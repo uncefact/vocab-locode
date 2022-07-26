@@ -1,12 +1,12 @@
-# Vocabulary - UN/LOCODE Domain
-special repository for the UN/LOCODE vocabulary
+# Code List - UN/LOCODE
+special repository for the UN/LOCODE 
 
 ## Links
 
-[GitHub](https://github.com/uncefact/vocab-locode)
+[GitHub](https://github.com/uncefact/code-locode)
 
-[Issues](https://github.com/uncefact/vocab-locode/issues)
+[Issues](https://github.com/uncefact/code-locode/issues)
 
-[Models](https://jargon.sh/user/unece/vocab-locode)
+[Models](https://jargon.sh/user/unece/code-locode)
 
-[Chat](https://uncefact.slack.com/archives/C03LCAZ3BH7) / [Join](https://join.slack.com/t/uncefact/shared_invite/zt-1b4qajh9d-dMCc7brWqHDToDrh195EZA)
+[Chat](https://uncefact.slack.com/archives/C03LCAZ3BH7)

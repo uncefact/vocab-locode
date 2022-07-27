@@ -1,0 +1,282 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "# Introduction\nThis API desceibes an implementation of UNLOCODE lookup. \n# Getting Started\n\n## Using The API\n\nThe API supports\n* GET of a list of Locodes - filtered by country code, status, or text string match (minumum two characters).\n* GET a single LOCODE.\n\n\n## Uptime & Planned Outages\n\nThis is a reference implementation and is not guaranteed to be available. Users that require high availability should synchronise the full UN/LOCODE list and implement their own API. \n\n# Authentication & Rate Limits\nThis is an open and un-authenticated API but is subject to rate limiting and reasonable use policy.  \n# Terms of Use, Copyright and Attribution\nIP is owned by UN/CEFACT but is avaialble for free use under MIT open source licnese.  \n\n\n# Contact Us\nhttps://github.com/uncefact/codes-locode",
+    "contact": {
+      "email": "",
+      "url": "https://github.com/uncefact/codes-locode"
+    },
+    "version": "unreleased",
+    "title": "Untitled API"
+  },
+  "paths": {
+    "/locodes": {
+      "get": {
+        "tags": [
+          "Locodes"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "country",
+            "description": "The ISO-3166 2-letter country code in which the locode is situated.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "description": "The status of this code value - must be one of \"proposed\", \"active\", \"deprecated\".",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "matchString",
+            "description": "At least two characters - used as a match string to subset locodes for dynamic form filling.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "schema": {
+              "type": "number"
+            },
+            "description": "The page that the user wants to return.",
+            "required": false
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "type": "number"
+            },
+            "description": "The number of results per page the user wants to return.",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Locodes"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "List Locodes",
+        "operationId": "listLocodes",
+        "description": "GET a list of locodes that match any of the following optional parameters\n\n* country code (returns all Locodes ina country)\n* status (returns all locodes of a given status - of not specified that defaulst is \"active\".\n* matchChars (returns all locodes that match the charater string - minimum 2 characters)\n\nThe result set is paginated if it includes more than 100 results.\n\n\n\nThis path supports pagination and uses the following query parameters:\n\n| Query Parameter | Description | Example |\n| --- | --- | --- |\n| 'page' | The page that the user wants to return. | 'page=1' (default: 1)|\n| 'limit' | The number of results per page the user wants to return. | 'limit=10' (default: 10)|\n\nThis creates a URI structure similar to:\n\nPage 1: '/locodes?page=1&limit=10'\n\nPage 2: '/locodes?page=2&limit=10'\n\n",
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/locodes/{code}": {
+      "get": {
+        "tags": [
+          "Locodes"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "description": "The code identifier - must be unique within one codelist.  eg \"AUBNE\" as a unique code withing UNlOCODE list.",
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Locodes"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get a Locodes",
+        "operationId": "getLocodesById",
+        "description": "Returns the matching locode.  \n",
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Locodes": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "string",
+            "description": "The ISO-3166 2-letter country code in which the locode is situated."
+          },
+          "countrySubDivision": {
+            "type": "string",
+            "description": "THe country sub-division (ie reagion, state, or territory) in which the locode is situated."
+          },
+          "nameWithDiacritics": {
+            "type": "string",
+            "description": "The name of the locode port with diacritics characters."
+          },
+          "authority": {
+            "type": "string",
+            "enum": [
+              "AA",
+              "AC",
+              "AF",
+              "AI",
+              "AM",
+              "AS",
+              "AQ",
+              "RL",
+              "RN",
+              "RQ",
+              "RR",
+              "QQ",
+              "UR",
+              "XX"
+            ],
+            "example": "AA",
+            "description": "The authority for the inclusion of this locode in the list - taken from a controlled list of values."
+          },
+          "functions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "B",
+              "0"
+            ],
+            "example": "1",
+            "description": "A list of one or more function codes that represent the purpose of the locode (eg air, ea, rail, etc port)."
+          },
+          "IATAcode": {
+            "type": "string",
+            "description": "The IATA port code that corresponds to this LOCODE.  "
+          },
+          "latitude": {
+            "type": "string",
+            "description": "The latitude of the locode degrees.decimal N/S"
+          },
+          "longditude": {
+            "type": "string",
+            "description": "The longditude of the locode degrees.decimal E/W"
+          },
+          "code": {
+            "type": "string",
+            "description": "The code identifier - must be unique within one codelist.  eg \"AUBNE\" as a unique code withing UNlOCODE list."
+          },
+          "name": {
+            "type": "string",
+            "description": "The human readable name for the code.  For example \"Port of Brisbane\" for Locode \"AUBNE\""
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "proposed",
+              "deprecated"
+            ],
+            "example": "active",
+            "description": "The status of this code value - must be one of \"proposed\", \"active\", \"deprecated\"."
+          },
+          "statusDate": {
+            "type": "string",
+            "format": "date",
+            "description": "The date at which the current status was set."
+          }
+        }
+      },
+      "Template_ErrorSchema": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Template_Error"
+            },
+            "description": ""
+          }
+        }
+      },
+      "Template_Error": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "readOnly": true,
+            "description": ""
+          },
+          "detail": {
+            "type": "string",
+            "description": ""
+          },
+          "code": {
+            "type": "string",
+            "description": ""
+          },
+          "source": {
+            "$ref": "#/components/schemas/Template_ErrorSource",
+            "description": ""
+          }
+        }
+      },
+      "Template_ErrorSource": {
+        "type": "object",
+        "properties": {
+          "pointer": {
+            "type": "string",
+            "description": ""
+          },
+          "parameter": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      }
+    },
+    "responses": {},
+    "securitySchemes": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ]
+}

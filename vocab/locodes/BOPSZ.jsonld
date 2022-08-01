@@ -1,0 +1,46 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:BOPSZ",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Puerto Suárez"
+                },
+                {
+                    "@value": "Puerto Suarez",
+                    "@language": "en"
+                }
+            ],
+            "unlcd:functions": [
+                {
+                    "@id": "unlcd:1"
+                },
+                {
+                    "@id": "unlcd:4"
+                }
+            ],
+            "rdf:value": "BOPSZ",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDBOS"
+            },
+            "unlcd:country": "BO",
+            "geo:lat": {
+                "@value": "-18.95",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-57.8",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

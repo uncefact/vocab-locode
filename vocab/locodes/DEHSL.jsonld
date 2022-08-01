@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:DEHSL",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Hauptstuhl",
+                "@language": "en"
+            },
+            "unlcd:functions": [
+                {
+                    "@id": "unlcd:2"
+                },
+                {
+                    "@id": "unlcd:3"
+                }
+            ],
+            "rdf:value": "DEHSL",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDDERP"
+            },
+            "unlcd:country": "DE",
+            "geo:lat": {
+                "@value": "49.4",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "7.483333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:RODIM",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Dîmbovita"
+                },
+                {
+                    "@value": "Dimbovita",
+                    "@language": "en"
+                }
+            ],
+            "unlcd:functions": {
+                "@id": "unlcd:3"
+            },
+            "rdf:value": "RODIM",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDRODB"
+            },
+            "unlcd:country": "RO",
+            "geo:lat": {
+                "@value": "45.416668",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "25.2",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

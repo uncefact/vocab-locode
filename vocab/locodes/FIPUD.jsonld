@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FIPUD",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Pudasjärvi"
+                },
+                {
+                    "@value": "Pudasjarvi",
+                    "@language": "en"
+                }
+            ],
+            "unlcd:functions": {
+                "@id": "unlcd:3"
+            },
+            "rdf:value": "FIPUD",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDFI14"
+            },
+            "unlcd:country": "FI",
+            "geo:lat": {
+                "@value": "65.333336",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "27.0",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

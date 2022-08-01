@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FIPOL",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Polvijärvi"
+                },
+                {
+                    "@value": "Polvijarvi",
+                    "@language": "en"
+                }
+            ],
+            "unlcd:functions": {
+                "@id": "unlcd:3"
+            },
+            "rdf:value": "FIPOL",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDFI13"
+            },
+            "unlcd:country": "FI",
+            "geo:lat": {
+                "@value": "62.85",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "29.366667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

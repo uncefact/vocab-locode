@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:USICU",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Curtis",
+                "@language": "en"
+            },
+            "unlcd:functions": [
+                {
+                    "@id": "unlcd:2"
+                },
+                {
+                    "@id": "unlcd:3"
+                }
+            ],
+            "rdf:value": "USICU",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDUSNE"
+            },
+            "unlcd:country": "US",
+            "geo:lat": {
+                "@value": "40.633335",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-100.5",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

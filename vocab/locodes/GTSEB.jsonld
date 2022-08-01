@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:GTSEB",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "San Sebastián"
+                },
+                {
+                    "@value": "San Sebastian",
+                    "@language": "en"
+                }
+            ],
+            "unlcd:functions": {
+                "@id": "unlcd:3"
+            },
+            "rdf:value": "GTSEB",
+            "unlcd:countrySubdivision": {
+                "@id": "unlcd:SDGT11"
+            },
+            "unlcd:country": "GT",
+            "geo:lat": {
+                "@value": "14.566667",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-91.65",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:BRUIT",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Uiramutã"
+                },
+                {
+                    "@value": "Uiramuta",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "BRUIT",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:BRRR"
+            },
+            "unlcdc:country": "BR",
+            "geo:lat": {
+                "@value": "4.5833335",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-60.183334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

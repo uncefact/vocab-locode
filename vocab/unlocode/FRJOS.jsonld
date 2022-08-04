@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FRJOS",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Jons",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "FRJOS",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR69"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "45.816666",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "5.0833335",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

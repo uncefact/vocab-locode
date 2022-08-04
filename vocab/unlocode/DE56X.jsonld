@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:DE56X",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Pölitz"
+                },
+                {
+                    "@value": "Politz",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "DE56X",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:DESH"
+            },
+            "unlcdc:country": "DE",
+            "geo:lat": {
+                "@value": "53.783333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "10.383333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

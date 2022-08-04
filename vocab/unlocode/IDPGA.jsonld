@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:IDPGA",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Pagerungan",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:1"
+                },
+                {
+                    "@id": "unlcdf:7"
+                }
+            ],
+            "rdf:value": "IDPGA",
+            "unlcdc:country": "ID",
+            "geo:lat": {
+                "@value": "-6.9166665",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "115.916664",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

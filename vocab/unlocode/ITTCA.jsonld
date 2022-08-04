@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:ITTCA",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Tuscania",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "ITTCA",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:ITVT"
+            },
+            "unlcdc:country": "IT",
+            "geo:lat": {
+                "@value": "42.416668",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "11.866667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

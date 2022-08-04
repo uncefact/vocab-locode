@@ -1,0 +1,47 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:SAJED",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Jeddah",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:1"
+                },
+                {
+                    "@id": "unlcdf:4"
+                },
+                {
+                    "@id": "unlcdf:5"
+                }
+            ],
+            "rdf:value": "SAJED",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:SA02"
+            },
+            "unlcdc:country": "SA",
+            "geo:lat": {
+                "@value": "21.466667",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "39.166668",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

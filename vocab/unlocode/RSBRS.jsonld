@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:RSBRS",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Brus",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "RSBRS",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:RS13"
+            },
+            "unlcdc:country": "RS",
+            "geo:lat": {
+                "@value": "43.383335",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "21.033333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:CLM9Z",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Ancoa",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "CLM9Z",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:CLML"
+            },
+            "unlcdc:country": "CL",
+            "geo:lat": {
+                "@value": "-35.916668",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-71.433334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

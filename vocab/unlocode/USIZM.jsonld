@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:USIZM",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Manton",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "USIZM",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:USMI"
+            },
+            "unlcdc:country": "US",
+            "geo:lat": {
+                "@value": "44.4",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-85.38333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

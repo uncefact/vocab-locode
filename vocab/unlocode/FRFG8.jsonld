@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FRFG8",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Fargues",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "FRFG8",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR33"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "44.533333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-0.28333333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

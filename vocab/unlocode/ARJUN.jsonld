@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:ARJUN",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Junín de Los Andes"
+                },
+                {
+                    "@value": "Junin de Los Andes",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "ARJUN",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:ARQ"
+            },
+            "unlcdc:country": "AR",
+            "geo:lat": {
+                "@value": "-39.933334",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-71.083336",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:SEVKB",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Vikarbyn",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "SEVKB",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:SEW"
+            },
+            "unlcdc:country": "SE",
+            "geo:lat": {
+                "@value": "60.916668",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "15.016666",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

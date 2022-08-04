@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:GRV3A",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Vrilissia",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "GRV3A",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:GRI"
+            },
+            "unlcdc:country": "GR",
+            "geo:lat": {
+                "@value": "38.033333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "23.833334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

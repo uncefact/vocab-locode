@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:PALJT",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Lajas de Tolé"
+                },
+                {
+                    "@value": "Lajas de Tole",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "PALJT",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:PA4"
+            },
+            "unlcdc:country": "PA",
+            "geo:lat": {
+                "@value": "8.166667",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-81.683334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

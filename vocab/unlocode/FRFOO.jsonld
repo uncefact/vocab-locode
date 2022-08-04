@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FRFOO",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Froidfond",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "FRFOO",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR85"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "46.866665",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-1.75",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

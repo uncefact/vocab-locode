@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:PLOEW",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Okuniew",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "PLOEW",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:PL14"
+            },
+            "unlcdc:country": "PL",
+            "geo:lat": {
+                "@value": "52.266666",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "21.3",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:MATEM",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Temara",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:1"
+            },
+            "rdf:value": "MATEM",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:MA06"
+            },
+            "unlcdc:country": "MA"
+        }
+    ]
+}

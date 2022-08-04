@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:USZTH",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Thatcher",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:6"
+                },
+                {
+                    "@id": "unlcdf:7"
+                }
+            ],
+            "rdf:value": "USZTH",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:USAR"
+            },
+            "unlcdc:country": "US",
+            "geo:lat": {
+                "@value": "32.85",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-109.76667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:BRRID",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Santa Margarida",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "BRRID",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:BRMG"
+            },
+            "unlcdc:country": "BR",
+            "geo:lat": {
+                "@value": "-20.366667",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-42.25",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FROIN",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Avoine",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:6"
+            },
+            "rdf:value": "FROIN",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR37"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "47.2",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "0.16666667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

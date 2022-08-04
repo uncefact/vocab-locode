@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:GRPAL",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Palaión Fáliron"
+                },
+                {
+                    "@value": "Palaion Faliron",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "GRPAL",
+            "unlcdc:country": "GR",
+            "geo:lat": {
+                "@value": "37.933334",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "23.7",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

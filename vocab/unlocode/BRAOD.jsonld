@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:BRAOD",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Arroio do Sal",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "BRAOD",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:BRRS"
+            },
+            "unlcdc:country": "BR",
+            "geo:lat": {
+                "@value": "-29.583334",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-49.916668",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

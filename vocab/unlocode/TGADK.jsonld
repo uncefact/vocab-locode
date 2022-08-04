@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:TGADK",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Adéti-Kopé"
+                },
+                {
+                    "@value": "Adeti-Kope",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:6"
+            },
+            "rdf:value": "TGADK",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:TGM"
+            },
+            "unlcdc:country": "TG",
+            "geo:lat": {
+                "@value": "6.35",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "1.2",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

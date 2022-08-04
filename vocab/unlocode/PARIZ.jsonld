@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:PARIZ",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Río Azúcar"
+                },
+                {
+                    "@value": "Rio Azucar",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:4"
+            },
+            "rdf:value": "PARIZ",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:PAKY"
+            },
+            "unlcdc:country": "PA",
+            "geo:lat": {
+                "@value": "9.433333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-78.63333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:PLZAS",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Zabkowice Slaskie",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:2"
+                },
+                {
+                    "@id": "unlcdf:3"
+                }
+            ],
+            "rdf:value": "PLZAS",
+            "unlcdc:country": "PL",
+            "geo:lat": {
+                "@value": "50.583332",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "16.816668",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

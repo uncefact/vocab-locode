@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:SEBRU",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Brunflo",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:1"
+                },
+                {
+                    "@id": "unlcdf:3"
+                }
+            ],
+            "rdf:value": "SEBRU",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:SEZ"
+            },
+            "unlcdc:country": "SE",
+            "geo:lat": {
+                "@value": "63.083332",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "14.816667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

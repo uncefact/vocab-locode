@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:EEKDR",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Kudruküla Sadam"
+                },
+                {
+                    "@value": "Kudrukula Sadam",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:1"
+            },
+            "rdf:value": "EEKDR",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:EE45"
+            },
+            "unlcdc:country": "EE",
+            "geo:lat": {
+                "@value": "59.45",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "29.083334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

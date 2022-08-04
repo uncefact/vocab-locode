@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:ILMSP",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Haifa Israel Shipyards Port",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:1"
+            },
+            "rdf:value": "ILMSP",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:ILZ"
+            },
+            "unlcdc:country": "IL",
+            "geo:lat": {
+                "@value": "32.8",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "34.983334",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

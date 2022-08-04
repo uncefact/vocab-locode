@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:MXSJI",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "San José Iturbide"
+                },
+                {
+                    "@value": "San Jose Iturbide",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "MXSJI",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:MXGUA"
+            },
+            "unlcdc:country": "MX",
+            "geo:lat": {
+                "@value": "21.0",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-100.38333",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

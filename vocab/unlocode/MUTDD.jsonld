@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:MUTDD",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Trou d'eau Douce",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "MUTDD",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:MUFL"
+            },
+            "unlcdc:country": "MU",
+            "geo:lat": {
+                "@value": "-20.233334",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "57.766666",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

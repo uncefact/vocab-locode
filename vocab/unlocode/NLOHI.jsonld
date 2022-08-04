@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:NLOHI",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Oudeschild",
+                "@language": "en"
+            },
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:1"
+                },
+                {
+                    "@id": "unlcdf:3"
+                }
+            ],
+            "rdf:value": "NLOHI",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:NLNH"
+            },
+            "unlcdc:country": "NL",
+            "geo:lat": {
+                "@value": "53.033333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "4.866667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

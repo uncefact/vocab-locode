@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:BRCJS",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Cerejeiras",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "BRCJS",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:BRRO"
+            },
+            "unlcdc:country": "BR",
+            "geo:lat": {
+                "@value": "-13.183333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "-60.816666",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

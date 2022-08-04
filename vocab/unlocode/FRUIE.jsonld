@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FRUIE",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Courville",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "FRUIE",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR51"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "49.266666",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "3.7",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:FRELL",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Épiais-lès-Louvres"
+                },
+                {
+                    "@value": "Epiais-les-Louvres",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "FRELL",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:FR95"
+            },
+            "unlcdc:country": "FR",
+            "geo:lat": {
+                "@value": "49.033333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "2.55",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

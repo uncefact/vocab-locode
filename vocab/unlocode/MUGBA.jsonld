@@ -1,0 +1,39 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:MUGBA",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": {
+                "@value": "Grand Baie",
+                "@language": "en"
+            },
+            "unlcdf:functions": {
+                "@id": "unlcdf:3"
+            },
+            "rdf:value": "MUGBA",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:MUPA"
+            },
+            "unlcdc:country": "MU",
+            "geo:lat": {
+                "@value": "-20.0",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "57.566666",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

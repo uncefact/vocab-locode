@@ -1,0 +1,55 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
+        "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+    },
+    "@graph": [
+        {
+            "@id": "unlcd:NOBOO",
+            "@type": "unlcd:UNLOCODE",
+            "rdfs:label": [
+                {
+                    "@value": "Bodø"
+                },
+                {
+                    "@value": "Bodo",
+                    "@language": "en"
+                }
+            ],
+            "unlcdf:functions": [
+                {
+                    "@id": "unlcdf:1"
+                },
+                {
+                    "@id": "unlcdf:2"
+                },
+                {
+                    "@id": "unlcdf:3"
+                },
+                {
+                    "@id": "unlcdf:4"
+                }
+            ],
+            "rdf:value": "NOBOO",
+            "unlcds:countrySubdivision": {
+                "@id": "unlcds:NO18"
+            },
+            "unlcdc:country": "NO",
+            "geo:lat": {
+                "@value": "67.28333",
+                "@type": "xsd:float"
+            },
+            "geo:long": {
+                "@value": "14.366667",
+                "@type": "xsd:float"
+            }
+        }
+    ]
+}

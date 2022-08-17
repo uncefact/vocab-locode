@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USTDU",
             "rdf:value": "USTDU",
+            "@id": "unlcd:USTDU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Stoddard"
+                "@value": "Stoddard",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USWI"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "43.65",
                 "@type": "xsd:float"

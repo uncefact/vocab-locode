@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRVB",
             "rdf:value": "FRRVB",
+            "@id": "unlcd:FRRVB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribeauvillé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribeauville"
+                    "@value": "Ribeauville",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR68"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.2",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USOSZ",
             "rdf:value": "USOSZ",
+            "@id": "unlcd:USOSZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Orca"
+                "@value": "Orca",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USAK"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "60.566666",
                 "@type": "xsd:float"

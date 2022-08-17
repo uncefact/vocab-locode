@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDSC",
             "rdf:value": "BRDSC",
+            "@id": "unlcd:BRDSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dois Córregos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dois Corregos"
+                    "@value": "Dois Corregos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.366667",
                 "@type": "xsd:float"

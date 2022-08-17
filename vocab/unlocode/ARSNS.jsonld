@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARSNS",
             "rdf:value": "ARSNS",
+            "@id": "unlcd:ARSNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Nicolás de los Arroyos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Nicolas de los Arroyos"
+                    "@value": "San Nicolas de los Arroyos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARB"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-33.333332",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASUC",
             "rdf:value": "CASUC",
+            "@id": "unlcd:CASUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Success"
+                "@value": "Success",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CASK"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "50.45",
                 "@type": "xsd:float"

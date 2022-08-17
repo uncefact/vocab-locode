@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREMD",
             "rdf:value": "FREMD",
+            "@id": "unlcd:FREMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Médis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Medis"
+                    "@value": "Medis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.633335",
                 "@type": "xsd:float"

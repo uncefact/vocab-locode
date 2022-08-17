@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAPDC",
             "rdf:value": "PAPDC",
+            "@id": "unlcd:PAPDC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Potrero de Caña"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Potrero de Cana"
+                    "@value": "Potrero de Cana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA4"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.3",
                 "@type": "xsd:float"

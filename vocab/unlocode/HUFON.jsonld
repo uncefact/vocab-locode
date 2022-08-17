@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUFON",
             "rdf:value": "HUFON",
+            "@id": "unlcd:HUFON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fonyód"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fonyod"
+                    "@value": "Fonyod",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUSO"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "46.733334",
                 "@type": "xsd:float"

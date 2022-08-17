@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGSD",
             "rdf:value": "FRGSD",
+            "@id": "unlcd:FRGSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Geniès-des-Mourgues"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Genies-des-Mourgues"
+                    "@value": "Saint-Genies-des-Mourgues",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.7",
                 "@type": "xsd:float"

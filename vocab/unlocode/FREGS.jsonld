@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREGS",
             "rdf:value": "FREGS",
+            "@id": "unlcd:FREGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Éguilles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Eguilles"
+                    "@value": "Eguilles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR13"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.566666",
                 "@type": "xsd:float"

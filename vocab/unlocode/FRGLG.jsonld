@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGLG",
             "rdf:value": "FRGLG",
+            "@id": "unlcd:FRGLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Garges-lès-Gonesse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garges-les-Gonesse"
+                    "@value": "Garges-les-Gonesse",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR95"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.966667",
                 "@type": "xsd:float"

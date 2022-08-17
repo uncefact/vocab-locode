@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOASC",
             "rdf:value": "BOASC",
+            "@id": "unlcd:BOASC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ascensión"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ascension"
+                    "@value": "Ascension",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOS"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-15.7",
                 "@type": "xsd:float"

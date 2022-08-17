@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USRC3",
             "rdf:value": "USRC3",
+            "@id": "unlcd:USRC3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Rice"
+                "@value": "Rice",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMN"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "45.75",
                 "@type": "xsd:float"

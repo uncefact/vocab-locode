@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUTR",
             "rdf:value": "DEUTR",
+            "@id": "unlcd:DEUTR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bütthard"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Butthard"
+                    "@value": "Butthard",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.6",
                 "@type": "xsd:float"

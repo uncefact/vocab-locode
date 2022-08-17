@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVNK",
             "rdf:value": "ESVNK",
+            "@id": "unlcd:ESVNK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villanueva de la Cañada"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villanueva de la Canada"
+                    "@value": "Villanueva de la Canada",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESM"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.45",
                 "@type": "xsd:float"

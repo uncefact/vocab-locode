@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BELNK",
             "rdf:value": "BELNK",
+            "@id": "unlcd:BELNK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lanklaar"
+                "@value": "Lanklaar",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEVLI"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "51.016666",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USFBP",
             "rdf:value": "USFBP",
+            "@id": "unlcd:USFBP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Fort Ripley"
+                "@value": "Fort Ripley",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMN"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "46.15",
                 "@type": "xsd:float"

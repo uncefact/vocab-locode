@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCDF",
             "rdf:value": "BRCDF",
+            "@id": "unlcd:BRCDF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição da Feira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao da Feira"
+                    "@value": "Conceicao da Feira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.5",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRGRC",
             "rdf:value": "BRGRC",
+            "@id": "unlcd:BRGRC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Graça"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Graca"
+                    "@value": "Graca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRCE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-4.0333333",
                 "@type": "xsd:float"

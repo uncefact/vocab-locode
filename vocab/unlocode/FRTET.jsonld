@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTET",
             "rdf:value": "FRTET",
+            "@id": "unlcd:FRTET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-lès-Remiremont"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-les-Remiremont"
+                    "@value": "Saint-Etienne-les-Remiremont",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR88"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.016666",
                 "@type": "xsd:float"

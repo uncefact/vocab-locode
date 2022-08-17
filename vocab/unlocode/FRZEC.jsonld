@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZEC",
             "rdf:value": "FRZEC",
+            "@id": "unlcd:FRZEC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Domèvre-sur-Durbion"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Domevre-sur-Durbion"
+                    "@value": "Domevre-sur-Durbion",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR88"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.283333",
                 "@type": "xsd:float"

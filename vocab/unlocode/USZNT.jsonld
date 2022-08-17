@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USZNT",
             "rdf:value": "USZNT",
+            "@id": "unlcd:USZNT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tryon"
+                "@value": "Tryon",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USNC"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "35.2",
                 "@type": "xsd:float"

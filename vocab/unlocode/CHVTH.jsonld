@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHVTH",
             "rdf:value": "CHVTH",
+            "@id": "unlcd:CHVTH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Venthône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Venthone"
+                    "@value": "Venthone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVS"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.3",
                 "@type": "xsd:float"

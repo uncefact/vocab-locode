@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBLY",
             "rdf:value": "DEBLY",
+            "@id": "unlcd:DEBLY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Büttelborn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buttelborn"
+                    "@value": "Buttelborn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

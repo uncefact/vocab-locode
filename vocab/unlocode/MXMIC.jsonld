@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXMIC",
             "rdf:value": "MXMIC",
+            "@id": "unlcd:MXMIC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Michoacán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Michoacan"
+                    "@value": "Michoacan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXTAB"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "17.916666",
                 "@type": "xsd:float"

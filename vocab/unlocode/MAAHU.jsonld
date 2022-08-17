@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MAAHU",
             "rdf:value": "MAAHU",
+            "@id": "unlcd:MAAHU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Al Hoceïma"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Al Hoceima"
+                    "@value": "Al Hoceima",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "35.25",
                 "@type": "xsd:float"

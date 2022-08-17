@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNCDU",
             "rdf:value": "CNCDU",
+            "@id": "unlcd:CNCDU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Chengdu"
+                "@value": "Chengdu",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNSC"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "30.666666",
                 "@type": "xsd:float"

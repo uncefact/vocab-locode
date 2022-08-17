@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLDD",
             "rdf:value": "FRLDD",
+            "@id": "unlcd:FRLDD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Chapelle-devant-Bruyères"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Chapelle-devant-Bruyeres"
+                    "@value": "La Chapelle-devant-Bruyeres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR88"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.183334",
                 "@type": "xsd:float"

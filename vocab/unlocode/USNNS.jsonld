@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USNNS",
             "rdf:value": "USNNS",
+            "@id": "unlcd:USNNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Newport News"
+                "@value": "Newport News",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USVA"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "36.966667",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESMDJ",
             "rdf:value": "ESMDJ",
+            "@id": "unlcd:ESMDJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mondéjar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mondejar"
+                    "@value": "Mondejar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.316666",
                 "@type": "xsd:float"

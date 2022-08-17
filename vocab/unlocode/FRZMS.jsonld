@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZMS",
             "rdf:value": "FRZMS",
+            "@id": "unlcd:FRZMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Méry-sur-Seine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mery-sur-Seine"
+                    "@value": "Mery-sur-Seine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.5",
                 "@type": "xsd:float"

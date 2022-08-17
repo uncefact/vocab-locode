@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPUN",
             "rdf:value": "BRPUN",
+            "@id": "unlcd:BRPUN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Porto União"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Porto Uniao"
+                    "@value": "Porto Uniao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.216667",
                 "@type": "xsd:float"

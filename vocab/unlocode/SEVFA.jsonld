@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEVFA",
             "rdf:value": "SEVFA",
+            "@id": "unlcd:SEVFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Västra Frölunda"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vastra Frolunda"
+                    "@value": "Vastra Frolunda",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEO"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "57.65",
                 "@type": "xsd:float"

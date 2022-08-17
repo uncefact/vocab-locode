@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEACU",
             "rdf:value": "DEACU",
+            "@id": "unlcd:DEACU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Achenmühle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Achenmuhle"
+                    "@value": "Achenmuhle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.783333",
                 "@type": "xsd:float"

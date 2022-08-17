@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLPIG",
             "rdf:value": "PLPIG",
+            "@id": "unlcd:PLPIG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pilawa Górna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pilawa Gorna"
+                    "@value": "Pilawa Gorna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL02"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "50.683334",
                 "@type": "xsd:float"

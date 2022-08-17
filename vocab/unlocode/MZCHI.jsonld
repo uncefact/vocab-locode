@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MZCHI",
             "rdf:value": "MZCHI",
+            "@id": "unlcd:MZCHI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chiúre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chiure"
+                    "@value": "Chiure",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MZP"
             },
-            "unlcdc:countryCode": "MZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MZ"
+            },
             "geo:lat": {
                 "@value": "-13.366667",
                 "@type": "xsd:float"

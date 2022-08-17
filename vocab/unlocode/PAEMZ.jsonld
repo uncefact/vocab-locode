@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAEMZ",
             "rdf:value": "PAEMZ",
+            "@id": "unlcd:PAEMZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "El Muñoz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "El Munoz"
+                    "@value": "El Munoz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA7"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "7.6666665",
                 "@type": "xsd:float"

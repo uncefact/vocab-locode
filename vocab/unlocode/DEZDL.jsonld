@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZDL",
             "rdf:value": "DEZDL",
+            "@id": "unlcd:DEZDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Düdenbüttel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dudenbuttel"
+                    "@value": "Dudenbuttel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.583332",
                 "@type": "xsd:float"

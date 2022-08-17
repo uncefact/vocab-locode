@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATSMM",
             "rdf:value": "ATSMM",
+            "@id": "unlcd:ATSMM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sankt Martin im Mühlkreis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sankt Martin im Muhlkreis"
+                    "@value": "Sankt Martin im Muhlkreis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.416668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMOD",
             "rdf:value": "BRMOD",
+            "@id": "unlcd:BRMOD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moreilândia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moreilandia"
+                    "@value": "Moreilandia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.616667",
                 "@type": "xsd:float"

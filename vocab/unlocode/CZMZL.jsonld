@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZMZL",
             "rdf:value": "CZMZL",
+            "@id": "unlcd:CZMZL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Msené-Lázne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Msene-Lazne"
+                    "@value": "Msene-Lazne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZ42"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.366665",
                 "@type": "xsd:float"

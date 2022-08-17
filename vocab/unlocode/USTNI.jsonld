@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USTNI",
             "rdf:value": "USTNI",
+            "@id": "unlcd:USTNI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tunica"
+                "@value": "Tunica",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMS"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "34.683334",
                 "@type": "xsd:float"

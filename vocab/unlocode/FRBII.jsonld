@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBII",
             "rdf:value": "FRBII",
+            "@id": "unlcd:FRBII",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Biéville-Beuville"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bieville-Beuville"
+                    "@value": "Bieville-Beuville",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.25",
                 "@type": "xsd:float"

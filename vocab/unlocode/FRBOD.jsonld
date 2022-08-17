@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBOD",
             "rdf:value": "FRBOD",
+            "@id": "unlcd:FRBOD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bordeaux"
+                "@value": "Bordeaux",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.833332",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLKOP",
             "rdf:value": "PLKOP",
+            "@id": "unlcd:PLKOP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kopytów"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kopytow"
+                    "@value": "Kopytow",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "52.2",
                 "@type": "xsd:float"

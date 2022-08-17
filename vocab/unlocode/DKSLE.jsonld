@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKSLE",
             "rdf:value": "DKSLE",
+            "@id": "unlcd:DKSLE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Stenløse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stenlose"
+                    "@value": "Stenlose",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK84"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "55.766666",
                 "@type": "xsd:float"

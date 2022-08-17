@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USTNX",
             "rdf:value": "USTNX",
+            "@id": "unlcd:USTNX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Trenton"
+                "@value": "Trenton",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USOH"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "39.483334",
                 "@type": "xsd:float"

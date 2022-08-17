@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INRMT",
             "rdf:value": "INRMT",
+            "@id": "unlcd:INRMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Ramtek"
+                "@value": "Ramtek",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INMH"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "21.4",
                 "@type": "xsd:float"

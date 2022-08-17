@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CALCP",
             "rdf:value": "CALCP",
+            "@id": "unlcd:CALCP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lockeport"
+                "@value": "Lockeport",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CANS"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "43.7",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRGDN",
             "rdf:value": "BRGDN",
+            "@id": "unlcd:BRGDN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Garrafão do Norte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garrafao do Norte"
+                    "@value": "Garrafao do Norte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-1.9166667",
                 "@type": "xsd:float"

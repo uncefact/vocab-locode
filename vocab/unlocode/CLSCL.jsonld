@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLSCL",
             "rdf:value": "CLSCL",
+            "@id": "unlcd:CLSCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Santiago"
+                "@value": "Santiago",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLRM"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-33.45",
                 "@type": "xsd:float"

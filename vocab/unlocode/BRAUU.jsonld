@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAUU",
             "rdf:value": "BRAUU",
+            "@id": "unlcd:BRAUU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Apicum-Açu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Apicum-Acu"
+                    "@value": "Apicum-Acu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-1.5166667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCLZ",
             "rdf:value": "FRCLZ",
+            "@id": "unlcd:FRCLZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Clonas-sur-Varèze"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Clonas-sur-Vareze"
+                    "@value": "Clonas-sur-Vareze",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.416668",
                 "@type": "xsd:float"

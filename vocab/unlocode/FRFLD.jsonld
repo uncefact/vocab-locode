@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFLD",
             "rdf:value": "FRFLD",
+            "@id": "unlcd:FRFLD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontaine-lès-Dijon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontaine-les-Dijon"
+                    "@value": "Fontaine-les-Dijon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.333332",
                 "@type": "xsd:float"

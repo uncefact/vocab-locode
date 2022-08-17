@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USGIO",
             "rdf:value": "USGIO",
+            "@id": "unlcd:USGIO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Gilmore City"
+                "@value": "Gilmore City",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USIA"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "42.716667",
                 "@type": "xsd:float"

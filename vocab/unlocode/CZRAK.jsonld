@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZRAK",
             "rdf:value": "CZRAK",
+            "@id": "unlcd:CZRAK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rakovník"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rakovnik"
+                    "@value": "Rakovnik",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.1",
                 "@type": "xsd:float"

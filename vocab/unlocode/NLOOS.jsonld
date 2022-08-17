@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLOOS",
             "rdf:value": "NLOOS",
+            "@id": "unlcd:NLOOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Oosterhout"
+                "@value": "Oosterhout",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLNB"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "51.65",
                 "@type": "xsd:float"

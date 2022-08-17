@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRTDL",
             "rdf:value": "BRTDL",
+            "@id": "unlcd:BRTDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Tomé das Letras"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Tome das Letras"
+                    "@value": "Sao Tome das Letras",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.716667",
                 "@type": "xsd:float"

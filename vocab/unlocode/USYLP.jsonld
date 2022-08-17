@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USYLP",
             "rdf:value": "USYLP",
+            "@id": "unlcd:USYLP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lake Providence"
+                "@value": "Lake Providence",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USLA"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "32.8",
                 "@type": "xsd:float"

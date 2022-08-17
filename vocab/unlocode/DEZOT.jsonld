@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZOT",
             "rdf:value": "DEZOT",
+            "@id": "unlcd:DEZOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zossen (Wünschendorf/Elster)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zossen (Wunschendorf/Elster)"
+                    "@value": "Zossen (Wunschendorf/Elster)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DETH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.8",
                 "@type": "xsd:float"

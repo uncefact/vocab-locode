@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARBHI",
             "rdf:value": "ARBHI",
+            "@id": "unlcd:ARBHI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bahía Blanca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bahia Blanca"
+                    "@value": "Bahia Blanca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARB"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-38.716667",
                 "@type": "xsd:float"

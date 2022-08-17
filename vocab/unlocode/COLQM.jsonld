@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COLQM",
             "rdf:value": "COLQM",
+            "@id": "unlcd:COLQM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto Leguízamo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto Leguizamo"
+                    "@value": "Puerto Leguizamo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COPUT"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "-0.16666667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZKMV",
             "rdf:value": "CZKMV",
+            "@id": "unlcd:CZKMV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Komárov"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Komarov"
+                    "@value": "Komarov",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZST"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.8",
                 "@type": "xsd:float"

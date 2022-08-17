@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNPHG",
             "rdf:value": "VNPHG",
+            "@id": "unlcd:VNPHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Phuóc Long"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Phuoc Long"
+                    "@value": "Phuoc Long",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "10.716666",
                 "@type": "xsd:float"

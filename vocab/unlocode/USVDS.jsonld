@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USVDS",
             "rdf:value": "USVDS",
+            "@id": "unlcd:USVDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Valle Crucis"
+                "@value": "Valle Crucis",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USNC"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "36.2",
                 "@type": "xsd:float"

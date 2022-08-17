@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITIDF",
             "rdf:value": "ITIDF",
+            "@id": "unlcd:ITIDF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Isola delle Femmine"
+                "@value": "Isola delle Femmine",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "38.2",
                 "@type": "xsd:float"

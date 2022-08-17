@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CADRS",
             "rdf:value": "CADRS",
+            "@id": "unlcd:CADRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Densmore Mills"
+                "@value": "Densmore Mills",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CANS"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.3",
                 "@type": "xsd:float"

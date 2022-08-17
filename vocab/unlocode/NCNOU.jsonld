@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCNOU",
             "rdf:value": "NCNOU",
+            "@id": "unlcd:NCNOU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nouméa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Noumea"
+                    "@value": "Noumea",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-22.266666",
                 "@type": "xsd:float"

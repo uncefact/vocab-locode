@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USASC",
             "rdf:value": "USASC",
+            "@id": "unlcd:USASC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Arkansas City"
+                "@value": "Arkansas City",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USAR"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "33.6",
                 "@type": "xsd:float"

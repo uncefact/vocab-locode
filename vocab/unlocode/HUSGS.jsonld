@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSGS",
             "rdf:value": "HUSGS",
+            "@id": "unlcd:HUSGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Seregélyes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Seregelyes"
+                    "@value": "Seregelyes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUFE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.116665",
                 "@type": "xsd:float"

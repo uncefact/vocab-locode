@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BJGLA",
             "rdf:value": "BJGLA",
+            "@id": "unlcd:BJGLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Glazoué"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Glazoue"
+                    "@value": "Glazoue",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BJ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BJ"
+            },
             "geo:lat": {
                 "@value": "7.9666667",
                 "@type": "xsd:float"

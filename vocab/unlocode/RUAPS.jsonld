@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUAPS",
             "rdf:value": "RUAPS",
+            "@id": "unlcd:RUAPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Apsheronsk"
+                "@value": "Apsheronsk",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUKDA"
             },
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "44.45",
                 "@type": "xsd:float"

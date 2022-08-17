@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPT",
             "rdf:value": "BRSPT",
+            "@id": "unlcd:BRSPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João dos Patos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao dos Patos"
+                    "@value": "Sao Joao dos Patos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.483333",
                 "@type": "xsd:float"

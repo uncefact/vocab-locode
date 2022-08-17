@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MNULG",
             "rdf:value": "MNULG",
+            "@id": "unlcd:MNULG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ölgii"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olgii"
+                    "@value": "Olgii",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MN071"
             },
-            "unlcdc:countryCode": "MN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MN"
+            },
             "geo:lat": {
                 "@value": "48.966667",
                 "@type": "xsd:float"

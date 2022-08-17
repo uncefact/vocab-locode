@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSMD",
             "rdf:value": "GTSMD",
+            "@id": "unlcd:GTSMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Miguel Dueñas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Miguel Duenas"
+                    "@value": "San Miguel Duenas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT03"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.516666",
                 "@type": "xsd:float"

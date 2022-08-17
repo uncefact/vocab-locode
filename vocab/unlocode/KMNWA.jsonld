@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KMNWA",
             "rdf:value": "KMNWA",
+            "@id": "unlcd:KMNWA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mohéli Apt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moheli Apt"
+                    "@value": "Moheli Apt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:KMM"
             },
-            "unlcdc:countryCode": "KM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KM"
+            },
             "geo:lat": {
                 "@value": "-12.25",
                 "@type": "xsd:float"

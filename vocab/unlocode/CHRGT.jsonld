@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHRGT",
             "rdf:value": "CHRGT",
+            "@id": "unlcd:CHRGT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Rougemont"
+                "@value": "Rougemont",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVD"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.483334",
                 "@type": "xsd:float"

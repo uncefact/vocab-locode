@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKVEP",
             "rdf:value": "SKVEP",
+            "@id": "unlcd:SKVEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Velká Paka"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Velka Paka"
+                    "@value": "Velka Paka",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKTA"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.033333",
                 "@type": "xsd:float"

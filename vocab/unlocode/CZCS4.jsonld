@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCS4",
             "rdf:value": "CZCS4",
+            "@id": "unlcd:CZCS4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceská"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceska"
+                    "@value": "Ceska",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.283333",
                 "@type": "xsd:float"

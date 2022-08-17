@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBLM",
             "rdf:value": "FRBLM",
+            "@id": "unlcd:FRBLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ballan-Miré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ballan-Mire"
+                    "@value": "Ballan-Mire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.333332",
                 "@type": "xsd:float"

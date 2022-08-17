@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESTDC",
             "rdf:value": "ESTDC",
+            "@id": "unlcd:ESTDC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Trobajo del Cerecedo"
+                "@value": "Trobajo del Cerecedo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESLE"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.566666",
                 "@type": "xsd:float"

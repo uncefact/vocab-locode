@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHLEU",
             "rdf:value": "CHLEU",
+            "@id": "unlcd:CHLEU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Leuk"
+                "@value": "Leuk",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVS"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.316666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRTEI",
             "rdf:value": "BRTEI",
+            "@id": "unlcd:BRTEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Três Arroios"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tres Arroios"
+                    "@value": "Tres Arroios",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-27.483334",
                 "@type": "xsd:float"

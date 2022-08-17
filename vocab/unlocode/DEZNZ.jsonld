@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZNZ",
             "rdf:value": "DEZNZ",
+            "@id": "unlcd:DEZNZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zöllnitz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zollnitz"
+                    "@value": "Zollnitz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DETH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.866665",
                 "@type": "xsd:float"

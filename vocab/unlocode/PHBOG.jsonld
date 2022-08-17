@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PHBOG",
             "rdf:value": "PHBOG",
+            "@id": "unlcd:PHBOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bogo"
+                "@value": "Bogo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PH"
+            },
             "geo:lat": {
                 "@value": "11.05",
                 "@type": "xsd:float"

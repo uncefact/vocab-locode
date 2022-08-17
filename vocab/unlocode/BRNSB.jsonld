@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNSB",
             "rdf:value": "BRNSB",
+            "@id": "unlcd:BRNSB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nova Santa Bárbara"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nova Santa Barbara"
+                    "@value": "Nova Santa Barbara",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.583334",
                 "@type": "xsd:float"

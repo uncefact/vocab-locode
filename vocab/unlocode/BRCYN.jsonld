@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCYN",
             "rdf:value": "BRCYN",
+            "@id": "unlcd:BRCYN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Caiçara do Norte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caicara do Norte"
+                    "@value": "Caicara do Norte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.05",
                 "@type": "xsd:float"

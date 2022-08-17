@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBAHN",
             "rdf:value": "GBAHN",
+            "@id": "unlcd:GBAHN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Achnacroish"
+                "@value": "Achnacroish",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBAGB"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "56.5",
                 "@type": "xsd:float"

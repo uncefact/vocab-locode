@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCA7",
             "rdf:value": "ESCA7",
+            "@id": "unlcd:ESCA7",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castelló de Ampurias"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castello de Ampurias"
+                    "@value": "Castello de Ampurias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESGI"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMLT",
             "rdf:value": "FRMLT",
+            "@id": "unlcd:FRMLT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Malemort-sur-Corrèze"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Malemort-sur-Correze"
+                    "@value": "Malemort-sur-Correze",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR19"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.166668",
                 "@type": "xsd:float"

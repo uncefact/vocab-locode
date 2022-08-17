@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAMRE",
             "rdf:value": "CAMRE",
+            "@id": "unlcd:CAMRE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montréal-Est"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montreal-Est"
+                    "@value": "Montreal-Est",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.633335",
                 "@type": "xsd:float"

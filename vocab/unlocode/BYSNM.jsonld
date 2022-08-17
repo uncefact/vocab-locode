@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BYSNM",
             "rdf:value": "BYSNM",
+            "@id": "unlcd:BYSNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Slonim"
+                "@value": "Slonim",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "BY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BY"
+            },
             "geo:lat": {
                 "@value": "53.1",
                 "@type": "xsd:float"

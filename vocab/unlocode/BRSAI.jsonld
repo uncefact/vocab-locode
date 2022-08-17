@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSAI",
             "rdf:value": "BRSAI",
+            "@id": "unlcd:BRSAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Rita do Sapucaí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Rita do Sapucai"
+                    "@value": "Santa Rita do Sapucai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBMH",
             "rdf:value": "BRBMH",
+            "@id": "unlcd:BRBMH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bela Vista do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bela Vista do Maranhao"
+                    "@value": "Bela Vista do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.7333333",
                 "@type": "xsd:float"

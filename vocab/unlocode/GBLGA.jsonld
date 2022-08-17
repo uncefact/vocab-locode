@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBLGA",
             "rdf:value": "GBLGA",
+            "@id": "unlcd:GBLGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Llangarron"
+                "@value": "Llangarron",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBHEF"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "51.883335",
                 "@type": "xsd:float"

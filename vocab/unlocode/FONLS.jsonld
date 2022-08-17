@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FONLS",
             "rdf:value": "FONLS",
+            "@id": "unlcd:FONLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nólsoy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nolsoy"
+                    "@value": "Nolsoy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "FO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FO"
+            },
             "geo:lat": {
                 "@value": "62.016666",
                 "@type": "xsd:float"

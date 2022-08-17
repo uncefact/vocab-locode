@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKLYD",
             "rdf:value": "SKLYD",
+            "@id": "unlcd:SKLYD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lysá nad Dunajcom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lysa nad Dunajcom"
+                    "@value": "Lysa nad Dunajcom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKPV"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "49.4",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNBCH",
             "rdf:value": "VNBCH",
+            "@id": "unlcd:VNBCH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bình Chánh"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Binh Chanh"
+                    "@value": "Binh Chanh",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VNSG"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "10.666667",
                 "@type": "xsd:float"

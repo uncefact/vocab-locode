@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHRO",
             "rdf:value": "FRHRO",
+            "@id": "unlcd:FRHRO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hautecourt-Romanèche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hautecourt-Romaneche"
+                    "@value": "Hautecourt-Romaneche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.166668",
                 "@type": "xsd:float"

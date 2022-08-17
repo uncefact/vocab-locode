@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSDS",
             "rdf:value": "GTSDS",
+            "@id": "unlcd:GTSDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Domingo Suchitepéquez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Domingo Suchitepequez"
+                    "@value": "Santo Domingo Suchitepequez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT10"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.466666",
                 "@type": "xsd:float"

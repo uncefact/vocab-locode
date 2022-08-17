@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEVOS",
             "rdf:value": "BEVOS",
+            "@id": "unlcd:BEVOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Vorst (Forest)/Brussel (Bruxelles)"
+                "@value": "Vorst (Forest)/Brussel (Bruxelles)",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEBRU"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.8",
                 "@type": "xsd:float"

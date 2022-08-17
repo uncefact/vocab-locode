@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOHFS",
             "rdf:value": "NOHFS",
+            "@id": "unlcd:NOHFS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hønefoss"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Honefoss"
+                    "@value": "Honefoss",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO06"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "60.166668",
                 "@type": "xsd:float"

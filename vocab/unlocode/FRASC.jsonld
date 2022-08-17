@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRASC",
             "rdf:value": "FRASC",
+            "@id": "unlcd:FRASC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alby-sur-Chéran"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alby-sur-Cheran"
+                    "@value": "Alby-sur-Cheran",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR74"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.816666",
                 "@type": "xsd:float"

@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USSVC",
             "rdf:value": "USSVC",
+            "@id": "unlcd:USSVC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Silver City"
+                "@value": "Silver City",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USNM"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

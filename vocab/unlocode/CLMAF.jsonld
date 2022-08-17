@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLMAF",
             "rdf:value": "CLMAF",
+            "@id": "unlcd:CLMAF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Máfil"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mafil"
+                    "@value": "Mafil",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLLL"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-39.65",
                 "@type": "xsd:float"

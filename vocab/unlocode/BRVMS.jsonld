@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRVMS",
             "rdf:value": "BRVMS",
+            "@id": "unlcd:BRVMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Varjão de Minas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Varjao de Minas"
+                    "@value": "Varjao de Minas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.383333",
                 "@type": "xsd:float"

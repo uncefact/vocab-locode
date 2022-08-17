@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COIGO",
             "rdf:value": "COIGO",
+            "@id": "unlcd:COIGO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chigorodó"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chigorodo"
+                    "@value": "Chigorodo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COANT"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "7.6833334",
                 "@type": "xsd:float"

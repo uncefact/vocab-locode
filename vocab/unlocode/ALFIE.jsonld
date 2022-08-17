@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ALFIE",
             "rdf:value": "ALFIE",
+            "@id": "unlcd:ALFIE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Fier"
+                "@value": "Fier",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "AL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AL"
+            },
             "geo:lat": {
                 "@value": "40.733334",
                 "@type": "xsd:float"

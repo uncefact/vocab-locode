@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RSSKA",
             "rdf:value": "RSSKA",
+            "@id": "unlcd:RSSKA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sremski Karlovci"
+                "@value": "Sremski Karlovci",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RS"
+            },
             "geo:lat": {
                 "@value": "45.2",
                 "@type": "xsd:float"

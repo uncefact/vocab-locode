@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAAV",
             "rdf:value": "BRAAV",
+            "@id": "unlcd:BRAAV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ariranha do Ivaí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ariranha do Ivai"
+                    "@value": "Ariranha do Ivai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-24.366667",
                 "@type": "xsd:float"

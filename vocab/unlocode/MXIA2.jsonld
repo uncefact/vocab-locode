@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXIA2",
             "rdf:value": "MXIA2",
+            "@id": "unlcd:MXIA2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ixtaczoquitlán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ixtaczoquitlan"
+                    "@value": "Ixtaczoquitlan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXVER"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "18.85",
                 "@type": "xsd:float"

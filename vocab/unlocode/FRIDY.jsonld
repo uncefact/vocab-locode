@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRIDY",
             "rdf:value": "FRIDY",
+            "@id": "unlcd:FRIDY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Île-d'Yeu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Ile-d'Yeu"
+                    "@value": "L'Ile-d'Yeu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.716667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLZPC",
             "rdf:value": "CLZPC",
+            "@id": "unlcd:CLZPC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pucón Apt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pucon Apt"
+                    "@value": "Pucon Apt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAR"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-39.283333",
                 "@type": "xsd:float"

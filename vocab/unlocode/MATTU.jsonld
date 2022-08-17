@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MATTU",
             "rdf:value": "MATTU",
+            "@id": "unlcd:MATTU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tétouan"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tetouan"
+                    "@value": "Tetouan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "35.566666",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAMVI",
             "rdf:value": "CAMVI",
+            "@id": "unlcd:CAMVI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Millville"
+                "@value": "Millville",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CANS"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.266666",
                 "@type": "xsd:float"

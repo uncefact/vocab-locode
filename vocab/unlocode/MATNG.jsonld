@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MATNG",
             "rdf:value": "MATNG",
+            "@id": "unlcd:MATNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tangier"
+                "@value": "Tangier",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "35.783333",
                 "@type": "xsd:float"

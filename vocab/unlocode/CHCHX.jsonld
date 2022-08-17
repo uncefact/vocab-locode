@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHCHX",
             "rdf:value": "CHCHX",
+            "@id": "unlcd:CHCHX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Choëx"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Choex"
+                    "@value": "Choex",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVS"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.233334",
                 "@type": "xsd:float"

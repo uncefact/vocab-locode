@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INPMT",
             "rdf:value": "INPMT",
+            "@id": "unlcd:INPMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "MTDCCL SEZ/Pune"
+                "@value": "MTDCCL SEZ/Pune",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INMH"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "18.533333",
                 "@type": "xsd:float"

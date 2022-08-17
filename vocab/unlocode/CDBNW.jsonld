@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CDBNW",
             "rdf:value": "CDBNW",
+            "@id": "unlcd:CDBNW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Banana"
+                "@value": "Banana",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CD"
+            },
             "geo:lat": {
                 "@value": "6.016667",
                 "@type": "xsd:float"

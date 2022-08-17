@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJNL",
             "rdf:value": "BRJNL",
+            "@id": "unlcd:BRJNL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jundiaí do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jundiai do Sul"
+                    "@value": "Jundiai do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.433332",
                 "@type": "xsd:float"

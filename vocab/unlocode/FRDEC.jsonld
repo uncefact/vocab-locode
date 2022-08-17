@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDEC",
             "rdf:value": "FRDEC",
+            "@id": "unlcd:FRDEC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Décines-Charpieu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Decines-Charpieu"
+                    "@value": "Decines-Charpieu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.766666",
                 "@type": "xsd:float"

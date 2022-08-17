@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEMMX",
             "rdf:value": "SEMMX",
+            "@id": "unlcd:SEMMX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Malmö Airport"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Malmo Airport"
+                    "@value": "Malmo Airport",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEM"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "55.516666",
                 "@type": "xsd:float"

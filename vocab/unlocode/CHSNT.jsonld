@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHSNT",
             "rdf:value": "CHSNT",
+            "@id": "unlcd:CHSNT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sent"
+                "@value": "Sent",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHGR"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.816666",
                 "@type": "xsd:float"

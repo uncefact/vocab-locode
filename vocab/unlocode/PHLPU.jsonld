@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PHLPU",
             "rdf:value": "PHLPU",
+            "@id": "unlcd:PHLPU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lapu-Lapu, Cebu"
+                "@value": "Lapu-Lapu, Cebu",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PH"
+            },
             "geo:lat": {
                 "@value": "10.316667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPL",
             "rdf:value": "BRSPL",
+            "@id": "unlcd:BRSPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Pinhal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Pinhal"
+                    "@value": "Santo Antonio do Pinhal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.816668",
                 "@type": "xsd:float"

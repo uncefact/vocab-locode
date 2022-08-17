@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUBOS",
             "rdf:value": "RUBOS",
+            "@id": "unlcd:RUBOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Boshnyakovo"
+                "@value": "Boshnyakovo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:2"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "49.65",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUCSY",
             "rdf:value": "HUCSY",
+            "@id": "unlcd:HUCSY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Csólyospálos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Csolyospalos"
+                    "@value": "Csolyospalos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUBK"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "46.416668",
                 "@type": "xsd:float"

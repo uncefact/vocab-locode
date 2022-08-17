@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOLAN",
             "rdf:value": "NOLAN",
+            "@id": "unlcd:NOLAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Langevåg - Sula"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Langevag - Sula"
+                    "@value": "Langevag - Sula",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO15"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "62.433334",
                 "@type": "xsd:float"

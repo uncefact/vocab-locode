@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEMLB",
             "rdf:value": "SEMLB",
+            "@id": "unlcd:SEMLB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mölnbo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Molnbo"
+                    "@value": "Molnbo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEAB"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "59.05",
                 "@type": "xsd:float"

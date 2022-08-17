@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARPEH",
             "rdf:value": "ARPEH",
+            "@id": "unlcd:ARPEH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pehuajó"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pehuajo"
+                    "@value": "Pehuajo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARB"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-35.816666",
                 "@type": "xsd:float"

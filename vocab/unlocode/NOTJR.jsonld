@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOTJR",
             "rdf:value": "NOTJR",
+            "@id": "unlcd:NOTJR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tjørvåg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tjorvag"
+                    "@value": "Tjorvag",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO15"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "62.283333",
                 "@type": "xsd:float"

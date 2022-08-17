@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMNGE",
             "rdf:value": "CMNGE",
+            "@id": "unlcd:CMNGE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ngaoundéré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ngaoundere"
+                    "@value": "Ngaoundere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CMAD"
             },
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "7.3166666",
                 "@type": "xsd:float"

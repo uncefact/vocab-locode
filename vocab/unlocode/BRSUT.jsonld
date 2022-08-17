@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSUT",
             "rdf:value": "BRSUT",
+            "@id": "unlcd:BRSUT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Sudoeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Sudoeste"
+                    "@value": "Santo Antonio do Sudoeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.066668",
                 "@type": "xsd:float"

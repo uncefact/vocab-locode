@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COABL",
             "rdf:value": "COABL",
+            "@id": "unlcd:COABL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Aguasblancas"
+                "@value": "Aguasblancas",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COCES"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "10.216666",
                 "@type": "xsd:float"

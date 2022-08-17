@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLUST",
             "rdf:value": "PLUST",
+            "@id": "unlcd:PLUST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Ustka"
+                "@value": "Ustka",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "54.583332",
                 "@type": "xsd:float"

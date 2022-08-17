@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRKBK",
             "rdf:value": "TRKBK",
+            "@id": "unlcd:TRKBK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Karabük"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Karabuk"
+                    "@value": "Karabuk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR78"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "41.25",
                 "@type": "xsd:float"

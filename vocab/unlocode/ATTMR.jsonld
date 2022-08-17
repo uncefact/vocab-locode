@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATTMR",
             "rdf:value": "ATTMR",
+            "@id": "unlcd:ATTMR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Traismauer"
+                "@value": "Traismauer",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.333332",
                 "@type": "xsd:float"

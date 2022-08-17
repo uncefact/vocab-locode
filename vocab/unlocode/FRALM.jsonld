@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRALM",
             "rdf:value": "FRALM",
+            "@id": "unlcd:FRALM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Argelès-sur-Mer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Argeles-sur-Mer"
+                    "@value": "Argeles-sur-Mer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR66"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "42.55",
                 "@type": "xsd:float"

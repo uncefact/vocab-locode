@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECSBO",
             "rdf:value": "ECSBO",
+            "@id": "unlcd:ECSBO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Simón Bolívar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Simon Bolivar"
+                    "@value": "Simon Bolivar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "EC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            },
             "geo:lat": {
                 "@value": "-2.0166667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRETQ",
             "rdf:value": "FRETQ",
+            "@id": "unlcd:FRETQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-de-Tinée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-de-Tinee"
+                    "@value": "Saint-Etienne-de-Tinee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR06"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.25",
                 "@type": "xsd:float"

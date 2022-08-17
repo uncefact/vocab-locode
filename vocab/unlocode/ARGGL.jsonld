@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARGGL",
             "rdf:value": "ARGGL",
+            "@id": "unlcd:ARGGL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "General Güemes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "General Guemes"
+                    "@value": "General Guemes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARA"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-24.666666",
                 "@type": "xsd:float"

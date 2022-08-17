@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUHAF",
             "rdf:value": "HUHAF",
+            "@id": "unlcd:HUHAF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Petofibánya"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Petofibanya"
+                    "@value": "Petofibanya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUHE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.766666",
                 "@type": "xsd:float"

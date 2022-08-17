@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUGK",
             "rdf:value": "DEUGK",
+            "@id": "unlcd:DEUGK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bühren/Gemeinde Emstek"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buhren/Gemeinde Emstek"
+                    "@value": "Buhren/Gemeinde Emstek",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.8",
                 "@type": "xsd:float"

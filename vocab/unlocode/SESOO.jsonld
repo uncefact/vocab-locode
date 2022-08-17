@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESOO",
             "rdf:value": "SESOO",
+            "@id": "unlcd:SESOO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Söderhamn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Soderhamn"
+                    "@value": "Soderhamn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEX"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

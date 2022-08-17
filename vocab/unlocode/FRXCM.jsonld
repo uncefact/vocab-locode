@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRXCM",
             "rdf:value": "FRXCM",
+            "@id": "unlcd:FRXCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Baslieux-sous-Châtillon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Baslieux-sous-Chatillon"
+                    "@value": "Baslieux-sous-Chatillon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.116665",
                 "@type": "xsd:float"

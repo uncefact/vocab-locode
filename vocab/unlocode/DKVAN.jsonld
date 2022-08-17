@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKVAN",
             "rdf:value": "DKVAN",
+            "@id": "unlcd:DKVAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vanløse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vanlose"
+                    "@value": "Vanlose",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK85"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "55.683334",
                 "@type": "xsd:float"

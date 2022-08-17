@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBCID",
             "rdf:value": "GBCID",
+            "@id": "unlcd:GBCID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Cairndow"
+                "@value": "Cairndow",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBAGB"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "56.25",
                 "@type": "xsd:float"

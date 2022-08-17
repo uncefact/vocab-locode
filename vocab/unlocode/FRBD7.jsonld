@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBD7",
             "rdf:value": "FRBD7",
+            "@id": "unlcd:FRBD7",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Bernardière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Bernardiere"
+                    "@value": "La Bernardiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.05",
                 "@type": "xsd:float"

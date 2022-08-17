@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSEE",
             "rdf:value": "ESSEE",
+            "@id": "unlcd:ESSEE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Seseña Nuevo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sesena Nuevo"
+                    "@value": "Sesena Nuevo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESTO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.1",
                 "@type": "xsd:float"

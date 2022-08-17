@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USNDA",
             "rdf:value": "USNDA",
+            "@id": "unlcd:USNDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Neodesha"
+                "@value": "Neodesha",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USKS"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "37.416668",
                 "@type": "xsd:float"

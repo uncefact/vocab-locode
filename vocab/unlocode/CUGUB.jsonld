@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUGUB",
             "rdf:value": "CUGUB",
+            "@id": "unlcd:CUGUB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Guantanamo Bay"
+                "@value": "Guantanamo Bay",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CU"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            }
         }
     ]
 }

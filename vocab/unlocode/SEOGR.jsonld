@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEOGR",
             "rdf:value": "SEOGR",
+            "@id": "unlcd:SEOGR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Öregrund"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Oregrund"
+                    "@value": "Oregrund",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEC"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

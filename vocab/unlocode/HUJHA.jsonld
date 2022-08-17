@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUJHA",
             "rdf:value": "HUJHA",
+            "@id": "unlcd:HUJHA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jánosháza"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Janoshaza"
+                    "@value": "Janoshaza",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.116665",
                 "@type": "xsd:float"

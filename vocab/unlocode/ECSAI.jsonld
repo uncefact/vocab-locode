@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECSAI",
             "rdf:value": "ECSAI",
+            "@id": "unlcd:ECSAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sangolquí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sangolqui"
+                    "@value": "Sangolqui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ECP"
             },
-            "unlcdc:countryCode": "EC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            },
             "geo:lat": {
                 "@value": "-0.31666666",
                 "@type": "xsd:float"

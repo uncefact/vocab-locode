@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESYS",
             "rdf:value": "SESYS",
+            "@id": "unlcd:SESYS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sysslebäck"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Syssleback"
+                    "@value": "Syssleback",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SES"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

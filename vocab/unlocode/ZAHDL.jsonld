@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ZAHDL",
             "rdf:value": "ZAHDL",
+            "@id": "unlcd:ZAHDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Heriotdale/Johannesburg"
+                "@value": "Heriotdale/Johannesburg",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ZA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ZA"
+            },
             "geo:lat": {
                 "@value": "-26.2",
                 "@type": "xsd:float"

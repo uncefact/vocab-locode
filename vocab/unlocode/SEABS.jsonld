@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEABS",
             "rdf:value": "SEABS",
+            "@id": "unlcd:SEABS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Abisko"
+                "@value": "Abisko",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEBD"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "68.35",
                 "@type": "xsd:float"

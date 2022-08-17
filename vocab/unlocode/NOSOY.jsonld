@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSOY",
             "rdf:value": "NOSOY",
+            "@id": "unlcd:NOSOY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Storøya"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Storoya"
+                    "@value": "Storoya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO11"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "59.416668",
                 "@type": "xsd:float"

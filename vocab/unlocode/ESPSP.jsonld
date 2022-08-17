@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESPSP",
             "rdf:value": "ESPSP",
+            "@id": "unlcd:ESPSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Peñalba de San Esteban"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Penalba de San Esteban"
+                    "@value": "Penalba de San Esteban",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.533333",
                 "@type": "xsd:float"

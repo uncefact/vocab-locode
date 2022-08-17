@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSOL",
             "rdf:value": "FRSOL",
+            "@id": "unlcd:FRSOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Ouen-l'Aumône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Ouen-l'Aumone"
+                    "@value": "Saint-Ouen-l'Aumone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR95"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.05",
                 "@type": "xsd:float"

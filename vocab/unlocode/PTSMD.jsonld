@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSMD",
             "rdf:value": "PTSMD",
+            "@id": "unlcd:PTSMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Mamede de Infesta"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Mamede de Infesta"
+                    "@value": "Sao Mamede de Infesta",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT13"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.2",
                 "@type": "xsd:float"

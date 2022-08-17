@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEELO",
             "rdf:value": "SEELO",
+            "@id": "unlcd:SEELO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ellös"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ellos"
+                    "@value": "Ellos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEO"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "58.183334",
                 "@type": "xsd:float"

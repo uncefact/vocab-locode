@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEAGH",
             "rdf:value": "SEAGH",
+            "@id": "unlcd:SEAGH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Helsingborg-Ängelholm Apt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Helsingborg-Angelholm Apt"
+                    "@value": "Helsingborg-Angelholm Apt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEM"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

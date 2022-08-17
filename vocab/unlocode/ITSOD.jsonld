@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITSOD",
             "rdf:value": "ITSOD",
+            "@id": "unlcd:ITSOD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "San Martino della Battaglia"
+                "@value": "San Martino della Battaglia",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.433334",
                 "@type": "xsd:float"

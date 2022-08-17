@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USGOV",
             "rdf:value": "USGOV",
+            "@id": "unlcd:USGOV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Gordonsville"
+                "@value": "Gordonsville",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USTN"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTCSJ",
             "rdf:value": "PTCSJ",
+            "@id": "unlcd:PTCSJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Caldas de São Jorge"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caldas de Sao Jorge"
+                    "@value": "Caldas de Sao Jorge",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT01"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "40.966667",
                 "@type": "xsd:float"

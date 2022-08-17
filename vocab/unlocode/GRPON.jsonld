@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRPON",
             "rdf:value": "GRPON",
+            "@id": "unlcd:GRPON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Políchni"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Polichni"
+                    "@value": "Polichni",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR54"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.65",
                 "@type": "xsd:float"

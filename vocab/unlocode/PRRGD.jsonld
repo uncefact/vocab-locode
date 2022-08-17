@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PRRGD",
             "rdf:value": "PRRGD",
+            "@id": "unlcd:PRRGD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Río Grande"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rio Grande"
+                    "@value": "Rio Grande",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "PR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PR"
+            },
             "geo:lat": {
                 "@value": "18.366667",
                 "@type": "xsd:float"

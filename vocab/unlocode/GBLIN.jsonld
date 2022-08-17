@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBLIN",
             "rdf:value": "GBLIN",
+            "@id": "unlcd:GBLIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lisnaskea"
+                "@value": "Lisnaskea",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBFER"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "54.25",
                 "@type": "xsd:float"

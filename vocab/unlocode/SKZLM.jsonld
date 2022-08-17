@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKZLM",
             "rdf:value": "SKZLM",
+            "@id": "unlcd:SKZLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zlaté Moravce"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zlate Moravce"
+                    "@value": "Zlate Moravce",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.383335",
                 "@type": "xsd:float"

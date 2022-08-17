@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INCDM",
             "rdf:value": "INCDM",
+            "@id": "unlcd:INCDM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Chidambaram"
+                "@value": "Chidambaram",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INTN"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "11.4",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE4BS",
             "rdf:value": "DE4BS",
+            "@id": "unlcd:DE4BS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Blankenförde/Neustrelitz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Blankenforde/Neustrelitz"
+                    "@value": "Blankenforde/Neustrelitz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.35",
                 "@type": "xsd:float"

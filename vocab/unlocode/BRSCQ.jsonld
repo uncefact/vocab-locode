@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSCQ",
             "rdf:value": "BRSCQ",
+            "@id": "unlcd:BRSCQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Salto do Céu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Salto do Ceu"
+                    "@value": "Salto do Ceu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.133333",
                 "@type": "xsd:float"

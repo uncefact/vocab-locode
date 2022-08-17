@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RSSUB",
             "rdf:value": "RSSUB",
+            "@id": "unlcd:RSSUB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Subotica"
+                "@value": "Subotica",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RS01"
             },
-            "unlcdc:countryCode": "RS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RS"
+            },
             "geo:lat": {
                 "@value": "46.1",
                 "@type": "xsd:float"

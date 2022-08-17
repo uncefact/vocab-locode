@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEVIA",
             "rdf:value": "SEVIA",
+            "@id": "unlcd:SEVIA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vingåker"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vingaker"
+                    "@value": "Vingaker",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SED"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CRSRP",
             "rdf:value": "CRSRP",
+            "@id": "unlcd:CRSRP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Santa Rosa/Pocosol"
+                "@value": "Santa Rosa/Pocosol",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CRA"
             },
-            "unlcdc:countryCode": "CR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CR"
+            },
             "geo:lat": {
                 "@value": "10.366667",
                 "@type": "xsd:float"

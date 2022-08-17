@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLHIT",
             "rdf:value": "CLHIT",
+            "@id": "unlcd:CLHIT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Hito Cajón/San Pedro de Atacama"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Hito Cajon/San Pedro de Atacama"
+                    "@value": "Paso Hito Cajon/San Pedro de Atacama",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAN"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-22.883333",
                 "@type": "xsd:float"

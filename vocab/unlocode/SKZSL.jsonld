@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKZSL",
             "rdf:value": "SKZSL",
+            "@id": "unlcd:SKZSL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zvolenská Slatina"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zvolenska Slatina"
+                    "@value": "Zvolenska Slatina",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.566666",
                 "@type": "xsd:float"

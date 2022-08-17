@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRIVE",
             "rdf:value": "FRIVE",
+            "@id": "unlcd:FRIVE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Biville-la-Rivière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Biville-la-Riviere"
+                    "@value": "Biville-la-Riviere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.783333",
                 "@type": "xsd:float"

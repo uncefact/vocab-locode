@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUNYL",
             "rdf:value": "HUNYL",
+            "@id": "unlcd:HUNYL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nyúl"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nyul"
+                    "@value": "Nyul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUGS"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.583332",
                 "@type": "xsd:float"

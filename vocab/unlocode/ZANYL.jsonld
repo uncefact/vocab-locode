@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ZANYL",
             "rdf:value": "ZANYL",
+            "@id": "unlcd:ZANYL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nylstroom"
+                "@value": "Nylstroom",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ZA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ZA"
+            },
             "geo:lat": {
                 "@value": "-24.683332",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ILNAT",
             "rdf:value": "ILNAT",
+            "@id": "unlcd:ILNAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Netanya"
+                "@value": "Netanya",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IL"
+            },
             "geo:lat": {
                 "@value": "32.333332",
                 "@type": "xsd:float"

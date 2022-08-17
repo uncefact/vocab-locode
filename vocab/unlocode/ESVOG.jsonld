@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVOG",
             "rdf:value": "ESVOG",
+            "@id": "unlcd:ESVOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villarejo de Órbigo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villarejo de Orbigo"
+                    "@value": "Villarejo de Orbigo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESLE"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.45",
                 "@type": "xsd:float"

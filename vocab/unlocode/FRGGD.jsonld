@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGGD",
             "rdf:value": "FRGGD",
+            "@id": "unlcd:FRGGD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Georges-d'Oléron"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Georges-d'Oleron"
+                    "@value": "Saint-Georges-d'Oleron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.966667",
                 "@type": "xsd:float"

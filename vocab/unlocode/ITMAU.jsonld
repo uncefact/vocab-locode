@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITMAU",
             "rdf:value": "ITMAU",
+            "@id": "unlcd:ITMAU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mansuè"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mansue"
+                    "@value": "Mansue",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITTV"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.816666",
                 "@type": "xsd:float"

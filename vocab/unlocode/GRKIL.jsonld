@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRKIL",
             "rdf:value": "GRKIL",
+            "@id": "unlcd:GRKIL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Killíni"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Killini"
+                    "@value": "Killini",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "37.933334",
                 "@type": "xsd:float"

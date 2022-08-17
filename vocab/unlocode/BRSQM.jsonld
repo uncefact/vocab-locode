@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSQM",
             "rdf:value": "BRSQM",
+            "@id": "unlcd:BRSQM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Quitéria do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Quiteria do Maranhao"
+                    "@value": "Santa Quiteria do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.4833333",
                 "@type": "xsd:float"

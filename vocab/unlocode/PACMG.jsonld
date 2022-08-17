@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PACMG",
             "rdf:value": "PACMG",
+            "@id": "unlcd:PACMG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Camogantí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Camoganti"
+                    "@value": "Camoganti",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA5"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.133333",
                 "@type": "xsd:float"

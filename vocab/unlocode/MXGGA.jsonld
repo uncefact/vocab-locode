@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXGGA",
             "rdf:value": "MXGGA",
+            "@id": "unlcd:MXGGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Garza García"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garza Garcia"
+                    "@value": "Garza Garcia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXNLE"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "25.666666",
                 "@type": "xsd:float"

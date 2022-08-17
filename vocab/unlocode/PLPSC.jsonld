@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLPSC",
             "rdf:value": "PLPSC",
+            "@id": "unlcd:PLPSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pszczonów"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pszczonow"
+                    "@value": "Pszczonow",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL10"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "51.966667",
                 "@type": "xsd:float"

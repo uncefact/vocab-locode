@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ILMGN",
             "rdf:value": "ILMGN",
+            "@id": "unlcd:ILMGN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Magén"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Magen"
+                    "@value": "Magen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ILD"
             },
-            "unlcdc:countryCode": "IL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IL"
+            },
             "geo:lat": {
                 "@value": "31.283333",
                 "@type": "xsd:float"

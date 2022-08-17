@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NZDAN",
             "rdf:value": "NZDAN",
+            "@id": "unlcd:NZDAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Dannevirke"
+                "@value": "Dannevirke",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZNTL"
             },
-            "unlcdc:countryCode": "NZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NZ"
+            },
             "geo:lat": {
                 "@value": "-40.2",
                 "@type": "xsd:float"

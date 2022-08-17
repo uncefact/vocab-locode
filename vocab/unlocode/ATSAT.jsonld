@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATSAT",
             "rdf:value": "ATSAT",
+            "@id": "unlcd:ATSAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schönau an der Triesting"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schonau an der Triesting"
+                    "@value": "Schonau an der Triesting",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT3"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.916668",
                 "@type": "xsd:float"

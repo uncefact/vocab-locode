@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CRSRI",
             "rdf:value": "CRSRI",
+            "@id": "unlcd:CRSRI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sarchí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sarchi"
+                    "@value": "Sarchi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CRA"
             },
-            "unlcdc:countryCode": "CR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CR"
+            },
             "geo:lat": {
                 "@value": "10.083333",
                 "@type": "xsd:float"

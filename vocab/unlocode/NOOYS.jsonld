@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOOYS",
             "rdf:value": "NOOYS",
+            "@id": "unlcd:NOOYS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Øystese"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Oystese"
+                    "@value": "Oystese",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO12"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "60.383335",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDVO",
             "rdf:value": "BRDVO",
+            "@id": "unlcd:BRDVO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dom Viçoso"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dom Vicoso"
+                    "@value": "Dom Vicoso",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.25",
                 "@type": "xsd:float"

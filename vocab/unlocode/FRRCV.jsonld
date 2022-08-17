@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRCV",
             "rdf:value": "FRRCV",
+            "@id": "unlcd:FRRCV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marcillé-la-Ville"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marcille-la-Ville"
+                    "@value": "Marcille-la-Ville",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR53"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.3",
                 "@type": "xsd:float"

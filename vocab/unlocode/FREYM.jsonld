@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREYM",
             "rdf:value": "FREYM",
+            "@id": "unlcd:FREYM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Crégy-lès-Meaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cregy-les-Meaux"
+                    "@value": "Cregy-les-Meaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.983334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PACCL",
             "rdf:value": "PACCL",
+            "@id": "unlcd:PACCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Coclé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cocle"
+                    "@value": "Cocle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA2"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.45",
                 "@type": "xsd:float"

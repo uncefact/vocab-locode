@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESULA",
             "rdf:value": "ESULA",
+            "@id": "unlcd:ESULA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Eulàlia de Ronçana"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Eulalia de Roncana"
+                    "@value": "Santa Eulalia de Roncana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.65",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRXUA",
             "rdf:value": "FRXUA",
+            "@id": "unlcd:FRXUA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Maur-des-Fossés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Maur-des-Fosses"
+                    "@value": "Saint-Maur-des-Fosses",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR94"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

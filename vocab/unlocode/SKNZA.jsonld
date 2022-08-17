@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKNZA",
             "rdf:value": "SKNZA",
+            "@id": "unlcd:SKNZA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nizná"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nizna"
+                    "@value": "Nizna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKPV"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.533333",
                 "@type": "xsd:float"

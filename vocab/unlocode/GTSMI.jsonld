@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSMI",
             "rdf:value": "GTSMI",
+            "@id": "unlcd:GTSMI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "San Miguel Petapa"
+                "@value": "San Miguel Petapa",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT01"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.5",
                 "@type": "xsd:float"

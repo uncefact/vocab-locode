@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IDSTR",
             "rdf:value": "IDSTR",
+            "@id": "unlcd:IDSTR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Siantar"
+                "@value": "Siantar",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IDSU"
             },
-            "unlcdc:countryCode": "ID",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ID"
+            },
             "geo:lat": {
                 "@value": "1.9666667",
                 "@type": "xsd:float"

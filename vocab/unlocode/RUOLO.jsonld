@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUOLO",
             "rdf:value": "RUOLO",
+            "@id": "unlcd:RUOLO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Oleniy Ostrov"
+                "@value": "Oleniy Ostrov",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "62.033333",
                 "@type": "xsd:float"

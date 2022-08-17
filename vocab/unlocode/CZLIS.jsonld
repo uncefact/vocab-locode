@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZLIS",
             "rdf:value": "CZLIS",
+            "@id": "unlcd:CZLIS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lísková u Nemanic"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Liskova u Nemanic"
+                    "@value": "Liskova u Nemanic",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.416668",
                 "@type": "xsd:float"

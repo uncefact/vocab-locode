@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKHTP",
             "rdf:value": "DKHTP",
+            "@id": "unlcd:DKHTP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Høje Tåstrup"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hoje Tastrup"
+                    "@value": "Hoje Tastrup",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "55.65",
                 "@type": "xsd:float"

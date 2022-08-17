@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRC2C",
             "rdf:value": "FRC2C",
+            "@id": "unlcd:FRC2C",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cherves-Châtelars"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cherves-Chatelars"
+                    "@value": "Cherves-Chatelars",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCYZ",
             "rdf:value": "FRCYZ",
+            "@id": "unlcd:FRCYZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceyzériat"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceyzeriat"
+                    "@value": "Ceyzeriat",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.166668",
                 "@type": "xsd:float"

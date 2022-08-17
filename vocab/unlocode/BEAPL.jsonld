@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEAPL",
             "rdf:value": "BEAPL",
+            "@id": "unlcd:BEAPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Appels"
+                "@value": "Appels",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEVOV"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "51.033333",
                 "@type": "xsd:float"

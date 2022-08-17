@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DOSTI",
             "rdf:value": "DOSTI",
+            "@id": "unlcd:DOSTI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Santiago de los Caballeros"
+                "@value": "Santiago de los Caballeros",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DO"
+            }
         }
     ]
 }

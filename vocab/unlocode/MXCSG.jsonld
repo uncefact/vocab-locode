@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXCSG",
             "rdf:value": "MXCSG",
+            "@id": "unlcd:MXCSG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ciudad Sahagún"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ciudad Sahagun"
+                    "@value": "Ciudad Sahagun",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXHID"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.766666",
                 "@type": "xsd:float"

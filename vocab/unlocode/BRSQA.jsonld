@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSQA",
             "rdf:value": "BRSQA",
+            "@id": "unlcd:BRSQA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Roque do Canaã"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Roque do Canaa"
+                    "@value": "Sao Roque do Canaa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.716667",
                 "@type": "xsd:float"

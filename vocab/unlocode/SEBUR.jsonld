@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEBUR",
             "rdf:value": "SEBUR",
+            "@id": "unlcd:SEBUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bureå"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Burea"
+                    "@value": "Burea",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEAC"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

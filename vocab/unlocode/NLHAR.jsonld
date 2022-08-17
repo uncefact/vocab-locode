@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLHAR",
             "rdf:value": "NLHAR",
+            "@id": "unlcd:NLHAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Harlingen"
+                "@value": "Harlingen",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "53.183334",
                 "@type": "xsd:float"

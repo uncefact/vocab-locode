@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDT8",
             "rdf:value": "FRDT8",
+            "@id": "unlcd:FRDT8",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Aubin-de-Baubigné"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Aubin-de-Baubigne"
+                    "@value": "Saint-Aubin-de-Baubigne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR79"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.95",
                 "@type": "xsd:float"

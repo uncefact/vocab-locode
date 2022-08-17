@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USMBS",
             "rdf:value": "USMBS",
+            "@id": "unlcd:USMBS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saginaw-Midland-Bay City Apt"
+                "@value": "Saginaw-Midland-Bay City Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMI"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

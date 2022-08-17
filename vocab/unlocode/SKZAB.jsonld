@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKZAB",
             "rdf:value": "SKZAB",
+            "@id": "unlcd:SKZAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Záborské"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zaborske"
+                    "@value": "Zaborske",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKPV"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.95",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEOSV",
             "rdf:value": "SEOSV",
+            "@id": "unlcd:SEOSV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Östra Sönnarslöv"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ostra Sonnarslov"
+                    "@value": "Ostra Sonnarslov",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEM"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "55.883335",
                 "@type": "xsd:float"

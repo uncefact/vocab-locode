@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOOAS",
             "rdf:value": "NOOAS",
+            "@id": "unlcd:NOOAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Østerås"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Osteras"
+                    "@value": "Osteras",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO02"
             },
-            "unlcdc:countryCode": "NO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            }
         }
     ]
 }

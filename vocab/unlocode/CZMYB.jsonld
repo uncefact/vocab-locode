@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZMYB",
             "rdf:value": "CZMYB",
+            "@id": "unlcd:CZMYB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moravský Beroun"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moravsky Beroun"
+                    "@value": "Moravsky Beroun",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZ71"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.8",
                 "@type": "xsd:float"

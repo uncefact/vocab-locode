@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PHNOP",
             "rdf:value": "PHNOP",
+            "@id": "unlcd:PHNOP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mactan Island Apt"
+                "@value": "Mactan Island Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "PH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PH"
+            },
             "geo:lat": {
                 "@value": "10.3",
                 "@type": "xsd:float"

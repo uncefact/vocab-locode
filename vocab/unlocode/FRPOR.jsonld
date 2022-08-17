@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPOR",
             "rdf:value": "FRPOR",
+            "@id": "unlcd:FRPOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Portes-lès-Valence"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Portes-les-Valence"
+                    "@value": "Portes-les-Valence",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.866665",
                 "@type": "xsd:float"

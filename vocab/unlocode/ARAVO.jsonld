@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARAVO",
             "rdf:value": "ARAVO",
+            "@id": "unlcd:ARAVO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Aristóbulo del Valle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aristobulo del Valle"
+                    "@value": "Aristobulo del Valle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARN"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-27.116667",
                 "@type": "xsd:float"

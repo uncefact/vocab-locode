@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLBRS",
             "rdf:value": "NLBRS",
+            "@id": "unlcd:NLBRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Breskens"
+                "@value": "Breskens",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "51.383335",
                 "@type": "xsd:float"

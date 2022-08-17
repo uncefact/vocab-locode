@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBUN",
             "rdf:value": "DEBUN",
+            "@id": "unlcd:DEBUN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Büdingen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Budingen"
+                    "@value": "Budingen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

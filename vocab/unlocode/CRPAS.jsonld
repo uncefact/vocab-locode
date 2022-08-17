@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CRPAS",
             "rdf:value": "CRPAS",
+            "@id": "unlcd:CRPAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Puntarenas"
+                "@value": "Puntarenas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CRP"
             },
-            "unlcdc:countryCode": "CR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CR"
+            },
             "geo:lat": {
                 "@value": "9.966666",
                 "@type": "xsd:float"

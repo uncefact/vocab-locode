@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSVO",
             "rdf:value": "FRSVO",
+            "@id": "unlcd:FRSVO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Savigny-en-Véron"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Savigny-en-Veron"
+                    "@value": "Savigny-en-Veron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.2",
                 "@type": "xsd:float"

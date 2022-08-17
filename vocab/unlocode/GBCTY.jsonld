@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBCTY",
             "rdf:value": "GBCTY",
+            "@id": "unlcd:GBCTY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Cantley"
+                "@value": "Cantley",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBNFK"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "52.583332",
                 "@type": "xsd:float"

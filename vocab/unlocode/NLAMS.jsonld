@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLAMS",
             "rdf:value": "NLAMS",
+            "@id": "unlcd:NLAMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Amsterdam"
+                "@value": "Amsterdam",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -34,7 +34,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "52.4",
                 "@type": "xsd:float"

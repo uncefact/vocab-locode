@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLRUT",
             "rdf:value": "NLRUT",
+            "@id": "unlcd:NLRUT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Rutten"
+                "@value": "Rutten",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLFL"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "52.8",
                 "@type": "xsd:float"

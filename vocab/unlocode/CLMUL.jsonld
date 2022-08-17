@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLMUL",
             "rdf:value": "CLMUL",
+            "@id": "unlcd:CLMUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mulchén"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mulchen"
+                    "@value": "Mulchen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLBI"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-37.716667",
                 "@type": "xsd:float"

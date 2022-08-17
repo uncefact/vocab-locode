@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFGF",
             "rdf:value": "FRFGF",
+            "@id": "unlcd:FRFGF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Forges-la-Forêt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Forges-la-Foret"
+                    "@value": "Forges-la-Foret",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.866665",
                 "@type": "xsd:float"

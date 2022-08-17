@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPGP",
             "rdf:value": "BRPGP",
+            "@id": "unlcd:BRPGP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Porto Alegre do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Porto Alegre do Piaui"
+                    "@value": "Porto Alegre do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.9666667",
                 "@type": "xsd:float"

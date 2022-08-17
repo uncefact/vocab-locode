@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSKZ",
             "rdf:value": "NOSKZ",
+            "@id": "unlcd:NOSKZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Skarsvåg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Skarsvag"
+                    "@value": "Skarsvag",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO20"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "71.1",
                 "@type": "xsd:float"

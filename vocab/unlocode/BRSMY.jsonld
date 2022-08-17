@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSMY",
             "rdf:value": "BRSMY",
+            "@id": "unlcd:BRSMY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Maria de Jetibá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Maria de Jetiba"
+                    "@value": "Santa Maria de Jetiba",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.016666",
                 "@type": "xsd:float"

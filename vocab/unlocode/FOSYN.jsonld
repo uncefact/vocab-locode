@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FOSYN",
             "rdf:value": "FOSYN",
+            "@id": "unlcd:FOSYN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Streymnes"
+                "@value": "Streymnes",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "FO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FO"
+            },
             "geo:lat": {
                 "@value": "62.2",
                 "@type": "xsd:float"

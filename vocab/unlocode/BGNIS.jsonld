@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BGNIS",
             "rdf:value": "BGNIS",
+            "@id": "unlcd:BGNIS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Novi Isar"
+                "@value": "Novi Isar",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BG"
+            },
             "geo:lat": {
                 "@value": "42.8",
                 "@type": "xsd:float"

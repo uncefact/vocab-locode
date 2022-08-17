@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEAYU",
             "rdf:value": "DEAYU",
+            "@id": "unlcd:DEAYU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Altenkirchen (Rügen)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Altenkirchen (Rugen)"
+                    "@value": "Altenkirchen (Rugen)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "54.633335",
                 "@type": "xsd:float"

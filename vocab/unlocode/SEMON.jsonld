@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEMON",
             "rdf:value": "SEMON",
+            "@id": "unlcd:SEMON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mönsterås"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monsteras"
+                    "@value": "Monsteras",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEH"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "57.033333",
                 "@type": "xsd:float"

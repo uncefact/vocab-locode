@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CATMC",
             "rdf:value": "CATMC",
+            "@id": "unlcd:CATMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Témiscouata-sur-le-Lac"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Temiscouata-sur-le-Lac"
+                    "@value": "Temiscouata-sur-le-Lac",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "47.683334",
                 "@type": "xsd:float"

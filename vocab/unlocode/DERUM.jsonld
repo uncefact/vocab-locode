@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DERUM",
             "rdf:value": "DERUM",
+            "@id": "unlcd:DERUM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rüsselsheim"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Russelsheim"
+                    "@value": "Russelsheim",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.983334",
                 "@type": "xsd:float"

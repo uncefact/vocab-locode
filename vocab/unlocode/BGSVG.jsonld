@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BGSVG",
             "rdf:value": "BGSVG",
+            "@id": "unlcd:BGSVG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Svoge"
+                "@value": "Svoge",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BG"
+            },
             "geo:lat": {
                 "@value": "42.966667",
                 "@type": "xsd:float"

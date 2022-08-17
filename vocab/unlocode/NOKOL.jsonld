@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOKOL",
             "rdf:value": "NOKOL",
+            "@id": "unlcd:NOKOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kollsnes Øst"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kollsnes Ost"
+                    "@value": "Kollsnes Ost",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO12"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "60.916668",
                 "@type": "xsd:float"

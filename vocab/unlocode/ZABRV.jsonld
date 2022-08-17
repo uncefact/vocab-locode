@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ZABRV",
             "rdf:value": "ZABRV",
+            "@id": "unlcd:ZABRV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Breërivier"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Breerivier"
+                    "@value": "Breerivier",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ZAWC"
             },
-            "unlcdc:countryCode": "ZA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ZA"
+            },
             "geo:lat": {
                 "@value": "-33.533333",
                 "@type": "xsd:float"

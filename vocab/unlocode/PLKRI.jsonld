@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLKRI",
             "rdf:value": "PLKRI",
+            "@id": "unlcd:PLKRI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kórnik"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kornik"
+                    "@value": "Kornik",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PLWP"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "52.25",
                 "@type": "xsd:float"

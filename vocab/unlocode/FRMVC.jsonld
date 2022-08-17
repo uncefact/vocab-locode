@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMVC",
             "rdf:value": "FRMVC",
+            "@id": "unlcd:FRMVC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Marcel-lès-Valence"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Marcel-les-Valence"
+                    "@value": "Saint-Marcel-les-Valence",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.966667",
                 "@type": "xsd:float"

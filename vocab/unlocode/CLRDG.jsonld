@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLRDG",
             "rdf:value": "CLRDG",
+            "@id": "unlcd:CLRDG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Río Don Guillermo/Torres del Paine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Rio Don Guillermo/Torres del Paine"
+                    "@value": "Paso Rio Don Guillermo/Torres del Paine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLMA"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-51.25",
                 "@type": "xsd:float"

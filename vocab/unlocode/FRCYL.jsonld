@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCYL",
             "rdf:value": "FRCYL",
+            "@id": "unlcd:FRCYL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chassey-lès-Scey"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chassey-les-Scey"
+                    "@value": "Chassey-les-Scey",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.65",
                 "@type": "xsd:float"

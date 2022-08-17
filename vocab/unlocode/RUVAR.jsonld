@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUVAR",
             "rdf:value": "RUVAR",
+            "@id": "unlcd:RUVAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Varandey"
+                "@value": "Varandey",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "68.78333",
                 "@type": "xsd:float"

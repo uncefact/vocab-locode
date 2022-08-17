@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRSU",
             "rdf:value": "BRRSU",
+            "@id": "unlcd:BRRSU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribeirão do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribeirao do Sul"
+                    "@value": "Ribeirao do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.783333",
                 "@type": "xsd:float"

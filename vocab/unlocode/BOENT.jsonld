@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOENT",
             "rdf:value": "BOENT",
+            "@id": "unlcd:BOENT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Entre Ríos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Entre Rios"
+                    "@value": "Entre Rios",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOT"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-21.533333",
                 "@type": "xsd:float"

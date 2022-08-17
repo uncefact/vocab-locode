@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTPSJ",
             "rdf:value": "GTPSJ",
+            "@id": "unlcd:GTPSJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto San José"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto San Jose"
+                    "@value": "Puerto San Jose",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT05"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "13.916667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITALM",
             "rdf:value": "ITALM",
+            "@id": "unlcd:ITALM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Almè"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alme"
+                    "@value": "Alme",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITBG"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.733334",
                 "@type": "xsd:float"

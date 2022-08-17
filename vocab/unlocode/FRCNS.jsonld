@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCNS",
             "rdf:value": "FRCNS",
+            "@id": "unlcd:FRCNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châtillon-sur-Seine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chatillon-sur-Seine"
+                    "@value": "Chatillon-sur-Seine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.85",
                 "@type": "xsd:float"

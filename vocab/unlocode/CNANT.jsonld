@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNANT",
             "rdf:value": "CNANT",
+            "@id": "unlcd:CNANT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Anting"
+                "@value": "Anting",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNSH"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "31.3",
                 "@type": "xsd:float"

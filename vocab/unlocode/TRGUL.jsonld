@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRGUL",
             "rdf:value": "TRGUL",
+            "@id": "unlcd:TRGUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Güllük"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gulluk"
+                    "@value": "Gulluk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR48"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "37.233334",
                 "@type": "xsd:float"

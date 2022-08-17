@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMFA",
             "rdf:value": "BRMFA",
+            "@id": "unlcd:BRMFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morro da Fumaça"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morro da Fumaca"
+                    "@value": "Morro da Fumaca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.65",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUCAR",
             "rdf:value": "CUCAR",
+            "@id": "unlcd:CUCAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cárdenas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cardenas"
+                    "@value": "Cardenas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            },
             "geo:lat": {
                 "@value": "23.033333",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TMBOL",
             "rdf:value": "TMBOL",
+            "@id": "unlcd:TMBOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Boldumsaz"
+                "@value": "Boldumsaz",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TM"
+            },
             "geo:lat": {
                 "@value": "42.133335",
                 "@type": "xsd:float"

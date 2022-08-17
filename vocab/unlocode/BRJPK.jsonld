@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJPK",
             "rdf:value": "BRJPK",
+            "@id": "unlcd:BRJPK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José de Princesa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose de Princesa"
+                    "@value": "Sao Jose de Princesa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.7333336",
                 "@type": "xsd:float"

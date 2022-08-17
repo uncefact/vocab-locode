@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRIKE",
             "rdf:value": "GRIKE",
+            "@id": "unlcd:GRIKE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pikérnis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pikernis"
+                    "@value": "Pikernis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR12"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "37.65",
                 "@type": "xsd:float"

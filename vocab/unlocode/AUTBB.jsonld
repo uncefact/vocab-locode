@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AUTBB",
             "rdf:value": "AUTBB",
+            "@id": "unlcd:AUTBB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tumbarumba"
+                "@value": "Tumbarumba",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUNSW"
             },
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-35.783333",
                 "@type": "xsd:float"

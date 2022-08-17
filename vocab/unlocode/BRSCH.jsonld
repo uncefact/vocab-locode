@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSCH",
             "rdf:value": "BRSCH",
+            "@id": "unlcd:BRSCH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sucupira do Riachão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sucupira do Riachao"
+                    "@value": "Sucupira do Riachao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.4166665",
                 "@type": "xsd:float"

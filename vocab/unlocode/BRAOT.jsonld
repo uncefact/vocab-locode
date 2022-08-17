@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAOT",
             "rdf:value": "BRAOT",
+            "@id": "unlcd:BRAOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Antônio Olinto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Antonio Olinto"
+                    "@value": "Antonio Olinto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.983334",
                 "@type": "xsd:float"

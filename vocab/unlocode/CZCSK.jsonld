@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCSK",
             "rdf:value": "CZCSK",
+            "@id": "unlcd:CZCSK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceská Skalice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceska Skalice"
+                    "@value": "Ceska Skalice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.4",
                 "@type": "xsd:float"

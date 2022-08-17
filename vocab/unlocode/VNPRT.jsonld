@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNPRT",
             "rdf:value": "VNPRT",
+            "@id": "unlcd:VNPRT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Phan Rang-Tháp Chàm"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Phan Rang-Thap Cham"
+                    "@value": "Phan Rang-Thap Cham",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN36"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "11.566667",
                 "@type": "xsd:float"

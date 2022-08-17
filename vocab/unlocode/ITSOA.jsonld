@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITSOA",
             "rdf:value": "ITSOA",
+            "@id": "unlcd:ITSOA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sorgà"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sorga"
+                    "@value": "Sorga",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.183334",
                 "@type": "xsd:float"

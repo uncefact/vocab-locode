@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FINML",
             "rdf:value": "FINML",
+            "@id": "unlcd:FINML",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nummela"
+                "@value": "Nummela",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.316666",
                 "@type": "xsd:float"

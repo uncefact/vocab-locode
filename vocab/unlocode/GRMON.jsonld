@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRMON",
             "rdf:value": "GRMON",
+            "@id": "unlcd:GRMON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Monemvasía"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monemvasia"
+                    "@value": "Monemvasia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR16"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "36.683334",
                 "@type": "xsd:float"

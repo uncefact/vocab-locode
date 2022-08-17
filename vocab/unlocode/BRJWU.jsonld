@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJWU",
             "rdf:value": "BRJWU",
+            "@id": "unlcd:BRJWU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João da Paraúna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao da Parauna"
+                    "@value": "Sao Joao da Parauna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.8",
                 "@type": "xsd:float"

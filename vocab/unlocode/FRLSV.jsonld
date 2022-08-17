@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLSV",
             "rdf:value": "FRLSV",
+            "@id": "unlcd:FRLSV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Chaussée-Saint-Victor"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Chaussee-Saint-Victor"
+                    "@value": "La Chaussee-Saint-Victor",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR41"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.616665",
                 "@type": "xsd:float"

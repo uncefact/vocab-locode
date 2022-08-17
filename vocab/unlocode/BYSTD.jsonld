@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BYSTD",
             "rdf:value": "BYSTD",
+            "@id": "unlcd:BYSTD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Starye Dorogi"
+                "@value": "Starye Dorogi",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BYMA"
             },
-            "unlcdc:countryCode": "BY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BY"
+            },
             "geo:lat": {
                 "@value": "53.383335",
                 "@type": "xsd:float"

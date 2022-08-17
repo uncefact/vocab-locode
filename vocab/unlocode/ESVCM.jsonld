@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVCM",
             "rdf:value": "ESVCM",
+            "@id": "unlcd:ESVCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villalón de Campos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villalon de Campos"
+                    "@value": "Villalon de Campos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.1",
                 "@type": "xsd:float"

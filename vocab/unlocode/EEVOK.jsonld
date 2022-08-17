@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEVOK",
             "rdf:value": "EEVOK",
+            "@id": "unlcd:EEVOK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Võõpsu Külasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Voopsu Kulasadam"
+                    "@value": "Voopsu Kulasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE87"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.066666",
                 "@type": "xsd:float"

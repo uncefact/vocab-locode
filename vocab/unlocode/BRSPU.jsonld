@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPU",
             "rdf:value": "BRSPU",
+            "@id": "unlcd:BRSPU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio da Patrulha"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio da Patrulha"
+                    "@value": "Santo Antonio da Patrulha",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-29.816668",
                 "@type": "xsd:float"

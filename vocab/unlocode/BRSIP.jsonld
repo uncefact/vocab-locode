@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSIP",
             "rdf:value": "BRSIP",
+            "@id": "unlcd:BRSIP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Izabel do Pará"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Izabel do Para"
+                    "@value": "Santa Izabel do Para",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-1.2833333",
                 "@type": "xsd:float"

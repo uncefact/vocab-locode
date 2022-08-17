@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZJPR",
             "rdf:value": "CZJPR",
+            "@id": "unlcd:CZJPR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jílové u Prahy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jilove u Prahy"
+                    "@value": "Jilove u Prahy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

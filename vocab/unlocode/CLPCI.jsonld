@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLPCI",
             "rdf:value": "CLPCI",
+            "@id": "unlcd:CLPCI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puchuncaví"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puchuncavi"
+                    "@value": "Puchuncavi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLVS"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-32.716667",
                 "@type": "xsd:float"

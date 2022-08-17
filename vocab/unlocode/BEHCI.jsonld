@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEHCI",
             "rdf:value": "BEHCI",
+            "@id": "unlcd:BEHCI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hélécine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Helecine"
+                    "@value": "Helecine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWBR"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.75",
                 "@type": "xsd:float"

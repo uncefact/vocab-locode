@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AUCAP",
             "rdf:value": "AUCAP",
+            "@id": "unlcd:AUCAP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Capalaba"
+                "@value": "Capalaba",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUQLD"
             },
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-27.516666",
                 "@type": "xsd:float"

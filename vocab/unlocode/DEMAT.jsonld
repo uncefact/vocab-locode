@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMAT",
             "rdf:value": "DEMAT",
+            "@id": "unlcd:DEMAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Marktschorgast"
+                "@value": "Marktschorgast",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

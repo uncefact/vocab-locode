@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRSYS",
             "rdf:value": "GRSYS",
+            "@id": "unlcd:GRSYS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Stylis (Stylída)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stylis (Stylida)"
+                    "@value": "Stylis (Stylida)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR06"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "38.916668",
                 "@type": "xsd:float"

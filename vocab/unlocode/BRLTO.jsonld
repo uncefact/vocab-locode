@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLTO",
             "rdf:value": "BRLTO",
+            "@id": "unlcd:BRLTO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Alto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Alto"
+                    "@value": "Sao Sebastiao do Alto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.95",
                 "@type": "xsd:float"

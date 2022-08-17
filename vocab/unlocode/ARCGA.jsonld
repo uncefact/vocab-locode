@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARCGA",
             "rdf:value": "ARCGA",
+            "@id": "unlcd:ARCGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cañada de Gómez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Canada de Gomez"
+                    "@value": "Canada de Gomez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARS"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-32.816666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSGS",
             "rdf:value": "ESSGS",
+            "@id": "unlcd:ESSGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Ginés de la Jara"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Gines de la Jara"
+                    "@value": "San Gines de la Jara",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESMU"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "37.65",
                 "@type": "xsd:float"

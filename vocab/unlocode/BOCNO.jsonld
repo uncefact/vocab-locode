@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOCNO",
             "rdf:value": "BOCNO",
+            "@id": "unlcd:BOCNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cañada Oruro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Canada Oruro"
+                    "@value": "Canada Oruro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOT"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-21.666666",
                 "@type": "xsd:float"

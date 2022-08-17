@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRMOS",
             "rdf:value": "GRMOS",
+            "@id": "unlcd:GRMOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moscháton"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moschaton"
+                    "@value": "Moschaton",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR41"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "39.316666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOSRA",
             "rdf:value": "BOSRA",
+            "@id": "unlcd:BOSRA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Rosa del Abuná"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Rosa del Abuna"
+                    "@value": "Santa Rosa del Abuna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BON"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-10.6",
                 "@type": "xsd:float"

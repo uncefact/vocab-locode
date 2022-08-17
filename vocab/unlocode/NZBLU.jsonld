@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NZBLU",
             "rdf:value": "NZBLU",
+            "@id": "unlcd:NZBLU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bluff"
+                "@value": "Bluff",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZSTL"
             },
-            "unlcdc:countryCode": "NZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NZ"
+            },
             "geo:lat": {
                 "@value": "-46.6",
                 "@type": "xsd:float"

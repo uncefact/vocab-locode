@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PEHYT",
             "rdf:value": "PEHYT",
+            "@id": "unlcd:PEHYT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Huaytará"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Huaytara"
+                    "@value": "Huaytara",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PEHUV"
             },
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-13.6",
                 "@type": "xsd:float"

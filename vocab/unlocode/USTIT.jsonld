@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USTIT",
             "rdf:value": "USTIT",
+            "@id": "unlcd:USTIT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Titusville"
+                "@value": "Titusville",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USPA"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

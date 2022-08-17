@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESMAD",
             "rdf:value": "ESMAD",
+            "@id": "unlcd:ESMAD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Madrid"
+                "@value": "Madrid",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "ES"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            }
         }
     ]
 }

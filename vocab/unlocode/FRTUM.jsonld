@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTUM",
             "rdf:value": "FRTUM",
+            "@id": "unlcd:FRTUM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Trélou-sur-Marne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Trelou-sur-Marne"
+                    "@value": "Trelou-sur-Marne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.066666",
                 "@type": "xsd:float"

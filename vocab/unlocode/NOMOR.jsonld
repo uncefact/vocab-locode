@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOMOR",
             "rdf:value": "NOMOR",
+            "@id": "unlcd:NOMOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mørsvikbotn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morsvikbotn"
+                    "@value": "Morsvikbotn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO18"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "67.7",
                 "@type": "xsd:float"

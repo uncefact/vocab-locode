@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMEDA",
             "rdf:value": "CMEDA",
+            "@id": "unlcd:CMEDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Edéa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Edea"
+                    "@value": "Edea",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "3.7666667",
                 "@type": "xsd:float"

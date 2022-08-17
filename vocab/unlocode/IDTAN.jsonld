@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IDTAN",
             "rdf:value": "IDTAN",
+            "@id": "unlcd:IDTAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tanjunguban"
+                "@value": "Tanjunguban",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ID",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ID"
+            },
             "geo:lat": {
                 "@value": "1.05",
                 "@type": "xsd:float"

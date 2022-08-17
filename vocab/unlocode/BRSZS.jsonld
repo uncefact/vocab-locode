@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSZS",
             "rdf:value": "BRSZS",
+            "@id": "unlcd:BRSZS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Terezinha de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Terezinha de Goias"
+                    "@value": "Santa Terezinha de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-14.433333",
                 "@type": "xsd:float"

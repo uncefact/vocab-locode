@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BECLO",
             "rdf:value": "BECLO",
+            "@id": "unlcd:BECLO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chapelle-à-Oie"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chapelle-a-Oie"
+                    "@value": "Chapelle-a-Oie",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKBSC",
             "rdf:value": "SKBSC",
+            "@id": "unlcd:SKBSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bosáca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bosaca"
+                    "@value": "Bosaca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.833332",
                 "@type": "xsd:float"

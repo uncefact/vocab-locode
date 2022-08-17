@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MDBEL",
             "rdf:value": "MDBEL",
+            "@id": "unlcd:MDBEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Balti (Bel'cy)"
+                "@value": "Balti (Bel'cy)",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MDBA"
             },
-            "unlcdc:countryCode": "MD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MD"
+            },
             "geo:lat": {
                 "@value": "47.75",
                 "@type": "xsd:float"

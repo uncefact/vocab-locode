@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRIOT",
             "rdf:value": "BRIOT",
+            "@id": "unlcd:BRIOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Iporã do Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ipora do Oeste"
+                    "@value": "Ipora do Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.983334",
                 "@type": "xsd:float"

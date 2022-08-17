@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKNTM",
             "rdf:value": "SKNTM",
+            "@id": "unlcd:SKNTM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tesárske Mlynany"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tesarske Mlynany"
+                    "@value": "Tesarske Mlynany",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKNI"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.35",
                 "@type": "xsd:float"

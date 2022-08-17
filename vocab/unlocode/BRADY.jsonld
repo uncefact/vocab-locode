@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRADY",
             "rdf:value": "BRADY",
+            "@id": "unlcd:BRADY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Itambé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Itambe"
+                    "@value": "Santo Antonio do Itambe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.466667",
                 "@type": "xsd:float"

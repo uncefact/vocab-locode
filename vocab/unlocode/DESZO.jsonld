@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESZO",
             "rdf:value": "DESZO",
+            "@id": "unlcd:DESZO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schönau an der Brend"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schonau an der Brend"
+                    "@value": "Schonau an der Brend",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.383335",
                 "@type": "xsd:float"

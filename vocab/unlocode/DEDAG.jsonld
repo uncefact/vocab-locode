@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEDAG",
             "rdf:value": "DEDAG",
+            "@id": "unlcd:DEDAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dagebüll"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dagebull"
+                    "@value": "Dagebull",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESH"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

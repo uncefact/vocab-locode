@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKMOR",
             "rdf:value": "DKMOR",
+            "@id": "unlcd:DKMOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mørdrup"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mordrup"
+                    "@value": "Mordrup",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK85"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "56.0",
                 "@type": "xsd:float"

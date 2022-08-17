@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESGCX",
             "rdf:value": "ESGCX",
+            "@id": "unlcd:ESGCX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villaviciosa de Córdoba"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villaviciosa de Cordoba"
+                    "@value": "Villaviciosa de Cordoba",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESCO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.083332",
                 "@type": "xsd:float"

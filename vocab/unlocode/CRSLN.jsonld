@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CRSLN",
             "rdf:value": "CRSLN",
+            "@id": "unlcd:CRSLN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Salinas"
+                "@value": "Salinas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CRP"
             },
-            "unlcdc:countryCode": "CR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CR"
+            },
             "geo:lat": {
                 "@value": "9.933333",
                 "@type": "xsd:float"

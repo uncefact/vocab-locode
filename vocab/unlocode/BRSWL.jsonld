@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSWL",
             "rdf:value": "BRSWL",
+            "@id": "unlcd:BRSWL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Leste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Leste"
+                    "@value": "Santo Antonio do Leste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-14.8",
                 "@type": "xsd:float"

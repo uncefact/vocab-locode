@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNPH",
             "rdf:value": "BRNPH",
+            "@id": "unlcd:BRNPH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nilo Peçanha"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nilo Pecanha"
+                    "@value": "Nilo Pecanha",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-13.6",
                 "@type": "xsd:float"

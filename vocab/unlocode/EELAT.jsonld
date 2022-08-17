@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EELAT",
             "rdf:value": "EELAT",
+            "@id": "unlcd:EELAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Läätsa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Laatsa"
+                    "@value": "Laatsa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE74"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.133335",
                 "@type": "xsd:float"

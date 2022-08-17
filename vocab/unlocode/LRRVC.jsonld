@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LRRVC",
             "rdf:value": "LRRVC",
+            "@id": "unlcd:LRRVC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "River Cess"
+                "@value": "River Cess",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "LR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LR"
+            },
             "geo:lat": {
                 "@value": "5.4666667",
                 "@type": "xsd:float"

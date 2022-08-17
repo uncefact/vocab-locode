@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPF",
             "rdf:value": "BRSPF",
+            "@id": "unlcd:BRSPF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cidade de São Paulo FPSO"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cidade de Sao Paulo FPSO"
+                    "@value": "Cidade de Sao Paulo FPSO",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.783333",
                 "@type": "xsd:float"

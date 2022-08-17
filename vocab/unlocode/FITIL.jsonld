@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FITIL",
             "rdf:value": "FITIL",
+            "@id": "unlcd:FITIL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pöppölä"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Poppola"
+                    "@value": "Poppola",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI10"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "64.583336",
                 "@type": "xsd:float"

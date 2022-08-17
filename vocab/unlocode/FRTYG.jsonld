@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTYG",
             "rdf:value": "FRTYG",
+            "@id": "unlcd:FRTYG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Thézy-Glimont"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Thezy-Glimont"
+                    "@value": "Thezy-Glimont",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR80"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.816666",
                 "@type": "xsd:float"

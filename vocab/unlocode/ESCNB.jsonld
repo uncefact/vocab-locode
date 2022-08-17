@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCNB",
             "rdf:value": "ESCNB",
+            "@id": "unlcd:ESCNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Carreña de Cabrales"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Carrena de Cabrales"
+                    "@value": "Carrena de Cabrales",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "43.316666",
                 "@type": "xsd:float"

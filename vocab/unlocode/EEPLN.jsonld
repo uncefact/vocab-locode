@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEPLN",
             "rdf:value": "EEPLN",
+            "@id": "unlcd:EEPLN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paldiski Põhjasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paldiski Pohjasadam"
+                    "@value": "Paldiski Pohjasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE37"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "59.35",
                 "@type": "xsd:float"

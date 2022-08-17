@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAZTB",
             "rdf:value": "CAZTB",
+            "@id": "unlcd:CAZTB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tête-à-la-Baleine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tete-a-la-Baleine"
+                    "@value": "Tete-a-la-Baleine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "50.7",
                 "@type": "xsd:float"

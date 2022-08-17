@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HURSP",
             "rdf:value": "HURSP",
+            "@id": "unlcd:HURSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sárospatak"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sarospatak"
+                    "@value": "Sarospatak",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.316666",
                 "@type": "xsd:float"

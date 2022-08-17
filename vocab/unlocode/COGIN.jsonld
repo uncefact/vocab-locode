@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COGIN",
             "rdf:value": "COGIN",
+            "@id": "unlcd:COGIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Girón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Giron"
+                    "@value": "Giron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COSAN"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "7.0666666",
                 "@type": "xsd:float"

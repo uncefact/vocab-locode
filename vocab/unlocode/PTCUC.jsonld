@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTCUC",
             "rdf:value": "PTCUC",
+            "@id": "unlcd:PTCUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cucujães"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cucujaes"
+                    "@value": "Cucujaes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT01"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "40.866665",
                 "@type": "xsd:float"

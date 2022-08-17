@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PHSMT",
             "rdf:value": "PHSMT",
+            "@id": "unlcd:PHSMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "San Mateo"
+                "@value": "San Mateo",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PHQUE"
             },
-            "unlcdc:countryCode": "PH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PH"
+            },
             "geo:lat": {
                 "@value": "14.166667",
                 "@type": "xsd:float"

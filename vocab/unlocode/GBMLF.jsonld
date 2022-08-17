@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBMLF",
             "rdf:value": "GBMLF",
+            "@id": "unlcd:GBMLF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Milford Haven"
+                "@value": "Milford Haven",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBPEM"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "51.716667",
                 "@type": "xsd:float"

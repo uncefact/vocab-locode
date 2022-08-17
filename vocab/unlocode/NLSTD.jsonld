@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLSTD",
             "rdf:value": "NLSTD",
+            "@id": "unlcd:NLSTD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Stellendam"
+                "@value": "Stellendam",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

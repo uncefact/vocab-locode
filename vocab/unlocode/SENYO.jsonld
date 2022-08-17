@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SENYO",
             "rdf:value": "SENYO",
+            "@id": "unlcd:SENYO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nyköping"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nykoping"
+                    "@value": "Nykoping",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SED"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "58.916668",
                 "@type": "xsd:float"

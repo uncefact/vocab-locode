@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBNG",
             "rdf:value": "FRBNG",
+            "@id": "unlcd:FRBNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bécon-les-Granits"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Becon-les-Granits"
+                    "@value": "Becon-les-Granits",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.5",
                 "@type": "xsd:float"

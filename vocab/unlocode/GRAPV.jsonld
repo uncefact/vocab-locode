@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRAPV",
             "rdf:value": "GRAPV",
+            "@id": "unlcd:GRAPV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Asproválta"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Asprovalta"
+                    "@value": "Asprovalta",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.716667",
                 "@type": "xsd:float"

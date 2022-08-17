@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSNP",
             "rdf:value": "BRSNP",
+            "@id": "unlcd:BRSNP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santana do Paraíso"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santana do Paraiso"
+                    "@value": "Santana do Paraiso",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.366667",
                 "@type": "xsd:float"

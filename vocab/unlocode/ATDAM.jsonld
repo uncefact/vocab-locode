@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATDAM",
             "rdf:value": "ATDAM",
+            "@id": "unlcd:ATDAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Damüls"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Damuls"
+                    "@value": "Damuls",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT8"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.283333",
                 "@type": "xsd:float"

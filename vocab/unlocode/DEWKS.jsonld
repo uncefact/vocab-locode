@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEWKS",
             "rdf:value": "DEWKS",
+            "@id": "unlcd:DEWKS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Wülknitz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Wulknitz"
+                    "@value": "Wulknitz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.366665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESODM",
             "rdf:value": "ESODM",
+            "@id": "unlcd:ESODM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Oliva de Mérida"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Oliva de Merida"
+                    "@value": "Oliva de Merida",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESBA"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.783333",
                 "@type": "xsd:float"

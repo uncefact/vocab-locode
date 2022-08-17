@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COPNM",
             "rdf:value": "COPNM",
+            "@id": "unlcd:COPNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto Limón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto Limon"
+                    "@value": "Puerto Limon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "1.05",
                 "@type": "xsd:float"

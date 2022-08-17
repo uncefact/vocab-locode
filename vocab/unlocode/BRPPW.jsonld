@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPPW",
             "rdf:value": "BRPPW",
+            "@id": "unlcd:BRPPW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Prata do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Prata do Piaui"
+                    "@value": "Prata do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.65",
                 "@type": "xsd:float"

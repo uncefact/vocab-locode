@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCHM",
             "rdf:value": "FRCHM",
+            "@id": "unlcd:FRCHM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Charleville-Mézières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Charleville-Mezieres"
+                    "@value": "Charleville-Mezieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR08"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.766666",
                 "@type": "xsd:float"

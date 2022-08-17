@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DENOH",
             "rdf:value": "DENOH",
+            "@id": "unlcd:DENOH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nörten-Hardenberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Norten-Hardenberg"
+                    "@value": "Norten-Hardenberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

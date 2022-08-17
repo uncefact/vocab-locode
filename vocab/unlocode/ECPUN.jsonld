@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECPUN",
             "rdf:value": "ECPUN",
+            "@id": "unlcd:ECPUN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puná"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puna"
+                    "@value": "Puna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ECG"
             },
-            "unlcdc:countryCode": "EC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            },
             "geo:lat": {
                 "@value": "-2.7333333",
                 "@type": "xsd:float"

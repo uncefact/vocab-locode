@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLME",
             "rdf:value": "BRLME",
+            "@id": "unlcd:BRLME",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Laje do Muriaé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Laje do Muriae"
+                    "@value": "Laje do Muriae",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.2",
                 "@type": "xsd:float"

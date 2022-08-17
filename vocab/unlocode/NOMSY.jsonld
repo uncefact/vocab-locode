@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOMSY",
             "rdf:value": "NOMSY",
+            "@id": "unlcd:NOMSY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Måsøy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Masoy"
+                    "@value": "Masoy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO20"
             },
-            "unlcdc:countryCode": "NO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            }
         }
     ]
 }

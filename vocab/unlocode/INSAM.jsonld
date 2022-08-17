@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INSAM",
             "rdf:value": "INSAM",
+            "@id": "unlcd:INSAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Samalkot"
+                "@value": "Samalkot",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INAP"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "17.05",
                 "@type": "xsd:float"

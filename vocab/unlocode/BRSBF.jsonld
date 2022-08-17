@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSBF",
             "rdf:value": "BRSBF",
+            "@id": "unlcd:BRSBF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José do Bonfim"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose do Bonfim"
+                    "@value": "Sao Jose do Bonfim",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.15",
                 "@type": "xsd:float"

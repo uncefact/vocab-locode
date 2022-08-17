@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSGY",
             "rdf:value": "HUSGY",
+            "@id": "unlcd:HUSGY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Szabadegyháza"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Szabadegyhaza"
+                    "@value": "Szabadegyhaza",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.083332",
                 "@type": "xsd:float"

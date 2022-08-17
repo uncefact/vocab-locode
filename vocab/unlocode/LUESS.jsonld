@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUESS",
             "rdf:value": "LUESS",
+            "@id": "unlcd:LUESS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Esch-sur-Sûre (Esch-Sauer)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Esch-sur-Sure (Esch-Sauer)"
+                    "@value": "Esch-sur-Sure (Esch-Sauer)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUWI"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

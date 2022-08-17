@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESM2D",
             "rdf:value": "ESM2D",
+            "@id": "unlcd:ESM2D",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villalonquéjar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villalonquejar"
+                    "@value": "Villalonquejar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESBU"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.35",
                 "@type": "xsd:float"

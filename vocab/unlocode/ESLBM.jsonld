@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESLBM",
             "rdf:value": "ESLBM",
+            "@id": "unlcd:ESLBM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Puebla de Montalbán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Puebla de Montalban"
+                    "@value": "La Puebla de Montalban",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESTO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.866665",
                 "@type": "xsd:float"

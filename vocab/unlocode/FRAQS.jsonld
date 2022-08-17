@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAQS",
             "rdf:value": "FRAQS",
+            "@id": "unlcd:FRAQS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Asnières-sur-Seine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Asnieres-sur-Seine"
+                    "@value": "Asnieres-sur-Seine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR92"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.916668",
                 "@type": "xsd:float"

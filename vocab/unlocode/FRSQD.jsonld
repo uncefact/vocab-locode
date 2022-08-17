@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSQD",
             "rdf:value": "FRSQD",
+            "@id": "unlcd:FRSQD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Amant-de-Nouère"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Amant-de-Nouere"
+                    "@value": "Saint-Amant-de-Nouere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.75",
                 "@type": "xsd:float"

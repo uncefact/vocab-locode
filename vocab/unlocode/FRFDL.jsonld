@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFDL",
             "rdf:value": "FRFDL",
+            "@id": "unlcd:FRFDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Forges-de-Lanouée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Forges-de-Lanouee"
+                    "@value": "Forges-de-Lanouee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR56"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.016666",
                 "@type": "xsd:float"

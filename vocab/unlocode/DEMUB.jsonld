@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMUB",
             "rdf:value": "DEMUB",
+            "@id": "unlcd:DEMUB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Münchenbernsdorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Munchenbernsdorf"
+                    "@value": "Munchenbernsdorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DETH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.816666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHVSG",
             "rdf:value": "CHVSG",
+            "@id": "unlcd:CHVSG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villars-sur-Glâne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villars-sur-Glane"
+                    "@value": "Villars-sur-Glane",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHFR"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.8",
                 "@type": "xsd:float"

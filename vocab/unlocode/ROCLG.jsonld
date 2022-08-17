@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROCLG",
             "rdf:value": "ROCLG",
+            "@id": "unlcd:ROCLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cîmpulung"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cimpulung"
+                    "@value": "Cimpulung",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROAG"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "45.266666",
                 "@type": "xsd:float"

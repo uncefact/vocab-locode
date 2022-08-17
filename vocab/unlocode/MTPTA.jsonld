@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MTPTA",
             "rdf:value": "MTPTA",
+            "@id": "unlcd:MTPTA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pietà"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pieta"
+                    "@value": "Pieta",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MT41"
             },
-            "unlcdc:countryCode": "MT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MT"
+            },
             "geo:lat": {
                 "@value": "35.883335",
                 "@type": "xsd:float"

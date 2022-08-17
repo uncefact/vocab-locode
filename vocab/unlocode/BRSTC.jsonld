@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSTC",
             "rdf:value": "BRSTC",
+            "@id": "unlcd:BRSTC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Rita de Cássia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Rita de Cassia"
+                    "@value": "Santa Rita de Cassia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-11.0",
                 "@type": "xsd:float"

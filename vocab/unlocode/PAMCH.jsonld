@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAMCH",
             "rdf:value": "PAMCH",
+            "@id": "unlcd:PAMCH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "María Chiquita"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Maria Chiquita"
+                    "@value": "Maria Chiquita",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA3"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "9.433333",
                 "@type": "xsd:float"

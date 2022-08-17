@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CACSC",
             "rdf:value": "CACSC",
+            "@id": "unlcd:CACSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Côte-Sainte-Catherine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cote-Sainte-Catherine"
+                    "@value": "Cote-Sainte-Catherine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

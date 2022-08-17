@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FISKS",
             "rdf:value": "FISKS",
+            "@id": "unlcd:FISKS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saaksjärvi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saaksjarvi"
+                    "@value": "Saaksjarvi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.583332",
                 "@type": "xsd:float"

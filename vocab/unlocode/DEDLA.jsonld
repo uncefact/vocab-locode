@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEDLA",
             "rdf:value": "DEDLA",
+            "@id": "unlcd:DEDLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dürrlauingen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Durrlauingen"
+                    "@value": "Durrlauingen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

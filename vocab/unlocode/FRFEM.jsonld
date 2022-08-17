@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFEM",
             "rdf:value": "FRFEM",
+            "@id": "unlcd:FRFEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Faverolles-et-Coëmy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Faverolles-et-Coemy"
+                    "@value": "Faverolles-et-Coemy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.233334",
                 "@type": "xsd:float"

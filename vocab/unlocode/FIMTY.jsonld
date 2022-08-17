@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIMTY",
             "rdf:value": "FIMTY",
+            "@id": "unlcd:FIMTY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mäntyluoto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mantyluoto"
+                    "@value": "Mantyluoto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI17"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "61.583332",
                 "@type": "xsd:float"

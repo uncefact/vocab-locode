@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSOM",
             "rdf:value": "HUSOM",
+            "@id": "unlcd:HUSOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Somoskoújfalu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Somoskoujfalu"
+                    "@value": "Somoskoujfalu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.15",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUKAS",
             "rdf:value": "RUKAS",
+            "@id": "unlcd:RUKAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Kashira"
+                "@value": "Kashira",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "54.833332",
                 "@type": "xsd:float"

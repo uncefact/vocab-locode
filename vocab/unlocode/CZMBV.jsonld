@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZMBV",
             "rdf:value": "CZMBV",
+            "@id": "unlcd:CZMBV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mladá Boleslav"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mlada Boleslav"
+                    "@value": "Mlada Boleslav",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.416668",
                 "@type": "xsd:float"

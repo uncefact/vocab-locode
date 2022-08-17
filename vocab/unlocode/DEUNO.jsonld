@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUNO",
             "rdf:value": "DEUNO",
+            "@id": "unlcd:DEUNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grünberg (Ottendorf-Okrilla)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grunberg (Ottendorf-Okrilla)"
+                    "@value": "Grunberg (Ottendorf-Okrilla)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.183334",
                 "@type": "xsd:float"

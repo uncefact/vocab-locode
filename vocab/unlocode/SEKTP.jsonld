@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEKTP",
             "rdf:value": "SEKTP",
+            "@id": "unlcd:SEKTP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kvarntorp/Örebro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kvarntorp/Orebro"
+                    "@value": "Kvarntorp/Orebro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SET"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "59.3",
                 "@type": "xsd:float"

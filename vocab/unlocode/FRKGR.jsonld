@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRKGR",
             "rdf:value": "FRKGR",
+            "@id": "unlcd:FRKGR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léger-les-Vignes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leger-les-Vignes"
+                    "@value": "Saint-Leger-les-Vignes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.133335",
                 "@type": "xsd:float"

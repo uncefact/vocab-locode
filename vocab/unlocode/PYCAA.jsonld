@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PYCAA",
             "rdf:value": "PYCAA",
+            "@id": "unlcd:PYCAA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Caacupé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caacupe"
+                    "@value": "Caacupe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PY3"
             },
-            "unlcdc:countryCode": "PY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PY"
+            },
             "geo:lat": {
                 "@value": "-25.383333",
                 "@type": "xsd:float"

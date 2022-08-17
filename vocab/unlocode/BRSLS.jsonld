@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSLS",
             "rdf:value": "BRSLS",
+            "@id": "unlcd:BRSLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Lourenço da Serra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Lourenco da Serra"
+                    "@value": "Sao Lourenco da Serra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.833334",
                 "@type": "xsd:float"

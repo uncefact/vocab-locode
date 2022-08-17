@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CFBEM",
             "rdf:value": "CFBEM",
+            "@id": "unlcd:CFBEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bossembélé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bossembele"
+                    "@value": "Bossembele",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CF"
+            },
             "geo:lat": {
                 "@value": "5.266667",
                 "@type": "xsd:float"

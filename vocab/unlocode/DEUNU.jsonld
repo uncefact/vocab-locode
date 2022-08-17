@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUNU",
             "rdf:value": "DEUNU",
+            "@id": "unlcd:DEUNU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grünberg (Augustusburg)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grunberg (Augustusburg)"
+                    "@value": "Grunberg (Augustusburg)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.816666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBZQ",
             "rdf:value": "DEBZQ",
+            "@id": "unlcd:DEBZQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Burgstädt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Burgstadt"
+                    "@value": "Burgstadt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.916668",
                 "@type": "xsd:float"

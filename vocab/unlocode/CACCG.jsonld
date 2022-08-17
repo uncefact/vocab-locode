@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CACCG",
             "rdf:value": "CACCG",
+            "@id": "unlcd:CACCG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Clotilde-de-Châteauguay"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Clotilde-de-Chateauguay"
+                    "@value": "Sainte-Clotilde-de-Chateauguay",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.15",
                 "@type": "xsd:float"

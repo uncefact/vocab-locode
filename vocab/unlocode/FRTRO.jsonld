@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTRO",
             "rdf:value": "FRTRO",
+            "@id": "unlcd:FRTRO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tournon-sur-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tournon-sur-Rhone"
+                    "@value": "Tournon-sur-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.05",
                 "@type": "xsd:float"

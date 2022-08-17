@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NISFL",
             "rdf:value": "NISFL",
+            "@id": "unlcd:NISFL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "San Francisco Libre"
+                "@value": "San Francisco Libre",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NIMN"
             },
-            "unlcdc:countryCode": "NI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NI"
+            },
             "geo:lat": {
                 "@value": "12.5",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRUS3",
             "rdf:value": "FRUS3",
+            "@id": "unlcd:FRUS3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Usclas-L'Hérault"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Usclas-L'Herault"
+                    "@value": "Usclas-L'Herault",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.516666",
                 "@type": "xsd:float"

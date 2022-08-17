@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KHKOS",
             "rdf:value": "KHKOS",
+            "@id": "unlcd:KHKOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kâmpóng Saôm"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kampong Saom"
+                    "@value": "Kampong Saom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:7"
                 }
             ],
-            "unlcdc:countryCode": "KH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KH"
+            },
             "geo:lat": {
                 "@value": "10.6",
                 "@type": "xsd:float"

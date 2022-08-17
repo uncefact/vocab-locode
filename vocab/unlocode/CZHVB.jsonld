@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZHVB",
             "rdf:value": "CZHVB",
+            "@id": "unlcd:CZHVB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Havlíckuv Brod"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Havlickuv Brod"
+                    "@value": "Havlickuv Brod",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.616665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FILKL",
             "rdf:value": "FILKL",
+            "@id": "unlcd:FILKL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Leskelä"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Leskela"
+                    "@value": "Leskela",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI14"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "64.183334",
                 "@type": "xsd:float"

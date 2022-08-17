@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATPDO",
             "rdf:value": "ATPDO",
+            "@id": "unlcd:ATPDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pöttelsdorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pottelsdorf"
+                    "@value": "Pottelsdorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT1"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.75",
                 "@type": "xsd:float"

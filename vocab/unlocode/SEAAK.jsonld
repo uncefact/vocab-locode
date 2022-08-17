@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEAAK",
             "rdf:value": "SEAAK",
+            "@id": "unlcd:SEAAK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Åkers Styckebruk"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Akers Styckebruk"
+                    "@value": "Akers Styckebruk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SED"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

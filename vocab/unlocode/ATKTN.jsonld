@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATKTN",
             "rdf:value": "ATKTN",
+            "@id": "unlcd:ATKTN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Königstetten"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Konigstetten"
+                    "@value": "Konigstetten",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT3"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.3",
                 "@type": "xsd:float"

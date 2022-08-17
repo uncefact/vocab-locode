@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INTDE",
             "rdf:value": "INTDE",
+            "@id": "unlcd:INTDE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tudiyalür"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tudiyalur"
+                    "@value": "Tudiyalur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INTN"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "11.083333",
                 "@type": "xsd:float"

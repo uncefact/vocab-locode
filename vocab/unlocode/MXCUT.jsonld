@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXCUT",
             "rdf:value": "MXCUT",
+            "@id": "unlcd:MXCUT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cuautitlán Izcalli"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cuautitlan Izcalli"
+                    "@value": "Cuautitlan Izcalli",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXMEX"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.633333",
                 "@type": "xsd:float"

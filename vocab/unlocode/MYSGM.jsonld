@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYSGM",
             "rdf:value": "MYSGM",
+            "@id": "unlcd:MYSGM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Segamat"
+                "@value": "Segamat",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MY01"
             },
-            "unlcdc:countryCode": "MY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            },
             "geo:lat": {
                 "@value": "2.5",
                 "@type": "xsd:float"

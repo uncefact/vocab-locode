@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MASSO",
             "rdf:value": "MASSO",
+            "@id": "unlcd:MASSO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Souk Sebt des Oulad Nemâa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Souk Sebt des Oulad Nemaa"
+                    "@value": "Souk Sebt des Oulad Nemaa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MABEM"
             },
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "32.3",
                 "@type": "xsd:float"

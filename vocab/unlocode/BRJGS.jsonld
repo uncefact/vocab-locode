@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJGS",
             "rdf:value": "BRJGS",
+            "@id": "unlcd:BRJGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jaboatão dos Guararapes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jaboatao dos Guararapes"
+                    "@value": "Jaboatao dos Guararapes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.15",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIVSS",
             "rdf:value": "FIVSS",
+            "@id": "unlcd:FIVSS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vuosaari (Nordsjö)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vuosaari (Nordsjo)"
+                    "@value": "Vuosaari (Nordsjo)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.216667",
                 "@type": "xsd:float"

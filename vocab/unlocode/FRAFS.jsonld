@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAFS",
             "rdf:value": "FRAFS",
+            "@id": "unlcd:FRAFS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Laferté-sur-Amance"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Laferte-sur-Amance"
+                    "@value": "Laferte-sur-Amance",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR52"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

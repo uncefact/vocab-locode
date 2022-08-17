@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTCF",
             "rdf:value": "FRTCF",
+            "@id": "unlcd:FRTCF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Côme-de-Fresné"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Come-de-Fresne"
+                    "@value": "Saint-Come-de-Fresne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.333332",
                 "@type": "xsd:float"

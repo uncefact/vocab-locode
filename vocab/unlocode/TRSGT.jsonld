@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRSGT",
             "rdf:value": "TRSGT",
+            "@id": "unlcd:TRSGT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sögüt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sogut"
+                    "@value": "Sogut",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR11"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "40.0",
                 "@type": "xsd:float"

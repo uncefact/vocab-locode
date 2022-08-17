@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DECFO",
             "rdf:value": "DECFO",
+            "@id": "unlcd:DECFO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ober-Flörsheim"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ober-Florsheim"
+                    "@value": "Ober-Florsheim",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.666668",
                 "@type": "xsd:float"

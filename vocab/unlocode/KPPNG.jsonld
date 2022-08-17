@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KPPNG",
             "rdf:value": "KPPNG",
+            "@id": "unlcd:KPPNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Panjang"
+                "@value": "Panjang",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "KP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KP"
+            },
             "geo:lat": {
                 "@value": "38.5",
                 "@type": "xsd:float"

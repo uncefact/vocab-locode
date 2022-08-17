@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSHZ",
             "rdf:value": "FRSHZ",
+            "@id": "unlcd:FRSHZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Hélène"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Helene"
+                    "@value": "Sainte-Helene",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.966667",
                 "@type": "xsd:float"

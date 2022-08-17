@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTBML",
             "rdf:value": "PTBML",
+            "@id": "unlcd:PTBML",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Belém"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Belem"
+                    "@value": "Belem",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT08"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "37.316666",
                 "@type": "xsd:float"

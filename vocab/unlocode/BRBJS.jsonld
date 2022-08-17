@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBJS",
             "rdf:value": "BRBJS",
+            "@id": "unlcd:BRBJS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bom Jesus de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bom Jesus de Goias"
+                    "@value": "Bom Jesus de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.2",
                 "@type": "xsd:float"

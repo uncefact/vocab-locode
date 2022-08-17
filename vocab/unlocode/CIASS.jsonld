@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CIASS",
             "rdf:value": "CIASS",
+            "@id": "unlcd:CIASS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Assinie-Mafia"
+                "@value": "Assinie-Mafia",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CI"
+            },
             "geo:lat": {
                 "@value": "5.116667",
                 "@type": "xsd:float"

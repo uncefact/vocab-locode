@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DOPIM",
             "rdf:value": "DOPIM",
+            "@id": "unlcd:DOPIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Pimentel"
+                "@value": "Pimentel",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "DO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DO"
+            },
             "geo:lat": {
                 "@value": "19.183332",
                 "@type": "xsd:float"

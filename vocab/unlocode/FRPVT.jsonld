@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPVT",
             "rdf:value": "FRPVT",
+            "@id": "unlcd:FRPVT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Passavant-la-Rochère"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Passavant-la-Rochere"
+                    "@value": "Passavant-la-Rochere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.966667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MZCHO",
             "rdf:value": "MZCHO",
+            "@id": "unlcd:MZCHO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chokwé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chokwe"
+                    "@value": "Chokwe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MZG"
             },
-            "unlcdc:countryCode": "MZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MZ"
+            },
             "geo:lat": {
                 "@value": "-24.533333",
                 "@type": "xsd:float"

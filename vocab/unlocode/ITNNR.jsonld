@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITNNR",
             "rdf:value": "ITNNR",
+            "@id": "unlcd:ITNNR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Roverè Della Luna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rovere Della Luna"
+                    "@value": "Rovere Della Luna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITTN"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "46.25",
                 "@type": "xsd:float"

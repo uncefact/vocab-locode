@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSJP",
             "rdf:value": "PTSJP",
+            "@id": "unlcd:PTSJP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João da Pesqueira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao da Pesqueira"
+                    "@value": "Sao Joao da Pesqueira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT18"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.15",
                 "@type": "xsd:float"

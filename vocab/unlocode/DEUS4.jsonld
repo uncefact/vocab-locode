@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUS4",
             "rdf:value": "DEUS4",
+            "@id": "unlcd:DEUS4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Büsumer Deichhausen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Busumer Deichhausen"
+                    "@value": "Busumer Deichhausen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "54.133335",
                 "@type": "xsd:float"

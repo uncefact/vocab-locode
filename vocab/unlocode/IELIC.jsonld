@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IELIC",
             "rdf:value": "IELIC",
+            "@id": "unlcd:IELIC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Little Island/Cork"
+                "@value": "Little Island/Cork",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IE"
+            },
             "geo:lat": {
                 "@value": "51.9",
                 "@type": "xsd:float"

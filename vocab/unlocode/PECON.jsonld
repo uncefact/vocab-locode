@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PECON",
             "rdf:value": "PECON",
+            "@id": "unlcd:PECON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conchán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conchan"
+                    "@value": "Conchan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-6.4166665",
                 "@type": "xsd:float"

@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUPCL",
             "rdf:value": "HUPCL",
+            "@id": "unlcd:HUPCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pécsely"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pecsely"
+                    "@value": "Pecsely",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DERHQ",
             "rdf:value": "DERHQ",
+            "@id": "unlcd:DERHQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rotthalmünster"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rotthalmunster"
+                    "@value": "Rotthalmunster",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.35",
                 "@type": "xsd:float"

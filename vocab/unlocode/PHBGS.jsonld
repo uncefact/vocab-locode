@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PHBGS",
             "rdf:value": "PHBGS",
+            "@id": "unlcd:PHBGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Balingasag"
+                "@value": "Balingasag",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PH"
+            },
             "geo:lat": {
                 "@value": "8.75",
                 "@type": "xsd:float"

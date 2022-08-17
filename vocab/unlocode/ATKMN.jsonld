@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATKMN",
             "rdf:value": "ATKMN",
+            "@id": "unlcd:ATKMN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Krems in Kärnten"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Krems in Karnten"
+                    "@value": "Krems in Karnten",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT2"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "46.916668",
                 "@type": "xsd:float"

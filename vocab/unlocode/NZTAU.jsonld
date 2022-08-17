@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NZTAU",
             "rdf:value": "NZTAU",
+            "@id": "unlcd:NZTAU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Taumarunui"
+                "@value": "Taumarunui",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZTKI"
             },
-            "unlcdc:countryCode": "NZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NZ"
+            },
             "geo:lat": {
                 "@value": "-38.883335",
                 "@type": "xsd:float"

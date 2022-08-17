@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRLG",
             "rdf:value": "BRRLG",
+            "@id": "unlcd:BRRLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribeirão do Largo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribeirao do Largo"
+                    "@value": "Ribeirao do Largo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.45",
                 "@type": "xsd:float"

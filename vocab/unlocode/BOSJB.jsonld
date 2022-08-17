@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOSJB",
             "rdf:value": "BOSJB",
+            "@id": "unlcd:BOSJB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Joaquín"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Joaquin"
+                    "@value": "San Joaquin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOB"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-13.066667",
                 "@type": "xsd:float"

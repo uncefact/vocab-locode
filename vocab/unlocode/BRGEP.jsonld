@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRGEP",
             "rdf:value": "BRGEP",
+            "@id": "unlcd:BRGEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Geraldo da Piedade"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Geraldo da Piedade"
+                    "@value": "Sao Geraldo da Piedade",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.833334",
                 "@type": "xsd:float"

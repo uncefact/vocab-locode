@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRAAI",
             "rdf:value": "GRAAI",
+            "@id": "unlcd:GRAAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ágioi Anárgyroi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Agioi Anargyroi"
+                    "@value": "Agioi Anargyroi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR31"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "39.133335",
                 "@type": "xsd:float"

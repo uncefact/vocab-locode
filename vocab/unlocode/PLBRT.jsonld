@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLBRT",
             "rdf:value": "PLBRT",
+            "@id": "unlcd:PLBRT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bierutów"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bierutow"
+                    "@value": "Bierutow",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL02"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "51.116665",
                 "@type": "xsd:float"

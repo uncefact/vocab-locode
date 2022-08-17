@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMEE",
             "rdf:value": "FRMEE",
+            "@id": "unlcd:FRMEE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Mée-sur-Seine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Mee-sur-Seine"
+                    "@value": "Le Mee-sur-Seine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.516666",
                 "@type": "xsd:float"

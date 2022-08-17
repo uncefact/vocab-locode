@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBDT",
             "rdf:value": "DEBDT",
+            "@id": "unlcd:DEBDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bürstadt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Burstadt"
+                    "@value": "Burstadt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

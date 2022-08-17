@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOJOS",
             "rdf:value": "NOJOS",
+            "@id": "unlcd:NOJOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jøssingfjord"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jossingfjord"
+                    "@value": "Jossingfjord",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO11"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "58.316666",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IESDN",
             "rdf:value": "IESDN",
+            "@id": "unlcd:IESDN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sandycove"
+                "@value": "Sandycove",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IEDL"
             },
-            "unlcdc:countryCode": "IE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IE"
+            },
             "geo:lat": {
                 "@value": "53.283333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRSCK",
             "rdf:value": "TRSCK",
+            "@id": "unlcd:TRSCK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Selçuk"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Selcuk"
+                    "@value": "Selcuk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR35"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "37.95",
                 "@type": "xsd:float"

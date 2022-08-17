@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SELIO",
             "rdf:value": "SELIO",
+            "@id": "unlcd:SELIO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lidingö"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lidingo"
+                    "@value": "Lidingo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEAB"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

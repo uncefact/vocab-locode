@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COELJ",
             "rdf:value": "COELJ",
+            "@id": "unlcd:COELJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "El Recréo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "El Recreo"
+                    "@value": "El Recreo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COHUI"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "2.3333333",
                 "@type": "xsd:float"

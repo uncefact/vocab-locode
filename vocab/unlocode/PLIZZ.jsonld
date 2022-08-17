@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLIZZ",
             "rdf:value": "PLIZZ",
+            "@id": "unlcd:PLIZZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Iwonicz-Zdrój"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Iwonicz-Zdroj"
+                    "@value": "Iwonicz-Zdroj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL18"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "49.566666",
                 "@type": "xsd:float"

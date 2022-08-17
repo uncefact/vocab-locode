@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASCM",
             "rdf:value": "CASCM",
+            "@id": "unlcd:CASCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Côme"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Come"
+                    "@value": "Saint-Come",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

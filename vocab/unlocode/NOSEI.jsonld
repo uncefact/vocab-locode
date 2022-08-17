@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSEI",
             "rdf:value": "NOSEI",
+            "@id": "unlcd:NOSEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Skånevik"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Skanevik"
+                    "@value": "Skanevik",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO12"
             },
-            "unlcdc:countryCode": "NO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            }
         }
     ]
 }

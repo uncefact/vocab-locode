@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEHWZ",
             "rdf:value": "DEHWZ",
+            "@id": "unlcd:DEHWZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hausen bei Würzburg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hausen bei Wurzburg"
+                    "@value": "Hausen bei Wurzburg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.95",
                 "@type": "xsd:float"

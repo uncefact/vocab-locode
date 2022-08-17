@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLPIU",
             "rdf:value": "CLPIU",
+            "@id": "unlcd:CLPIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Piuquenes/San José de Maipo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Piuquenes/San Jose de Maipo"
+                    "@value": "Paso Piuquenes/San Jose de Maipo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLRM"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-33.633335",
                 "@type": "xsd:float"

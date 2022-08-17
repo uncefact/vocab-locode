@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMFC",
             "rdf:value": "FRMFC",
+            "@id": "unlcd:FRMFC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Martigné-Ferchaud"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Martigne-Ferchaud"
+                    "@value": "Martigne-Ferchaud",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

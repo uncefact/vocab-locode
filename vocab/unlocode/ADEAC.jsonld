@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ADEAC",
             "rdf:value": "ADEAC",
+            "@id": "unlcd:ADEAC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Escàs"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Escas"
+                    "@value": "Escas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AD04"
             },
-            "unlcdc:countryCode": "AD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AD"
+            },
             "geo:lat": {
                 "@value": "42.55",
                 "@type": "xsd:float"

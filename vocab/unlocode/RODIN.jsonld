@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RODIN",
             "rdf:value": "RODIN",
+            "@id": "unlcd:RODIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dinkelsbühl"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dinkelsbuhl"
+                    "@value": "Dinkelsbuhl",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROB"
             },
-            "unlcdc:countryCode": "RO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            }
         }
     ]
 }

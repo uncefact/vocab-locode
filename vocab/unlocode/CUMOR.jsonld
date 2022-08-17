@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUMOR",
             "rdf:value": "CUMOR",
+            "@id": "unlcd:CUMOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moron"
+                    "@value": "Moron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CU08"
             },
-            "unlcdc:countryCode": "CU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            },
             "geo:lat": {
                 "@value": "22.1",
                 "@type": "xsd:float"

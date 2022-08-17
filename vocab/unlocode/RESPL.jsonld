@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RESPL",
             "rdf:value": "RESPL",
+            "@id": "unlcd:RESPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saint-Paul"
+                "@value": "Saint-Paul",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "RE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RE"
+            },
             "geo:lat": {
                 "@value": "-20.983334",
                 "@type": "xsd:float"

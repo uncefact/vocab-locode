@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSMF",
             "rdf:value": "BRSMF",
+            "@id": "unlcd:BRSMF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Fidalgo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Fidalgo"
+                    "@value": "Sao Miguel do Fidalgo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.5833335",
                 "@type": "xsd:float"

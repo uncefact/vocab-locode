@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTPFR",
             "rdf:value": "PTPFR",
+            "@id": "unlcd:PTPFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paços de Ferreira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pacos de Ferreira"
+                    "@value": "Pacos de Ferreira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT13"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.266666",
                 "@type": "xsd:float"

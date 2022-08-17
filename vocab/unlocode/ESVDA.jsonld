@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVDA",
             "rdf:value": "ESVDA",
+            "@id": "unlcd:ESVDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Valencia de Alcántara"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Valencia de Alcantara"
+                    "@value": "Valencia de Alcantara",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.416668",
                 "@type": "xsd:float"

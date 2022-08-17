@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LTKUR",
             "rdf:value": "LTKUR",
+            "@id": "unlcd:LTKUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kursénai"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kursenai"
+                    "@value": "Kursenai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LTSA"
             },
-            "unlcdc:countryCode": "LT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LT"
+            },
             "geo:lat": {
                 "@value": "55.983334",
                 "@type": "xsd:float"

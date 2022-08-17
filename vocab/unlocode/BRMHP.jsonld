@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMHP",
             "rdf:value": "BRMHP",
+            "@id": "unlcd:BRMHP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morro do Chapéu do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morro do Chapeu do Piaui"
+                    "@value": "Morro do Chapeu do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.7333333",
                 "@type": "xsd:float"

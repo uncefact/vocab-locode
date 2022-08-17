@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGCC",
             "rdf:value": "FRGCC",
+            "@id": "unlcd:FRGCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gilly-lès-Cîteaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gilly-les-Citeaux"
+                    "@value": "Gilly-les-Citeaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.166668",
                 "@type": "xsd:float"

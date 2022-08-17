@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKBOS",
             "rdf:value": "DKBOS",
+            "@id": "unlcd:DKBOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bøjden"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bojden"
+                    "@value": "Bojden",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "55.1",
                 "@type": "xsd:float"

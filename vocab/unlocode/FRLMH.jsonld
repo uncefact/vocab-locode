@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLMH",
             "rdf:value": "FRLMH",
+            "@id": "unlcd:FRLMH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Mêle-sur-Sarthe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Mele-sur-Sarthe"
+                    "@value": "Le Mele-sur-Sarthe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR61"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.516666",
                 "@type": "xsd:float"

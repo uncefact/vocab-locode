@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHEBC",
             "rdf:value": "CHEBC",
+            "@id": "unlcd:CHEBC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Emmenbrücke"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Emmenbrucke"
+                    "@value": "Emmenbrucke",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHLU"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "47.066666",
                 "@type": "xsd:float"

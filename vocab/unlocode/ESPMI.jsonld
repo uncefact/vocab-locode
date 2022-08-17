@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESPMI",
             "rdf:value": "ESPMI",
+            "@id": "unlcd:ESPMI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Palma de Mallorca"
+                "@value": "Palma de Mallorca",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -34,7 +34,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.566666",
                 "@type": "xsd:float"

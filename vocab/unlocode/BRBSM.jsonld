@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBSM",
             "rdf:value": "BRBSM",
+            "@id": "unlcd:BRBSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Barra de São Miguel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Barra de Sao Miguel"
+                    "@value": "Barra de Sao Miguel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.833333",
                 "@type": "xsd:float"

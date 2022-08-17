@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBLON",
             "rdf:value": "GBLON",
+            "@id": "unlcd:GBLON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "London"
+                "@value": "London",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBLND"
             },
-            "unlcdc:countryCode": "GB"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            }
         }
     ]
 }

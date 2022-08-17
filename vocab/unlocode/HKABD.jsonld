@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HKABD",
             "rdf:value": "HKABD",
+            "@id": "unlcd:HKABD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Aberdeen"
+                "@value": "Aberdeen",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HK"
+            },
             "geo:lat": {
                 "@value": "22.25",
                 "@type": "xsd:float"

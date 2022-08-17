@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSOD",
             "rdf:value": "BRSOD",
+            "@id": "unlcd:BRSOD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Descoberto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Descoberto"
+                    "@value": "Santo Antonio do Descoberto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.933333",
                 "@type": "xsd:float"

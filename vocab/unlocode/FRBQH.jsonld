@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBQH",
             "rdf:value": "FRBQH",
+            "@id": "unlcd:FRBQH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Bussière-sur-Ouche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Bussiere-sur-Ouche"
+                    "@value": "La Bussiere-sur-Ouche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.216667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAFCX",
             "rdf:value": "CAFCX",
+            "@id": "unlcd:CAFCX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-François-Xavier"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Francois-Xavier"
+                    "@value": "Saint-Francois-Xavier",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAMB"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

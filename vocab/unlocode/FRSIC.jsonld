@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSIC",
             "rdf:value": "FRSIC",
+            "@id": "unlcd:FRSIC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-de-Chigny"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-de-Chigny"
+                    "@value": "Saint-Etienne-de-Chigny",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.383335",
                 "@type": "xsd:float"

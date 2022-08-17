@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBNI",
             "rdf:value": "FRBNI",
+            "@id": "unlcd:FRBNI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bonnières-sur-Seine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bonnieres-sur-Seine"
+                    "@value": "Bonnieres-sur-Seine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR78"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.033333",
                 "@type": "xsd:float"

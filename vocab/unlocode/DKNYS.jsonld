@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKNYS",
             "rdf:value": "DKNYS",
+            "@id": "unlcd:DKNYS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nykøbing Sjælland"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nykobing Sjalland"
+                    "@value": "Nykobing Sjalland",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK85"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "55.916668",
                 "@type": "xsd:float"

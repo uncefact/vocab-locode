@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRVIE",
             "rdf:value": "BRVIE",
+            "@id": "unlcd:BRVIE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vila Bela da Santíssima Trindade"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vila Bela da Santissima Trindade"
+                    "@value": "Vila Bela da Santissima Trindade",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.0",
                 "@type": "xsd:float"

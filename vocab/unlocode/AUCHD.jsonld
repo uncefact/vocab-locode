@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AUCHD",
             "rdf:value": "AUCHD",
+            "@id": "unlcd:AUCHD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Chadstone/Melbourne"
+                "@value": "Chadstone/Melbourne",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUVIC"
             },
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-37.883335",
                 "@type": "xsd:float"

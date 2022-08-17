@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRATE",
             "rdf:value": "BRATE",
+            "@id": "unlcd:BRATE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Almirante Tamandaré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Almirante Tamandare"
+                    "@value": "Almirante Tamandare",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.3",
                 "@type": "xsd:float"

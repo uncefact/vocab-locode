@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZNVV",
             "rdf:value": "CZNVV",
+            "@id": "unlcd:CZNVV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nový Vestec"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Novy Vestec"
+                    "@value": "Novy Vestec",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.183334",
                 "@type": "xsd:float"

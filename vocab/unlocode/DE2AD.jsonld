@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE2AD",
             "rdf:value": "DE2AD",
+            "@id": "unlcd:DE2AD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alt Kätwin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alt Katwin"
+                    "@value": "Alt Katwin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.966667",
                 "@type": "xsd:float"

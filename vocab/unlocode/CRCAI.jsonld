@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CRCAI",
             "rdf:value": "CRCAI",
+            "@id": "unlcd:CRCAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Caimital"
+                "@value": "Caimital",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CRG"
             },
-            "unlcdc:countryCode": "CR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CR"
+            },
             "geo:lat": {
                 "@value": "10.066667",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLGRA",
             "rdf:value": "NLGRA",
+            "@id": "unlcd:NLGRA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "'s-Gravendeel"
+                "@value": "'s-Gravendeel",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLZH"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "51.783333",
                 "@type": "xsd:float"

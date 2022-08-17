@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSBN",
             "rdf:value": "BRSBN",
+            "@id": "unlcd:BRSBN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Bento do Norte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Bento do Norte"
+                    "@value": "Sao Bento do Norte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.05",
                 "@type": "xsd:float"

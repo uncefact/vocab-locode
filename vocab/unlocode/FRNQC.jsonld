@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNQC",
             "rdf:value": "FRNQC",
+            "@id": "unlcd:FRNQC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neuvicq-le-Château"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neuvicq-le-Chateau"
+                    "@value": "Neuvicq-le-Chateau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

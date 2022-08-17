@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRIAN",
             "rdf:value": "FRIAN",
+            "@id": "unlcd:FRIAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Martial-sur-Né"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Martial-sur-Ne"
+                    "@value": "Saint-Martial-sur-Ne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.566666",
                 "@type": "xsd:float"

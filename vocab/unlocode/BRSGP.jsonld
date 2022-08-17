@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSGP",
             "rdf:value": "BRSGP",
+            "@id": "unlcd:BRSGP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gabriel da Palha"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Gabriel da Palha"
+                    "@value": "Sao Gabriel da Palha",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.016666",
                 "@type": "xsd:float"

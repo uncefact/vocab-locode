@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:THBSP",
             "rdf:value": "THBSP",
+            "@id": "unlcd:THBSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bang Saphan"
+                "@value": "Bang Saphan",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TH"
+            },
             "geo:lat": {
                 "@value": "11.2",
                 "@type": "xsd:float"

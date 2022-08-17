@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LTTAU",
             "rdf:value": "LTTAU",
+            "@id": "unlcd:LTTAU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tauragé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Taurage"
+                    "@value": "Taurage",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LTTA"
             },
-            "unlcdc:countryCode": "LT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LT"
+            },
             "geo:lat": {
                 "@value": "55.25",
                 "@type": "xsd:float"

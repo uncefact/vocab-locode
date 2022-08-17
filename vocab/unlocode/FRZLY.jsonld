@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZLY",
             "rdf:value": "FRZLY",
+            "@id": "unlcd:FRZLY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léger-en-Yvelines"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leger-en-Yvelines"
+                    "@value": "Saint-Leger-en-Yvelines",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR78"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.716667",
                 "@type": "xsd:float"

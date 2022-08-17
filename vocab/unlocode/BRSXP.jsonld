@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSXP",
             "rdf:value": "BRSXP",
+            "@id": "unlcd:BRSXP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Félix do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Felix do Piaui"
+                    "@value": "Sao Felix do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.9166665",
                 "@type": "xsd:float"

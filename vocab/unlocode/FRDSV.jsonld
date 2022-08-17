@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDSV",
             "rdf:value": "FRDSV",
+            "@id": "unlcd:FRDSV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Domèvre-sur-Vezouze"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Domevre-sur-Vezouze"
+                    "@value": "Domevre-sur-Vezouze",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.566666",
                 "@type": "xsd:float"

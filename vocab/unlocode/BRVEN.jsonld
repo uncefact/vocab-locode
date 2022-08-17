@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRVEN",
             "rdf:value": "BRVEN",
+            "@id": "unlcd:BRVEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Aventureiro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Aventureiro"
+                    "@value": "Santo Antonio do Aventureiro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.75",
                 "@type": "xsd:float"

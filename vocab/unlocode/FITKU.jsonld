@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FITKU",
             "rdf:value": "FITKU",
+            "@id": "unlcd:FITKU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Turku (Åbo)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Turku (Abo)"
+                    "@value": "Turku (Abo)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI19"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.45",
                 "@type": "xsd:float"

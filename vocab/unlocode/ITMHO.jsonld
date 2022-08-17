@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITMHO",
             "rdf:value": "ITMHO",
+            "@id": "unlcd:ITMHO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Maria Hoè"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Maria Hoe"
+                    "@value": "Santa Maria Hoe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITLC"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.75",
                 "@type": "xsd:float"

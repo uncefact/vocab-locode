@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DZSET",
             "rdf:value": "DZSET",
+            "@id": "unlcd:DZSET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sétif"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Setif"
+                    "@value": "Setif",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DZ"
+            },
             "geo:lat": {
                 "@value": "36.183334",
                 "@type": "xsd:float"

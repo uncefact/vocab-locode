@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTCML",
             "rdf:value": "PTCML",
+            "@id": "unlcd:PTCML",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Câmara de Lobos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Camara de Lobos"
+                    "@value": "Camara de Lobos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT30"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "32.633335",
                 "@type": "xsd:float"

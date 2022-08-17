@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREAB",
             "rdf:value": "FREAB",
+            "@id": "unlcd:FREAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Lambert-des-Levées"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Lambert-des-Levees"
+                    "@value": "Saint-Lambert-des-Levees",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.283333",
                 "@type": "xsd:float"

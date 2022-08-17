@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SCSEZ",
             "rdf:value": "SCSEZ",
+            "@id": "unlcd:SCSEZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mahé Island Apt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mahe Island Apt"
+                    "@value": "Mahe Island Apt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "SC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SC"
+            },
             "geo:lat": {
                 "@value": "-4.6666665",
                 "@type": "xsd:float"

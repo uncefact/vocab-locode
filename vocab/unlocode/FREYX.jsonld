@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREYX",
             "rdf:value": "FREYX",
+            "@id": "unlcd:FREYX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Ollières-sur-Eyrieux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Ollieres-sur-Eyrieux"
+                    "@value": "Les Ollieres-sur-Eyrieux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.8",
                 "@type": "xsd:float"

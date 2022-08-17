@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBLCM",
             "rdf:value": "GBLCM",
+            "@id": "unlcd:GBLCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lytchett Minster"
+                "@value": "Lytchett Minster",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBDOR"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "50.733334",
                 "@type": "xsd:float"

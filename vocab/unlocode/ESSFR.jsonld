@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSFR",
             "rdf:value": "ESSFR",
+            "@id": "unlcd:ESSFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Fruitós de Bagés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Fruitos de Bages"
+                    "@value": "Sant Fruitos de Bages",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.75",
                 "@type": "xsd:float"

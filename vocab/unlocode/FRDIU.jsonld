@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDIU",
             "rdf:value": "FRDIU",
+            "@id": "unlcd:FRDIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villedieu-les-Poêles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villedieu-les-Poeles"
+                    "@value": "Villedieu-les-Poeles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR50"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.833332",
                 "@type": "xsd:float"

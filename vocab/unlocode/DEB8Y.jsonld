@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEB8Y",
             "rdf:value": "DEB8Y",
+            "@id": "unlcd:DEB8Y",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bernstadt/Württemberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bernstadt/Wurttemberg"
+                    "@value": "Bernstadt/Wurttemberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.5",
                 "@type": "xsd:float"

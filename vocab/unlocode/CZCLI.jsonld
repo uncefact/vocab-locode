@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCLI",
             "rdf:value": "CZCLI",
+            "@id": "unlcd:CZCLI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceská Lípa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceska Lipa"
+                    "@value": "Ceska Lipa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.683334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVBL",
             "rdf:value": "FRVBL",
+            "@id": "unlcd:FRVBL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villedieu-la-Blouère"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villedieu-la-Blouere"
+                    "@value": "Villedieu-la-Blouere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.15",
                 "@type": "xsd:float"

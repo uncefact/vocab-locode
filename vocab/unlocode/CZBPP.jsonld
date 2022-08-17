@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZBPP",
             "rdf:value": "CZBPP",
+            "@id": "unlcd:CZBPP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Belá pod Pradedem"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bela pod Pradedem"
+                    "@value": "Bela pod Pradedem",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZOL"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.166668",
                 "@type": "xsd:float"

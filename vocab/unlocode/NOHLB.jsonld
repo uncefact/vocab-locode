@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOHLB",
             "rdf:value": "NOHLB",
+            "@id": "unlcd:NOHLB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Høylandsbygda"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hoylandsbygda"
+                    "@value": "Hoylandsbygda",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO12"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "59.783333",
                 "@type": "xsd:float"

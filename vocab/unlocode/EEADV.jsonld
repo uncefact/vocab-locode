@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEADV",
             "rdf:value": "EEADV",
+            "@id": "unlcd:EEADV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Admirali Väikesadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Admirali Vaikesadam"
+                    "@value": "Admirali Vaikesadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE68"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.533333",
                 "@type": "xsd:float"

@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USCLM",
             "rdf:value": "USCLM",
+            "@id": "unlcd:USCLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Angeles"
+                "@value": "Port Angeles",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USWA"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

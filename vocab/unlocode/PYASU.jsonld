@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PYASU",
             "rdf:value": "PYASU",
+            "@id": "unlcd:PYASU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Asunción"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Asuncion"
+                    "@value": "Asuncion",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PYASU"
             },
-            "unlcdc:countryCode": "PY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PY"
+            },
             "geo:lat": {
                 "@value": "-25.266666",
                 "@type": "xsd:float"

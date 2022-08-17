@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLRIM",
             "rdf:value": "CLRIM",
+            "@id": "unlcd:CLRIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Río Mayer/O'Higgins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Rio Mayer/O'Higgins"
+                    "@value": "Paso Rio Mayer/O'Higgins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAI"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-48.216667",
                 "@type": "xsd:float"

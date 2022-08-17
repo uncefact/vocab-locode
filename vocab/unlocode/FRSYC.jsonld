@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSYC",
             "rdf:value": "FRSYC",
+            "@id": "unlcd:FRSYC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Cyr-l'École"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Cyr-l'Ecole"
+                    "@value": "Saint-Cyr-l'Ecole",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR78"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

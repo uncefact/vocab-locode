@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HULUK",
             "rdf:value": "HULUK",
+            "@id": "unlcd:HULUK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lukácsháza"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lukacshaza"
+                    "@value": "Lukacshaza",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUVA"
             },
-            "unlcdc:countryCode": "HU"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            }
         }
     ]
 }

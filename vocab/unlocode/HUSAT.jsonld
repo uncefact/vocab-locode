@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSAT",
             "rdf:value": "HUSAT",
+            "@id": "unlcd:HUSAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sátoraljaújhely"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Satoraljaujhely"
+                    "@value": "Satoraljaujhely",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.4",
                 "@type": "xsd:float"

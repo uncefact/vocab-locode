@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSAA",
             "rdf:value": "GTSAA",
+            "@id": "unlcd:GTSAA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Antonio Suchitepéquez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Antonio Suchitepequez"
+                    "@value": "San Antonio Suchitepequez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT10"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.533334",
                 "@type": "xsd:float"

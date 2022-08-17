@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLTEX",
             "rdf:value": "NLTEX",
+            "@id": "unlcd:NLTEX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Texel"
+                "@value": "Texel",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCLR",
             "rdf:value": "FRCLR",
+            "@id": "unlcd:FRCLR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châtenoy-le-Royal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chatenoy-le-Royal"
+                    "@value": "Chatenoy-le-Royal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.783333",
                 "@type": "xsd:float"

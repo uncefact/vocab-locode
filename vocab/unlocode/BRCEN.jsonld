@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCEN",
             "rdf:value": "BRCEN",
+            "@id": "unlcd:BRCEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Colônia Leopoldina"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Colonia Leopoldina"
+                    "@value": "Colonia Leopoldina",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.9",
                 "@type": "xsd:float"

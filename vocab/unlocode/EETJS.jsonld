@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EETJS",
             "rdf:value": "EETJS",
+            "@id": "unlcd:EETJS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tori Jõesadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tori Joesadam"
+                    "@value": "Tori Joesadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE74"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.25",
                 "@type": "xsd:float"

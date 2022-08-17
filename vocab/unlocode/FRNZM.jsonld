@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNZM",
             "rdf:value": "FRNZM",
+            "@id": "unlcd:FRNZM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nagel-Séez-Mesnil"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nagel-Seez-Mesnil"
+                    "@value": "Nagel-Seez-Mesnil",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.933334",
                 "@type": "xsd:float"

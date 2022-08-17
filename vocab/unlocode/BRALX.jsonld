@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRALX",
             "rdf:value": "BRALX",
+            "@id": "unlcd:BRALX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio dos Lopes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio dos Lopes"
+                    "@value": "Santo Antonio dos Lopes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-4.866667",
                 "@type": "xsd:float"

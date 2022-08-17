@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVVM",
             "rdf:value": "FRVVM",
+            "@id": "unlcd:FRVVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Évin-Malmaison"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Evin-Malmaison"
+                    "@value": "Evin-Malmaison",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.066666",
                 "@type": "xsd:float"

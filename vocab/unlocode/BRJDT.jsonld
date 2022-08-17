@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJDT",
             "rdf:value": "BRJDT",
+            "@id": "unlcd:BRJDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João do Tigre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao do Tigre"
+                    "@value": "Sao Joao do Tigre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.066667",
                 "@type": "xsd:float"

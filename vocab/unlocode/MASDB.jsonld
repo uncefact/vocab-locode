@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MASDB",
             "rdf:value": "MASDB",
+            "@id": "unlcd:MASDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sidi Bennour"
+                "@value": "Sidi Bennour",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MAJDI"
             },
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "32.65",
                 "@type": "xsd:float"

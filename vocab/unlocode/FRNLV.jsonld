@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNLV",
             "rdf:value": "FRNLV",
+            "@id": "unlcd:FRNLV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Noidans-lès-Vesoul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Noidans-les-Vesoul"
+                    "@value": "Noidans-les-Vesoul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.616665",
                 "@type": "xsd:float"

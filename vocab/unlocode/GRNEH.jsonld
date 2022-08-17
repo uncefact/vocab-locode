@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRNEH",
             "rdf:value": "GRNEH",
+            "@id": "unlcd:GRNEH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neokhorákion"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neokhorakion"
+                    "@value": "Neokhorakion",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GRE"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "39.166668",
                 "@type": "xsd:float"

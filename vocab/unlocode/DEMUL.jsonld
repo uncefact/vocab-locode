@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMUL",
             "rdf:value": "DEMUL",
+            "@id": "unlcd:DEMUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mühlacker"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Muhlacker"
+                    "@value": "Muhlacker",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

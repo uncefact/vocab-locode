@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMUH",
             "rdf:value": "DEMUH",
+            "@id": "unlcd:DEMUH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mülheim an der Ruhr"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mulheim an der Ruhr"
+                    "@value": "Mulheim an der Ruhr",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.433334",
                 "@type": "xsd:float"

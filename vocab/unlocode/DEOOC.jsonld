@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEOOC",
             "rdf:value": "DEOOC",
+            "@id": "unlcd:DEOOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Broock bei Lübz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Broock bei Lubz"
+                    "@value": "Broock bei Lubz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.466667",
                 "@type": "xsd:float"

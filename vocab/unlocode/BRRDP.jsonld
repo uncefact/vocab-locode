@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRDP",
             "rdf:value": "BRRDP",
+            "@id": "unlcd:BRRDP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribeirão do Pinhal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribeirao do Pinhal"
+                    "@value": "Ribeirao do Pinhal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.4",
                 "@type": "xsd:float"

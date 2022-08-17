@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZVMZ",
             "rdf:value": "CZVMZ",
+            "@id": "unlcd:CZVMZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Valasské Mezirící"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Valasske Mezirici"
+                    "@value": "Valasske Mezirici",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.466667",
                 "@type": "xsd:float"

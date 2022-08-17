@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLLX",
             "rdf:value": "FRLLX",
+            "@id": "unlcd:FRLLX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lussac-les-Châteaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lussac-les-Chateaux"
+                    "@value": "Lussac-les-Chateaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR86"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.4",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSZB",
             "rdf:value": "HUSZB",
+            "@id": "unlcd:HUSZB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Százhalombatta"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Szazhalombatta"
+                    "@value": "Szazhalombatta",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.333332",
                 "@type": "xsd:float"

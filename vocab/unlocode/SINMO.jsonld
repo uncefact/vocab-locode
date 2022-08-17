@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SINMO",
             "rdf:value": "SINMO",
+            "@id": "unlcd:SINMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Novo Mesto"
+                "@value": "Novo Mesto",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SI"
+            },
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

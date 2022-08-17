@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRROO",
             "rdf:value": "FRROO",
+            "@id": "unlcd:FRROO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Orléans Sta/Rouen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Orleans Sta/Rouen"
+                    "@value": "Orleans Sta/Rouen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.433334",
                 "@type": "xsd:float"

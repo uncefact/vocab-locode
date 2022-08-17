@@ -10,22 +10,24 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRTIN",
             "rdf:value": "GRTIN",
+            "@id": "unlcd:GRTIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tínos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tinos"
+                    "@value": "Tinos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "37.533333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZLNS",
             "rdf:value": "CZLNS",
+            "@id": "unlcd:CZLNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ledec nad Sázavou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ledec nad Sazavou"
+                    "@value": "Ledec nad Sazavou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZVY"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.7",
                 "@type": "xsd:float"

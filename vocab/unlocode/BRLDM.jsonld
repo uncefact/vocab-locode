@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLDM",
             "rdf:value": "BRLDM",
+            "@id": "unlcd:BRLDM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Luís Eduardo Magalhães"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Luis Eduardo Magalhaes"
+                    "@value": "Luis Eduardo Magalhaes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.066667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRNRS",
             "rdf:value": "GRNRS",
+            "@id": "unlcd:GRNRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Néa Raidhestós"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nea Raidhestos"
+                    "@value": "Nea Raidhestos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR54"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.533333",
                 "@type": "xsd:float"

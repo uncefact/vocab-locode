@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTFDL",
             "rdf:value": "PTFDL",
+            "@id": "unlcd:PTFDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Figueira de Lorvão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Figueira de Lorvao"
+                    "@value": "Figueira de Lorvao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT06"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "40.283333",
                 "@type": "xsd:float"

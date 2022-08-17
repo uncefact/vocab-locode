@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRGDM",
             "rdf:value": "BRGDM",
+            "@id": "unlcd:BRGDM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Guarani das Missões"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Guarani das Missoes"
+                    "@value": "Guarani das Missoes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.133333",
                 "@type": "xsd:float"

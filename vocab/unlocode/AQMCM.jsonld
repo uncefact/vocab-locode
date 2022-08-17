@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AQMCM",
             "rdf:value": "AQMCM",
+            "@id": "unlcd:AQMCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "McMurdo"
+                "@value": "McMurdo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "AQ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AQ"
+            },
             "geo:lat": {
                 "@value": "-77.833336",
                 "@type": "xsd:float"

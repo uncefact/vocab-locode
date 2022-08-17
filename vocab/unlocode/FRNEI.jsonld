@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNEI",
             "rdf:value": "FRNEI",
+            "@id": "unlcd:FRNEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neuville-lès-Dieppe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neuville-les-Dieppe"
+                    "@value": "Neuville-les-Dieppe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.916668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMSI",
             "rdf:value": "FRMSI",
+            "@id": "unlcd:FRMSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Méry-sur-Oise"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mery-sur-Oise"
+                    "@value": "Mery-sur-Oise",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR95"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.066666",
                 "@type": "xsd:float"

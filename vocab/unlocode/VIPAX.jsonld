@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VIPAX",
             "rdf:value": "VIPAX",
+            "@id": "unlcd:VIPAX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Alucroix"
+                "@value": "Port Alucroix",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "VI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VI"
+            },
             "geo:lat": {
                 "@value": "17.7",
                 "@type": "xsd:float"

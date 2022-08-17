@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRKPL",
             "rdf:value": "FRKPL",
+            "@id": "unlcd:FRKPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-Lidon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-Lidon"
+                    "@value": "Saint-Andre-de-Lidon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.6",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDPL",
             "rdf:value": "CZDPL",
+            "@id": "unlcd:CZDPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Podluzí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Podluzi"
+                    "@value": "Dolni Podluzi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZUS"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.883335",
                 "@type": "xsd:float"

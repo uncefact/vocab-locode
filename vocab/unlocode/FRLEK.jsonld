@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLEK",
             "rdf:value": "FRLEK",
+            "@id": "unlcd:FRLEK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Nouvion-en-Thiérache"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Nouvion-en-Thierache"
+                    "@value": "Le Nouvion-en-Thierache",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.0",
                 "@type": "xsd:float"

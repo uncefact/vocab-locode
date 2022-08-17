@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BGLMC",
             "rdf:value": "BGLMC",
+            "@id": "unlcd:BGLMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lyubimets"
+                "@value": "Lyubimets",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BG"
+            },
             "geo:lat": {
                 "@value": "41.85",
                 "@type": "xsd:float"

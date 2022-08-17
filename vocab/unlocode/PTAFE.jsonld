@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTAFE",
             "rdf:value": "PTAFE",
+            "@id": "unlcd:PTAFE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alfândega da Fé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alfandega da Fe"
+                    "@value": "Alfandega da Fe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT04"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.333332",
                 "@type": "xsd:float"

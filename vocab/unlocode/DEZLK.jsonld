@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZLK",
             "rdf:value": "DEZLK",
+            "@id": "unlcd:DEZLK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zell (Bad König)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zell (Bad Konig)"
+                    "@value": "Zell (Bad Konig)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.75",
                 "@type": "xsd:float"

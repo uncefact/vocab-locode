@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSMC",
             "rdf:value": "GTSMC",
+            "@id": "unlcd:GTSMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa María Cauqué"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Maria Cauque"
+                    "@value": "Santa Maria Cauque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT03"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.633333",
                 "@type": "xsd:float"

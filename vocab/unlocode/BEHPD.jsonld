@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEHPD",
             "rdf:value": "BEHPD",
+            "@id": "unlcd:BEHPD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hastière-par-delà"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hastiere-par-dela"
+                    "@value": "Hastiere-par-dela",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWNA"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.216667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESIGN",
             "rdf:value": "ESIGN",
+            "@id": "unlcd:ESIGN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Arenas de Iguña"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Arenas de Iguna"
+                    "@value": "Arenas de Iguna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESS"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "43.183334",
                 "@type": "xsd:float"

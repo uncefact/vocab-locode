@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MUPMA",
             "rdf:value": "MUPMA",
+            "@id": "unlcd:MUPMA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Mathurin"
+                "@value": "Port Mathurin",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "MU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MU"
+            },
             "geo:lat": {
                 "@value": "-19.683332",
                 "@type": "xsd:float"

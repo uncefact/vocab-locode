@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NORAD",
             "rdf:value": "NORAD",
+            "@id": "unlcd:NORAD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Råde"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rade"
+                    "@value": "Rade",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO01"
             },
-            "unlcdc:countryCode": "NO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            }
         }
     ]
 }

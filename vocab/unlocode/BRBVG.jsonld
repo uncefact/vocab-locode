@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBVG",
             "rdf:value": "BRBVG",
+            "@id": "unlcd:BRBVG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bela Vista de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bela Vista de Goias"
+                    "@value": "Bela Vista de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.966667",
                 "@type": "xsd:float"

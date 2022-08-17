@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SIVAS",
             "rdf:value": "SIVAS",
+            "@id": "unlcd:SIVAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Vas"
+                "@value": "Vas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "SI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SI"
+            },
             "geo:lat": {
                 "@value": "45.466667",
                 "@type": "xsd:float"

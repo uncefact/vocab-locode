@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJOM",
             "rdf:value": "BRJOM",
+            "@id": "unlcd:BRJOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "José Gonçalves de Minas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jose Goncalves de Minas"
+                    "@value": "Jose Goncalves de Minas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.9",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJOW",
             "rdf:value": "BRJOW",
+            "@id": "unlcd:BRJOW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João do Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao do Oeste"
+                    "@value": "Sao Joao do Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-27.083334",
                 "@type": "xsd:float"

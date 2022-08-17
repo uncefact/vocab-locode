@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LVAUC",
             "rdf:value": "LVAUC",
+            "@id": "unlcd:LVAUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Auce"
+                "@value": "Auce",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LV010"
             },
-            "unlcdc:countryCode": "LV",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LV"
+            },
             "geo:lat": {
                 "@value": "56.466667",
                 "@type": "xsd:float"

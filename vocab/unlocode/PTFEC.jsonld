@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTFEC",
             "rdf:value": "PTFEC",
+            "@id": "unlcd:PTFEC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Freixo de Espada à Cinta"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Freixo de Espada a Cinta"
+                    "@value": "Freixo de Espada a Cinta",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT04"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.083332",
                 "@type": "xsd:float"

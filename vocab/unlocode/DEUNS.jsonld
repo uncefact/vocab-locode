@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUNS",
             "rdf:value": "DEUNS",
+            "@id": "unlcd:DEUNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grünberg (Rudelzhausen)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grunberg (Rudelzhausen)"
+                    "@value": "Grunberg (Rudelzhausen)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.583332",
                 "@type": "xsd:float"

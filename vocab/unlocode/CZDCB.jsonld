@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDCB",
             "rdf:value": "CZDCB",
+            "@id": "unlcd:CZDCB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Decín"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Decin"
+                    "@value": "Decin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.783333",
                 "@type": "xsd:float"

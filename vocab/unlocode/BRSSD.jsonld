@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSSD",
             "rdf:value": "BRSSD",
+            "@id": "unlcd:BRSSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José da Coroa Grande"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose da Coroa Grande"
+                    "@value": "Sao Jose da Coroa Grande",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.883333",
                 "@type": "xsd:float"

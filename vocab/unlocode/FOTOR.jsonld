@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FOTOR",
             "rdf:value": "FOTOR",
+            "@id": "unlcd:FOTOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tórshavn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Torshavn"
+                    "@value": "Torshavn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "FO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FO"
+            },
             "geo:lat": {
                 "@value": "62.166668",
                 "@type": "xsd:float"

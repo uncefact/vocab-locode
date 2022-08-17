@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRULT",
             "rdf:value": "FRULT",
+            "@id": "unlcd:FRULT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sault-lès-Rethel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sault-les-Rethel"
+                    "@value": "Sault-les-Rethel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR08"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.5",
                 "@type": "xsd:float"

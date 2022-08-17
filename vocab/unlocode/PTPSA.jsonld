@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTPSA",
             "rdf:value": "PTPSA",
+            "@id": "unlcd:PTPSA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Póvoa de Santo Adrião"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Povoa de Santo Adriao"
+                    "@value": "Povoa de Santo Adriao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT11"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "38.8",
                 "@type": "xsd:float"

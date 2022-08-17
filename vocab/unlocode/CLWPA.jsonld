@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLWPA",
             "rdf:value": "CLWPA",
+            "@id": "unlcd:CLWPA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto Aisén"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto Aisen"
+                    "@value": "Puerto Aisen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAI"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-45.383335",
                 "@type": "xsd:float"

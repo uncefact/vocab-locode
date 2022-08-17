@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUCCC",
             "rdf:value": "HUCCC",
+            "@id": "unlcd:HUCCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tiszaszentmárton"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tiszaszentmarton"
+                    "@value": "Tiszaszentmarton",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUSZ"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.383335",
                 "@type": "xsd:float"

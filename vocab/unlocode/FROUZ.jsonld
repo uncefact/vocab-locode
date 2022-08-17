@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROUZ",
             "rdf:value": "FROUZ",
+            "@id": "unlcd:FROUZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ouzouer-le-Marché"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ouzouer-le-Marche"
+                    "@value": "Ouzouer-le-Marche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR41"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.916668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECCHG",
             "rdf:value": "ECCHG",
+            "@id": "unlcd:ECCHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chongón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chongon"
+                    "@value": "Chongon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ECG"
             },
-            "unlcdc:countryCode": "EC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            },
             "geo:lat": {
                 "@value": "-2.2333333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EERLS",
             "rdf:value": "EERLS",
+            "@id": "unlcd:EERLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ristna Lõunasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ristna Lounasadam"
+                    "@value": "Ristna Lounasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE39"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.916668",
                 "@type": "xsd:float"

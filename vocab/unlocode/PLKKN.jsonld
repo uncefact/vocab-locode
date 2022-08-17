@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLKKN",
             "rdf:value": "PLKKN",
+            "@id": "unlcd:PLKKN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Krzesk Królowa Niwa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Krzesk Krolowa Niwa"
+                    "@value": "Krzesk Krolowa Niwa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL14"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "52.066666",
                 "@type": "xsd:float"

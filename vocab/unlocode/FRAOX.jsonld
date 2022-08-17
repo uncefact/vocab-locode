@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAOX",
             "rdf:value": "FRAOX",
+            "@id": "unlcd:FRAOX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montagny-lès-Buxy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montagny-les-Buxy"
+                    "@value": "Montagny-les-Buxy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.7",
                 "@type": "xsd:float"

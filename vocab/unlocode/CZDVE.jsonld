@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDVE",
             "rdf:value": "CZDVE",
+            "@id": "unlcd:CZDVE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Vestonice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Vestonice"
+                    "@value": "Dolni Vestonice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.883335",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZVMO",
             "rdf:value": "CZVMO",
+            "@id": "unlcd:CZVMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vysoké Myto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vysoke Myto"
+                    "@value": "Vysoke Myto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.95",
                 "@type": "xsd:float"

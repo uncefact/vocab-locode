@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BSNAS",
             "rdf:value": "BSNAS",
+            "@id": "unlcd:BSNAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nassau"
+                "@value": "Nassau",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "BS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BS"
+            },
             "geo:lat": {
                 "@value": "25.083334",
                 "@type": "xsd:float"

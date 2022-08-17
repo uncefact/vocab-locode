@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESA9",
             "rdf:value": "DESA9",
+            "@id": "unlcd:DESA9",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Stötten Am Auerberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stotten Am Auerberg"
+                    "@value": "Stotten Am Auerberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.733334",
                 "@type": "xsd:float"

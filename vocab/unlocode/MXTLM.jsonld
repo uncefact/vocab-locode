@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTLM",
             "rdf:value": "MXTLM",
+            "@id": "unlcd:MXTLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tlacotepec de Mejía"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tlacotepec de Mejia"
+                    "@value": "Tlacotepec de Mejia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXVER"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.183332",
                 "@type": "xsd:float"

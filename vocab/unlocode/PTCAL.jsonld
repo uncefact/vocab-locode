@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTCAL",
             "rdf:value": "PTCAL",
+            "@id": "unlcd:PTCAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Calheta, Island São Jorge"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Calheta, Island Sao Jorge"
+                    "@value": "Calheta, Island Sao Jorge",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT20"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "38.6",
                 "@type": "xsd:float"

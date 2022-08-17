@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSSK",
             "rdf:value": "FRSSK",
+            "@id": "unlcd:FRSSK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Sébastien-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Sebastien-sur-Loire"
+                    "@value": "Saint-Sebastien-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.2",
                 "@type": "xsd:float"

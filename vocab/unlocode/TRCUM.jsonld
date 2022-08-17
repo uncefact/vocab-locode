@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRCUM",
             "rdf:value": "TRCUM",
+            "@id": "unlcd:TRCUM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Çaycuma"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caycuma"
+                    "@value": "Caycuma",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR67"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "41.416668",
                 "@type": "xsd:float"

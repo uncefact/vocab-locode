@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:THSAM",
             "rdf:value": "THSAM",
+            "@id": "unlcd:THSAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Samphanthawong"
+                "@value": "Samphanthawong",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TH"
+            },
             "geo:lat": {
                 "@value": "13.733334",
                 "@type": "xsd:float"

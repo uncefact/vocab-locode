@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMKA",
             "rdf:value": "DEMKA",
+            "@id": "unlcd:DEMKA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mülheim-Kärlich"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mulheim-Karlich"
+                    "@value": "Mulheim-Karlich",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.383335",
                 "@type": "xsd:float"

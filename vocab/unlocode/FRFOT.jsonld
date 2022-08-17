@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFOT",
             "rdf:value": "FRFOT",
+            "@id": "unlcd:FRFOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontenay-Trésigny"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontenay-Tresigny"
+                    "@value": "Fontenay-Tresigny",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.7",
                 "@type": "xsd:float"

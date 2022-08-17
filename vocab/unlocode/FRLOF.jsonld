@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLOF",
             "rdf:value": "FRLOF",
+            "@id": "unlcd:FRLOF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lamothe-Fénelon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lamothe-Fenelon"
+                    "@value": "Lamothe-Fenelon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR46"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.833332",
                 "@type": "xsd:float"

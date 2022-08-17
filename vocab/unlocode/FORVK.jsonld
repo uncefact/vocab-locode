@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FORVK",
             "rdf:value": "FORVK",
+            "@id": "unlcd:FORVK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Runavík"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Runavik"
+                    "@value": "Runavik",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "FO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FO"
+            },
             "geo:lat": {
                 "@value": "62.116665",
                 "@type": "xsd:float"

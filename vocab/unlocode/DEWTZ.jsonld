@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEWTZ",
             "rdf:value": "DEWTZ",
+            "@id": "unlcd:DEWTZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Wernberg-Köblitz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Wernberg-Koblitz"
+                    "@value": "Wernberg-Koblitz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.533333",
                 "@type": "xsd:float"

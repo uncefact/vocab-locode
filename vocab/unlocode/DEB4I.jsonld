@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEB4I",
             "rdf:value": "DEB4I",
+            "@id": "unlcd:DEB4I",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Beilstein/Württemberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beilstein/Wurttemberg"
+                    "@value": "Beilstein/Wurttemberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.033333",
                 "@type": "xsd:float"

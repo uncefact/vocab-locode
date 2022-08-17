@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHWAB",
             "rdf:value": "CHWAB",
+            "@id": "unlcd:CHWAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Wangen-Brüttisellen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Wangen-Bruttisellen"
+                    "@value": "Wangen-Bruttisellen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHZH"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "47.416668",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUJUC",
             "rdf:value": "CUJUC",
+            "@id": "unlcd:CUJUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Júcaro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jucaro"
+                    "@value": "Jucaro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            },
             "geo:lat": {
                 "@value": "21.633333",
                 "@type": "xsd:float"

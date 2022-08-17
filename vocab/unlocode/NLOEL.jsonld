@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLOEL",
             "rdf:value": "NLOEL",
+            "@id": "unlcd:NLOEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ohé en Laak"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ohe en Laak"
+                    "@value": "Ohe en Laak",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLLI"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "51.116665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRG2P",
             "rdf:value": "FRG2P",
+            "@id": "unlcd:FRG2P",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Germain-Beaupré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Germain-Beaupre"
+                    "@value": "Saint-Germain-Beaupre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR23"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.316666",
                 "@type": "xsd:float"

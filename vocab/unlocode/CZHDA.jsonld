@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZHDA",
             "rdf:value": "CZHDA",
+            "@id": "unlcd:CZHDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Horní Dvoriste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Horni Dvoriste"
+                    "@value": "Horni Dvoriste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.6",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKAHJ",
             "rdf:value": "DKAHJ",
+            "@id": "unlcd:DKAHJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Åbyhøj/Århus"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Abyhoj/Arhus"
+                    "@value": "Abyhoj/Arhus",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "56.133335",
                 "@type": "xsd:float"

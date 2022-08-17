@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSGA",
             "rdf:value": "FRSGA",
+            "@id": "unlcd:FRSGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Genest-d'Ambière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Genest-d'Ambiere"
+                    "@value": "Saint-Genest-d'Ambiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR86"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.816666",
                 "@type": "xsd:float"

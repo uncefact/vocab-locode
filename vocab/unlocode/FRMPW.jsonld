@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMPW",
             "rdf:value": "FRMPW",
+            "@id": "unlcd:FRMPW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montagny-près-Louhans"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montagny-pres-Louhans"
+                    "@value": "Montagny-pres-Louhans",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.65",
                 "@type": "xsd:float"

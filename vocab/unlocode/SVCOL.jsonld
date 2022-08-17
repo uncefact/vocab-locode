@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SVCOL",
             "rdf:value": "SVCOL",
+            "@id": "unlcd:SVCOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Colón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Colon"
+                    "@value": "Colon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SVLI"
             },
-            "unlcdc:countryCode": "SV",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SV"
+            },
             "geo:lat": {
                 "@value": "13.716666",
                 "@type": "xsd:float"

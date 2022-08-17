@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVCD",
             "rdf:value": "FRVCD",
+            "@id": "unlcd:FRVCD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ventenac-Cabardès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ventenac-Cabardes"
+                    "@value": "Ventenac-Cabardes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR11"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.266666",
                 "@type": "xsd:float"

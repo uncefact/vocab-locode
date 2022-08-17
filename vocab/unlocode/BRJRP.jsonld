@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJRP",
             "rdf:value": "BRJRP",
+            "@id": "unlcd:BRJRP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José do Rio Pardo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose do Rio Pardo"
+                    "@value": "Sao Jose do Rio Pardo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.583334",
                 "@type": "xsd:float"

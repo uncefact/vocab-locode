@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RSLAC",
             "rdf:value": "RSLAC",
+            "@id": "unlcd:RSLAC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lacarak"
+                "@value": "Lacarak",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RS07"
             },
-            "unlcdc:countryCode": "RS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RS"
+            },
             "geo:lat": {
                 "@value": "45.0",
                 "@type": "xsd:float"

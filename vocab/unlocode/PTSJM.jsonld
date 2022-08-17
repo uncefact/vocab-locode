@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSJM",
             "rdf:value": "PTSJM",
+            "@id": "unlcd:PTSJM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João da Madeira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao da Madeira"
+                    "@value": "Sao Joao da Madeira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT01"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "40.9",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBURT",
             "rdf:value": "GBURT",
+            "@id": "unlcd:GBURT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sturton by Stow"
+                "@value": "Sturton by Stow",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBLIN"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "53.3",
                 "@type": "xsd:float"

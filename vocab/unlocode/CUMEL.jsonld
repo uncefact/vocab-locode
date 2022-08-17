@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUMEL",
             "rdf:value": "CUMEL",
+            "@id": "unlcd:CUMEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Media Luna"
+                "@value": "Media Luna",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            },
             "geo:lat": {
                 "@value": "20.15",
                 "@type": "xsd:float"

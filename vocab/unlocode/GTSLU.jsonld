@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSLU",
             "rdf:value": "GTSLU",
+            "@id": "unlcd:GTSLU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Lucía Milpas Altas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Lucia Milpas Altas"
+                    "@value": "Santa Lucia Milpas Altas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT03"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.566667",
                 "@type": "xsd:float"

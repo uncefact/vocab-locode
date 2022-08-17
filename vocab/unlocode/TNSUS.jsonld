@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TNSUS",
             "rdf:value": "TNSUS",
+            "@id": "unlcd:TNSUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sousse"
+                "@value": "Sousse",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "TN"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TN"
+            }
         }
     ]
 }

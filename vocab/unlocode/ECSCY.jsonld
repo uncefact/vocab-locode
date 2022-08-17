@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECSCY",
             "rdf:value": "ECSCY",
+            "@id": "unlcd:ECSCY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Cristóbal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Cristobal"
+                    "@value": "San Cristobal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ECW"
             },
-            "unlcdc:countryCode": "EC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            },
             "geo:lat": {
                 "@value": "-0.9",
                 "@type": "xsd:float"

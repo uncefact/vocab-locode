@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREFR",
             "rdf:value": "FREFR",
+            "@id": "unlcd:FREFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-de-Gadagne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-de-Gadagne"
+                    "@value": "Chateauneuf-de-Gadagne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR84"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.933334",
                 "@type": "xsd:float"

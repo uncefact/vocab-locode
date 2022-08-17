@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NZPON",
             "rdf:value": "NZPON",
+            "@id": "unlcd:NZPON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Nelson"
+                "@value": "Port Nelson",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "NZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NZ"
+            },
             "geo:lat": {
                 "@value": "-41.266666",
                 "@type": "xsd:float"

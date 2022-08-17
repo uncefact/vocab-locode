@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBMME",
             "rdf:value": "GBMME",
+            "@id": "unlcd:GBMME",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Teesside"
+                "@value": "Teesside",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBMDB"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "54.566666",
                 "@type": "xsd:float"

@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLMID",
             "rdf:value": "NLMID",
+            "@id": "unlcd:NLMID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Middelburg"
+                "@value": "Middelburg",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -26,7 +26,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

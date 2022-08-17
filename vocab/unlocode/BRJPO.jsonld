@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJPO",
             "rdf:value": "BRJPO",
+            "@id": "unlcd:BRJPO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João do Paraíso"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao do Paraiso"
+                    "@value": "Sao Joao do Paraiso",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.45",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCFA",
             "rdf:value": "BRCFA",
+            "@id": "unlcd:BRCFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Canindé de São Francisco"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caninde de Sao Francisco"
+                    "@value": "Caninde de Sao Francisco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.65",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHBTL",
             "rdf:value": "CHBTL",
+            "@id": "unlcd:CHBTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brüttisellen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bruttisellen"
+                    "@value": "Bruttisellen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHZH"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "47.416668",
                 "@type": "xsd:float"

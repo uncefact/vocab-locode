@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRIB",
             "rdf:value": "FRRIB",
+            "@id": "unlcd:FRRIB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribécourt-Dreslincourt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribecourt-Dreslincourt"
+                    "@value": "Ribecourt-Dreslincourt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.516666",
                 "@type": "xsd:float"

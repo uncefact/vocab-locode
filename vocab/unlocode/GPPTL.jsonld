@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GPPTL",
             "rdf:value": "GPPTL",
+            "@id": "unlcd:GPPTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port-Louis"
+                "@value": "Port-Louis",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "GP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GP"
+            },
             "geo:lat": {
                 "@value": "16.416666",
                 "@type": "xsd:float"

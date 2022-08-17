@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSTQ",
             "rdf:value": "BRSTQ",
+            "@id": "unlcd:BRSTQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Tomás de Aquino"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Tomas de Aquino"
+                    "@value": "Sao Tomas de Aquino",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.783333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSMT",
             "rdf:value": "FRSMT",
+            "@id": "unlcd:FRSMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Mathieu-de-Tréviers"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Mathieu-de-Treviers"
+                    "@value": "Saint-Mathieu-de-Treviers",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.766666",
                 "@type": "xsd:float"

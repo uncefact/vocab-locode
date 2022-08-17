@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE4AX",
             "rdf:value": "DE4AX",
+            "@id": "unlcd:DE4AX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Asbach (Hunsrück)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Asbach (Hunsruck)"
+                    "@value": "Asbach (Hunsruck)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.816666",
                 "@type": "xsd:float"

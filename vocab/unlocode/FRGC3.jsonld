@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGC3",
             "rdf:value": "FRGC3",
+            "@id": "unlcd:FRGC3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grand'Combe-Châteleu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grand'Combe-Chateleu"
+                    "@value": "Grand'Combe-Chateleu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.016666",
                 "@type": "xsd:float"

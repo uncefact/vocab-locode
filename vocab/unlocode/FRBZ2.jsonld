@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBZ2",
             "rdf:value": "FRBZ2",
+            "@id": "unlcd:FRBZ2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bézu-le-Guéry"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bezu-le-Guery"
+                    "@value": "Bezu-le-Guery",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.016666",
                 "@type": "xsd:float"

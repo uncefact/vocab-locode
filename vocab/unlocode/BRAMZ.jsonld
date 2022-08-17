@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAMZ",
             "rdf:value": "BRAMZ",
+            "@id": "unlcd:BRAMZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio das Missões"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio das Missoes"
+                    "@value": "Santo Antonio das Missoes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.5",
                 "@type": "xsd:float"

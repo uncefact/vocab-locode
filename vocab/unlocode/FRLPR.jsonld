@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLPR",
             "rdf:value": "FRLPR",
+            "@id": "unlcd:FRLPR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Puy-Sainte-Réparade"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Puy-Sainte-Reparade"
+                    "@value": "Le Puy-Sainte-Reparade",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR13"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.666668",
                 "@type": "xsd:float"

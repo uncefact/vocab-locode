@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESOG",
             "rdf:value": "SESOG",
+            "@id": "unlcd:SESOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Söderköping"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Soderkoping"
+                    "@value": "Soderkoping",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEE"
             },
-            "unlcdc:countryCode": "SE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            }
         }
     ]
 }

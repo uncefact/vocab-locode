@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBUY",
             "rdf:value": "FRBUY",
+            "@id": "unlcd:FRBUY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bruay-la-Buissière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bruay-la-Buissiere"
+                    "@value": "Bruay-la-Buissiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.483334",
                 "@type": "xsd:float"

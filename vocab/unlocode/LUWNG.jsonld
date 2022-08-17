@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUWNG",
             "rdf:value": "LUWNG",
+            "@id": "unlcd:LUWNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Wincrange (Wëntger)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Wincrange (Wentger)"
+                    "@value": "Wincrange (Wentger)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUCL"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "50.05",
                 "@type": "xsd:float"

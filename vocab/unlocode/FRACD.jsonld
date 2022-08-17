@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRACD",
             "rdf:value": "FRACD",
+            "@id": "unlcd:FRACD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lavans-lès-Saint-Claude"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lavans-les-Saint-Claude"
+                    "@value": "Lavans-les-Saint-Claude",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR39"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.383335",
                 "@type": "xsd:float"

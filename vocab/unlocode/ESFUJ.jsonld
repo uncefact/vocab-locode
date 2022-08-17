@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFUJ",
             "rdf:value": "ESFUJ",
+            "@id": "unlcd:ESFUJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuentidueña de Tajo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuentiduena de Tajo"
+                    "@value": "Fuentiduena de Tajo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESM"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.116665",
                 "@type": "xsd:float"

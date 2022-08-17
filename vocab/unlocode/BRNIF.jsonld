@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNIF",
             "rdf:value": "BRNIF",
+            "@id": "unlcd:BRNIF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cidade de Niterói FPSO"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cidade de Niteroi FPSO"
+                    "@value": "Cidade de Niteroi FPSO",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.483334",
                 "@type": "xsd:float"

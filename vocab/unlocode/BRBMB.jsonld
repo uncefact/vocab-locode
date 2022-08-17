@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBMB",
             "rdf:value": "BRBMB",
+            "@id": "unlcd:BRBMB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brotas de Macaúbas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brotas de Macaubas"
+                    "@value": "Brotas de Macaubas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.0",
                 "@type": "xsd:float"

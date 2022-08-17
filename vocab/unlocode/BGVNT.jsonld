@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BGVNT",
             "rdf:value": "BGVNT",
+            "@id": "unlcd:BGVNT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Venets"
+                "@value": "Venets",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BG"
+            },
             "geo:lat": {
                 "@value": "42.633335",
                 "@type": "xsd:float"

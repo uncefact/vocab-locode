@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTSA",
             "rdf:value": "FRTSA",
+            "@id": "unlcd:FRTSA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tarascon-sur-Ariège"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tarascon-sur-Ariege"
+                    "@value": "Tarascon-sur-Ariege",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR09"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "42.85",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASAS",
             "rdf:value": "CASAS",
+            "@id": "unlcd:CASAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Anne-des-Chênes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Anne-des-Chenes"
+                    "@value": "Sainte-Anne-des-Chenes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAMB"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "49.666668",
                 "@type": "xsd:float"

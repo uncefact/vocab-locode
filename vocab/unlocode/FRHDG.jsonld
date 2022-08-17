@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHDG",
             "rdf:value": "FRHDG",
+            "@id": "unlcd:FRHDG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Hôpital-du-Grosbois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Hopital-du-Grosbois"
+                    "@value": "L'Hopital-du-Grosbois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.166668",
                 "@type": "xsd:float"

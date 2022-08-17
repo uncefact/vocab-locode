@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMT4",
             "rdf:value": "FRMT4",
+            "@id": "unlcd:FRMT4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Monthou-sur-Bièvre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monthou-sur-Bievre"
+                    "@value": "Monthou-sur-Bievre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR41"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.466667",
                 "@type": "xsd:float"

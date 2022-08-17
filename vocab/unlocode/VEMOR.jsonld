@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VEMOR",
             "rdf:value": "VEMOR",
+            "@id": "unlcd:VEMOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moron"
+                    "@value": "Moron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VEG"
             },
-            "unlcdc:countryCode": "VE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VE"
+            },
             "geo:lat": {
                 "@value": "10.483334",
                 "@type": "xsd:float"

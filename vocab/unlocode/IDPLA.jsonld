@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IDPLA",
             "rdf:value": "IDPLA",
+            "@id": "unlcd:IDPLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Plaju, Sumatra"
+                "@value": "Plaju, Sumatra",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ID",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ID"
+            },
             "geo:lat": {
                 "@value": "-2.9833333",
                 "@type": "xsd:float"

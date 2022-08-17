@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUAKT",
             "rdf:value": "HUAKT",
+            "@id": "unlcd:HUAKT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Andornaktálya"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Andornaktalya"
+                    "@value": "Andornaktalya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

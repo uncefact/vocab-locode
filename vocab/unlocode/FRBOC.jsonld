@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBOC",
             "rdf:value": "FRBOC",
+            "@id": "unlcd:FRBOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boissy-le-Châtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boissy-le-Chatel"
+                    "@value": "Boissy-le-Chatel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.816666",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITRNO",
             "rdf:value": "ITRNO",
+            "@id": "unlcd:ITRNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Ronago"
+                "@value": "Ronago",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.833332",
                 "@type": "xsd:float"

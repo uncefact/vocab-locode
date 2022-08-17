@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESMA",
             "rdf:value": "SESMA",
+            "@id": "unlcd:SESMA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Smålandsstenar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Smalandsstenar"
+                    "@value": "Smalandsstenar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEF"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "57.166668",
                 "@type": "xsd:float"

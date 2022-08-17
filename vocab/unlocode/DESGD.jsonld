@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESGD",
             "rdf:value": "DESGD",
+            "@id": "unlcd:DESGD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schwäbisch Gmünd"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schwabisch Gmund"
+                    "@value": "Schwabisch Gmund",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

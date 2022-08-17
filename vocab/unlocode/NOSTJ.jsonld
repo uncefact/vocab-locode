@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSTJ",
             "rdf:value": "NOSTJ",
+            "@id": "unlcd:NOSTJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Stjørdal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stjordal"
+                    "@value": "Stjordal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO17"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "63.466667",
                 "@type": "xsd:float"

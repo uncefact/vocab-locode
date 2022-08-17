@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRICN",
             "rdf:value": "FRICN",
+            "@id": "unlcd:FRICN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Brévin-l'Océan"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Brevin-l'Ocean"
+                    "@value": "Saint-Brevin-l'Ocean",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.216667",
                 "@type": "xsd:float"

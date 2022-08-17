@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ILNAZ",
             "rdf:value": "ILNAZ",
+            "@id": "unlcd:ILNAZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nazareth"
+                "@value": "Nazareth",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "IL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IL"
+            },
             "geo:lat": {
                 "@value": "32.7",
                 "@type": "xsd:float"

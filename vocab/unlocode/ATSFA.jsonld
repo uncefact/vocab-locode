@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATSFA",
             "rdf:value": "ATSFA",
+            "@id": "unlcd:ATSFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schörfling am Attersee"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schorfling am Attersee"
+                    "@value": "Schorfling am Attersee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.933334",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYRAI",
             "rdf:value": "MYRAI",
+            "@id": "unlcd:MYRAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Perai"
+                "@value": "Perai",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "MY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            },
             "geo:lat": {
                 "@value": "5.383333",
                 "@type": "xsd:float"

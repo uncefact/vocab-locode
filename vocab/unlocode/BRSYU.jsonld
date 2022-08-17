@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSYU",
             "rdf:value": "BRSYU",
+            "@id": "unlcd:BRSYU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Serranópolis do Iguaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Serranopolis do Iguacu"
+                    "@value": "Serranopolis do Iguacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.366667",
                 "@type": "xsd:float"

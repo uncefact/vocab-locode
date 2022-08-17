@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EELUI",
             "rdf:value": "EELUI",
+            "@id": "unlcd:EELUI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Luige Väikesadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Luige Vaikesadam"
+                    "@value": "Luige Vaikesadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE56"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.866665",
                 "@type": "xsd:float"

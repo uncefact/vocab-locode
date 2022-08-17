@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREPR",
             "rdf:value": "FREPR",
+            "@id": "unlcd:FREPR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Martin-sur-le-Pré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Martin-sur-le-Pre"
+                    "@value": "Saint-Martin-sur-le-Pre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.983334",
                 "@type": "xsd:float"

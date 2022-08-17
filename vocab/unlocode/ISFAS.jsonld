@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISFAS",
             "rdf:value": "ISFAS",
+            "@id": "unlcd:ISFAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Faskrudsfjørdur"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Faskrudsfjordur"
+                    "@value": "Faskrudsfjordur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "IS"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            }
         }
     ]
 }

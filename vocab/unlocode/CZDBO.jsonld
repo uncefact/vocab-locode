@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDBO",
             "rdf:value": "CZDBO",
+            "@id": "unlcd:CZDBO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Bojanovice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Bojanovice"
+                    "@value": "Dolni Bojanovice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.85",
                 "@type": "xsd:float"

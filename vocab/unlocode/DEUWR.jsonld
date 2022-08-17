@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUWR",
             "rdf:value": "DEUWR",
+            "@id": "unlcd:DEUWR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bruchweiler-Bärenbach"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bruchweiler-Barenbach"
+                    "@value": "Bruchweiler-Barenbach",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.116665",
                 "@type": "xsd:float"

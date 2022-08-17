@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRXCC",
             "rdf:value": "FRXCC",
+            "@id": "unlcd:FRXCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cravant-les-Côteaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cravant-les-Coteaux"
+                    "@value": "Cravant-les-Coteaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.15",
                 "@type": "xsd:float"

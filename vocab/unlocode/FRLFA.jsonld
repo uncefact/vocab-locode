@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLFA",
             "rdf:value": "FRLFA",
+            "@id": "unlcd:FRLFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Ferté-Saint-Aubin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Ferte-Saint-Aubin"
+                    "@value": "La Ferte-Saint-Aubin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.716667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPP3",
             "rdf:value": "FRPP3",
+            "@id": "unlcd:FRPP3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Plessis-Pâté"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Plessis-Pate"
+                    "@value": "Le Plessis-Pate",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR91"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.616665",
                 "@type": "xsd:float"

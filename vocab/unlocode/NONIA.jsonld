@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NONIA",
             "rdf:value": "NONIA",
+            "@id": "unlcd:NONIA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hammarvika - Frøya"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hammarvika - Froya"
+                    "@value": "Hammarvika - Froya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO16"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "63.683334",
                 "@type": "xsd:float"

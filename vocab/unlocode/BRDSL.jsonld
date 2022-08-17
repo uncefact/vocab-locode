@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDSL",
             "rdf:value": "BRDSL",
+            "@id": "unlcd:BRDSL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Divino de São Lourenço"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Divino de Sao Lourenco"
+                    "@value": "Divino de Sao Lourenco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.616667",
                 "@type": "xsd:float"

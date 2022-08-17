@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSRN",
             "rdf:value": "BRSRN",
+            "@id": "unlcd:BRSRN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Raimundo Nonato"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Raimundo Nonato"
+                    "@value": "Sao Raimundo Nonato",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.0",
                 "@type": "xsd:float"

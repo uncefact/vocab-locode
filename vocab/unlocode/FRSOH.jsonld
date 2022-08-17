@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSOH",
             "rdf:value": "FRSOH",
+            "@id": "unlcd:FRSOH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Omer-en-Chaussée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Omer-en-Chaussee"
+                    "@value": "Saint-Omer-en-Chaussee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.533333",
                 "@type": "xsd:float"

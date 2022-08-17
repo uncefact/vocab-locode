@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AULEN",
             "rdf:value": "AULEN",
+            "@id": "unlcd:AULEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lakes Entrance"
+                "@value": "Lakes Entrance",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUVIC"
             },
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-37.883335",
                 "@type": "xsd:float"

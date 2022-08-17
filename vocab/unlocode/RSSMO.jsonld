@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RSSMO",
             "rdf:value": "RSSMO",
+            "@id": "unlcd:RSSMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Smederevo"
+                "@value": "Smederevo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RS"
+            },
             "geo:lat": {
                 "@value": "44.65",
                 "@type": "xsd:float"

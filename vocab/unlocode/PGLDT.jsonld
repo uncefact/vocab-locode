@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PGLDT",
             "rdf:value": "PGLDT",
+            "@id": "unlcd:PGLDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Londolovit"
+                "@value": "Londolovit",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PG"
+            },
             "geo:lat": {
                 "@value": "-3.0666666",
                 "@type": "xsd:float"

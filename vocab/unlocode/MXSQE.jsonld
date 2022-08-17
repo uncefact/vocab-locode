@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXSQE",
             "rdf:value": "MXSQE",
+            "@id": "unlcd:MXSQE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santiago de Querétaro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santiago de Queretaro"
+                    "@value": "Santiago de Queretaro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXQUE"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "20.583334",
                 "@type": "xsd:float"

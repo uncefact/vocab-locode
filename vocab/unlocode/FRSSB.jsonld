@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSSB",
             "rdf:value": "FRSSB",
+            "@id": "unlcd:FRSSB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Siméon-de-Bressieux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Simeon-de-Bressieux"
+                    "@value": "Saint-Simeon-de-Bressieux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.333332",
                 "@type": "xsd:float"

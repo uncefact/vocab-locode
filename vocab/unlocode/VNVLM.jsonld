@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNVLM",
             "rdf:value": "VNVLM",
+            "@id": "unlcd:VNVLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Van Lâm"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Van Lam"
+                    "@value": "Van Lam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN22"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "18.683332",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRIO",
             "rdf:value": "BRRIO",
+            "@id": "unlcd:BRRIO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Rio de Janeiro"
+                "@value": "Rio de Janeiro",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -44,7 +44,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.866667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BROAG",
             "rdf:value": "BROAG",
+            "@id": "unlcd:BROAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Olhos-d'Água"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olhos-d'Agua"
+                    "@value": "Olhos-d'Agua",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-17.4",
                 "@type": "xsd:float"

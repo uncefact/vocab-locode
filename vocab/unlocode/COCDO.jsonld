@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COCDO",
             "rdf:value": "COCDO",
+            "@id": "unlcd:COCDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ciénaga de Oro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cienaga de Oro"
+                    "@value": "Cienaga de Oro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COCOR"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "8.866667",
                 "@type": "xsd:float"

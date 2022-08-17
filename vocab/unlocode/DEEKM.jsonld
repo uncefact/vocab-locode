@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEEKM",
             "rdf:value": "DEEKM",
+            "@id": "unlcd:DEEKM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Breslack/Neissemünde"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Breslack/Neissemunde"
+                    "@value": "Breslack/Neissemunde",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.05",
                 "@type": "xsd:float"

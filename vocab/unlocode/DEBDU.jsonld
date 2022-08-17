@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBDU",
             "rdf:value": "DEBDU",
+            "@id": "unlcd:DEBDU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bad Dürkheim"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bad Durkheim"
+                    "@value": "Bad Durkheim",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

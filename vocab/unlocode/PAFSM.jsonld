@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAFSM",
             "rdf:value": "PAFSM",
+            "@id": "unlcd:PAFSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Finca Santa Mónica"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Finca Santa Monica"
+                    "@value": "Finca Santa Monica",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.366667",
                 "@type": "xsd:float"

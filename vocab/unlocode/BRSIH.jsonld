@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSIH",
             "rdf:value": "BRSIH",
+            "@id": "unlcd:BRSIH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Maranhao"
+                    "@value": "Sao Sebastiao do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.083334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESGP",
             "rdf:value": "SESGP",
+            "@id": "unlcd:SESGP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Skogstorp/Vingåker"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Skogstorp/Vingaker"
+                    "@value": "Skogstorp/Vingaker",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SED"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "59.15",
                 "@type": "xsd:float"

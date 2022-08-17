@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOOSL",
             "rdf:value": "NOOSL",
+            "@id": "unlcd:NOOSL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Oslo"
+                "@value": "Oslo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO03"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "59.9",
                 "@type": "xsd:float"

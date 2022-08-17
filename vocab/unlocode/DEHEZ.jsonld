@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEHEZ",
             "rdf:value": "DEHEZ",
+            "@id": "unlcd:DEHEZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Häg-Ehrsberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hag-Ehrsberg"
+                    "@value": "Hag-Ehrsberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.733334",
                 "@type": "xsd:float"

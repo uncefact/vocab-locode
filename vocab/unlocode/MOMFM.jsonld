@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MOMFM",
             "rdf:value": "MOMFM",
+            "@id": "unlcd:MOMFM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Macau"
+                "@value": "Macau",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "MO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MO"
+            },
             "geo:lat": {
                 "@value": "22.2",
                 "@type": "xsd:float"

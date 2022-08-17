@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLVO",
             "rdf:value": "FRLVO",
+            "@id": "unlcd:FRLVO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Voulte-sur-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Voulte-sur-Rhone"
+                    "@value": "La Voulte-sur-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.8",
                 "@type": "xsd:float"

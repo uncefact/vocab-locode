@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRGRU",
             "rdf:value": "BRGRU",
+            "@id": "unlcd:BRGRU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Guarulhos Apt / São Paulo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Guarulhos Apt / Sao Paulo"
+                    "@value": "Guarulhos Apt / Sao Paulo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.433332",
                 "@type": "xsd:float"

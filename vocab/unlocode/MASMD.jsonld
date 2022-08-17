@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MASMD",
             "rdf:value": "MASMD",
+            "@id": "unlcd:MASMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Aït Melloul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ait Melloul"
+                    "@value": "Ait Melloul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MA13"
             },
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "30.333334",
                 "@type": "xsd:float"

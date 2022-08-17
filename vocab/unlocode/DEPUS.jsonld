@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEPUS",
             "rdf:value": "DEPUS",
+            "@id": "unlcd:DEPUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Pausa"
+                "@value": "Pausa",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.566666",
                 "@type": "xsd:float"

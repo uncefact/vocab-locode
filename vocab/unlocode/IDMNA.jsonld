@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IDMNA",
             "rdf:value": "IDMNA",
+            "@id": "unlcd:IDMNA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Melonguanne"
+                "@value": "Melonguanne",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "ID",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ID"
+            },
             "geo:lat": {
                 "@value": "4.0",
                 "@type": "xsd:float"

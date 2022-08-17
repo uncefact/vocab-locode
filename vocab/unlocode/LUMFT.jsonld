@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUMFT",
             "rdf:value": "LUMFT",
+            "@id": "unlcd:LUMFT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Moutfort"
+                "@value": "Moutfort",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.583332",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SOELM",
             "rdf:value": "SOELM",
+            "@id": "unlcd:SOELM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "El Maan"
+                "@value": "El Maan",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SO"
+            },
             "geo:lat": {
                 "@value": "2.1666667",
                 "@type": "xsd:float"

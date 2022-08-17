@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NIDIM",
             "rdf:value": "NIDIM",
+            "@id": "unlcd:NIDIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Diriomo"
+                "@value": "Diriomo",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NIGR"
             },
-            "unlcdc:countryCode": "NI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NI"
+            },
             "geo:lat": {
                 "@value": "11.866667",
                 "@type": "xsd:float"

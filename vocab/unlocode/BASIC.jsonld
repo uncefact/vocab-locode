@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BASIC",
             "rdf:value": "BASIC",
+            "@id": "unlcd:BASIC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Srebrenica"
+                "@value": "Srebrenica",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BASRP"
             },
-            "unlcdc:countryCode": "BA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BA"
+            },
             "geo:lat": {
                 "@value": "44.1",
                 "@type": "xsd:float"

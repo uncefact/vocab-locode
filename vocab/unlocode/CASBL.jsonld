@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASBL",
             "rdf:value": "CASBL",
+            "@id": "unlcd:CASBL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Benoît-Labre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Benoit-Labre"
+                    "@value": "Saint-Benoit-Labre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.066666",
                 "@type": "xsd:float"

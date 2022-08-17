@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CFTOG",
             "rdf:value": "CFTOG",
+            "@id": "unlcd:CFTOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Togo"
+                "@value": "Togo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CF"
+            },
             "geo:lat": {
                 "@value": "5.5",
                 "@type": "xsd:float"

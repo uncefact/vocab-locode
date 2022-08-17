@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXNLN",
             "rdf:value": "MXNLN",
+            "@id": "unlcd:MXNLN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nuevo León"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nuevo Leon"
+                    "@value": "Nuevo Leon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXCHP"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "16.633333",
                 "@type": "xsd:float"

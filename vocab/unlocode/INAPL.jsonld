@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INAPL",
             "rdf:value": "INAPL",
+            "@id": "unlcd:INAPL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Acpl Cfs/Dadri"
+                "@value": "Acpl Cfs/Dadri",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INUP"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "28.566668",
                 "@type": "xsd:float"

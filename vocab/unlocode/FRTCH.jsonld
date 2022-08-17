@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTCH",
             "rdf:value": "FRTCH",
+            "@id": "unlcd:FRTCH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Thoré-la-Rochette"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Thore-la-Rochette"
+                    "@value": "Thore-la-Rochette",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR41"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.783333",
                 "@type": "xsd:float"

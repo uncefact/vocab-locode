@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBRHS",
             "rdf:value": "GBRHS",
+            "@id": "unlcd:GBRHS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rhôs-on-Sea"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rhos-on-Sea"
+                    "@value": "Rhos-on-Sea",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBCWY"
             },
-            "unlcdc:countryCode": "GB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            },
             "geo:lat": {
                 "@value": "53.3",
                 "@type": "xsd:float"

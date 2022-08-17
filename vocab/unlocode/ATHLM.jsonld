@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATHLM",
             "rdf:value": "ATHLM",
+            "@id": "unlcd:ATHLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Haslach an der Mühl"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Haslach an der Muhl"
+                    "@value": "Haslach an der Muhl",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.583332",
                 "@type": "xsd:float"

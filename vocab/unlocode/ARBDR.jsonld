@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARBDR",
             "rdf:value": "ARBDR",
+            "@id": "unlcd:ARBDR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Banda del Río Salí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Banda del Rio Sali"
+                    "@value": "Banda del Rio Sali",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ART"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-26.833334",
                 "@type": "xsd:float"

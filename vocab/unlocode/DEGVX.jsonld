@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEGVX",
             "rdf:value": "DEGVX",
+            "@id": "unlcd:DEGVX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Burgstall bei Tangerhütte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Burgstall bei Tangerhutte"
+                    "@value": "Burgstall bei Tangerhutte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.416668",
                 "@type": "xsd:float"

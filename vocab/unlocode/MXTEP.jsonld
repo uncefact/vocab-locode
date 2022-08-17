@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTEP",
             "rdf:value": "MXTEP",
+            "@id": "unlcd:MXTEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tepatitlán de Morelos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tepatitlan de Morelos"
+                    "@value": "Tepatitlan de Morelos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXJAL"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "20.816668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GNSGD",
             "rdf:value": "GNSGD",
+            "@id": "unlcd:GNSGD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sangarédi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sangaredi"
+                    "@value": "Sangaredi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNBK"
             },
-            "unlcdc:countryCode": "GN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GN"
+            },
             "geo:lat": {
                 "@value": "11.1",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSAJ",
             "rdf:value": "HUSAJ",
+            "@id": "unlcd:HUSAJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sajószentpéter"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sajoszentpeter"
+                    "@value": "Sajoszentpeter",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUBZ"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.216667",
                 "@type": "xsd:float"

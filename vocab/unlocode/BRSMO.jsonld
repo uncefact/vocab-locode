@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSMO",
             "rdf:value": "BRSMO",
+            "@id": "unlcd:BRSMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Oeste"
+                    "@value": "Sao Miguel do Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.716667",
                 "@type": "xsd:float"

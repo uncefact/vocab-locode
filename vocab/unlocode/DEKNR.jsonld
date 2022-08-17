@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEKNR",
             "rdf:value": "DEKNR",
+            "@id": "unlcd:DEKNR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kölln-Reisiek"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kolln-Reisiek"
+                    "@value": "Kolln-Reisiek",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.766666",
                 "@type": "xsd:float"

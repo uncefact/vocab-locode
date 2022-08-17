@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNCKH",
             "rdf:value": "VNCKH",
+            "@id": "unlcd:VNCKH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cam Khê"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cam Khe"
+                    "@value": "Cam Khe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN70"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "21.433332",
                 "@type": "xsd:float"

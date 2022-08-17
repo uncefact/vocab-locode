@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HRBOR",
             "rdf:value": "HRBOR",
+            "@id": "unlcd:HRBOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Borovo"
+                "@value": "Borovo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HR"
+            },
             "geo:lat": {
                 "@value": "45.366665",
                 "@type": "xsd:float"

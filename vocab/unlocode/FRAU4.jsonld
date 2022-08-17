@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAU4",
             "rdf:value": "FRAU4",
+            "@id": "unlcd:FRAU4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Autry-le-Châtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Autry-le-Chatel"
+                    "@value": "Autry-le-Chatel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.6",
                 "@type": "xsd:float"

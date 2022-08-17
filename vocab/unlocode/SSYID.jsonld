@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SSYID",
             "rdf:value": "SSYID",
+            "@id": "unlcd:SSYID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Yida"
+                "@value": "Yida",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SSUY"
             },
-            "unlcdc:countryCode": "SS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SS"
+            },
             "geo:lat": {
                 "@value": "10.1",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUMIS",
             "rdf:value": "HUMIS",
+            "@id": "unlcd:HUMIS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kozármisleny"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kozarmisleny"
+                    "@value": "Kozarmisleny",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUBA"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "46.033333",
                 "@type": "xsd:float"

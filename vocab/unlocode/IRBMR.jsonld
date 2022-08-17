@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IRBMR",
             "rdf:value": "IRBMR",
+            "@id": "unlcd:IRBMR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bandar Mashur"
+                "@value": "Bandar Mashur",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IR06"
             },
-            "unlcdc:countryCode": "IR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IR"
+            },
             "geo:lat": {
                 "@value": "30.55",
                 "@type": "xsd:float"

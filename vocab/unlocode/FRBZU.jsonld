@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBZU",
             "rdf:value": "FRBZU",
+            "@id": "unlcd:FRBZU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bézu-Saint-Éloi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bezu-Saint-Eloi"
+                    "@value": "Bezu-Saint-Eloi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.3",
                 "@type": "xsd:float"

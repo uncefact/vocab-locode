@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSYO",
             "rdf:value": "FRSYO",
+            "@id": "unlcd:FRSYO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sennecey-lès-Dijon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sennecey-les-Dijon"
+                    "@value": "Sennecey-les-Dijon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.283333",
                 "@type": "xsd:float"

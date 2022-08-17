@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSPJ",
             "rdf:value": "CZSPJ",
+            "@id": "unlcd:CZSPJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Svetlá pod Jestedem"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Svetla pod Jestedem"
+                    "@value": "Svetla pod Jestedem",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZLI"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.716667",
                 "@type": "xsd:float"

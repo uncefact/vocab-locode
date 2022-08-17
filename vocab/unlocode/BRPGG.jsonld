@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPGG",
             "rdf:value": "BRPGG",
+            "@id": "unlcd:BRPGG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pingo-d'Água"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pingo-d'Agua"
+                    "@value": "Pingo-d'Agua",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.716667",
                 "@type": "xsd:float"

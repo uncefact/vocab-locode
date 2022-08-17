@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMHQ",
             "rdf:value": "FRMHQ",
+            "@id": "unlcd:FRMHQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Colombier-Châtelot"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Colombier-Chatelot"
+                    "@value": "Colombier-Chatelot",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.433334",
                 "@type": "xsd:float"

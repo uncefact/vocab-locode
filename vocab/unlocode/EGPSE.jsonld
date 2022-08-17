@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EGPSE",
             "rdf:value": "EGPSE",
+            "@id": "unlcd:EGPSE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Said East"
+                "@value": "Port Said East",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EGSUZ"
             },
-            "unlcdc:countryCode": "EG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EG"
+            },
             "geo:lat": {
                 "@value": "31.216667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREXV",
             "rdf:value": "FREXV",
+            "@id": "unlcd:FREXV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Vieil-Évreux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Vieil-Evreux"
+                    "@value": "Le Vieil-Evreux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.0",
                 "@type": "xsd:float"

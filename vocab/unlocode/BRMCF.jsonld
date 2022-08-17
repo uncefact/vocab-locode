@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMCF",
             "rdf:value": "BRMCF",
+            "@id": "unlcd:BRMCF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cidade de Maricá FPSO"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cidade de Marica FPSO"
+                    "@value": "Cidade de Marica FPSO",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.433332",
                 "@type": "xsd:float"

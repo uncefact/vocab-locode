@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARCDS",
             "rdf:value": "ARCDS",
+            "@id": "unlcd:ARCDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Capilla del Señor"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Capilla del Senor"
+                    "@value": "Capilla del Senor",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARB"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-34.3",
                 "@type": "xsd:float"

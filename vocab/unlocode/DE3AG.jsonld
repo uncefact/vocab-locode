@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE3AG",
             "rdf:value": "DE3AG",
+            "@id": "unlcd:DE3AG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Altenau, Mühlberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Altenau, Muhlberg"
+                    "@value": "Altenau, Muhlberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.416668",
                 "@type": "xsd:float"

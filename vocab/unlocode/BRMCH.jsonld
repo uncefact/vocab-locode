@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMCH",
             "rdf:value": "BRMCH",
+            "@id": "unlcd:BRMCH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morro do Chapéu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morro do Chapeu"
+                    "@value": "Morro do Chapeu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-11.55",
                 "@type": "xsd:float"

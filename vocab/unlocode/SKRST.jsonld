@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKRST",
             "rdf:value": "SKRST",
+            "@id": "unlcd:SKRST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rimavská Sobota"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rimavska Sobota"
+                    "@value": "Rimavska Sobota",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKBC"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.383335",
                 "@type": "xsd:float"

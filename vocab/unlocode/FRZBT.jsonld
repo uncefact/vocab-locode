@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZBT",
             "rdf:value": "FRZBT",
+            "@id": "unlcd:FRZBT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boisset-lès-Montrond"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boisset-les-Montrond"
+                    "@value": "Boisset-les-Montrond",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR42"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.616665",
                 "@type": "xsd:float"

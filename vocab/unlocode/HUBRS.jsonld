@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUBRS",
             "rdf:value": "HUBRS",
+            "@id": "unlcd:HUBRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Badacsonyörs"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Badacsonyors"
+                    "@value": "Badacsonyors",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUVE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "46.8",
                 "@type": "xsd:float"

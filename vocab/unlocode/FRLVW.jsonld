@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLVW",
             "rdf:value": "FRLVW",
+            "@id": "unlcd:FRLVW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Ferté-Vidame"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Ferte-Vidame"
+                    "@value": "La Ferte-Vidame",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.616665",
                 "@type": "xsd:float"

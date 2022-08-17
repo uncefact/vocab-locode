@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LCCAS",
             "rdf:value": "LCCAS",
+            "@id": "unlcd:LCCAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Castries"
+                "@value": "Castries",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LC"
+            },
             "geo:lat": {
                 "@value": "14.016666",
                 "@type": "xsd:float"

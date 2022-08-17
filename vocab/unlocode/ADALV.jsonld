@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ADALV",
             "rdf:value": "ADALV",
+            "@id": "unlcd:ADALV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Andorra la Vella"
+                "@value": "Andorra la Vella",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "AD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AD"
+            },
             "geo:lat": {
                 "@value": "42.5",
                 "@type": "xsd:float"

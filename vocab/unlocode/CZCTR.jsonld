@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCTR",
             "rdf:value": "CZCTR",
+            "@id": "unlcd:CZCTR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceská Trebová"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceska Trebova"
+                    "@value": "Ceska Trebova",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

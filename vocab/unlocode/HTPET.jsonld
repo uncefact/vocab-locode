@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HTPET",
             "rdf:value": "HTPET",
+            "@id": "unlcd:HTPET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pétion-Ville"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Petion-Ville"
+                    "@value": "Petion-Ville",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HTNE"
             },
-            "unlcdc:countryCode": "HT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HT"
+            },
             "geo:lat": {
                 "@value": "18.516666",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCKB",
             "rdf:value": "CZCKB",
+            "@id": "unlcd:CZCKB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceské Budejovice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceske Budejovice"
+                    "@value": "Ceske Budejovice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.983334",
                 "@type": "xsd:float"

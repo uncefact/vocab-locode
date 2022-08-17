@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNDB",
             "rdf:value": "FRNDB",
+            "@id": "unlcd:FRNDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Notre-Dame-de-Briançon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Notre-Dame-de-Briancon"
+                    "@value": "Notre-Dame-de-Briancon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR73"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.533333",
                 "@type": "xsd:float"

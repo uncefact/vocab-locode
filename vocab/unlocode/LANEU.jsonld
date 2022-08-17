@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LANEU",
             "rdf:value": "LANEU",
+            "@id": "unlcd:LANEU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Sam Neua"
+                "@value": "Sam Neua",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "LA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LA"
+            },
             "geo:lat": {
                 "@value": "20.4",
                 "@type": "xsd:float"

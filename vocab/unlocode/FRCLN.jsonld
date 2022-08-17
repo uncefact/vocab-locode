@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCLN",
             "rdf:value": "FRCLN",
+            "@id": "unlcd:FRCLN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cléon-d'Andran"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cleon-d'Andran"
+                    "@value": "Cleon-d'Andran",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.616665",
                 "@type": "xsd:float"

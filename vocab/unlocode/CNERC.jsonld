@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNERC",
             "rdf:value": "CNERC",
+            "@id": "unlcd:CNERC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Erlianhaote"
+                "@value": "Erlianhaote",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNNM"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "43.633335",
                 "@type": "xsd:float"

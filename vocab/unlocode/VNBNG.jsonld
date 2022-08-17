@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNBNG",
             "rdf:value": "VNBNG",
+            "@id": "unlcd:VNBNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bèn Nghè"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ben Nghe"
+                    "@value": "Ben Nghe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VNSG"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "10.75",
                 "@type": "xsd:float"

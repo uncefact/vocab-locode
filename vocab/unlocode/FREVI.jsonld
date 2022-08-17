@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREVI",
             "rdf:value": "FREVI",
+            "@id": "unlcd:FREVI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Évian-les-Bains"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Evian-les-Bains"
+                    "@value": "Evian-les-Bains",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR74"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.383335",
                 "@type": "xsd:float"

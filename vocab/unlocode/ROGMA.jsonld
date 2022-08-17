@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROGMA",
             "rdf:value": "ROGMA",
+            "@id": "unlcd:ROGMA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gârla-Mare"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garla-Mare"
+                    "@value": "Garla-Mare",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROMH"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "44.2",
                 "@type": "xsd:float"

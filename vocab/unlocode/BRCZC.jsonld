@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCZC",
             "rdf:value": "BRCZC",
+            "@id": "unlcd:BRCZC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cruzeiro do Iguaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cruzeiro do Iguacu"
+                    "@value": "Cruzeiro do Iguacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.6",
                 "@type": "xsd:float"

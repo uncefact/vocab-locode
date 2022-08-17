@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBZP",
             "rdf:value": "FRBZP",
+            "@id": "unlcd:FRBZP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bazouges-la-Pérouse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bazouges-la-Perouse"
+                    "@value": "Bazouges-la-Perouse",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.416668",
                 "@type": "xsd:float"

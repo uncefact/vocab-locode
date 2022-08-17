@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRESN",
             "rdf:value": "FRESN",
+            "@id": "unlcd:FRESN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Condé-en-Normandie"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conde-en-Normandie"
+                    "@value": "Conde-en-Normandie",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.85",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSDR",
             "rdf:value": "PTSDR",
+            "@id": "unlcd:PTSDR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Domingos de Rana"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Domingos de Rana"
+                    "@value": "Sao Domingos de Rana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT11"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "38.7",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESMCA",
             "rdf:value": "ESMCA",
+            "@id": "unlcd:ESMCA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mambrilla de Castrejón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mambrilla de Castrejon"
+                    "@value": "Mambrilla de Castrejon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESBU"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.666668",
                 "@type": "xsd:float"

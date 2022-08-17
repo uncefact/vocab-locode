@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRUFG",
             "rdf:value": "FRUFG",
+            "@id": "unlcd:FRUFG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-de-Galaure"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-de-Galaure"
+                    "@value": "Chateauneuf-de-Galaure",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.216667",
                 "@type": "xsd:float"

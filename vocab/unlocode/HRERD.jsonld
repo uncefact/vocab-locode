@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HRERD",
             "rdf:value": "HRERD",
+            "@id": "unlcd:HRERD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Erdut"
+                "@value": "Erdut",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "HR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HR"
+            },
             "geo:lat": {
                 "@value": "45.533333",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RODCD",
             "rdf:value": "RODCD",
+            "@id": "unlcd:RODCD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dorna Cândrenilor"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dorna Candrenilor"
+                    "@value": "Dorna Candrenilor",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "47.35",
                 "@type": "xsd:float"

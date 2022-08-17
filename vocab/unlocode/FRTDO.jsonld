@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTDO",
             "rdf:value": "FRTDO",
+            "@id": "unlcd:FRTDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Puiset-Doré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Puiset-Dore"
+                    "@value": "Le Puiset-Dore",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.233334",
                 "@type": "xsd:float"

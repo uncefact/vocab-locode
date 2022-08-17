@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHCN",
             "rdf:value": "FRHCN",
+            "@id": "unlcd:FRHCN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Clohars-Carnoët"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Clohars-Carnoet"
+                    "@value": "Clohars-Carnoet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR29"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.8",
                 "@type": "xsd:float"

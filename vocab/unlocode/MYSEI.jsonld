@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYSEI",
             "rdf:value": "MYSEI",
+            "@id": "unlcd:MYSEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Senai"
+                "@value": "Senai",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MY01"
             },
-            "unlcdc:countryCode": "MY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            },
             "geo:lat": {
                 "@value": "1.6",
                 "@type": "xsd:float"

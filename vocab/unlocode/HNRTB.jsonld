@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNRTB",
             "rdf:value": "HNRTB",
+            "@id": "unlcd:HNRTB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Roatán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Roatan"
+                    "@value": "Roatan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "HN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            },
             "geo:lat": {
                 "@value": "16.3",
                 "@type": "xsd:float"

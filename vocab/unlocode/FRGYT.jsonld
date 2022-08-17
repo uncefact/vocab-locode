@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGYT",
             "rdf:value": "FRGYT",
+            "@id": "unlcd:FRGYT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montigny-lès-Metz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montigny-les-Metz"
+                    "@value": "Montigny-les-Metz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR57"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.1",
                 "@type": "xsd:float"

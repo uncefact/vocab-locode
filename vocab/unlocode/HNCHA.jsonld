@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNCHA",
             "rdf:value": "HNCHA",
+            "@id": "unlcd:HNCHA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chamelecón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chamelecon"
+                    "@value": "Chamelecon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HNCR"
             },
-            "unlcdc:countryCode": "HN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            },
             "geo:lat": {
                 "@value": "15.433333",
                 "@type": "xsd:float"

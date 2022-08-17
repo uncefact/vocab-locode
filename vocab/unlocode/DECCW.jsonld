@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DECCW",
             "rdf:value": "DECCW",
+            "@id": "unlcd:DECCW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schönwalde (Havelland)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schonwalde (Havelland)"
+                    "@value": "Schonwalde (Havelland)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.616665",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRSKG",
             "rdf:value": "GRSKG",
+            "@id": "unlcd:GRSKG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Thessaloníki"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Thessaloniki"
+                    "@value": "Thessaloniki",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.633335",
                 "@type": "xsd:float"

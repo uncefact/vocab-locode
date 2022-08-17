@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESLIU",
             "rdf:value": "ESLIU",
+            "@id": "unlcd:ESLIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Felíu de Buxalleu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Feliu de Buxalleu"
+                    "@value": "San Feliu de Buxalleu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESGI"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.783333",
                 "@type": "xsd:float"

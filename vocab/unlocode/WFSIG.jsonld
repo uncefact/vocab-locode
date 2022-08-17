@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:WFSIG",
             "rdf:value": "WFSIG",
+            "@id": "unlcd:WFSIG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sigavé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sigave"
+                    "@value": "Sigave",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "WF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:WF"
+            },
             "geo:lat": {
                 "@value": "-14.283334",
                 "@type": "xsd:float"

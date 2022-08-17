@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRXEM",
             "rdf:value": "FRXEM",
+            "@id": "unlcd:FRXEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-le-Molard"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-le-Molard"
+                    "@value": "Saint-Etienne-le-Molard",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR42"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.733334",
                 "@type": "xsd:float"

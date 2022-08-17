@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMHT",
             "rdf:value": "BRMHT",
+            "@id": "unlcd:BRMHT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Monsenhor Hipólito"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monsenhor Hipolito"
+                    "@value": "Monsenhor Hipolito",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.0",
                 "@type": "xsd:float"

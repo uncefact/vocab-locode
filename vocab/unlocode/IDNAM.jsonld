@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IDNAM",
             "rdf:value": "IDNAM",
+            "@id": "unlcd:IDNAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Namlea"
+                "@value": "Namlea",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IDMA"
             },
-            "unlcdc:countryCode": "ID",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ID"
+            },
             "geo:lat": {
                 "@value": "-3.3",
                 "@type": "xsd:float"

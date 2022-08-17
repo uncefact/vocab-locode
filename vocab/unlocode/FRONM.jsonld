@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRONM",
             "rdf:value": "FRONM",
+            "@id": "unlcd:FRONM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moëlan-sur-Mer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moelan-sur-Mer"
+                    "@value": "Moelan-sur-Mer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR29"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.8",
                 "@type": "xsd:float"

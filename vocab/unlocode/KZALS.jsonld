@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KZALS",
             "rdf:value": "KZALS",
+            "@id": "unlcd:KZALS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Alashankou"
+                "@value": "Alashankou",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "KZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KZ"
+            },
             "geo:lat": {
                 "@value": "45.2",
                 "@type": "xsd:float"

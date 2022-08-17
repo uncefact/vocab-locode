@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATKUD",
             "rdf:value": "ATKUD",
+            "@id": "unlcd:ATKUD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kühnsdorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kuhnsdorf"
+                    "@value": "Kuhnsdorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT2"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "46.616665",
                 "@type": "xsd:float"

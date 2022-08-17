@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDLI",
             "rdf:value": "CZDLI",
+            "@id": "unlcd:CZDLI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Lipka"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Lipka"
+                    "@value": "Dolni Lipka",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.1",
                 "@type": "xsd:float"

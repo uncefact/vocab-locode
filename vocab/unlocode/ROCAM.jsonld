@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROCAM",
             "rdf:value": "ROCAM",
+            "@id": "unlcd:ROCAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Câmpina"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Campina"
+                    "@value": "Campina",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROPH"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "45.133335",
                 "@type": "xsd:float"

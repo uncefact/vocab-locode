@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CIFRE",
             "rdf:value": "CIFRE",
+            "@id": "unlcd:CIFRE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Fresco"
+                "@value": "Fresco",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CI"
+            },
             "geo:lat": {
                 "@value": "5.0833335",
                 "@type": "xsd:float"

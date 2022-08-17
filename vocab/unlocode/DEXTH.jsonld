@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEXTH",
             "rdf:value": "DEXTH",
+            "@id": "unlcd:DEXTH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Maxhütte-Haidhof"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Maxhutte-Haidhof"
+                    "@value": "Maxhutte-Haidhof",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.2",
                 "@type": "xsd:float"

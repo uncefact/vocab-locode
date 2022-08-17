@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNNIH",
             "rdf:value": "VNNIH",
+            "@id": "unlcd:VNNIH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ninh Hòa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ninh Hoa"
+                    "@value": "Ninh Hoa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN34"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "12.483334",
                 "@type": "xsd:float"

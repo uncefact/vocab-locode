@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FITVS",
             "rdf:value": "FITVS",
+            "@id": "unlcd:FITVS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tövsala (Taivassalo)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tovsala (Taivassalo)"
+                    "@value": "Tovsala (Taivassalo)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI19"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.566666",
                 "@type": "xsd:float"

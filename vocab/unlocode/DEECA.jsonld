@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEECA",
             "rdf:value": "DEECA",
+            "@id": "unlcd:DEECA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Esch (Bad Münstereifel)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Esch (Bad Munstereifel)"
+                    "@value": "Esch (Bad Munstereifel)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.5",
                 "@type": "xsd:float"

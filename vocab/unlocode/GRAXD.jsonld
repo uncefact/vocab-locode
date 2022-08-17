@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRAXD",
             "rdf:value": "GRAXD",
+            "@id": "unlcd:GRAXD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alexandroúpolis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alexandroupolis"
+                    "@value": "Alexandroupolis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.85",
                 "@type": "xsd:float"

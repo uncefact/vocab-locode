@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMIG",
             "rdf:value": "BRMIG",
+            "@id": "unlcd:BRMIG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Tocantins"
+                    "@value": "Sao Miguel do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.55",
                 "@type": "xsd:float"

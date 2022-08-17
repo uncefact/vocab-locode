@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CUPAS",
             "rdf:value": "CUPAS",
+            "@id": "unlcd:CUPAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Puerto de Pastelillo"
+                "@value": "Puerto de Pastelillo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CU"
+            },
             "geo:lat": {
                 "@value": "21.55",
                 "@type": "xsd:float"

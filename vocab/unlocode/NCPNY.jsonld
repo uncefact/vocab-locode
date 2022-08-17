@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCPNY",
             "rdf:value": "NCPNY",
+            "@id": "unlcd:NCPNY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Prony"
+                "@value": "Prony",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-22.316668",
                 "@type": "xsd:float"

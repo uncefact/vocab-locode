@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKHRV",
             "rdf:value": "SKHRV",
+            "@id": "unlcd:SKHRV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hradiste pod Vrátnom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hradiste pod Vratnom"
+                    "@value": "Hradiste pod Vratnom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKTA"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.633335",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYTAG",
             "rdf:value": "MYTAG",
+            "@id": "unlcd:MYTAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tanjung Lembung"
+                "@value": "Tanjung Lembung",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MY02"
             },
-            "unlcdc:countryCode": "MY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            },
             "geo:lat": {
                 "@value": "6.2833333",
                 "@type": "xsd:float"

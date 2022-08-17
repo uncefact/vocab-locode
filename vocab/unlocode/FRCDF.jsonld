@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCDF",
             "rdf:value": "FRCDF",
+            "@id": "unlcd:FRCDF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-du-Faou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-du-Faou"
+                    "@value": "Chateauneuf-du-Faou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR29"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.183334",
                 "@type": "xsd:float"

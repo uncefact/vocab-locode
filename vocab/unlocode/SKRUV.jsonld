@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKRUV",
             "rdf:value": "SKRUV",
+            "@id": "unlcd:SKRUV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Liptovské Revúce"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Liptovske Revuce"
+                    "@value": "Liptovske Revuce",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKZI"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.933334",
                 "@type": "xsd:float"

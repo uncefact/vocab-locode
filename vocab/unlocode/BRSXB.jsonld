@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSXB",
             "rdf:value": "BRSXB",
+            "@id": "unlcd:BRSXB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Félix de Balsas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Felix de Balsas"
+                    "@value": "Sao Felix de Balsas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.0833335",
                 "@type": "xsd:float"

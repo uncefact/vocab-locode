@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AUCRS",
             "rdf:value": "AUCRS",
+            "@id": "unlcd:AUCRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Coral Sea"
+                "@value": "Coral Sea",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-19.083334",
                 "@type": "xsd:float"

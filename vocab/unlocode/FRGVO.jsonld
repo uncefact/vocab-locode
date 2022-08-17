@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGVO",
             "rdf:value": "FRGVO",
+            "@id": "unlcd:FRGVO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gasville-Oisème"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gasville-Oiseme"
+                    "@value": "Gasville-Oiseme",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.483334",
                 "@type": "xsd:float"

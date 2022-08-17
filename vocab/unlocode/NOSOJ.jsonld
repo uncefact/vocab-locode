@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSOJ",
             "rdf:value": "NOSOJ",
+            "@id": "unlcd:NOSOJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sørkjosen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sorkjosen"
+                    "@value": "Sorkjosen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO19"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "69.8",
                 "@type": "xsd:float"

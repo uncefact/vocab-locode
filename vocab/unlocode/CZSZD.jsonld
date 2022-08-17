@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSZD",
             "rdf:value": "CZSZD",
+            "@id": "unlcd:CZSZD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Staré Zdánice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stare Zdanice"
+                    "@value": "Stare Zdanice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZ53"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.133335",
                 "@type": "xsd:float"

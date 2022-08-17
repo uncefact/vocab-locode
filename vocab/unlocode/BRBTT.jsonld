@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBTT",
             "rdf:value": "BRBTT",
+            "@id": "unlcd:BRBTT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Barão de Monte Alto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Barao de Monte Alto"
+                    "@value": "Barao de Monte Alto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.233334",
                 "@type": "xsd:float"

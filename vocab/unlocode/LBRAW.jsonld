@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LBRAW",
             "rdf:value": "LBRAW",
+            "@id": "unlcd:LBRAW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Raouché"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Raouche"
+                    "@value": "Raouche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LBBA"
             },
-            "unlcdc:countryCode": "LB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LB"
+            },
             "geo:lat": {
                 "@value": "33.883335",
                 "@type": "xsd:float"

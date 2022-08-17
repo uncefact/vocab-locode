@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMMH",
             "rdf:value": "BRMMH",
+            "@id": "unlcd:BRMMH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Milagres do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Milagres do Maranhao"
+                    "@value": "Milagres do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.5666666",
                 "@type": "xsd:float"

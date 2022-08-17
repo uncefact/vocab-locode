@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAEDD",
             "rdf:value": "CAEDD",
+            "@id": "unlcd:CAEDD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Eugène-de-Grantham"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Eugene-de-Grantham"
+                    "@value": "Saint-Eugene-de-Grantham",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

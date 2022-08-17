@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSCA",
             "rdf:value": "GTSCA",
+            "@id": "unlcd:GTSCA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Cristóbal Acasaguastlán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Cristobal Acasaguastlan"
+                    "@value": "San Cristobal Acasaguastlan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT02"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.916667",
                 "@type": "xsd:float"

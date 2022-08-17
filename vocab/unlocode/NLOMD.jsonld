@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLOMD",
             "rdf:value": "NLOMD",
+            "@id": "unlcd:NLOMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Roermond"
+                "@value": "Roermond",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

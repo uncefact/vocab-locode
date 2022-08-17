@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IRBND",
             "rdf:value": "IRBND",
+            "@id": "unlcd:IRBND",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bandar Abbas"
+                "@value": "Bandar Abbas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IR22"
             },
-            "unlcdc:countryCode": "IR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IR"
+            },
             "geo:lat": {
                 "@value": "27.183332",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNSPI",
             "rdf:value": "CNSPI",
+            "@id": "unlcd:CNSPI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Shipai"
+                "@value": "Shipai",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNAH"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "30.316668",
                 "@type": "xsd:float"

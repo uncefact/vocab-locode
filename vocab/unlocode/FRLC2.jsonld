@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLC2",
             "rdf:value": "FRLC2",
+            "@id": "unlcd:FRLC2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Côtes-d'Arey"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Cotes-d'Arey"
+                    "@value": "Les Cotes-d'Arey",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.45",
                 "@type": "xsd:float"

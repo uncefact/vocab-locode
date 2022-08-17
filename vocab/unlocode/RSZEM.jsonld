@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RSZEM",
             "rdf:value": "RSZEM",
+            "@id": "unlcd:RSZEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Zemun"
+                "@value": "Zemun",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RS"
+            },
             "geo:lat": {
                 "@value": "44.833332",
                 "@type": "xsd:float"

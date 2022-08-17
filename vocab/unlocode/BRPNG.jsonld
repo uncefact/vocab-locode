@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPNG",
             "rdf:value": "BRPNG",
+            "@id": "unlcd:BRPNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paranaguá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paranagua"
+                    "@value": "Paranagua",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -43,7 +43,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.5",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSPX",
             "rdf:value": "FRSPX",
+            "@id": "unlcd:FRSPX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Paul-lès-Dax"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Paul-les-Dax"
+                    "@value": "Saint-Paul-les-Dax",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR40"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.716667",
                 "@type": "xsd:float"

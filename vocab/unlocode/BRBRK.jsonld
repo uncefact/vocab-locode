@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBRK",
             "rdf:value": "BRBRK",
+            "@id": "unlcd:BRBRK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brasilândia do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brasilandia do Tocantins"
+                    "@value": "Brasilandia do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.383333",
                 "@type": "xsd:float"

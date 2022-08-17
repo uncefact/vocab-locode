@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MDKIV",
             "rdf:value": "MDKIV",
+            "@id": "unlcd:MDKIV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chisinãu (ex Kishinev)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chisinau (ex Kishinev)"
+                    "@value": "Chisinau (ex Kishinev)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "MD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MD"
+            },
             "geo:lat": {
                 "@value": "47.016666",
                 "@type": "xsd:float"

@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKSBG",
             "rdf:value": "DKSBG",
+            "@id": "unlcd:DKSBG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Søborg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Soborg"
+                    "@value": "Soborg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DK"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            }
         }
     ]
 }

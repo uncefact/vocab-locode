@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSOE",
             "rdf:value": "BRSOE",
+            "@id": "unlcd:BRSOE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José da Tapera"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose da Tapera"
+                    "@value": "Sao Jose da Tapera",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.533334",
                 "@type": "xsd:float"

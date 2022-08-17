@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USMKC",
             "rdf:value": "USMKC",
+            "@id": "unlcd:USMKC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Kansas City"
+                "@value": "Kansas City",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMO"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "39.1",
                 "@type": "xsd:float"

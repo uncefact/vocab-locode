@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLSP",
             "rdf:value": "FRLSP",
+            "@id": "unlcd:FRLSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Longpré-les-Corps-Saints"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Longpre-les-Corps-Saints"
+                    "@value": "Longpre-les-Corps-Saints",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR80"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.016666",
                 "@type": "xsd:float"

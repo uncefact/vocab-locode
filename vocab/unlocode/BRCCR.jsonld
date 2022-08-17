@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCCR",
             "rdf:value": "BRCCR",
+            "@id": "unlcd:BRCCR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição dos Ouros"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao dos Ouros"
+                    "@value": "Conceicao dos Ouros",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.416666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESLPN",
             "rdf:value": "ESLPN",
+            "@id": "unlcd:ESLPN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Pobla de Montornès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Pobla de Montornes"
+                    "@value": "La Pobla de Montornes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EST"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.166668",
                 "@type": "xsd:float"

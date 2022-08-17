@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDDP",
             "rdf:value": "BRDDP",
+            "@id": "unlcd:BRDDP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Domingos do Prata"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Domingos do Prata"
+                    "@value": "Sao Domingos do Prata",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.866667",
                 "@type": "xsd:float"

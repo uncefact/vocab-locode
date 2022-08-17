@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESTPM",
             "rdf:value": "ESTPM",
+            "@id": "unlcd:ESTPM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Tomás de las Ollas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Tomas de las Ollas"
+                    "@value": "Santo Tomas de las Ollas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESLE"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.55",
                 "@type": "xsd:float"

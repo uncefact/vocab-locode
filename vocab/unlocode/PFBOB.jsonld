@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PFBOB",
             "rdf:value": "PFBOB",
+            "@id": "unlcd:PFBOB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bora Bora"
+                "@value": "Bora Bora",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "PF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PF"
+            },
             "geo:lat": {
                 "@value": "-16.45",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUBOR",
             "rdf:value": "HUBOR",
+            "@id": "unlcd:HUBOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Borsodnádasd"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Borsodnadasd"
+                    "@value": "Borsodnadasd",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUBZ"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.116665",
                 "@type": "xsd:float"

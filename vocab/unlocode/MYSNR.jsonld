@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYSNR",
             "rdf:value": "MYSNR",
+            "@id": "unlcd:MYSNR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Senari - Sarawak"
+                "@value": "Senari - Sarawak",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MY13"
             },
-            "unlcdc:countryCode": "MY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            },
             "geo:lat": {
                 "@value": "1.6",
                 "@type": "xsd:float"

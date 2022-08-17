@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCNAK",
             "rdf:value": "NCNAK",
+            "@id": "unlcd:NCNAK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nakéty"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nakety"
+                    "@value": "Nakety",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-21.55",
                 "@type": "xsd:float"

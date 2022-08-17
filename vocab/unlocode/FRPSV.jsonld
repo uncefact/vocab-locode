@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPSV",
             "rdf:value": "FRPSV",
+            "@id": "unlcd:FRPSV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Poiré-sur-Vie"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Poire-sur-Vie"
+                    "@value": "Le Poire-sur-Vie",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.766666",
                 "@type": "xsd:float"

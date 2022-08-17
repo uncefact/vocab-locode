@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MFSFG",
             "rdf:value": "MFSFG",
+            "@id": "unlcd:MFSFG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Espérance Apt/St Martin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Esperance Apt/St Martin"
+                    "@value": "L'Esperance Apt/St Martin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "MF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MF"
+            },
             "geo:lat": {
                 "@value": "18.1",
                 "@type": "xsd:float"

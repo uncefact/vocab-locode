@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNVDA",
             "rdf:value": "HNVDA",
+            "@id": "unlcd:HNVDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Valle de Ángeles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Valle de Angeles"
+                    "@value": "Valle de Angeles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HNCM"
             },
-            "unlcdc:countryCode": "HN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            },
             "geo:lat": {
                 "@value": "14.5",
                 "@type": "xsd:float"

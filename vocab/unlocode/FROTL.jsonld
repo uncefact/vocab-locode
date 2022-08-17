@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROTL",
             "rdf:value": "FROTL",
+            "@id": "unlcd:FROTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lavoûte-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lavoute-sur-Loire"
+                    "@value": "Lavoute-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR43"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.116665",
                 "@type": "xsd:float"

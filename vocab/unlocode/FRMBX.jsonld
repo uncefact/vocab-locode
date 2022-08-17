@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMBX",
             "rdf:value": "FRMBX",
+            "@id": "unlcd:FRMBX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montagny-lès-Beaune"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montagny-les-Beaune"
+                    "@value": "Montagny-les-Beaune",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.983334",
                 "@type": "xsd:float"

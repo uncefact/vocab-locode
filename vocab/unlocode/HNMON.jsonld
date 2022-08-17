@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNMON",
             "rdf:value": "HNMON",
+            "@id": "unlcd:HNMON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Monjarás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monjaras"
+                    "@value": "Monjaras",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HNCH"
             },
-            "unlcdc:countryCode": "HN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            },
             "geo:lat": {
                 "@value": "13.2",
                 "@type": "xsd:float"

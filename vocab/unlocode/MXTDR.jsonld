@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTDR",
             "rdf:value": "MXTDR",
+            "@id": "unlcd:MXTDR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tlalpujahua de Rayón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tlalpujahua de Rayon"
+                    "@value": "Tlalpujahua de Rayon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXMIC"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.8",
                 "@type": "xsd:float"

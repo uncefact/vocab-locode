@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCMTD",
             "rdf:value": "NCMTD",
+            "@id": "unlcd:NCMTD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Le Mont-Dore"
+                "@value": "Le Mont-Dore",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-22.283333",
                 "@type": "xsd:float"

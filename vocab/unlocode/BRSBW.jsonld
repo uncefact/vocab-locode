@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSBW",
             "rdf:value": "BRSBW",
+            "@id": "unlcd:BRSBW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Bárbara d'Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Barbara d'Oeste"
+                    "@value": "Santa Barbara d'Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.75",
                 "@type": "xsd:float"

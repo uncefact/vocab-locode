@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHKSR",
             "rdf:value": "CHKSR",
+            "@id": "unlcd:CHKSR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Küssnacht am Rigi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kussnacht am Rigi"
+                    "@value": "Kussnacht am Rigi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHSZ"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "47.066666",
                 "@type": "xsd:float"

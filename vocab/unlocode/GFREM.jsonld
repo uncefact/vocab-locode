@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GFREM",
             "rdf:value": "GFREM",
+            "@id": "unlcd:GFREM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dégrad des Cannes-Pariacabo Pt/Remire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Degrad des Cannes-Pariacabo Pt/Remire"
+                    "@value": "Degrad des Cannes-Pariacabo Pt/Remire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:7"
                 }
             ],
-            "unlcdc:countryCode": "GF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GF"
+            },
             "geo:lat": {
                 "@value": "4.883333",
                 "@type": "xsd:float"

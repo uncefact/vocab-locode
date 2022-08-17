@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMKSI",
             "rdf:value": "CMKSI",
+            "@id": "unlcd:CMKSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kousséri"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kousseri"
+                    "@value": "Kousseri",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CMEN"
             },
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "12.066667",
                 "@type": "xsd:float"

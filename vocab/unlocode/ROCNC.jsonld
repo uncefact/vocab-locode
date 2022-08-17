@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROCNC",
             "rdf:value": "ROCNC",
+            "@id": "unlcd:ROCNC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cîlnic, Gorj"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cilnic, Gorj"
+                    "@value": "Cilnic, Gorj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROGJ"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "45.95",
                 "@type": "xsd:float"

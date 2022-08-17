@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFAL",
             "rdf:value": "ESFAL",
+            "@id": "unlcd:ESFAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuente-Álamo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuente-Alamo"
+                    "@value": "Fuente-Alamo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESAB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.7",
                 "@type": "xsd:float"

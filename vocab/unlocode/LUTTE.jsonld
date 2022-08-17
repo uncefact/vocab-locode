@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUTTE",
             "rdf:value": "LUTTE",
+            "@id": "unlcd:LUTTE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tuntange (Téinten)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tuntange (Teinten)"
+                    "@value": "Tuntange (Teinten)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUME"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.716667",
                 "@type": "xsd:float"

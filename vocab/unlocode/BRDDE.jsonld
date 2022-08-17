@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDDE",
             "rdf:value": "BRDDE",
+            "@id": "unlcd:BRDDE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dois Irmãos das Missões"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dois Irmaos das Missoes"
+                    "@value": "Dois Irmaos das Missoes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-27.65",
                 "@type": "xsd:float"

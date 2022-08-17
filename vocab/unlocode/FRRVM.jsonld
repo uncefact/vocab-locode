@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRVM",
             "rdf:value": "FRRVM",
+            "@id": "unlcd:FRRVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Regnéville-sur-Mer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Regneville-sur-Mer"
+                    "@value": "Regneville-sur-Mer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR50"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.016666",
                 "@type": "xsd:float"

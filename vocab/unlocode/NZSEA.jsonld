@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NZSEA",
             "rdf:value": "NZSEA",
+            "@id": "unlcd:NZSEA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Seaview"
+                "@value": "Seaview",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZWGN"
             },
-            "unlcdc:countryCode": "NZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NZ"
+            },
             "geo:lat": {
                 "@value": "-39.466667",
                 "@type": "xsd:float"

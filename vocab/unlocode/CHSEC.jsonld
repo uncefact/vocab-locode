@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHSEC",
             "rdf:value": "CHSEC",
+            "@id": "unlcd:CHSEC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Légier-La Chiésaz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Legier-La Chiesaz"
+                    "@value": "Saint-Legier-La Chiesaz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVD"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.466667",
                 "@type": "xsd:float"

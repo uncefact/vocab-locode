@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOAAA",
             "rdf:value": "NOAAA",
+            "@id": "unlcd:NOAAA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Å i Lofoten"
                 },
                 {
-                    "@language": "en",
-                    "@value": "A i Lofoten"
+                    "@value": "A i Lofoten",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO18"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "67.88333",
                 "@type": "xsd:float"

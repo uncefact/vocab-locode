@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUBDF",
             "rdf:value": "LUBDF",
+            "@id": "unlcd:LUBDF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Berdorf (Bäerdref)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Berdorf (Baerdref)"
+                    "@value": "Berdorf (Baerdref)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUGR"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.8",
                 "@type": "xsd:float"

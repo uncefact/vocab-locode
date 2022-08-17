@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MCMCM",
             "rdf:value": "MCMCM",
+            "@id": "unlcd:MCMCM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Monte-Carlo"
+                "@value": "Monte-Carlo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MC"
+            },
             "geo:lat": {
                 "@value": "43.733334",
                 "@type": "xsd:float"

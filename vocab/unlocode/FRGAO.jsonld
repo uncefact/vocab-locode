@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGAO",
             "rdf:value": "FRGAO",
+            "@id": "unlcd:FRGAO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gigny-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gigny-sur-Saone"
+                    "@value": "Gigny-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.666668",
                 "@type": "xsd:float"

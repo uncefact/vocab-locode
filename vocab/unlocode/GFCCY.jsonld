@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GFCCY",
             "rdf:value": "GFCCY",
+            "@id": "unlcd:GFCCY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Awala-Yalimapo"
+                "@value": "Awala-Yalimapo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GF"
+            },
             "geo:lat": {
                 "@value": "5.6833334",
                 "@type": "xsd:float"

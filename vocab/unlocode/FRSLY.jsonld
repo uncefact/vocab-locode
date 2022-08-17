@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSLY",
             "rdf:value": "FRSLY",
+            "@id": "unlcd:FRSLY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saulxures-lès-Nancy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saulxures-les-Nancy"
+                    "@value": "Saulxures-les-Nancy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.683334",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HKTST",
             "rdf:value": "HKTST",
+            "@id": "unlcd:HKTST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tsim Sha Tsui"
+                "@value": "Tsim Sha Tsui",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HK"
+            },
             "geo:lat": {
                 "@value": "22.3",
                 "@type": "xsd:float"

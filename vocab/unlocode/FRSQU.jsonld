@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSQU",
             "rdf:value": "FRSQU",
+            "@id": "unlcd:FRSQU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-Cubzac"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-Cubzac"
+                    "@value": "Saint-Andre-de-Cubzac",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.0",
                 "@type": "xsd:float"

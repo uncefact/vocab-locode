@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PFPPT",
             "rdf:value": "PFPPT",
+            "@id": "unlcd:PFPPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Papeete"
+                "@value": "Papeete",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "PF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PF"
+            },
             "geo:lat": {
                 "@value": "-17.55",
                 "@type": "xsd:float"

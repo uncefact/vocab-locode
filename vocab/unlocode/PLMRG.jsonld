@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLMRG",
             "rdf:value": "PLMRG",
+            "@id": "unlcd:PLMRG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Miedzyrzecze Górne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Miedzyrzecze Gorne"
+                    "@value": "Miedzyrzecze Gorne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL24"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "49.85",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMTS",
             "rdf:value": "FRMTS",
+            "@id": "unlcd:FRMTS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Montigny-lès-Cormeilles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montigny-les-Cormeilles"
+                    "@value": "Montigny-les-Cormeilles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR95"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.983334",
                 "@type": "xsd:float"

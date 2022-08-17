@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GEBUS",
             "rdf:value": "GEBUS",
+            "@id": "unlcd:GEBUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Batumi"
+                "@value": "Batumi",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "GE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GE"
+            }
         }
     ]
 }

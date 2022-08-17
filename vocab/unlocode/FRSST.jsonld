@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSST",
             "rdf:value": "FRSST",
+            "@id": "unlcd:FRSST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Saturnin-lès-Avignon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Saturnin-les-Avignon"
+                    "@value": "Saint-Saturnin-les-Avignon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR84"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.95",
                 "@type": "xsd:float"

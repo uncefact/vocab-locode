@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GNTOU",
             "rdf:value": "GNTOU",
+            "@id": "unlcd:GNTOU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tougué"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tougue"
+                    "@value": "Tougue",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNTO"
             },
-            "unlcdc:countryCode": "GN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GN"
+            },
             "geo:lat": {
                 "@value": "11.45",
                 "@type": "xsd:float"

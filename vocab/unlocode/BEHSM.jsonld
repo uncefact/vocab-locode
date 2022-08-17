@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEHSM",
             "rdf:value": "BEHSM",
+            "@id": "unlcd:BEHSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Houtain-Saint-Siméon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Houtain-Saint-Simeon"
+                    "@value": "Houtain-Saint-Simeon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWLG"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.733334",
                 "@type": "xsd:float"

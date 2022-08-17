@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DZBOM",
             "rdf:value": "DZBOM",
+            "@id": "unlcd:DZBOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bordj Menaïel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bordj Menaiel"
+                    "@value": "Bordj Menaiel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DZ"
+            },
             "geo:lat": {
                 "@value": "36.733334",
                 "@type": "xsd:float"

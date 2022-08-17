@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROCMP",
             "rdf:value": "ROCMP",
+            "@id": "unlcd:ROCMP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Câmpulung Moldovenesc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Campulung Moldovenesc"
+                    "@value": "Campulung Moldovenesc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROSV"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "47.533333",
                 "@type": "xsd:float"

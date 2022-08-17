@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRWEL",
             "rdf:value": "FRWEL",
+            "@id": "unlcd:FRWEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Éleu-dit-Leauwette"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Eleu-dit-Leauwette"
+                    "@value": "Eleu-dit-Leauwette",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.416668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROXM",
             "rdf:value": "FROXM",
+            "@id": "unlcd:FROXM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Ouen-de-Mimbré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Ouen-de-Mimbre"
+                    "@value": "Saint-Ouen-de-Mimbre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.283333",
                 "@type": "xsd:float"

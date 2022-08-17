@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZVNV",
             "rdf:value": "CZVNV",
+            "@id": "unlcd:CZVNV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Velká nad Velickou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Velka nad Velickou"
+                    "@value": "Velka nad Velickou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.883335",
                 "@type": "xsd:float"

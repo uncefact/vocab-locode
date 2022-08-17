@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FINAJ",
             "rdf:value": "FINAJ",
+            "@id": "unlcd:FINAJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Naarajärvi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Naarajarvi"
+                    "@value": "Naarajarvi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI04"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "62.283333",
                 "@type": "xsd:float"

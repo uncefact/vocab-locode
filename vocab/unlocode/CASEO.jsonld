@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASEO",
             "rdf:value": "CASEO",
+            "@id": "unlcd:CASEO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Édouard-de-Lotbinière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Edouard-de-Lotbiniere"
+                    "@value": "Saint-Edouard-de-Lotbiniere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.566666",
                 "@type": "xsd:float"

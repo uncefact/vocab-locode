@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VEPPZ",
             "rdf:value": "VEPPZ",
+            "@id": "unlcd:VEPPZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto Páez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto Paez"
+                    "@value": "Puerto Paez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "VE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VE"
+            },
             "geo:lat": {
                 "@value": "6.2166667",
                 "@type": "xsd:float"

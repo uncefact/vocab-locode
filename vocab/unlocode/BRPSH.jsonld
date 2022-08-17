@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPSH",
             "rdf:value": "BRPSH",
+            "@id": "unlcd:BRPSH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Porto dos Gaúchos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Porto dos Gauchos"
+                    "@value": "Porto dos Gauchos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-11.533334",
                 "@type": "xsd:float"

@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USPUC",
             "rdf:value": "USPUC",
+            "@id": "unlcd:USPUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Price"
+                "@value": "Price",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USUT"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

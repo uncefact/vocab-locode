@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTAMC",
             "rdf:value": "PTAMC",
+            "@id": "unlcd:PTAMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Amiães de Cima"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Amiaes de Cima"
+                    "@value": "Amiaes de Cima",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT14"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "39.45",
                 "@type": "xsd:float"

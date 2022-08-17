@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZBBE",
             "rdf:value": "CZBBE",
+            "@id": "unlcd:CZBBE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Berkovice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Berkovice"
+                    "@value": "Dolni Berkovice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.383335",
                 "@type": "xsd:float"

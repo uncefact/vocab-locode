@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSHS",
             "rdf:value": "BRSHS",
+            "@id": "unlcd:BRSHS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José de Espinharas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose de Espinharas"
+                    "@value": "Sao Jose de Espinharas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.8333335",
                 "@type": "xsd:float"

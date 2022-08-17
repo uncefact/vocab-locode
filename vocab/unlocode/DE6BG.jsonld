@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE6BG",
             "rdf:value": "DE6BG",
+            "@id": "unlcd:DE6BG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bickenbach/Hunsrück"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bickenbach/Hunsruck"
+                    "@value": "Bickenbach/Hunsruck",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.116665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCMH",
             "rdf:value": "BRCMH",
+            "@id": "unlcd:BRCMH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Centro Novo do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Centro Novo do Maranhao"
+                    "@value": "Centro Novo do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-2.1333334",
                 "@type": "xsd:float"

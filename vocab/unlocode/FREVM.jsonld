@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREVM",
             "rdf:value": "FREVM",
+            "@id": "unlcd:FREVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Épreville-en-Roumois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Epreville-en-Roumois"
+                    "@value": "Epreville-en-Roumois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.316666",
                 "@type": "xsd:float"

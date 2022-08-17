@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBIG",
             "rdf:value": "BRBIG",
+            "@id": "unlcd:BRBIG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boa Esperança do Iguaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boa Esperanca do Iguacu"
+                    "@value": "Boa Esperanca do Iguacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.633333",
                 "@type": "xsd:float"

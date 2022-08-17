@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BREIU",
             "rdf:value": "BREIU",
+            "@id": "unlcd:BREIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Espigão Alto do Iguaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Espigao Alto do Iguacu"
+                    "@value": "Espigao Alto do Iguacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.416666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMVM",
             "rdf:value": "FRMVM",
+            "@id": "unlcd:FRMVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marville-Moutiers-Brûlé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marville-Moutiers-Brule"
+                    "@value": "Marville-Moutiers-Brule",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.666668",
                 "@type": "xsd:float"

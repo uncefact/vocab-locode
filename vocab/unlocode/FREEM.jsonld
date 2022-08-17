@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREEM",
             "rdf:value": "FREEM",
+            "@id": "unlcd:FREEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Étables-sur-Mer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Etables-sur-Mer"
+                    "@value": "Etables-sur-Mer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR22"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.616665",
                 "@type": "xsd:float"

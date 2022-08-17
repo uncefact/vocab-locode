@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSDT",
             "rdf:value": "BRSDT",
+            "@id": "unlcd:BRSDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Pedro do Turvo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Pedro do Turvo"
+                    "@value": "Sao Pedro do Turvo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.75",
                 "@type": "xsd:float"

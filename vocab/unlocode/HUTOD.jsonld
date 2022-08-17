@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUTOD",
             "rdf:value": "HUTOD",
+            "@id": "unlcd:HUTOD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tornanádaska"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tornanadaska"
+                    "@value": "Tornanadaska",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.566666",
                 "@type": "xsd:float"

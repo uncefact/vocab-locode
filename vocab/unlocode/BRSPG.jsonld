@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPG",
             "rdf:value": "BRSPG",
+            "@id": "unlcd:BRSPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Paulo do Potengi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Paulo do Potengi"
+                    "@value": "Sao Paulo do Potengi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.883333",
                 "@type": "xsd:float"

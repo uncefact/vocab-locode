@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIUUS",
             "rdf:value": "FIUUS",
+            "@id": "unlcd:FIUUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Uusi-Valamo/Heinävesi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Uusi-Valamo/Heinavesi"
+                    "@value": "Uusi-Valamo/Heinavesi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI04"
             },
-            "unlcdc:countryCode": "FI"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            }
         }
     ]
 }

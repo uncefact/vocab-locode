@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRJDO",
             "rdf:value": "FRJDO",
+            "@id": "unlcd:FRJDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Jean-des-Ollières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Jean-des-Ollieres"
+                    "@value": "Saint-Jean-des-Ollieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR63"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.65",
                 "@type": "xsd:float"

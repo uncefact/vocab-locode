@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTVAR",
             "rdf:value": "PTVAR",
+            "@id": "unlcd:PTVAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Várzea do Douro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Varzea do Douro"
+                    "@value": "Varzea do Douro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT13"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.116665",
                 "@type": "xsd:float"

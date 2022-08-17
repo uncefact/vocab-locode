@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LBNAQ",
             "rdf:value": "LBNAQ",
+            "@id": "unlcd:LBNAQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "En Nâqoûra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "En Naqoura"
+                    "@value": "En Naqoura",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "LB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LB"
+            },
             "geo:lat": {
                 "@value": "33.116665",
                 "@type": "xsd:float"

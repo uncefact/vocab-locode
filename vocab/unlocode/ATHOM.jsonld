@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATHOM",
             "rdf:value": "ATHOM",
+            "@id": "unlcd:ATHOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hofkirchen im Mühlkreis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hofkirchen im Muhlkreis"
+                    "@value": "Hofkirchen im Muhlkreis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.483334",
                 "@type": "xsd:float"

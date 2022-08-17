@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLCAI",
             "rdf:value": "CLCAI",
+            "@id": "unlcd:CLCAI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Carirriñe/Panguipulli"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Carirrine/Panguipulli"
+                    "@value": "Paso Carirrine/Panguipulli",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLLR"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-39.783333",
                 "@type": "xsd:float"

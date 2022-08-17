@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCSS",
             "rdf:value": "FRCSS",
+            "@id": "unlcd:FRCSS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chalon-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chalon-sur-Saone"
+                    "@value": "Chalon-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.783333",
                 "@type": "xsd:float"

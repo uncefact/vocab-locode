@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BROHI",
             "rdf:value": "BROHI",
+            "@id": "unlcd:BROHI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Olho d'Água do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olho d'Agua do Piaui"
+                    "@value": "Olho d'Agua do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.8333335",
                 "@type": "xsd:float"

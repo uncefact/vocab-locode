@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEWBL",
             "rdf:value": "DEWBL",
+            "@id": "unlcd:DEWBL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Wolfenbüttel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Wolfenbuttel"
+                    "@value": "Wolfenbuttel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.166668",
                 "@type": "xsd:float"

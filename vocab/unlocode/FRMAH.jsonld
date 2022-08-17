@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMAH",
             "rdf:value": "FRMAH",
+            "@id": "unlcd:FRMAH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Machecoul-Saint-Même"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Machecoul-Saint-Meme"
+                    "@value": "Machecoul-Saint-Meme",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.0",
                 "@type": "xsd:float"

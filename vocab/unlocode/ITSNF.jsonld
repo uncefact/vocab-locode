@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITSNF",
             "rdf:value": "ITSNF",
+            "@id": "unlcd:ITSNF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Nicolò Ferrarese"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Nicolo Ferrarese"
+                    "@value": "San Nicolo Ferrarese",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITFE"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "44.7",
                 "@type": "xsd:float"

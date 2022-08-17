@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CACSU",
             "rdf:value": "CACSU",
+            "@id": "unlcd:CACSU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Côte-Saint-Luc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cote-Saint-Luc"
+                    "@value": "Cote-Saint-Luc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.466667",
                 "@type": "xsd:float"

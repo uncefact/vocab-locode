@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPMC",
             "rdf:value": "FRPMC",
+            "@id": "unlcd:FRPMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Plounévez-Moëdec"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Plounevez-Moedec"
+                    "@value": "Plounevez-Moedec",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR22"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.566666",
                 "@type": "xsd:float"

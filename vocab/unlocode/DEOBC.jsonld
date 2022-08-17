@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEOBC",
             "rdf:value": "DEOBC",
+            "@id": "unlcd:DEOBC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Oberasbach bei Nürnberg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Oberasbach bei Nurnberg"
+                    "@value": "Oberasbach bei Nurnberg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.433334",
                 "@type": "xsd:float"

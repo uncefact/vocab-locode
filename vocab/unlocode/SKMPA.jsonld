@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKMPA",
             "rdf:value": "SKMPA",
+            "@id": "unlcd:SKMPA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mnísek nad Popradom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mnisek nad Popradom"
+                    "@value": "Mnisek nad Popradom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKPV"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "49.416668",
                 "@type": "xsd:float"

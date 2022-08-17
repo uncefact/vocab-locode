@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMML",
             "rdf:value": "DEMML",
+            "@id": "unlcd:DEMML",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Möckmühl"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mockmuhl"
+                    "@value": "Mockmuhl",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -35,7 +35,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUFRS",
             "rdf:value": "LUFRS",
+            "@id": "unlcd:LUFRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Frisange (Fréiseng)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Frisange (Freiseng)"
+                    "@value": "Frisange (Freiseng)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUES"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.5",
                 "@type": "xsd:float"

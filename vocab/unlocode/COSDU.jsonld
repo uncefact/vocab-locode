@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COSDU",
             "rdf:value": "COSDU",
+            "@id": "unlcd:COSDU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villa San Diego de Ubaté"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villa San Diego de Ubate"
+                    "@value": "Villa San Diego de Ubate",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COCUN"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "5.3",
                 "@type": "xsd:float"

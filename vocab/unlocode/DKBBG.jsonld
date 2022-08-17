@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKBBG",
             "rdf:value": "DKBBG",
+            "@id": "unlcd:DKBBG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bøvlingbjerg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bovlingbjerg"
+                    "@value": "Bovlingbjerg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "56.433334",
                 "@type": "xsd:float"

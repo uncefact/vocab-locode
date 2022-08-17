@@ -10,17 +10,19 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCBDB",
             "rdf:value": "NCBDB",
+            "@id": "unlcd:NCBDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Baie de Prony"
+                "@value": "Baie de Prony",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-22.366667",
                 "@type": "xsd:float"

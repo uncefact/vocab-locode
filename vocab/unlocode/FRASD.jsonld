@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRASD",
             "rdf:value": "FRASD",
+            "@id": "unlcd:FRASD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Georges-de-Luzençon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Georges-de-Luzencon"
+                    "@value": "Saint-Georges-de-Luzencon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR12"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.066666",
                 "@type": "xsd:float"

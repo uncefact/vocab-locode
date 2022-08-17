@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBXM",
             "rdf:value": "FRBXM",
+            "@id": "unlcd:FRBXM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Buxières-les-Mines"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buxieres-les-Mines"
+                    "@value": "Buxieres-les-Mines",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR03"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.466667",
                 "@type": "xsd:float"

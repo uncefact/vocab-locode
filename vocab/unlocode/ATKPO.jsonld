@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATKPO",
             "rdf:value": "ATKPO",
+            "@id": "unlcd:ATKPO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kleinpöchlarn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kleinpochlarn"
+                    "@value": "Kleinpochlarn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT3"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.216667",
                 "@type": "xsd:float"

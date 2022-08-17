@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMMOU",
             "rdf:value": "CMMOU",
+            "@id": "unlcd:CMMOU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Moudi Terminal"
+                "@value": "Moudi Terminal",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "4.116667",
                 "@type": "xsd:float"

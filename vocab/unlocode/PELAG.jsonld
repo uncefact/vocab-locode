@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PELAG",
             "rdf:value": "PELAG",
+            "@id": "unlcd:PELAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lagunas"
+                "@value": "Lagunas",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PELOR"
             },
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-5.2166667",
                 "@type": "xsd:float"

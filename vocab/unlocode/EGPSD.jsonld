@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EGPSD",
             "rdf:value": "EGPSD",
+            "@id": "unlcd:EGPSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Said"
+                "@value": "Port Said",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "EG"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EG"
+            }
         }
     ]
 }

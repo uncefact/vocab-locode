@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BSNET",
             "rdf:value": "BSNET",
+            "@id": "unlcd:BSNET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "New Bight"
+                "@value": "New Bight",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BSCI"
             },
-            "unlcdc:countryCode": "BS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BS"
+            },
             "geo:lat": {
                 "@value": "24.3",
                 "@type": "xsd:float"

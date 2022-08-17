@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRASS",
             "rdf:value": "GRASS",
+            "@id": "unlcd:GRASS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Asprópirgos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aspropirgos"
+                    "@value": "Aspropirgos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GRA1"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "38.066666",
                 "@type": "xsd:float"

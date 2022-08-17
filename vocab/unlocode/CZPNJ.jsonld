@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZPNJ",
             "rdf:value": "CZPNJ",
+            "@id": "unlcd:CZPNJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Police nad Metují"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Police nad Metuji"
+                    "@value": "Police nad Metuji",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.533333",
                 "@type": "xsd:float"

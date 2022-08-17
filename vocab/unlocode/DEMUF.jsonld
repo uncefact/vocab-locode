@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMUF",
             "rdf:value": "DEMUF",
+            "@id": "unlcd:DEMUF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mühldorf am Inn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Muhldorf am Inn"
+                    "@value": "Muhldorf am Inn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.233334",
                 "@type": "xsd:float"

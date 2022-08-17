@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PEAZA",
             "rdf:value": "PEAZA",
+            "@id": "unlcd:PEAZA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Azángaro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Azangaro"
+                    "@value": "Azangaro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PEPUN"
             },
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-14.9",
                 "@type": "xsd:float"

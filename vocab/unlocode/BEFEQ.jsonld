@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEFEQ",
             "rdf:value": "BEFEQ",
+            "@id": "unlcd:BEFEQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontaine-l'Évêque"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontaine-l'Eveque"
+                    "@value": "Fontaine-l'Eveque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.416668",
                 "@type": "xsd:float"

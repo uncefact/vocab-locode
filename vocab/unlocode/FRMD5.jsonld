@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMD5",
             "rdf:value": "FRMD5",
+            "@id": "unlcd:FRMD5",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mérindol-les-Oliviers"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Merindol-les-Oliviers"
+                    "@value": "Merindol-les-Oliviers",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.266666",
                 "@type": "xsd:float"

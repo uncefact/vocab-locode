@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRIDG",
             "rdf:value": "BRIDG",
+            "@id": "unlcd:BRIDG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Itaipava do Grajaú"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Itaipava do Grajau"
+                    "@value": "Itaipava do Grajau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.133333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KHMMT",
             "rdf:value": "KHMMT",
+            "@id": "unlcd:KHMMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mémót"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Memot"
+                    "@value": "Memot",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:KH3"
             },
-            "unlcdc:countryCode": "KH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KH"
+            },
             "geo:lat": {
                 "@value": "11.816667",
                 "@type": "xsd:float"

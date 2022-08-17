@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCCV",
             "rdf:value": "ESCCV",
+            "@id": "unlcd:ESCCV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Carrión de Calatrava"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Carrion de Calatrava"
+                    "@value": "Carrion de Calatrava",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESCR"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.016666",
                 "@type": "xsd:float"

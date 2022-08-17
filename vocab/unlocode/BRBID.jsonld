@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBID",
             "rdf:value": "BRBID",
+            "@id": "unlcd:BRBID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brasilândia do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brasilandia do Sul"
+                    "@value": "Brasilandia do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-24.183332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESAUL",
             "rdf:value": "ESAUL",
+            "@id": "unlcd:ESAUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Arroyo de Cuéllar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Arroyo de Cuellar"
+                    "@value": "Arroyo de Cuellar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSG"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.333332",
                 "@type": "xsd:float"

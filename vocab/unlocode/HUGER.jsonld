@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUGER",
             "rdf:value": "HUGER",
+            "@id": "unlcd:HUGER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gerendás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gerendas"
+                    "@value": "Gerendas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUBE"
             },
-            "unlcdc:countryCode": "HU"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            }
         }
     ]
 }

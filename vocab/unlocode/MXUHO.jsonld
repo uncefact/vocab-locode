@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXUHO",
             "rdf:value": "MXUHO",
+            "@id": "unlcd:MXUHO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Unión Hidalgo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Union Hidalgo"
+                    "@value": "Union Hidalgo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXOAX"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "16.483334",
                 "@type": "xsd:float"

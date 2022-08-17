@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FJVAT",
             "rdf:value": "FJVAT",
+            "@id": "unlcd:FJVAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Vatia Wharf"
+                "@value": "Vatia Wharf",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "FJ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FJ"
+            },
             "geo:lat": {
                 "@value": "-17.4",
                 "@type": "xsd:float"

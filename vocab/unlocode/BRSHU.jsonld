@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSHU",
             "rdf:value": "BRSHU",
+            "@id": "unlcd:BRSHU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João do Manhuaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao do Manhuacu"
+                    "@value": "Sao Joao do Manhuacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.383333",
                 "@type": "xsd:float"

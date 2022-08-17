@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LTKUP",
             "rdf:value": "LTKUP",
+            "@id": "unlcd:LTKUP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Kupiskis"
+                "@value": "Kupiskis",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LT"
+            },
             "geo:lat": {
                 "@value": "55.833332",
                 "@type": "xsd:float"

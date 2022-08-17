@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDDX",
             "rdf:value": "FRDDX",
+            "@id": "unlcd:FRDDX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Denis-de-l'Hôtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Denis-de-l'Hotel"
+                    "@value": "Saint-Denis-de-l'Hotel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.883335",
                 "@type": "xsd:float"

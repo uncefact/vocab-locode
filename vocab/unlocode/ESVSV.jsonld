@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVSV",
             "rdf:value": "ESVSV",
+            "@id": "unlcd:ESVSV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villarejo de Salvanés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villarejo de Salvanes"
+                    "@value": "Villarejo de Salvanes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESM"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.183334",
                 "@type": "xsd:float"

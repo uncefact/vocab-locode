@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLLBW",
             "rdf:value": "PLLBW",
+            "@id": "unlcd:PLLBW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lubycza Królewska"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lubycza Krolewska"
+                    "@value": "Lubycza Krolewska",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PLLU"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "50.333332",
                 "@type": "xsd:float"

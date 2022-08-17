@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSUS",
             "rdf:value": "FRSUS",
+            "@id": "unlcd:FRSUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Laurent-de-Céris"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Laurent-de-Ceris"
+                    "@value": "Saint-Laurent-de-Ceris",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.95",
                 "@type": "xsd:float"

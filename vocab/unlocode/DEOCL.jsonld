@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEOCL",
             "rdf:value": "DEOCL",
+            "@id": "unlcd:DEOCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bröckel/Kreis Celle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brockel/Kreis Celle"
+                    "@value": "Brockel/Kreis Celle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.516666",
                 "@type": "xsd:float"

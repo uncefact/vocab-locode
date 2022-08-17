@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGAB",
             "rdf:value": "FRGAB",
+            "@id": "unlcd:FRGAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brains-sur-Gée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brains-sur-Gee"
+                    "@value": "Brains-sur-Gee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.016666",
                 "@type": "xsd:float"

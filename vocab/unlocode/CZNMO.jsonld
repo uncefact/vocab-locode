@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZNMO",
             "rdf:value": "CZNMO",
+            "@id": "unlcd:CZNMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nové Mesto na Morave"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nove Mesto na Morave"
+                    "@value": "Nove Mesto na Morave",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.566666",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HRMAS",
             "rdf:value": "HRMAS",
+            "@id": "unlcd:HRMAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Maslenica"
+                "@value": "Maslenica",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HR17"
             },
-            "unlcdc:countryCode": "HR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HR"
+            },
             "geo:lat": {
                 "@value": "44.216667",
                 "@type": "xsd:float"

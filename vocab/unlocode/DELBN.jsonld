@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DELBN",
             "rdf:value": "DELBN",
+            "@id": "unlcd:DELBN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lauben im Oberallgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lauben im Oberallgau"
+                    "@value": "Lauben im Oberallgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.783333",
                 "@type": "xsd:float"

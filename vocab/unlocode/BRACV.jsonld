@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRACV",
             "rdf:value": "BRACV",
+            "@id": "unlcd:BRACV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Álvaro de Carvalho"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alvaro de Carvalho"
+                    "@value": "Alvaro de Carvalho",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.066668",
                 "@type": "xsd:float"

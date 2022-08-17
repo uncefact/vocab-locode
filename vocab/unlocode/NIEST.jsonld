@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NIEST",
             "rdf:value": "NIEST",
+            "@id": "unlcd:NIEST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Estelí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Esteli"
+                    "@value": "Esteli",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NIES"
             },
-            "unlcdc:countryCode": "NI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NI"
+            },
             "geo:lat": {
                 "@value": "13.083333",
                 "@type": "xsd:float"

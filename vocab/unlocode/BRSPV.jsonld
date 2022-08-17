@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPV",
             "rdf:value": "BRSPV",
+            "@id": "unlcd:BRSPV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Paulo de Olivença"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Paulo de Olivenca"
+                    "@value": "Sao Paulo de Olivenca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAM"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.45",
                 "@type": "xsd:float"

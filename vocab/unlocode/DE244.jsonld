@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE244",
             "rdf:value": "DE244",
+            "@id": "unlcd:DE244",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bräunsdorf/Oberschöna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Braunsdorf/Oberschona"
+                    "@value": "Braunsdorf/Oberschona",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.95",
                 "@type": "xsd:float"

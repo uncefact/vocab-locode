@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AUTOG",
             "rdf:value": "AUTOG",
+            "@id": "unlcd:AUTOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tooronga"
+                "@value": "Tooronga",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUVIC"
             },
-            "unlcdc:countryCode": "AU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AU"
+            },
             "geo:lat": {
                 "@value": "-37.766666",
                 "@type": "xsd:float"

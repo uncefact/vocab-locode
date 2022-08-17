@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHSE",
             "rdf:value": "FRHSE",
+            "@id": "unlcd:FRHSE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Haÿ-les-Roses"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Hay-les-Roses"
+                    "@value": "L'Hay-les-Roses",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR94"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.783333",
                 "@type": "xsd:float"

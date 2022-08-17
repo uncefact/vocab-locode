@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEGNM",
             "rdf:value": "DEGNM",
+            "@id": "unlcd:DEGNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gallin (Mühlanger)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gallin (Muhlanger)"
+                    "@value": "Gallin (Muhlanger)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.85",
                 "@type": "xsd:float"

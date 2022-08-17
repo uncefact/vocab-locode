@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COVDJ",
             "rdf:value": "COVDJ",
+            "@id": "unlcd:COVDJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Valencia de Jesús"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Valencia de Jesus"
+                    "@value": "Valencia de Jesus",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COCES"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "10.3",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRENR",
             "rdf:value": "FRENR",
+            "@id": "unlcd:FRENR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Laboissière-en-Santerre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Laboissiere-en-Santerre"
+                    "@value": "Laboissiere-en-Santerre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR80"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.666668",
                 "@type": "xsd:float"

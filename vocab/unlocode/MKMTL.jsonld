@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MKMTL",
             "rdf:value": "MKMTL",
+            "@id": "unlcd:MKMTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Medzitlija"
+                "@value": "Medzitlija",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "MK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MK"
+            },
             "geo:lat": {
                 "@value": "40.933334",
                 "@type": "xsd:float"

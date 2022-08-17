@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRFGY",
             "rdf:value": "BRFGY",
+            "@id": "unlcd:BRFGY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Francisco de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Francisco de Goias"
+                    "@value": "Sao Francisco de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.916667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEMEB",
             "rdf:value": "BEMEB",
+            "@id": "unlcd:BEMEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Meslin-l'Evêque"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Meslin-l'Eveque"
+                    "@value": "Meslin-l'Eveque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.65",
                 "@type": "xsd:float"

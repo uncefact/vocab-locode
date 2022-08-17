@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VISTX",
             "rdf:value": "VISTX",
+            "@id": "unlcd:VISTX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saint Croix"
+                "@value": "Saint Croix",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "VI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VI"
+            },
             "geo:lat": {
                 "@value": "17.75",
                 "@type": "xsd:float"

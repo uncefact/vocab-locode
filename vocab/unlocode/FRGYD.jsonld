@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGYD",
             "rdf:value": "FRGYD",
+            "@id": "unlcd:FRGYD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gouy-Saint-André"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gouy-Saint-Andre"
+                    "@value": "Gouy-Saint-Andre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.366665",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TWILA",
             "rdf:value": "TWILA",
+            "@id": "unlcd:TWILA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "I-lan"
+                "@value": "I-lan",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TW"
+            },
             "geo:lat": {
                 "@value": "24.766666",
                 "@type": "xsd:float"

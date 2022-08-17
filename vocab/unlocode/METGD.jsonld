@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:METGD",
             "rdf:value": "METGD",
+            "@id": "unlcd:METGD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Podgorica"
+                "@value": "Podgorica",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "ME",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ME"
+            },
             "geo:lat": {
                 "@value": "42.433334",
                 "@type": "xsd:float"

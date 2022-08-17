@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLWF",
             "rdf:value": "FRLWF",
+            "@id": "unlcd:FRLWF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lamotte-Warfusée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lamotte-Warfusee"
+                    "@value": "Lamotte-Warfusee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR80"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.866665",
                 "@type": "xsd:float"

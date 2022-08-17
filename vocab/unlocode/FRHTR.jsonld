@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHTR",
             "rdf:value": "FRHTR",
+            "@id": "unlcd:FRHTR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Château-d'Oléron"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Chateau-d'Oleron"
+                    "@value": "Le Chateau-d'Oleron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR17"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.9",
                 "@type": "xsd:float"

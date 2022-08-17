@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPFP",
             "rdf:value": "BRPFP",
+            "@id": "unlcd:BRPFP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Passagem Franca do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Passagem Franca do Piaui"
+                    "@value": "Passagem Franca do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.85",
                 "@type": "xsd:float"

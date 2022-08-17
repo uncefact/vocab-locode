@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRESR",
             "rdf:value": "FRESR",
+            "@id": "unlcd:FRESR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Étoile-sur-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Etoile-sur-Rhone"
+                    "@value": "Etoile-sur-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.833332",
                 "@type": "xsd:float"

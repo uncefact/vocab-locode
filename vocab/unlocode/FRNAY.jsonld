@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNAY",
             "rdf:value": "FRNAY",
+            "@id": "unlcd:FRNAY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marsannay-la-Côte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marsannay-la-Cote"
+                    "@value": "Marsannay-la-Cote",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.266666",
                 "@type": "xsd:float"

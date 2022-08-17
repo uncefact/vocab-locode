@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPOE",
             "rdf:value": "FRPOE",
+            "@id": "unlcd:FRPOE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pont-l'Évêque"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pont-l'Eveque"
+                    "@value": "Pont-l'Eveque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.283333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSFS",
             "rdf:value": "BRSFS",
+            "@id": "unlcd:BRSFS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Francisco do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Francisco do Sul"
+                    "@value": "Sao Francisco do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -43,7 +43,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.233334",
                 "@type": "xsd:float"

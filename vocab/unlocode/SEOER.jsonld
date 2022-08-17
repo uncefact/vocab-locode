@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEOER",
             "rdf:value": "SEOER",
+            "@id": "unlcd:SEOER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Örnsköldsvik"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ornskoldsvik"
+                    "@value": "Ornskoldsvik",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEY"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "63.3",
                 "@type": "xsd:float"

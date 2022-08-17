@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MEIGL",
             "rdf:value": "MEIGL",
+            "@id": "unlcd:MEIGL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Igalo"
+                "@value": "Igalo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ME",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ME"
+            },
             "geo:lat": {
                 "@value": "42.466667",
                 "@type": "xsd:float"

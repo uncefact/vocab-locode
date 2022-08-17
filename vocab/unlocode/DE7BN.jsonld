@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE7BN",
             "rdf:value": "DE7BN",
+            "@id": "unlcd:DE7BN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Birkholz bei Tangerhütte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Birkholz bei Tangerhutte"
+                    "@value": "Birkholz bei Tangerhutte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.416668",
                 "@type": "xsd:float"

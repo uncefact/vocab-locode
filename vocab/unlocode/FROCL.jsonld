@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROCL",
             "rdf:value": "FROCL",
+            "@id": "unlcd:FROCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marolles-lès-Saint-Calais"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marolles-les-Saint-Calais"
+                    "@value": "Marolles-les-Saint-Calais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.916668",
                 "@type": "xsd:float"

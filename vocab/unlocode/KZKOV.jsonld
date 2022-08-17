@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KZKOV",
             "rdf:value": "KZKOV",
+            "@id": "unlcd:KZKOV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kökshetau"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kokshetau"
+                    "@value": "Kokshetau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "KZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KZ"
+            },
             "geo:lat": {
                 "@value": "53.266666",
                 "@type": "xsd:float"

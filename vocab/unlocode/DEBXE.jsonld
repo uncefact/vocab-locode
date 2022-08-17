@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBXE",
             "rdf:value": "DEBXE",
+            "@id": "unlcd:DEBXE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Buxheim, Unterallgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buxheim, Unterallgau"
+                    "@value": "Buxheim, Unterallgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

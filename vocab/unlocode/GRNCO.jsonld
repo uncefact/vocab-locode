@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRNCO",
             "rdf:value": "GRNCO",
+            "@id": "unlcd:GRNCO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neokhoroúdha"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neokhoroudha"
+                    "@value": "Neokhoroudha",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "40.733334",
                 "@type": "xsd:float"

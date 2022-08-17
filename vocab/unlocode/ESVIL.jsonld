@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVIL",
             "rdf:value": "ESVIL",
+            "@id": "unlcd:ESVIL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villagarcía de Arosa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villagarcia de Arosa"
+                    "@value": "Villagarcia de Arosa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESPO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.6",
                 "@type": "xsd:float"

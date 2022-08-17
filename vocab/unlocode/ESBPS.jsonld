@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESBPS",
             "rdf:value": "ESBPS",
+            "@id": "unlcd:ESBPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Bisbal del Penèdes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Bisbal del Penedes"
+                    "@value": "La Bisbal del Penedes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESTF"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.283333",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GPBBR",
             "rdf:value": "GPBBR",
+            "@id": "unlcd:GPBBR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Basse-Terre"
+                "@value": "Basse-Terre",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "GP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GP"
+            },
             "geo:lat": {
                 "@value": "16.0",
                 "@type": "xsd:float"

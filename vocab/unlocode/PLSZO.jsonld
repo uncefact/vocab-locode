@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLSZO",
             "rdf:value": "PLSZO",
+            "@id": "unlcd:PLSZO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Solec-Zdrój"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Solec-Zdroj"
+                    "@value": "Solec-Zdroj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "50.366665",
                 "@type": "xsd:float"

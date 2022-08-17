@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGEB",
             "rdf:value": "FRGEB",
+            "@id": "unlcd:FRGEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Garancières-en-Beauce"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garancieres-en-Beauce"
+                    "@value": "Garancieres-en-Beauce",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.433334",
                 "@type": "xsd:float"

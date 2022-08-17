@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZFRM",
             "rdf:value": "CZFRM",
+            "@id": "unlcd:CZFRM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Frydek-Místek"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Frydek-Mistek"
+                    "@value": "Frydek-Mistek",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.683334",
                 "@type": "xsd:float"

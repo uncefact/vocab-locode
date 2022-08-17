@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BSSML",
             "rdf:value": "BSSML",
+            "@id": "unlcd:BSSML",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Stella Maris"
+                "@value": "Stella Maris",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BSLI"
             },
-            "unlcdc:countryCode": "BS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BS"
+            },
             "geo:lat": {
                 "@value": "23.6",
                 "@type": "xsd:float"

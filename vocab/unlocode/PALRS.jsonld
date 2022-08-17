@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PALRS",
             "rdf:value": "PALRS",
+            "@id": "unlcd:PALRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Raya de Santa María"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Raya de Santa Maria"
+                    "@value": "La Raya de Santa Maria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA10"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.166667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFFN",
             "rdf:value": "FRFFN",
+            "@id": "unlcd:FRFFN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Ferté-Frênel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Ferte-Frenel"
+                    "@value": "La Ferte-Frenel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR61"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.833332",
                 "@type": "xsd:float"

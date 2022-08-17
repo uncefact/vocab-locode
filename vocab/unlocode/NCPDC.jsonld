@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCPDC",
             "rdf:value": "NCPDC",
+            "@id": "unlcd:NCPDC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Muéo/Népoui"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mueo/Nepoui"
+                    "@value": "Mueo/Nepoui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "NC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            },
             "geo:lat": {
                 "@value": "-21.3",
                 "@type": "xsd:float"

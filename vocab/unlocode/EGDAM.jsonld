@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EGDAM",
             "rdf:value": "EGDAM",
+            "@id": "unlcd:EGDAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Dumyat (Damietta)"
+                "@value": "Dumyat (Damietta)",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -31,7 +31,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "EG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EG"
+            },
             "geo:lat": {
                 "@value": "31.416666",
                 "@type": "xsd:float"

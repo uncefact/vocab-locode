@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ILBGA",
             "rdf:value": "ILBGA",
+            "@id": "unlcd:ILBGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Ben Gurion International Apt"
+                "@value": "Ben Gurion International Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ILTA"
             },
-            "unlcdc:countryCode": "IL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IL"
+            },
             "geo:lat": {
                 "@value": "32.016666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDPP",
             "rdf:value": "FRDPP",
+            "@id": "unlcd:FRDPP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Condé-sur-Suippe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conde-sur-Suippe"
+                    "@value": "Conde-sur-Suippe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.416668",
                 "@type": "xsd:float"

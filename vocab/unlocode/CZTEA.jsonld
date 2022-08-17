@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZTEA",
             "rdf:value": "CZTEA",
+            "@id": "unlcd:CZTEA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cesky Tesín"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cesky Tesin"
+                    "@value": "Cesky Tesin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.75",
                 "@type": "xsd:float"

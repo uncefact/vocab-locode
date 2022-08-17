@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNIO",
             "rdf:value": "FRNIO",
+            "@id": "unlcd:FRNIO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nançois-sur-Ornain"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nancois-sur-Ornain"
+                    "@value": "Nancois-sur-Ornain",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR55"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.716667",
                 "@type": "xsd:float"

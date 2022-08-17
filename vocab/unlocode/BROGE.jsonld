@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BROGE",
             "rdf:value": "BROGE",
+            "@id": "unlcd:BROGE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Olho d'Água Grande"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olho d'Agua Grande"
+                    "@value": "Olho d'Agua Grande",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.05",
                 "@type": "xsd:float"

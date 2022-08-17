@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSMP",
             "rdf:value": "PTSMP",
+            "@id": "unlcd:PTSMP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Marta de Penaguião"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Marta de Penaguiao"
+                    "@value": "Santa Marta de Penaguiao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT17"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.2",
                 "@type": "xsd:float"

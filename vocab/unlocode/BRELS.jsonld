@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRELS",
             "rdf:value": "BRELS",
+            "@id": "unlcd:BRELS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Senador Elói de Souza"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Senador Eloi de Souza"
+                    "@value": "Senador Eloi de Souza",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.0333333",
                 "@type": "xsd:float"

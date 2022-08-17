@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRRV",
             "rdf:value": "FRRRV",
+            "@id": "unlcd:FRRRV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Beauvois-en-Cambrésis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beauvois-en-Cambresis"
+                    "@value": "Beauvois-en-Cambresis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR59"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.133335",
                 "@type": "xsd:float"

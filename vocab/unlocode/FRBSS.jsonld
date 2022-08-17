@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBSS",
             "rdf:value": "FRBSS",
+            "@id": "unlcd:FRBSS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Belleville-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Belleville-sur-Saone"
+                    "@value": "Belleville-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.1",
                 "@type": "xsd:float"

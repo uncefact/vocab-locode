@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZMNS",
             "rdf:value": "CZMNS",
+            "@id": "unlcd:CZMNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moravská Nová Ves"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moravska Nova Ves"
+                    "@value": "Moravska Nova Ves",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

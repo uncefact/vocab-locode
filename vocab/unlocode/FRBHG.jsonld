@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBHG",
             "rdf:value": "FRBHG",
+            "@id": "unlcd:FRBHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Berchères-Saint-Germain"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bercheres-Saint-Germain"
+                    "@value": "Bercheres-Saint-Germain",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.516666",
                 "@type": "xsd:float"

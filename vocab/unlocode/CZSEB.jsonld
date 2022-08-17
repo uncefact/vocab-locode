@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSEB",
             "rdf:value": "CZSEB",
+            "@id": "unlcd:CZSEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Strunkovice nad Blanicí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Strunkovice nad Blanici"
+                    "@value": "Strunkovice nad Blanici",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJC"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.083332",
                 "@type": "xsd:float"

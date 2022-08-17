@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPOC",
             "rdf:value": "FRPOC",
+            "@id": "unlcd:FRPOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pont-de-Chéruy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pont-de-Cheruy"
+                    "@value": "Pont-de-Cheruy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.75",
                 "@type": "xsd:float"

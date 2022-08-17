@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSVC",
             "rdf:value": "BRSVC",
+            "@id": "unlcd:BRSVC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sítio Novo do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sitio Novo do Tocantins"
+                    "@value": "Sitio Novo do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.6",
                 "@type": "xsd:float"

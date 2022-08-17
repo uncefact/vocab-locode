@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:JPTOC",
             "rdf:value": "JPTOC",
+            "@id": "unlcd:JPTOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Togane"
+                "@value": "Togane",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:JP12"
             },
-            "unlcdc:countryCode": "JP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:JP"
+            },
             "geo:lat": {
                 "@value": "35.566666",
                 "@type": "xsd:float"

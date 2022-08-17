@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVHG",
             "rdf:value": "FRVHG",
+            "@id": "unlcd:FRVHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villeneuve-de-Rivière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villeneuve-de-Riviere"
+                    "@value": "Villeneuve-de-Riviere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR31"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.133335",
                 "@type": "xsd:float"

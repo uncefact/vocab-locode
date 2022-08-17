@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUWE",
             "rdf:value": "DEUWE",
+            "@id": "unlcd:DEUWE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bülow bei Gadebusch"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bulow bei Gadebusch"
+                    "@value": "Bulow bei Gadebusch",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.766666",
                 "@type": "xsd:float"

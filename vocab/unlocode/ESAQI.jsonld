@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESAQI",
             "rdf:value": "ESAQI",
+            "@id": "unlcd:ESAQI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alcalá de Chivert"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alcala de Chivert"
+                    "@value": "Alcala de Chivert",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESCS"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.3",
                 "@type": "xsd:float"

@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLDEV",
             "rdf:value": "NLDEV",
+            "@id": "unlcd:NLDEV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Deventer"
+                "@value": "Deventer",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -26,7 +26,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPSI",
             "rdf:value": "FRPSI",
+            "@id": "unlcd:FRPSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Piré-sur-Seiche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pire-sur-Seiche"
+                    "@value": "Pire-sur-Seiche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.0",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBMI",
             "rdf:value": "BRBMI",
+            "@id": "unlcd:BRBMI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brasilândia de Minas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brasilandia de Minas"
+                    "@value": "Brasilandia de Minas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.983334",
                 "@type": "xsd:float"

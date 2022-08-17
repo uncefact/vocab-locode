@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRUCQ",
             "rdf:value": "FRUCQ",
+            "@id": "unlcd:FRUCQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lucq-de-Béarn"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lucq-de-Bearn"
+                    "@value": "Lucq-de-Bearn",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR64"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.3",
                 "@type": "xsd:float"

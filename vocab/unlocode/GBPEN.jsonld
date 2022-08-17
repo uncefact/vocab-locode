@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBPEN",
             "rdf:value": "GBPEN",
+            "@id": "unlcd:GBPEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Penzance"
+                "@value": "Penzance",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBCON"
             },
-            "unlcdc:countryCode": "GB"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            }
         }
     ]
 }

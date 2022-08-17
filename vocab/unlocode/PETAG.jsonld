@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PETAG",
             "rdf:value": "PETAG",
+            "@id": "unlcd:PETAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tambo Grande"
+                "@value": "Tambo Grande",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-16.0",
                 "@type": "xsd:float"

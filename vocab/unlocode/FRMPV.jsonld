@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMPV",
             "rdf:value": "FRMPV",
+            "@id": "unlcd:FRMPV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Monferran-Plavès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Monferran-Plaves"
+                    "@value": "Monferran-Plaves",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR32"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.483334",
                 "@type": "xsd:float"

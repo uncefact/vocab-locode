@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRUVA",
             "rdf:value": "BRUVA",
+            "@id": "unlcd:BRUVA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "União da Vitória"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Uniao da Vitoria"
+                    "@value": "Uniao da Vitoria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.216667",
                 "@type": "xsd:float"

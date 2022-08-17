@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSMG",
             "rdf:value": "BRSMG",
+            "@id": "unlcd:BRSMG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Gostoso"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Gostoso"
+                    "@value": "Sao Miguel do Gostoso",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.116667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSJR",
             "rdf:value": "BRSJR",
+            "@id": "unlcd:BRSJR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José do Rio Claro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose do Rio Claro"
+                    "@value": "Sao Jose do Rio Claro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-13.45",
                 "@type": "xsd:float"

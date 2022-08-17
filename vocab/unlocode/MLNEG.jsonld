@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MLNEG",
             "rdf:value": "MLNEG",
+            "@id": "unlcd:MLNEG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Négala"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Negala"
+                    "@value": "Negala",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ML2"
             },
-            "unlcdc:countryCode": "ML",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ML"
+            },
             "geo:lat": {
                 "@value": "12.866667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCSM",
             "rdf:value": "FRCSM",
+            "@id": "unlcd:FRCSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châlons-en-Champagne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chalons-en-Champagne"
+                    "@value": "Chalons-en-Champagne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.95",
                 "@type": "xsd:float"

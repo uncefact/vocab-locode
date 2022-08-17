@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCMD",
             "rdf:value": "FRCMD",
+            "@id": "unlcd:FRCMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castelnau-de-Médoc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castelnau-de-Medoc"
+                    "@value": "Castelnau-de-Medoc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.033333",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSBU",
             "rdf:value": "ESSBU",
+            "@id": "unlcd:ESSBU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saldaña de Burgos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saldana de Burgos"
+                    "@value": "Saldana de Burgos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.25",
                 "@type": "xsd:float"

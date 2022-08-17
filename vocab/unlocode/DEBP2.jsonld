@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBP2",
             "rdf:value": "DEBP2",
+            "@id": "unlcd:DEBP2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bandekow bei Lübtheen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bandekow bei Lubtheen"
+                    "@value": "Bandekow bei Lubtheen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.333332",
                 "@type": "xsd:float"

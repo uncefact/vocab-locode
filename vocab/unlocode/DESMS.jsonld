@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESMS",
             "rdf:value": "DESMS",
+            "@id": "unlcd:DESMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schönau im Schwarzwald"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schonau im Schwarzwald"
+                    "@value": "Schonau im Schwarzwald",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.783333",
                 "@type": "xsd:float"

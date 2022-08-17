@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEIMM",
             "rdf:value": "DEIMM",
+            "@id": "unlcd:DEIMM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Immenstadt im Allgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Immenstadt im Allgau"
+                    "@value": "Immenstadt im Allgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.566666",
                 "@type": "xsd:float"

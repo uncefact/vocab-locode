@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSSC",
             "rdf:value": "BRSSC",
+            "@id": "unlcd:BRSSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Caí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Cai"
+                    "@value": "Sao Sebastiao do Cai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-29.583334",
                 "@type": "xsd:float"

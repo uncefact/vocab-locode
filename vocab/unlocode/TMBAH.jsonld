@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TMBAH",
             "rdf:value": "TMBAH",
+            "@id": "unlcd:TMBAH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bäherden"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Baherden"
+                    "@value": "Baherden",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TM"
+            },
             "geo:lat": {
                 "@value": "38.433334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSDF",
             "rdf:value": "BRSDF",
+            "@id": "unlcd:BRSDF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Pedro dos Ferros"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Pedro dos Ferros"
+                    "@value": "Sao Pedro dos Ferros",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.166666",
                 "@type": "xsd:float"

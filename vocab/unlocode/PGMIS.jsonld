@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PGMIS",
             "rdf:value": "PGMIS",
+            "@id": "unlcd:PGMIS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Misima Island"
+                "@value": "Misima Island",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "PG"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PG"
+            }
         }
     ]
 }

@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSID",
             "rdf:value": "ESSID",
+            "@id": "unlcd:ESSID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Isidro de Dueñas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Isidro de Duenas"
+                    "@value": "San Isidro de Duenas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESP"
             },
-            "unlcdc:countryCode": "ES"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            }
         }
     ]
 }

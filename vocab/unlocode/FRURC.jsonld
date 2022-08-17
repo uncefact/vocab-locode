@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRURC",
             "rdf:value": "FRURC",
+            "@id": "unlcd:FRURC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Pourçain-sur-Sioule"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Pourcain-sur-Sioule"
+                    "@value": "Saint-Pourcain-sur-Sioule",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR03"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.3",
                 "@type": "xsd:float"

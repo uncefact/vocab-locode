@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CWCUR",
             "rdf:value": "CWCUR",
+            "@id": "unlcd:CWCUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Curaçao"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Curacao"
+                    "@value": "Curacao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CW"
+            },
             "geo:lat": {
                 "@value": "12.166667",
                 "@type": "xsd:float"

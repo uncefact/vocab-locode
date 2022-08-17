@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRJTS",
             "rdf:value": "FRJTS",
+            "@id": "unlcd:FRJTS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Joué-lès-Tours"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Joue-les-Tours"
+                    "@value": "Joue-les-Tours",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.35",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NISEB",
             "rdf:value": "NISEB",
+            "@id": "unlcd:NISEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sébaco"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sebaco"
+                    "@value": "Sebaco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NIMT"
             },
-            "unlcdc:countryCode": "NI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NI"
+            },
             "geo:lat": {
                 "@value": "12.85",
                 "@type": "xsd:float"

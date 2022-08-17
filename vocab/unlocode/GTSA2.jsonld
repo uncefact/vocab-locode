@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSA2",
             "rdf:value": "GTSA2",
+            "@id": "unlcd:GTSA2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Agustín Acasaguastlán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Agustin Acasaguastlan"
+                    "@value": "San Agustin Acasaguastlan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT02"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.95",
                 "@type": "xsd:float"

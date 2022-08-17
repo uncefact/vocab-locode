@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LALPQ",
             "rdf:value": "LALPQ",
+            "@id": "unlcd:LALPQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Luang Prabang"
+                "@value": "Luang Prabang",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "LA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LA"
+            },
             "geo:lat": {
                 "@value": "19.883333",
                 "@type": "xsd:float"

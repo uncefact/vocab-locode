@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDSI",
             "rdf:value": "FRDSI",
+            "@id": "unlcd:FRDSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dreuil-lès-Amiens"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dreuil-les-Amiens"
+                    "@value": "Dreuil-les-Amiens",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR80"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.916668",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZRNH",
             "rdf:value": "CZRNH",
+            "@id": "unlcd:CZRNH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kralice na Hané"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kralice na Hane"
+                    "@value": "Kralice na Hane",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.45",
                 "@type": "xsd:float"

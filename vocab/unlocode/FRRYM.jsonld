@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRYM",
             "rdf:value": "FRRYM",
+            "@id": "unlcd:FRRYM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Charnay-lès-Mâcon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Charnay-les-Macon"
+                    "@value": "Charnay-les-Macon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.3",
                 "@type": "xsd:float"

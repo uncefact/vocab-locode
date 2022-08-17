@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZHOS",
             "rdf:value": "CZHOS",
+            "@id": "unlcd:CZHOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hora Svatého Sebestiána"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hora Svateho Sebestiana"
+                    "@value": "Hora Svateho Sebestiana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.516666",
                 "@type": "xsd:float"

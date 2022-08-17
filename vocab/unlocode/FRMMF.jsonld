@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMMF",
             "rdf:value": "FRMMF",
+            "@id": "unlcd:FRMMF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marimont-lès-Bénestroff"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marimont-les-Benestroff"
+                    "@value": "Marimont-les-Benestroff",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR57"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.883335",
                 "@type": "xsd:float"

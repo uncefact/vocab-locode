@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCBJ",
             "rdf:value": "BRCBJ",
+            "@id": "unlcd:BRCBJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Córrego do Bom Jesus"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Corrego do Bom Jesus"
+                    "@value": "Corrego do Bom Jesus",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.616667",
                 "@type": "xsd:float"

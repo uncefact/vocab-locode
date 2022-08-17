@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NIPTI",
             "rdf:value": "NIPTI",
+            "@id": "unlcd:NIPTI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Potosí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Potosi"
+                    "@value": "Potosi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NICI"
             },
-            "unlcdc:countryCode": "NI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NI"
+            },
             "geo:lat": {
                 "@value": "13.0",
                 "@type": "xsd:float"

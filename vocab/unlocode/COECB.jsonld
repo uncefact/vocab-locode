@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COECB",
             "rdf:value": "COECB",
+            "@id": "unlcd:COECB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "El Carmen de Bolívar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "El Carmen de Bolivar"
+                    "@value": "El Carmen de Bolivar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COBOL"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "9.716666",
                 "@type": "xsd:float"

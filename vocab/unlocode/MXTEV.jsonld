@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTEV",
             "rdf:value": "MXTEV",
+            "@id": "unlcd:MXTEV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Teotitlán del Valle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Teotitlan del Valle"
+                    "@value": "Teotitlan del Valle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXOAX"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "17.033333",
                 "@type": "xsd:float"

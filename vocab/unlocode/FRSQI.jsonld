@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSQI",
             "rdf:value": "FRSQI",
+            "@id": "unlcd:FRSQI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-Roquepertuis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-Roquepertuis"
+                    "@value": "Saint-Andre-de-Roquepertuis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR30"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.233334",
                 "@type": "xsd:float"

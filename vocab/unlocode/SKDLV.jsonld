@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKDLV",
             "rdf:value": "SKDLV",
+            "@id": "unlcd:SKDLV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolný Lieskov"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolny Lieskov"
+                    "@value": "Dolny Lieskov",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKTC"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "49.05",
                 "@type": "xsd:float"

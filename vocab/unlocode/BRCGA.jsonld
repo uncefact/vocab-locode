@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCGA",
             "rdf:value": "BRCGA",
+            "@id": "unlcd:BRCGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição do Araguaia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao do Araguaia"
+                    "@value": "Conceicao do Araguaia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.25",
                 "@type": "xsd:float"

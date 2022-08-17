@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSSA",
             "rdf:value": "FRSSA",
+            "@id": "unlcd:FRSSA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Scey-sur-Saône-et-Saint-Albin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Scey-sur-Saone-et-Saint-Albin"
+                    "@value": "Scey-sur-Saone-et-Saint-Albin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.666668",
                 "@type": "xsd:float"

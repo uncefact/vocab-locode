@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDLV",
             "rdf:value": "FRDLV",
+            "@id": "unlcd:FRDLV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Délivrance/Lille"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Delivrance/Lille"
+                    "@value": "Delivrance/Lille",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR59"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.633335",
                 "@type": "xsd:float"

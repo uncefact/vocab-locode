@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUIPO",
             "rdf:value": "HUIPO",
+            "@id": "unlcd:HUIPO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ipolytarnóc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ipolytarnoc"
+                    "@value": "Ipolytarnoc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "48.233334",
                 "@type": "xsd:float"

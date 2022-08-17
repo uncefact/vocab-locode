@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLBS",
             "rdf:value": "BRLBS",
+            "@id": "unlcd:BRLBS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Leopoldo de Bulhões"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Leopoldo de Bulhoes"
+                    "@value": "Leopoldo de Bulhoes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.616667",
                 "@type": "xsd:float"

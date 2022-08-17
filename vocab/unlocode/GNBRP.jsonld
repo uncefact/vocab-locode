@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GNBRP",
             "rdf:value": "GNBRP",
+            "@id": "unlcd:GNBRP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Port de Boké"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Port de Boke"
+                    "@value": "Port de Boke",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNBK"
             },
-            "unlcdc:countryCode": "GN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GN"
+            },
             "geo:lat": {
                 "@value": "10.516666",
                 "@type": "xsd:float"

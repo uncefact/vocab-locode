@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKPBY",
             "rdf:value": "SKPBY",
+            "@id": "unlcd:SKPBY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Povazská Bystrica"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Povazska Bystrica"
+                    "@value": "Povazska Bystrica",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "49.1",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESBNF",
             "rdf:value": "ESBNF",
+            "@id": "unlcd:ESBNF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Benifairó de la Valldigna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Benifairo de la Valldigna"
+                    "@value": "Benifairo de la Valldigna",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESV"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.033333",
                 "@type": "xsd:float"

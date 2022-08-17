@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASEZ",
             "rdf:value": "CASEZ",
+            "@id": "unlcd:CASEZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Elzéar/La-Nouvelle-Beau"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Elzear/La-Nouvelle-Beau"
+                    "@value": "Saint-Elzear/La-Nouvelle-Beau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.4",
                 "@type": "xsd:float"

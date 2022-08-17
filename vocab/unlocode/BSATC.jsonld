@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BSATC",
             "rdf:value": "BSATC",
+            "@id": "unlcd:BSATC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Arthur's Town, Cat Island"
+                "@value": "Arthur's Town, Cat Island",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BSCI"
             },
-            "unlcdc:countryCode": "BS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BS"
+            },
             "geo:lat": {
                 "@value": "24.633333",
                 "@type": "xsd:float"

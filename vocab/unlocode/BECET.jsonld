@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BECET",
             "rdf:value": "BECET",
+            "@id": "unlcd:BECET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Court-Saint-Étienne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Court-Saint-Etienne"
+                    "@value": "Court-Saint-Etienne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWBR"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.633335",
                 "@type": "xsd:float"

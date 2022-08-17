@@ -10,22 +10,24 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATVOC",
             "rdf:value": "ATVOC",
+            "@id": "unlcd:ATVOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vöcklabruck"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vocklabruck"
+                    "@value": "Vocklabruck",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.0",
                 "@type": "xsd:float"

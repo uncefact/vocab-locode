@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TDLER",
             "rdf:value": "TDLER",
+            "@id": "unlcd:TDLER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Léré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lere"
+                    "@value": "Lere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TDMO"
             },
-            "unlcdc:countryCode": "TD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TD"
+            },
             "geo:lat": {
                 "@value": "9.65",
                 "@type": "xsd:float"

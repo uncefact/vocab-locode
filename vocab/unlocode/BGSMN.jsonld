@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BGSMN",
             "rdf:value": "BGSMN",
+            "@id": "unlcd:BGSMN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Shumen"
+                "@value": "Shumen",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BG"
+            },
             "geo:lat": {
                 "@value": "43.266666",
                 "@type": "xsd:float"

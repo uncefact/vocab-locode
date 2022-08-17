@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBAB",
             "rdf:value": "FRBAB",
+            "@id": "unlcd:FRBAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bagnères-de-Bigorre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bagneres-de-Bigorre"
+                    "@value": "Bagneres-de-Bigorre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR65"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.066666",
                 "@type": "xsd:float"

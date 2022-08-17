@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CDMHB",
             "rdf:value": "CDMHB",
+            "@id": "unlcd:CDMHB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Moho Bilondo"
+                "@value": "Moho Bilondo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "CD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CD"
+            },
             "geo:lat": {
                 "@value": "-5.9166665",
                 "@type": "xsd:float"

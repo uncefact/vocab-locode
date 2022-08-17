@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZHP",
             "rdf:value": "FRZHP",
+            "@id": "unlcd:FRZHP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Marcel-d'Ardèche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Marcel-d'Ardeche"
+                    "@value": "Saint-Marcel-d'Ardeche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.316666",
                 "@type": "xsd:float"

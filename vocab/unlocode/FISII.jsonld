@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FISII",
             "rdf:value": "FISII",
+            "@id": "unlcd:FISII",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Siilinjärvi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Siilinjarvi"
+                    "@value": "Siilinjarvi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI15"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "63.083332",
                 "@type": "xsd:float"

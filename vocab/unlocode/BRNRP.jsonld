@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNRP",
             "rdf:value": "BRNRP",
+            "@id": "unlcd:BRNRP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Novo Oriente do Piauí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Novo Oriente do Piaui"
+                    "@value": "Novo Oriente do Piaui",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.4333334",
                 "@type": "xsd:float"

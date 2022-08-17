@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTDL",
             "rdf:value": "FRTDL",
+            "@id": "unlcd:FRTDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Clément-des-Levées"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Clement-des-Levees"
+                    "@value": "Saint-Clement-des-Levees",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.333332",
                 "@type": "xsd:float"

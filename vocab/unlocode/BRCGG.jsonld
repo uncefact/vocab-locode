@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCGG",
             "rdf:value": "BRCGG",
+            "@id": "unlcd:BRCGG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Campo Alegre de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Campo Alegre de Goias"
+                    "@value": "Campo Alegre de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-17.633333",
                 "@type": "xsd:float"

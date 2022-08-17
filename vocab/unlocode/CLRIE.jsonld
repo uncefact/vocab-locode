@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLRIE",
             "rdf:value": "CLRIE",
+            "@id": "unlcd:CLRIE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Río Encuentro/Palena"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Rio Encuentro/Palena"
+                    "@value": "Paso Rio Encuentro/Palena",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLLL"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-43.583332",
                 "@type": "xsd:float"

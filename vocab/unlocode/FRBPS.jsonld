@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBPS",
             "rdf:value": "FRBPS",
+            "@id": "unlcd:FRBPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Blénod-lès-Pont-à-Mousson"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Blenod-les-Pont-a-Mousson"
+                    "@value": "Blenod-les-Pont-a-Mousson",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.883335",
                 "@type": "xsd:float"

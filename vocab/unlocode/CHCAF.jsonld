@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHCAF",
             "rdf:value": "CHCAF",
+            "@id": "unlcd:CHCAF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Côte-aux-Fées"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Cote-aux-Fees"
+                    "@value": "La Cote-aux-Fees",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHNE"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.866665",
                 "@type": "xsd:float"

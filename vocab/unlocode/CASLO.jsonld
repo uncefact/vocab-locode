@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASLO",
             "rdf:value": "CASLO",
+            "@id": "unlcd:CASLO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Laurent-de-l'Île-d'Orléans"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Laurent-de-l'Ile-d'Orleans"
+                    "@value": "Saint-Laurent-de-l'Ile-d'Orleans",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.866665",
                 "@type": "xsd:float"

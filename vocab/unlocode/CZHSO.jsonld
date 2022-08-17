@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZHSO",
             "rdf:value": "CZHSO",
+            "@id": "unlcd:CZHSO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Horní Slavkov"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Horni Slavkov"
+                    "@value": "Horni Slavkov",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.15",
                 "@type": "xsd:float"

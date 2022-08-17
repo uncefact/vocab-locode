@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASFX",
             "rdf:value": "CASFX",
+            "@id": "unlcd:CASFX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Félix-de-Valois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Felix-de-Valois"
+                    "@value": "Saint-Felix-de-Valois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.166668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJWD",
             "rdf:value": "BRJWD",
+            "@id": "unlcd:BRJWD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João das Duas Pontes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao das Duas Pontes"
+                    "@value": "Sao Joao das Duas Pontes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.383333",
                 "@type": "xsd:float"

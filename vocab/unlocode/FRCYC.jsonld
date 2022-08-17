@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCYC",
             "rdf:value": "FRCYC",
+            "@id": "unlcd:FRCYC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chevagny-les-Chevrières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chevagny-les-Chevrieres"
+                    "@value": "Chevagny-les-Chevrieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.333332",
                 "@type": "xsd:float"

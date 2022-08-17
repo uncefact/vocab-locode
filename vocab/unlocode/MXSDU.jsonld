@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXSDU",
             "rdf:value": "MXSDU",
+            "@id": "unlcd:MXSDU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Diego de la Unión"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Diego de la Union"
+                    "@value": "San Diego de la Union",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXGUA"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "21.466667",
                 "@type": "xsd:float"

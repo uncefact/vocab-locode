@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CARBD",
             "rdf:value": "CARBD",
+            "@id": "unlcd:CARBD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rivière-Beaudette"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Riviere-Beaudette"
+                    "@value": "Riviere-Beaudette",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.233334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTRNV",
             "rdf:value": "PTRNV",
+            "@id": "unlcd:PTRNV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Romão de Neiva"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Romao de Neiva"
+                    "@value": "Sao Romao de Neiva",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT16"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.633335",
                 "@type": "xsd:float"

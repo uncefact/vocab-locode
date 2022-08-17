@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNSP",
             "rdf:value": "FRNSP",
+            "@id": "unlcd:FRNSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neuvy-Saint-Sépulchre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neuvy-Saint-Sepulchre"
+                    "@value": "Neuvy-Saint-Sepulchre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR36"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.6",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUSZM",
             "rdf:value": "HUSZM",
+            "@id": "unlcd:HUSZM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Szigetszentmiklós"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Szigetszentmiklos"
+                    "@value": "Szigetszentmiklos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUPE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.35",
                 "@type": "xsd:float"

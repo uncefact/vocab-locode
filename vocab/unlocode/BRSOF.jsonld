@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSOF",
             "rdf:value": "BRSOF",
+            "@id": "unlcd:BRSOF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santana do São Francisco"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santana do Sao Francisco"
+                    "@value": "Santana do Sao Francisco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.283334",
                 "@type": "xsd:float"

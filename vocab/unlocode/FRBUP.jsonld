@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBUP",
             "rdf:value": "FRBUP",
+            "@id": "unlcd:FRBUP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brienon-sur-Armançon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brienon-sur-Armancon"
+                    "@value": "Brienon-sur-Armancon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR89"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.0",
                 "@type": "xsd:float"

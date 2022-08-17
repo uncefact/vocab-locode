@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROST",
             "rdf:value": "FROST",
+            "@id": "unlcd:FROST",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ouzouer-sur-Trézée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ouzouer-sur-Trezee"
+                    "@value": "Ouzouer-sur-Trezee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.666668",
                 "@type": "xsd:float"

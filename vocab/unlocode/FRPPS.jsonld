@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPPS",
             "rdf:value": "FRPPS",
+            "@id": "unlcd:FRPPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Colombe-près-Vernon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Colombe-pres-Vernon"
+                    "@value": "Sainte-Colombe-pres-Vernon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.083332",
                 "@type": "xsd:float"

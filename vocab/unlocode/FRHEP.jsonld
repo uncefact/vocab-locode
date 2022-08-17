@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHEP",
             "rdf:value": "FRHEP",
+            "@id": "unlcd:FRHEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Château-sur-Epte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateau-sur-Epte"
+                    "@value": "Chateau-sur-Epte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.2",
                 "@type": "xsd:float"

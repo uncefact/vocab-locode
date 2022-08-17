@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SGJUR",
             "rdf:value": "SGJUR",
+            "@id": "unlcd:SGJUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Jurong/Singapore"
+                "@value": "Jurong/Singapore",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SG"
+            },
             "geo:lat": {
                 "@value": "1.3333334",
                 "@type": "xsd:float"

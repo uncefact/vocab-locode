@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MEBAR",
             "rdf:value": "MEBAR",
+            "@id": "unlcd:MEBAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bar"
+                "@value": "Bar",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ME",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ME"
+            },
             "geo:lat": {
                 "@value": "42.083332",
                 "@type": "xsd:float"

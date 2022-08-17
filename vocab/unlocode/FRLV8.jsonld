@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLV8",
             "rdf:value": "FRLV8",
+            "@id": "unlcd:FRLV8",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Louvigné-du-Désert"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Louvigne-du-Desert"
+                    "@value": "Louvigne-du-Desert",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.483334",
                 "@type": "xsd:float"

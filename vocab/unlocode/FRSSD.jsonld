@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSSD",
             "rdf:value": "FRSSD",
+            "@id": "unlcd:FRSSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Serrières-de-Briord"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Serrieres-de-Briord"
+                    "@value": "Serrieres-de-Briord",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

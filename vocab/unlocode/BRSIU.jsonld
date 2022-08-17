@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSIU",
             "rdf:value": "BRSIU",
+            "@id": "unlcd:BRSIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Araguaia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Araguaia"
+                    "@value": "Sao Miguel do Araguaia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-13.266666",
                 "@type": "xsd:float"

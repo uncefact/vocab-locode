@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREPS",
             "rdf:value": "FREPS",
+            "@id": "unlcd:FREPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Épinay-sous-Sénart"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Epinay-sous-Senart"
+                    "@value": "Epinay-sous-Senart",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR91"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.683334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLOLA",
             "rdf:value": "CLOLA",
+            "@id": "unlcd:CLOLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Ollagüe/Ollagüe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Ollague/Ollague"
+                    "@value": "Paso Ollague/Ollague",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAN"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-21.216667",
                 "@type": "xsd:float"

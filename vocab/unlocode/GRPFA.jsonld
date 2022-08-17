@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRPFA",
             "rdf:value": "GRPFA",
+            "@id": "unlcd:GRPFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Palaiá Fókaia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Palaia Fokaia"
+                    "@value": "Palaia Fokaia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "37.716667",
                 "@type": "xsd:float"

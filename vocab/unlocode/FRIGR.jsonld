@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRIGR",
             "rdf:value": "FRIGR",
+            "@id": "unlcd:FRIGR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Bâtie-Montsaléon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Batie-Montsaleon"
+                    "@value": "La Batie-Montsaleon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR05"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.45",
                 "@type": "xsd:float"

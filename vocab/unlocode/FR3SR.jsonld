@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR3SR",
             "rdf:value": "FR3SR",
+            "@id": "unlcd:FR3SR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Clar-de-Rivière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Clar-de-Riviere"
+                    "@value": "Saint-Clar-de-Riviere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR31"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.466667",
                 "@type": "xsd:float"

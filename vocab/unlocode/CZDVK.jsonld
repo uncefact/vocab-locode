@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDVK",
             "rdf:value": "CZDVK",
+            "@id": "unlcd:CZDVK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dvur Králové nad Labem"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dvur Kralove nad Labem"
+                    "@value": "Dvur Kralove nad Labem",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.433334",
                 "@type": "xsd:float"

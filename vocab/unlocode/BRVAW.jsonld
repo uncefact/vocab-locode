@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRVAW",
             "rdf:value": "BRVAW",
+            "@id": "unlcd:BRVAW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Cecília do Pavão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Cecilia do Pavao"
+                    "@value": "Santa Cecilia do Pavao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.5",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASNG",
             "rdf:value": "CASNG",
+            "@id": "unlcd:CASNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-d'Argenteuil"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-d'Argenteuil"
+                    "@value": "Saint-Andre-d'Argenteuil",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.566666",
                 "@type": "xsd:float"

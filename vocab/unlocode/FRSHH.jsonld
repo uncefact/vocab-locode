@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSHH",
             "rdf:value": "FRSHH",
+            "@id": "unlcd:FRSHH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Hilaire-du-Harcouët"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Hilaire-du-Harcouet"
+                    "@value": "Saint-Hilaire-du-Harcouet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR50"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.566666",
                 "@type": "xsd:float"

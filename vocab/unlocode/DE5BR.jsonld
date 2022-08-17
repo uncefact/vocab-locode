@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE5BR",
             "rdf:value": "DE5BR",
+            "@id": "unlcd:DE5BR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Blaichach/Allgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Blaichach/Allgau"
+                    "@value": "Blaichach/Allgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.533333",
                 "@type": "xsd:float"

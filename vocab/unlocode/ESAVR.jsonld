@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESAVR",
             "rdf:value": "ESAVR",
+            "@id": "unlcd:ESAVR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Aldeadávila de la Ribera"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aldeadavila de la Ribera"
+                    "@value": "Aldeadavila de la Ribera",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSA"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.216667",
                 "@type": "xsd:float"

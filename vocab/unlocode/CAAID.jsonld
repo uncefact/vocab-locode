@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAAID",
             "rdf:value": "CAAID",
+            "@id": "unlcd:CAAID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Alnwick/Haldimand"
+                "@value": "Alnwick/Haldimand",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAON"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "44.083332",
                 "@type": "xsd:float"

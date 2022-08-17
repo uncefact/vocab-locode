@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUCYO",
             "rdf:value": "RUCYO",
+            "@id": "unlcd:RUCYO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chërnyy Otrog"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chernyy Otrog"
+                    "@value": "Chernyy Otrog",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "51.883335",
                 "@type": "xsd:float"

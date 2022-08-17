@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXPDP",
             "rdf:value": "MXPDP",
+            "@id": "unlcd:MXPDP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Martín de las Pirámides"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Martin de las Piramides"
+                    "@value": "San Martin de las Piramides",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXMEX"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.7",
                 "@type": "xsd:float"

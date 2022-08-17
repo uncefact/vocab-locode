@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFOM",
             "rdf:value": "ESFOM",
+            "@id": "unlcd:ESFOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuente el Olmo de Fuentidueña"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuente el Olmo de Fuentiduena"
+                    "@value": "Fuente el Olmo de Fuentiduena",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSG"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.383335",
                 "@type": "xsd:float"

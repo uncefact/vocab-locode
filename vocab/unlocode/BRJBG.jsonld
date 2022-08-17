@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJBG",
             "rdf:value": "BRJBG",
+            "@id": "unlcd:BRJBG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João Batista do Glória"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao Batista do Gloria"
+                    "@value": "Sao Joao Batista do Gloria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.633333",
                 "@type": "xsd:float"

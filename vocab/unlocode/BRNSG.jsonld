@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNSG",
             "rdf:value": "BRNSG",
+            "@id": "unlcd:BRNSG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nossa Senhora da Glória"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nossa Senhora da Gloria"
+                    "@value": "Nossa Senhora da Gloria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.2",
                 "@type": "xsd:float"

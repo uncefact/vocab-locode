@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LVSDS",
             "rdf:value": "LVSDS",
+            "@id": "unlcd:LVSDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saldus"
+                "@value": "Saldus",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LV088"
             },
-            "unlcdc:countryCode": "LV",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LV"
+            },
             "geo:lat": {
                 "@value": "56.666668",
                 "@type": "xsd:float"

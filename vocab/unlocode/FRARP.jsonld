@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRARP",
             "rdf:value": "FRARP",
+            "@id": "unlcd:FRARP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Arpajon-sur-Cère"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Arpajon-sur-Cere"
+                    "@value": "Arpajon-sur-Cere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR15"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.9",
                 "@type": "xsd:float"

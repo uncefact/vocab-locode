@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USCNM",
             "rdf:value": "USCNM",
+            "@id": "unlcd:USCNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Carlsbad"
+                "@value": "Carlsbad",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USNM"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "32.416668",
                 "@type": "xsd:float"

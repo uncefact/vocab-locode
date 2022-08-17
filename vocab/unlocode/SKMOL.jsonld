@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKMOL",
             "rdf:value": "SKMOL",
+            "@id": "unlcd:SKMOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Moravské Lieskové"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Moravske Lieskove"
+                    "@value": "Moravske Lieskove",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKTC"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.816666",
                 "@type": "xsd:float"

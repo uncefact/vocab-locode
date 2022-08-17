@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSSK",
             "rdf:value": "BRSSK",
+            "@id": "unlcd:BRSSK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Salvador do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Salvador do Tocantins"
+                    "@value": "Sao Salvador do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.733334",
                 "@type": "xsd:float"

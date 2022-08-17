@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIOUL",
             "rdf:value": "FIOUL",
+            "@id": "unlcd:FIOUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Uleåborg (Oulu)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Uleaborg (Oulu)"
+                    "@value": "Uleaborg (Oulu)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI14"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "65.01667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDDD",
             "rdf:value": "BRDDD",
+            "@id": "unlcd:BRDDD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Domingos das Dores"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Domingos das Dores"
+                    "@value": "Sao Domingos das Dores",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.516666",
                 "@type": "xsd:float"

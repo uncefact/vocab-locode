@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLM3",
             "rdf:value": "FRLM3",
+            "@id": "unlcd:FRLM3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Langis-lès-Mortagne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Langis-les-Mortagne"
+                    "@value": "Saint-Langis-les-Mortagne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR61"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.516666",
                 "@type": "xsd:float"

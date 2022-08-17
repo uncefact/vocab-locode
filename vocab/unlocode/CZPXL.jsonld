@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZPXL",
             "rdf:value": "CZPXL",
+            "@id": "unlcd:CZPXL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Planá nad Luznicí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Plana nad Luznici"
+                    "@value": "Plana nad Luznici",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJC"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.35",
                 "@type": "xsd:float"

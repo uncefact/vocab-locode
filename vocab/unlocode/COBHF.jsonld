@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:COBHF",
             "rdf:value": "COBHF",
+            "@id": "unlcd:COBHF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bahía Cupica"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bahia Cupica"
+                    "@value": "Bahia Cupica",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:COCHO"
             },
-            "unlcdc:countryCode": "CO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CO"
+            },
             "geo:lat": {
                 "@value": "6.55",
                 "@type": "xsd:float"

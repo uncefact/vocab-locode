@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDLF",
             "rdf:value": "FRDLF",
+            "@id": "unlcd:FRDLF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Doué-la-Fontaine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Doue-la-Fontaine"
+                    "@value": "Doue-la-Fontaine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.2",
                 "@type": "xsd:float"

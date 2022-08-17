@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZUHE",
             "rdf:value": "CZUHE",
+            "@id": "unlcd:CZUHE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Uherské Hradiste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Uherske Hradiste"
+                    "@value": "Uherske Hradiste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.066666",
                 "@type": "xsd:float"

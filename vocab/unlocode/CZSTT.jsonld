@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSTT",
             "rdf:value": "CZSTT",
+            "@id": "unlcd:CZSTT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Stetí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Steti"
+                    "@value": "Steti",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.45",
                 "@type": "xsd:float"

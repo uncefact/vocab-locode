@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFEA",
             "rdf:value": "FRFEA",
+            "@id": "unlcd:FRFEA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ferrières-en-Gâtinais"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ferrieres-en-Gatinais"
+                    "@value": "Ferrieres-en-Gatinais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.083332",
                 "@type": "xsd:float"

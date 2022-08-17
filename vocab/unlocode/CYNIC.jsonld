@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CYNIC",
             "rdf:value": "CYNIC",
+            "@id": "unlcd:CYNIC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nicosia"
+                "@value": "Nicosia",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CY01"
             },
-            "unlcdc:countryCode": "CY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CY"
+            },
             "geo:lat": {
                 "@value": "35.166668",
                 "@type": "xsd:float"

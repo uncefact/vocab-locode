@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GPPTP",
             "rdf:value": "GPPTP",
+            "@id": "unlcd:GPPTP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Point-à-Pitre Apt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Point-a-Pitre Apt"
+                    "@value": "Point-a-Pitre Apt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "GP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GP"
+            },
             "geo:lat": {
                 "@value": "16.266666",
                 "@type": "xsd:float"

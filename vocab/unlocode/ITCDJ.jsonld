@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITCDJ",
             "rdf:value": "ITCDJ",
+            "@id": "unlcd:ITCDJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Città della Pieve"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Citta della Pieve"
+                    "@value": "Citta della Pieve",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITPG"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "42.95",
                 "@type": "xsd:float"

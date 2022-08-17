@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUKK",
             "rdf:value": "DEUKK",
+            "@id": "unlcd:DEUKK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brücken/Birkenfeld"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brucken/Birkenfeld"
+                    "@value": "Brucken/Birkenfeld",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.633335",
                 "@type": "xsd:float"

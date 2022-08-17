@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SGCHG",
             "rdf:value": "SGCHG",
+            "@id": "unlcd:SGCHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Changi"
+                "@value": "Changi",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "SG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SG"
+            },
             "geo:lat": {
                 "@value": "1.3166666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTDTO",
             "rdf:value": "PTDTO",
+            "@id": "unlcd:PTDTO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antão do Tojal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antao do Tojal"
+                    "@value": "Santo Antao do Tojal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT11"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "38.85",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZJAB",
             "rdf:value": "CZJAB",
+            "@id": "unlcd:CZJAB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jablonné nad Orlicí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jablonne nad Orlici"
+                    "@value": "Jablonne nad Orlici",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.033333",
                 "@type": "xsd:float"

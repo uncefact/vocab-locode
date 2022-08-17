@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DOMAN",
             "rdf:value": "DOMAN",
+            "@id": "unlcd:DOMAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Manzanillo"
+                "@value": "Manzanillo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DO"
+            },
             "geo:lat": {
                 "@value": "19.7",
                 "@type": "xsd:float"

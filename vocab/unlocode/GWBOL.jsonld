@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GWBOL",
             "rdf:value": "GWBOL",
+            "@id": "unlcd:GWBOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bolama"
+                "@value": "Bolama",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GW"
+            },
             "geo:lat": {
                 "@value": "11.583333",
                 "@type": "xsd:float"

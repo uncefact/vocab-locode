@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IECRS",
             "rdf:value": "IECRS",
+            "@id": "unlcd:IECRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Carrick-on-Suir"
+                "@value": "Carrick-on-Suir",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IETA"
             },
-            "unlcdc:countryCode": "IE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IE"
+            },
             "geo:lat": {
                 "@value": "52.333332",
                 "@type": "xsd:float"

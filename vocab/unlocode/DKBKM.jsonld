@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKBKM",
             "rdf:value": "DKBKM",
+            "@id": "unlcd:DKBKM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bækmarksbro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bakmarksbro"
+                    "@value": "Bakmarksbro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK82"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "56.416668",
                 "@type": "xsd:float"

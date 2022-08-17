@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFTB",
             "rdf:value": "ESFTB",
+            "@id": "unlcd:ESFTB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuentes de Béjar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuentes de Bejar"
+                    "@value": "Fuentes de Bejar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSA"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.5",
                 "@type": "xsd:float"

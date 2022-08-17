@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KRPUS",
             "rdf:value": "KRPUS",
+            "@id": "unlcd:KRPUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Busan"
+                "@value": "Busan",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -44,7 +44,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:KR26"
             },
-            "unlcdc:countryCode": "KR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KR"
+            },
             "geo:lat": {
                 "@value": "35.133335",
                 "@type": "xsd:float"

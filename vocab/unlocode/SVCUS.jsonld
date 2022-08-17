@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SVCUS",
             "rdf:value": "SVCUS",
+            "@id": "unlcd:SVCUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Antiguo Cuscatlán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Antiguo Cuscatlan"
+                    "@value": "Antiguo Cuscatlan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SVLI"
             },
-            "unlcdc:countryCode": "SV",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SV"
+            },
             "geo:lat": {
                 "@value": "13.666667",
                 "@type": "xsd:float"

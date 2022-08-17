@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USNMM",
             "rdf:value": "USNMM",
+            "@id": "unlcd:USNMM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Milan"
+                "@value": "Milan",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USIN"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "39.116665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBCE",
             "rdf:value": "FRBCE",
+            "@id": "unlcd:FRBCE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bagnols-sur-Cèze"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bagnols-sur-Ceze"
+                    "@value": "Bagnols-sur-Ceze",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR30"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.166668",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HRSLM",
             "rdf:value": "HRSLM",
+            "@id": "unlcd:HRSLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Slum"
+                "@value": "Slum",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HR"
+            },
             "geo:lat": {
                 "@value": "45.433334",
                 "@type": "xsd:float"

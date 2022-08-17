@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSCA",
             "rdf:value": "BRSCA",
+            "@id": "unlcd:BRSCA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gabriel da Cachoeira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Gabriel da Cachoeira"
+                    "@value": "Sao Gabriel da Cachoeira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAM"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-0.13333334",
                 "@type": "xsd:float"

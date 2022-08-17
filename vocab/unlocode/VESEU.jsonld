@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VESEU",
             "rdf:value": "VESEU",
+            "@id": "unlcd:VESEU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Elena de Uairén"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Elena de Uairen"
+                    "@value": "Santa Elena de Uairen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VEF"
             },
-            "unlcdc:countryCode": "VE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VE"
+            },
             "geo:lat": {
                 "@value": "4.616667",
                 "@type": "xsd:float"

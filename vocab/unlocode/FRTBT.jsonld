@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTBT",
             "rdf:value": "FRTBT",
+            "@id": "unlcd:FRTBT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Benoît-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Benoit-sur-Loire"
+                    "@value": "Saint-Benoit-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.816666",
                 "@type": "xsd:float"

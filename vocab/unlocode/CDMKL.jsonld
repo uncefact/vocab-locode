@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CDMKL",
             "rdf:value": "CDMKL",
+            "@id": "unlcd:CDMKL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Makala"
+                "@value": "Makala",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CD"
+            },
             "geo:lat": {
                 "@value": "2.8166666",
                 "@type": "xsd:float"

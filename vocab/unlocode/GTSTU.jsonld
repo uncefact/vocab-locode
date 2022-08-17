@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSTU",
             "rdf:value": "GTSTU",
+            "@id": "unlcd:GTSTU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Tomás La Unión"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Tomas La Union"
+                    "@value": "Santo Tomas La Union",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT10"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.633333",
                 "@type": "xsd:float"

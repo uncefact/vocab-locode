@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMHA",
             "rdf:value": "FRMHA",
+            "@id": "unlcd:FRMHA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mauléon-Licharre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mauleon-Licharre"
+                    "@value": "Mauleon-Licharre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR64"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.216667",
                 "@type": "xsd:float"

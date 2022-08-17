@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHGVA",
             "rdf:value": "CHGVA",
+            "@id": "unlcd:CHGVA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Genève"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Geneve"
+                    "@value": "Geneve",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHGE"
             },
-            "unlcdc:countryCode": "CH"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            }
         }
     ]
 }

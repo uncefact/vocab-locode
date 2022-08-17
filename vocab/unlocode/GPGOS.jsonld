@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GPGOS",
             "rdf:value": "GPGOS",
+            "@id": "unlcd:GPGOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Le Gosier"
+                "@value": "Le Gosier",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GP"
+            },
             "geo:lat": {
                 "@value": "16.2",
                 "@type": "xsd:float"

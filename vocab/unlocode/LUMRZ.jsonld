@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUMRZ",
             "rdf:value": "LUMRZ",
+            "@id": "unlcd:LUMRZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mertzig (Mäerzeg)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mertzig (Maerzeg)"
+                    "@value": "Mertzig (Maerzeg)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUDI"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.833332",
                 "@type": "xsd:float"

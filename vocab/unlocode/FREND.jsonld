@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREND",
             "rdf:value": "FREND",
+            "@id": "unlcd:FREND",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Abrets en Dauphiné"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Abrets en Dauphine"
+                    "@value": "Les Abrets en Dauphine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.533333",
                 "@type": "xsd:float"

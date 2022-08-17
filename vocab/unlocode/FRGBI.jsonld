@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGBI",
             "rdf:value": "FRGBI",
+            "@id": "unlcd:FRGBI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Gabriel-Brécy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Gabriel-Brecy"
+                    "@value": "Saint-Gabriel-Brecy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.266666",
                 "@type": "xsd:float"

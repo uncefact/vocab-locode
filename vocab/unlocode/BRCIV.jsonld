@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCIV",
             "rdf:value": "BRCIV",
+            "@id": "unlcd:BRCIV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Capitão Gervásio Oliveira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Capitao Gervasio Oliveira"
+                    "@value": "Capitao Gervasio Oliveira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.483334",
                 "@type": "xsd:float"

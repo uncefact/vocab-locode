@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RERUN",
             "rdf:value": "RERUN",
+            "@id": "unlcd:RERUN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Denis de la Réunion"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Denis de la Reunion"
+                    "@value": "Saint-Denis de la Reunion",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "RE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RE"
+            },
             "geo:lat": {
                 "@value": "-20.9",
                 "@type": "xsd:float"

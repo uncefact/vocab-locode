@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEHNT",
             "rdf:value": "DEHNT",
+            "@id": "unlcd:DEHNT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hardt bei Nürtingen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hardt bei Nurtingen"
+                    "@value": "Hardt bei Nurtingen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.633335",
                 "@type": "xsd:float"

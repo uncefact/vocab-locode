@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRVIF",
             "rdf:value": "BRVIF",
+            "@id": "unlcd:BRVIF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cidade de Vitória FPSO"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cidade de Vitoria FPSO"
+                    "@value": "Cidade de Vitoria FPSO",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.033333",
                 "@type": "xsd:float"

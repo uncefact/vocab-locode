@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NORAY",
             "rdf:value": "NORAY",
+            "@id": "unlcd:NORAY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Radøy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Radoy"
+                    "@value": "Radoy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO12"
             },
-            "unlcdc:countryCode": "NO"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            }
         }
     ]
 }

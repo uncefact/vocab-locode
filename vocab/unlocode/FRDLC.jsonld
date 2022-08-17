@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDLC",
             "rdf:value": "FRDLC",
+            "@id": "unlcd:FRDLC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Denis-lès-Sens"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Denis-les-Sens"
+                    "@value": "Saint-Denis-les-Sens",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR89"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.216667",
                 "@type": "xsd:float"

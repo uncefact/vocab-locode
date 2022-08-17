@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREAV",
             "rdf:value": "FREAV",
+            "@id": "unlcd:FREAV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Étang-la-Ville"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Etang-la-Ville"
+                    "@value": "L'Etang-la-Ville",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR79"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.866665",
                 "@type": "xsd:float"

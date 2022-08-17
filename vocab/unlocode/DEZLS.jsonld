@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZLS",
             "rdf:value": "DEZLS",
+            "@id": "unlcd:DEZLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zell (Börtlingen)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zell (Bortlingen)"
+                    "@value": "Zell (Bortlingen)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

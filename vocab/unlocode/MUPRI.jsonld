@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MUPRI",
             "rdf:value": "MUPRI",
+            "@id": "unlcd:MUPRI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Petite Rivière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Petite Riviere"
+                    "@value": "Petite Riviere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MUBL"
             },
-            "unlcdc:countryCode": "MU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MU"
+            },
             "geo:lat": {
                 "@value": "-20.183332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSIM",
             "rdf:value": "FRSIM",
+            "@id": "unlcd:FRSIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Martin-des-Entrées"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Martin-des-Entrees"
+                    "@value": "Saint-Martin-des-Entrees",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.266666",
                 "@type": "xsd:float"

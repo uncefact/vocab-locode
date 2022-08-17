@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CVPOI",
             "rdf:value": "CVPOI",
+            "@id": "unlcd:CVPOI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Porto Inglez"
+                "@value": "Porto Inglez",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CVMA"
             },
-            "unlcdc:countryCode": "CV",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CV"
+            },
             "geo:lat": {
                 "@value": "15.133333",
                 "@type": "xsd:float"

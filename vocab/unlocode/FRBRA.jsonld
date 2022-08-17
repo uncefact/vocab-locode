@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBRA",
             "rdf:value": "FRBRA",
+            "@id": "unlcd:FRBRA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bercy"
+                "@value": "Bercy",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:2"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR75C"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.833332",
                 "@type": "xsd:float"

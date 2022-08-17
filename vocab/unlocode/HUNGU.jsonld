@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUNGU",
             "rdf:value": "HUNGU",
+            "@id": "unlcd:HUNGU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nyergesújfalu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nyergesujfalu"
+                    "@value": "Nyergesujfalu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUKE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.766666",
                 "@type": "xsd:float"

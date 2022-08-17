@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMHU",
             "rdf:value": "DEMHU",
+            "@id": "unlcd:DEMHU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mühlhausen-Ehingen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Muhlhausen-Ehingen"
+                    "@value": "Muhlhausen-Ehingen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.816666",
                 "@type": "xsd:float"

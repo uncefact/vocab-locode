@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSSW",
             "rdf:value": "BRSSW",
+            "@id": "unlcd:BRSSW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Bárbara do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Barbara do Sul"
+                    "@value": "Santa Barbara do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.35",
                 "@type": "xsd:float"

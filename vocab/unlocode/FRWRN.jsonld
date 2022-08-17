@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRWRN",
             "rdf:value": "FRWRN",
+            "@id": "unlcd:FRWRN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Châtelliers-Châteaumur"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Chatelliers-Chateaumur"
+                    "@value": "Les Chatelliers-Chateaumur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.85",
                 "@type": "xsd:float"

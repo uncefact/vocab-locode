@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTCY",
             "rdf:value": "FRTCY",
+            "@id": "unlcd:FRTCY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Cyr-de-Favières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Cyr-de-Favieres"
+                    "@value": "Saint-Cyr-de-Favieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR42"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.966667",
                 "@type": "xsd:float"

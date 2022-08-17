@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZVAA",
             "rdf:value": "CZVAA",
+            "@id": "unlcd:CZVAA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Veverská Bityska"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Veverska Bityska"
+                    "@value": "Veverska Bityska",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.283333",
                 "@type": "xsd:float"

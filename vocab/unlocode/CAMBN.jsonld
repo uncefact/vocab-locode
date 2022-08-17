@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAMBN",
             "rdf:value": "CAMBN",
+            "@id": "unlcd:CAMBN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Métabetchouan-Lac-à-la-Croix"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Metabetchouan-Lac-a-la-Croix"
+                    "@value": "Metabetchouan-Lac-a-la-Croix",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "48.433334",
                 "@type": "xsd:float"

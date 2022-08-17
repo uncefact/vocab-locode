@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATKLD",
             "rdf:value": "ATKLD",
+            "@id": "unlcd:ATKLD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kröllendorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Krollendorf"
+                    "@value": "Krollendorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "AT"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            }
         }
     ]
 }

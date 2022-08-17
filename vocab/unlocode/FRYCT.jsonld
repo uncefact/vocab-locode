@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYCT",
             "rdf:value": "FRYCT",
+            "@id": "unlcd:FRYCT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cauchy-à-la-Tour"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cauchy-a-la-Tour"
+                    "@value": "Cauchy-a-la-Tour",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.5",
                 "@type": "xsd:float"

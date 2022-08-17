@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TMYOL",
             "rdf:value": "TMYOL",
+            "@id": "unlcd:TMYOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Yolöten"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Yoloten"
+                    "@value": "Yoloten",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TM"
+            },
             "geo:lat": {
                 "@value": "37.3",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PRLPN",
             "rdf:value": "PRLPN",
+            "@id": "unlcd:PRLPN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Las Pinas"
+                "@value": "Las Pinas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "PR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PR"
+            },
             "geo:lat": {
                 "@value": "18.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSTE",
             "rdf:value": "ESSTE",
+            "@id": "unlcd:ESSTE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Eulalia del Río"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Eulalia del Rio"
+                    "@value": "Santa Eulalia del Rio",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESPM"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.983334",
                 "@type": "xsd:float"

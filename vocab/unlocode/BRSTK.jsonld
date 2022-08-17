@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSTK",
             "rdf:value": "BRSTK",
+            "@id": "unlcd:BRSTK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Tocantins"
+                    "@value": "Sao Sebastiao do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.25",
                 "@type": "xsd:float"

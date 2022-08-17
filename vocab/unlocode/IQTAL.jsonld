@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IQTAL",
             "rdf:value": "IQTAL",
+            "@id": "unlcd:IQTAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Ali Air Base"
+                "@value": "Ali Air Base",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "IQ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IQ"
+            },
             "geo:lat": {
                 "@value": "30.933332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZIE",
             "rdf:value": "FRZIE",
+            "@id": "unlcd:FRZIE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Nazaire-de-Pézan"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Nazaire-de-Pezan"
+                    "@value": "Saint-Nazaire-de-Pezan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.633335",
                 "@type": "xsd:float"

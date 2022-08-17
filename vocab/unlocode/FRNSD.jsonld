@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNSD",
             "rdf:value": "FRNSD",
+            "@id": "unlcd:FRNSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lavans-lès-Dole"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lavans-les-Dole"
+                    "@value": "Lavans-les-Dole",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR39"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.133335",
                 "@type": "xsd:float"

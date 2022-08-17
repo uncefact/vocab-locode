@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AGFAM",
             "rdf:value": "AGFAM",
+            "@id": "unlcd:AGFAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Falmouth"
+                "@value": "Falmouth",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "AG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AG"
+            },
             "geo:lat": {
                 "@value": "17.016666",
                 "@type": "xsd:float"

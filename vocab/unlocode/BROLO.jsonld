@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BROLO",
             "rdf:value": "BROLO",
+            "@id": "unlcd:BROLO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Olho d'Água do Casado"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olho d'Agua do Casado"
+                    "@value": "Olho d'Agua do Casado",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.5",
                 "@type": "xsd:float"

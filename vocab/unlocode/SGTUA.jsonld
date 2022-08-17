@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SGTUA",
             "rdf:value": "SGTUA",
+            "@id": "unlcd:SGTUA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tuas"
+                "@value": "Tuas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SG"
+            },
             "geo:lat": {
                 "@value": "1.3166666",
                 "@type": "xsd:float"

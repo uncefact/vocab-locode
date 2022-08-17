@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUMIK",
             "rdf:value": "RUMIK",
+            "@id": "unlcd:RUMIK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mikhnëvo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mikhnevo"
+                    "@value": "Mikhnevo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "55.116665",
                 "@type": "xsd:float"

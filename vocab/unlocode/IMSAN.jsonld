@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IMSAN",
             "rdf:value": "IMSAN",
+            "@id": "unlcd:IMSAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Santon"
+                "@value": "Santon",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "IM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IM"
+            },
             "geo:lat": {
                 "@value": "54.116665",
                 "@type": "xsd:float"

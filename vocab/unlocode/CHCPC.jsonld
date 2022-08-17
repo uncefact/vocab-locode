@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHCPC",
             "rdf:value": "CHCPC",
+            "@id": "unlcd:CHCPC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Crans-Près-Céligny"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Crans-Pres-Celigny"
+                    "@value": "Crans-Pres-Celigny",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVD"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.35",
                 "@type": "xsd:float"

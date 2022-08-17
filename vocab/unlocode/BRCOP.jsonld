@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCOP",
             "rdf:value": "BRCOP",
+            "@id": "unlcd:BRCOP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Carmo do Paranaíba"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Carmo do Paranaiba"
+                    "@value": "Carmo do Paranaiba",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.983334",
                 "@type": "xsd:float"

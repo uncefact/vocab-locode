@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSSR",
             "rdf:value": "FRSSR",
+            "@id": "unlcd:FRSSR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sablé-sur-Sarthe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sable-sur-Sarthe"
+                    "@value": "Sable-sur-Sarthe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

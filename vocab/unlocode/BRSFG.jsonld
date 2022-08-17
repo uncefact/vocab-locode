@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSFG",
             "rdf:value": "BRSFG",
+            "@id": "unlcd:BRSFG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Félix do Xingu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Felix do Xingu"
+                    "@value": "Sao Felix do Xingu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.633333",
                 "@type": "xsd:float"

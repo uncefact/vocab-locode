@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSHD",
             "rdf:value": "CZSHD",
+            "@id": "unlcd:CZSHD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Staré Hradiste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stare Hradiste"
+                    "@value": "Stare Hradiste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.066666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSV5",
             "rdf:value": "FRSV5",
+            "@id": "unlcd:FRSV5",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Vivien-de-Médoc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Vivien-de-Medoc"
+                    "@value": "Saint-Vivien-de-Medoc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.433334",
                 "@type": "xsd:float"

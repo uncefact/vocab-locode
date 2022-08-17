@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSCF",
             "rdf:value": "GTSCF",
+            "@id": "unlcd:GTSCF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Cristóbal Frontera"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Cristobal Frontera"
+                    "@value": "San Cristobal Frontera",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT22"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.183333",
                 "@type": "xsd:float"

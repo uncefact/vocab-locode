@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRQPG",
             "rdf:value": "FRQPG",
+            "@id": "unlcd:FRQPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Quemper-Guézennec"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Quemper-Guezennec"
+                    "@value": "Quemper-Guezennec",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR22"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.7",
                 "@type": "xsd:float"

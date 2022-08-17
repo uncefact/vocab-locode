@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISBOL",
             "rdf:value": "ISBOL",
+            "@id": "unlcd:ISBOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bolungarvik"
+                "@value": "Bolungarvik",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "IS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            },
             "geo:lat": {
                 "@value": "66.13333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESTZ",
             "rdf:value": "DESTZ",
+            "@id": "unlcd:DESTZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Königsbach-Stein"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Konigsbach-Stein"
+                    "@value": "Konigsbach-Stein",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.966667",
                 "@type": "xsd:float"

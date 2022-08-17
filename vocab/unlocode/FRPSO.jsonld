@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPSO",
             "rdf:value": "FRPSO",
+            "@id": "unlcd:FRPSO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Précy-sur-Oise"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Precy-sur-Oise"
+                    "@value": "Precy-sur-Oise",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.2",
                 "@type": "xsd:float"

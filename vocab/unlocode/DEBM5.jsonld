@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBM5",
             "rdf:value": "DEBM5",
+            "@id": "unlcd:DEBM5",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bäk bei Ratzeburg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bak bei Ratzeburg"
+                    "@value": "Bak bei Ratzeburg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.716667",
                 "@type": "xsd:float"

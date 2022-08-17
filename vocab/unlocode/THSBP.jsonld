@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:THSBP",
             "rdf:value": "THSBP",
+            "@id": "unlcd:THSBP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Siam Bangkok Port"
+                "@value": "Siam Bangkok Port",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TH"
+            },
             "geo:lat": {
                 "@value": "13.65",
                 "@type": "xsd:float"

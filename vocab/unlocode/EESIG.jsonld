@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EESIG",
             "rdf:value": "EESIG",
+            "@id": "unlcd:EESIG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sigatsuaru Väikesadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sigatsuaru Vaikesadam"
+                    "@value": "Sigatsuaru Vaikesadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE68"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.15",
                 "@type": "xsd:float"

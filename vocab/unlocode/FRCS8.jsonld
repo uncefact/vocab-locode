@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCS8",
             "rdf:value": "FRCS8",
+            "@id": "unlcd:FRCS8",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châtel-sur-Moselle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chatel-sur-Moselle"
+                    "@value": "Chatel-sur-Moselle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR88"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.3",
                 "@type": "xsd:float"

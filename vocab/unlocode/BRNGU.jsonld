@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNGU",
             "rdf:value": "BRNGU",
+            "@id": "unlcd:BRNGU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santo Antônio do Aracanguá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santo Antonio do Aracangua"
+                    "@value": "Santo Antonio do Aracangua",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.916666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMGP",
             "rdf:value": "FRMGP",
+            "@id": "unlcd:FRMGP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Maizières-la-Grande-Paroisse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Maizieres-la-Grande-Paroisse"
+                    "@value": "Maizieres-la-Grande-Paroisse",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.516666",
                 "@type": "xsd:float"

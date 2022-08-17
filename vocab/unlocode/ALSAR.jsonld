@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ALSAR",
             "rdf:value": "ALSAR",
+            "@id": "unlcd:ALSAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sarandë"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sarande"
+                    "@value": "Sarande",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ALSR"
             },
-            "unlcdc:countryCode": "AL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AL"
+            },
             "geo:lat": {
                 "@value": "39.883335",
                 "@type": "xsd:float"

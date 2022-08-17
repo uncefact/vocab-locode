@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TMALT",
             "rdf:value": "TMALT",
+            "@id": "unlcd:TMALT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Altyn Asyr"
+                "@value": "Altyn Asyr",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "TM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TM"
+            },
             "geo:lat": {
                 "@value": "37.883335",
                 "@type": "xsd:float"

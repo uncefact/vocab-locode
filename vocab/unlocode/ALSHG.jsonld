@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ALSHG",
             "rdf:value": "ALSHG",
+            "@id": "unlcd:ALSHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Shëngjin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Shengjin"
+                    "@value": "Shengjin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ALLE"
             },
-            "unlcdc:countryCode": "AL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AL"
+            },
             "geo:lat": {
                 "@value": "41.8",
                 "@type": "xsd:float"

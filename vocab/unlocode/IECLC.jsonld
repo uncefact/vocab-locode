@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IECLC",
             "rdf:value": "IECLC",
+            "@id": "unlcd:IECLC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Clarecastle"
+                "@value": "Clarecastle",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IECE"
             },
-            "unlcdc:countryCode": "IE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IE"
+            },
             "geo:lat": {
                 "@value": "52.816666",
                 "@type": "xsd:float"

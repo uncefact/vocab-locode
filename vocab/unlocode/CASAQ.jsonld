@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASAQ",
             "rdf:value": "CASAQ",
+            "@id": "unlcd:CASAQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Aimé-des-Lacs"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Aime-des-Lacs"
+                    "@value": "Saint-Aime-des-Lacs",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "47.683334",
                 "@type": "xsd:float"

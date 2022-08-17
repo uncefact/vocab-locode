@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SIPTV",
             "rdf:value": "SIPTV",
+            "@id": "unlcd:SIPTV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Petrovce"
+                "@value": "Petrovce",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SI"
+            },
             "geo:lat": {
                 "@value": "46.233334",
                 "@type": "xsd:float"

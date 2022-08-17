@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRPTL",
             "rdf:value": "GRPTL",
+            "@id": "unlcd:GRPTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lágos (Pórto-Lágo)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lagos (Porto-Lago)"
+                    "@value": "Lagos (Porto-Lago)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR72"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "41.016666",
                 "@type": "xsd:float"

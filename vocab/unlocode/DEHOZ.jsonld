@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEHOZ",
             "rdf:value": "DEHOZ",
+            "@id": "unlcd:DEHOZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Büchel bei Sömmerda"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buchel bei Sommerda"
+                    "@value": "Buchel bei Sommerda",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DETH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.25",
                 "@type": "xsd:float"

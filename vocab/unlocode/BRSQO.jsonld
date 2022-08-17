@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSQO",
             "rdf:value": "BRSQO",
+            "@id": "unlcd:BRSQO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel do Passa Quatro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel do Passa Quatro"
+                    "@value": "Sao Miguel do Passa Quatro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-17.05",
                 "@type": "xsd:float"

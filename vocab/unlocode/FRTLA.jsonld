@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTLA",
             "rdf:value": "FRTLA",
+            "@id": "unlcd:FRTLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tillières-sur-Avre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tillieres-sur-Avre"
+                    "@value": "Tillieres-sur-Avre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

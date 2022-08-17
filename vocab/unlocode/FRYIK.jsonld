@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYIK",
             "rdf:value": "FRYIK",
+            "@id": "unlcd:FRYIK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Auge-Saint-Médard"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Auge-Saint-Medard"
+                    "@value": "Auge-Saint-Medard",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.833332",
                 "@type": "xsd:float"

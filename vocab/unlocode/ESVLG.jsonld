@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVLG",
             "rdf:value": "ESVLG",
+            "@id": "unlcd:ESVLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villanueva y Geltrú (Vilanova i la Geltrú)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villanueva y Geltru (Vilanova i la Geltru)"
+                    "@value": "Villanueva y Geltru (Vilanova i la Geltru)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.216667",
                 "@type": "xsd:float"

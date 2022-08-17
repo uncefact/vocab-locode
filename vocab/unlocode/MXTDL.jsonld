@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTDL",
             "rdf:value": "MXTDL",
+            "@id": "unlcd:MXTDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tepanco de López"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tepanco de Lopez"
+                    "@value": "Tepanco de Lopez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXPUE"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "18.566668",
                 "@type": "xsd:float"

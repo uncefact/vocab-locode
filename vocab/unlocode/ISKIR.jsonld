@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISKIR",
             "rdf:value": "ISKIR",
+            "@id": "unlcd:ISKIR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kirkjubæjarklaustur"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kirkjubajarklaustur"
+                    "@value": "Kirkjubajarklaustur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IS8"
             },
-            "unlcdc:countryCode": "IS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            },
             "geo:lat": {
                 "@value": "63.783333",
                 "@type": "xsd:float"

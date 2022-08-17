@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEGDM",
             "rdf:value": "DEGDM",
+            "@id": "unlcd:DEGDM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gundelfingen (Münsingen)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gundelfingen (Munsingen)"
+                    "@value": "Gundelfingen (Munsingen)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.416668",
                 "@type": "xsd:float"

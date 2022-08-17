@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZMKA",
             "rdf:value": "CZMKA",
+            "@id": "unlcd:CZMKA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mariánské Lázne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marianske Lazne"
+                    "@value": "Marianske Lazne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.966667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEBL4",
             "rdf:value": "DEBL4",
+            "@id": "unlcd:DEBL4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bahrendorf (Sülzetal)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bahrendorf (Sulzetal)"
+                    "@value": "Bahrendorf (Sulzetal)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.0",
                 "@type": "xsd:float"

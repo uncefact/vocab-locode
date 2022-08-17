@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSJP",
             "rdf:value": "BRSJP",
+            "@id": "unlcd:BRSJP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José do Rio Preto"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose do Rio Preto"
+                    "@value": "Sao Jose do Rio Preto",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.8",
                 "@type": "xsd:float"

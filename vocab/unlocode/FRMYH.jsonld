@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMYH",
             "rdf:value": "FRMYH",
+            "@id": "unlcd:FRMYH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Milly-sur-Thérain"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Milly-sur-Therain"
+                    "@value": "Milly-sur-Therain",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.5",
                 "@type": "xsd:float"

@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USPSB",
             "rdf:value": "USPSB",
+            "@id": "unlcd:USPSB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Clearfield-Bellefonte Apt"
+                "@value": "Clearfield-Bellefonte Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -30,7 +30,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USPA"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUMYZ",
             "rdf:value": "HUMYZ",
+            "@id": "unlcd:HUMYZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mihályháza"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mihalyhaza"
+                    "@value": "Mihalyhaza",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.3",
                 "@type": "xsd:float"

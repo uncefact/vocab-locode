@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MUGRS",
             "rdf:value": "MUGRS",
+            "@id": "unlcd:MUGRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grande Rivière Sud Est"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grande Riviere Sud Est"
+                    "@value": "Grande Riviere Sud Est",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MUFL"
             },
-            "unlcdc:countryCode": "MU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MU"
+            },
             "geo:lat": {
                 "@value": "-20.283333",
                 "@type": "xsd:float"

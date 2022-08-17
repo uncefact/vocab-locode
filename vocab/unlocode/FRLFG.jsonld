@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLFG",
             "rdf:value": "FRLFG",
+            "@id": "unlcd:FRLFG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Ferté-Gaucher"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Ferte-Gaucher"
+                    "@value": "La Ferte-Gaucher",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.783333",
                 "@type": "xsd:float"

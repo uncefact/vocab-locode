@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAGZ",
             "rdf:value": "FRAGZ",
+            "@id": "unlcd:FRAGZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Argelès-Gazost"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Argeles-Gazost"
+                    "@value": "Argeles-Gazost",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR65"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.016666",
                 "@type": "xsd:float"

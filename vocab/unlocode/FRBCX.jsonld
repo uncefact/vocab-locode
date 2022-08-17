@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBCX",
             "rdf:value": "FRBCX",
+            "@id": "unlcd:FRBCX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Beire-le-Châtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beire-le-Chatel"
+                    "@value": "Beire-le-Chatel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.416668",
                 "@type": "xsd:float"

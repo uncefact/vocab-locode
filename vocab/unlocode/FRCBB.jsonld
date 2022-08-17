@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCBB",
             "rdf:value": "FRCBB",
+            "@id": "unlcd:FRCBB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Charbonnières-les-Bains"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Charbonnieres-les-Bains"
+                    "@value": "Charbonnieres-les-Bains",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.766666",
                 "@type": "xsd:float"

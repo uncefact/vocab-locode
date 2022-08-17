@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITLIN",
             "rdf:value": "ITLIN",
+            "@id": "unlcd:ITLIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Linate Apt/Milano"
+                "@value": "Linate Apt/Milano",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "IT"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            }
         }
     ]
 }

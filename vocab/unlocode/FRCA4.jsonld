@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCA4",
             "rdf:value": "FRCA4",
+            "@id": "unlcd:FRCA4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cléry-Saint-André"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Clery-Saint-Andre"
+                    "@value": "Clery-Saint-Andre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.816666",
                 "@type": "xsd:float"

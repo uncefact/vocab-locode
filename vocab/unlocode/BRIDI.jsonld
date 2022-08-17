@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRIDI",
             "rdf:value": "BRIDI",
+            "@id": "unlcd:BRIDI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ilha de Itamaracá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ilha de Itamaraca"
+                    "@value": "Ilha de Itamaraca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.7333336",
                 "@type": "xsd:float"

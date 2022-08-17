@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EESNK",
             "rdf:value": "EESNK",
+            "@id": "unlcd:EESNK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Salinõmme Kalasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Salinomme Kalasadam"
+                    "@value": "Salinomme Kalasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE39"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.833332",
                 "@type": "xsd:float"

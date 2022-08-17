@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSFP",
             "rdf:value": "ESSFP",
+            "@id": "unlcd:ESSFP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Fe del Penedès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Fe del Penedes"
+                    "@value": "Santa Fe del Penedes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.383335",
                 "@type": "xsd:float"

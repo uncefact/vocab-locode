@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDSP",
             "rdf:value": "FRDSP",
+            "@id": "unlcd:FRDSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-sur-Sèvre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-sur-Sevre"
+                    "@value": "Saint-Andre-sur-Sevre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR79"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.783333",
                 "@type": "xsd:float"

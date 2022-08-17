@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSJJ",
             "rdf:value": "BRSJJ",
+            "@id": "unlcd:BRSJJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José do Jacuípe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose do Jacuipe"
+                    "@value": "Sao Jose do Jacuipe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-11.5",
                 "@type": "xsd:float"

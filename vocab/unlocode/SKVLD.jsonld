@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKVLD",
             "rdf:value": "SKVLD",
+            "@id": "unlcd:SKVLD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vel'Ká Ida"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vel'Ka Ida"
+                    "@value": "Vel'Ka Ida",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKKI"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.6",
                 "@type": "xsd:float"

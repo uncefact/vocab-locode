@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EERNV",
             "rdf:value": "EERNV",
+            "@id": "unlcd:EERNV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rohuneeme Väikesadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rohuneeme Vaikesadam"
+                    "@value": "Rohuneeme Vaikesadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE37"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "59.566666",
                 "@type": "xsd:float"

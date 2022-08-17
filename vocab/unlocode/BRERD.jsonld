@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRERD",
             "rdf:value": "BRERD",
+            "@id": "unlcd:BRERD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Bárbara do Monte Verde"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Barbara do Monte Verde"
+                    "@value": "Santa Barbara do Monte Verde",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.95",
                 "@type": "xsd:float"

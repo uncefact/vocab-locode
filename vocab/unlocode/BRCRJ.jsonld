@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCRJ",
             "rdf:value": "BRCRJ",
+            "@id": "unlcd:BRCRJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Coronel João Pessoa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Coronel Joao Pessoa"
+                    "@value": "Coronel Joao Pessoa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBSF",
             "rdf:value": "FRBSF",
+            "@id": "unlcd:FRBSF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bagnols-en-Forêt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bagnols-en-Foret"
+                    "@value": "Bagnols-en-Foret",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR83"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.533333",
                 "@type": "xsd:float"

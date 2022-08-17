@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMBEL",
             "rdf:value": "CMBEL",
+            "@id": "unlcd:CMBEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bélabo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Belabo"
+                    "@value": "Belabo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CMES"
             },
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "4.9333334",
                 "@type": "xsd:float"

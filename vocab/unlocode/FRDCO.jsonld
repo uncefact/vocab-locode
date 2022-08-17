@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDCO",
             "rdf:value": "FRDCO",
+            "@id": "unlcd:FRDCO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-Corcy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-Corcy"
+                    "@value": "Saint-Andre-de-Corcy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.916668",
                 "@type": "xsd:float"

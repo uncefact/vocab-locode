@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPB",
             "rdf:value": "BRSPB",
+            "@id": "unlcd:BRSPB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Itaguaí Pt = Sepetiba Pt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Itaguai Pt = Sepetiba Pt"
+                    "@value": "Itaguai Pt = Sepetiba Pt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.866667",
                 "@type": "xsd:float"

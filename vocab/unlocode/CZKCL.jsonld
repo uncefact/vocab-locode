@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZKCL",
             "rdf:value": "CZKCL",
+            "@id": "unlcd:CZKCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kostelec nad Cernými Lesy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kostelec nad Cernymi Lesy"
+                    "@value": "Kostelec nad Cernymi Lesy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.0",
                 "@type": "xsd:float"

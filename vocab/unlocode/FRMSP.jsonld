@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMSP",
             "rdf:value": "FRMSP",
+            "@id": "unlcd:FRMSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mesnil-Saint-Père"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mesnil-Saint-Pere"
+                    "@value": "Mesnil-Saint-Pere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHNL",
             "rdf:value": "FRHNL",
+            "@id": "unlcd:FRHNL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Lande-Saint-Léger"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Lande-Saint-Leger"
+                    "@value": "La Lande-Saint-Leger",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.3",
                 "@type": "xsd:float"

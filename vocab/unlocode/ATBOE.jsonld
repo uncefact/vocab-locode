@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATBOE",
             "rdf:value": "ATBOE",
+            "@id": "unlcd:ATBOE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Böhlerwenk"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bohlerwenk"
+                    "@value": "Bohlerwenk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT3"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.983334",
                 "@type": "xsd:float"

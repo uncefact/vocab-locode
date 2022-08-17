@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRCR",
             "rdf:value": "BRRCR",
+            "@id": "unlcd:BRRCR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ribeirão Cascalheira"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ribeirao Cascalheira"
+                    "@value": "Ribeirao Cascalheira",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.916667",
                 "@type": "xsd:float"

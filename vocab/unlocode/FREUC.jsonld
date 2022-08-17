@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREUC",
             "rdf:value": "FREUC",
+            "@id": "unlcd:FREUC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Estouteville-Écalles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Estouteville-Ecalles"
+                    "@value": "Estouteville-Ecalles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.583332",
                 "@type": "xsd:float"

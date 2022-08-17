@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SIPDP",
             "rdf:value": "SIPDP",
+            "@id": "unlcd:SIPDP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Podplat"
+                "@value": "Podplat",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SI106"
             },
-            "unlcdc:countryCode": "SI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SI"
+            },
             "geo:lat": {
                 "@value": "46.25",
                 "@type": "xsd:float"

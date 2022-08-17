@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HRMUR",
             "rdf:value": "HRMUR",
+            "@id": "unlcd:HRMUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Murter"
+                "@value": "Murter",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HR"
+            },
             "geo:lat": {
                 "@value": "43.816666",
                 "@type": "xsd:float"

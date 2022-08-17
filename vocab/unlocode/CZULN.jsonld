@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZULN",
             "rdf:value": "CZULN",
+            "@id": "unlcd:CZULN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ustí nad Labem"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Usti nad Labem"
+                    "@value": "Usti nad Labem",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -36,7 +36,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.666668",
                 "@type": "xsd:float"

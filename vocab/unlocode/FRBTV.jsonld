@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBTV",
             "rdf:value": "FRBTV",
+            "@id": "unlcd:FRBTV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Beaufort-en-Vallée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beaufort-en-Vallee"
+                    "@value": "Beaufort-en-Vallee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.433334",
                 "@type": "xsd:float"

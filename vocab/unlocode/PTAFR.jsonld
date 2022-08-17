@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTAFR",
             "rdf:value": "PTAFR",
+            "@id": "unlcd:PTAFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Pedro da Afurada"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Pedro da Afurada"
+                    "@value": "Sao Pedro da Afurada",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT13"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.133335",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMGRB",
             "rdf:value": "CMGRB",
+            "@id": "unlcd:CMGRB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Garoua Boulaï"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Garoua Boulai"
+                    "@value": "Garoua Boulai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CMES"
             },
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "5.883333",
                 "@type": "xsd:float"

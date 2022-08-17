@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCFT",
             "rdf:value": "FRCFT",
+            "@id": "unlcd:FRCFT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-en-Thymerais"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-en-Thymerais"
+                    "@value": "Chateauneuf-en-Thymerais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.583332",
                 "@type": "xsd:float"

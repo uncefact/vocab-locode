@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTLM",
             "rdf:value": "FRTLM",
+            "@id": "unlcd:FRTLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tilloy-lès-Mofflaines"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tilloy-les-Mofflaines"
+                    "@value": "Tilloy-les-Mofflaines",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR62"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCPJ",
             "rdf:value": "BRCPJ",
+            "@id": "unlcd:BRCPJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cachoeira de Pajeú"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cachoeira de Pajeu"
+                    "@value": "Cachoeira de Pajeu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.95",
                 "@type": "xsd:float"

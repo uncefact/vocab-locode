@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEVSC",
             "rdf:value": "BEVSC",
+            "@id": "unlcd:BEVSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vaux-sous-Chèvremont"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vaux-sous-Chevremont"
+                    "@value": "Vaux-sous-Chevremont",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWLG"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

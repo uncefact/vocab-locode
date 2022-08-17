@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLKNA",
             "rdf:value": "CLKNA",
+            "@id": "unlcd:CLKNA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Viña del Mar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vina del Mar"
+                    "@value": "Vina del Mar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -40,7 +40,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLVS"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-32.983334",
                 "@type": "xsd:float"

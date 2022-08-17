@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VGPUR",
             "rdf:value": "VGPUR",
+            "@id": "unlcd:VGPUR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Purcell"
+                "@value": "Port Purcell",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "VG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VG"
+            },
             "geo:lat": {
                 "@value": "18.416666",
                 "@type": "xsd:float"

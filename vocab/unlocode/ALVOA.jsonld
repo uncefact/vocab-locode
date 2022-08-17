@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ALVOA",
             "rdf:value": "ALVOA",
+            "@id": "unlcd:ALVOA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vlorë"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vlore"
+                    "@value": "Vlore",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ALVL"
             },
-            "unlcdc:countryCode": "AL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AL"
+            },
             "geo:lat": {
                 "@value": "40.466667",
                 "@type": "xsd:float"

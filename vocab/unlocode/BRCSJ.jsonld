@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCSJ",
             "rdf:value": "BRCSJ",
+            "@id": "unlcd:BRCSJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cedro de São João"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cedro de Sao Joao"
+                    "@value": "Cedro de Sao Joao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.233334",
                 "@type": "xsd:float"

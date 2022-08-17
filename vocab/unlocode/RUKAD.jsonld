@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUKAD",
             "rdf:value": "RUKAD",
+            "@id": "unlcd:RUKAD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Korolëv (ex Kaliningrad), Moskovskaya"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Korolev (ex Kaliningrad), Moskovskaya"
+                    "@value": "Korolev (ex Kaliningrad), Moskovskaya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUMOS"
             },
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "55.9",
                 "@type": "xsd:float"

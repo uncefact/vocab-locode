@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAL2",
             "rdf:value": "FRAL2",
+            "@id": "unlcd:FRAL2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vanault-le-Châtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vanault-le-Chatel"
+                    "@value": "Vanault-le-Chatel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.866665",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LSMPS",
             "rdf:value": "LSMPS",
+            "@id": "unlcd:LSMPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Maputsoe"
+                "@value": "Maputsoe",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LS"
+            },
             "geo:lat": {
                 "@value": "-28.883333",
                 "@type": "xsd:float"

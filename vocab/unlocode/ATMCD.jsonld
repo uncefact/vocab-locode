@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATMCD",
             "rdf:value": "ATMCD",
+            "@id": "unlcd:ATMCD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Micheldorf in Oberösterreich"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Micheldorf in Oberosterreich"
+                    "@value": "Micheldorf in Oberosterreich",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.866665",
                 "@type": "xsd:float"

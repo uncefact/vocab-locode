@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEHRR",
             "rdf:value": "SEHRR",
+            "@id": "unlcd:SEHRR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hisings Kärra/Göteborg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hisings Karra/Goteborg"
+                    "@value": "Hisings Karra/Goteborg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEO"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "57.783333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BESTB",
             "rdf:value": "BESTB",
+            "@id": "unlcd:BESTB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Strépy-Bracquegnies"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Strepy-Bracquegnies"
+                    "@value": "Strepy-Bracquegnies",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.45",
                 "@type": "xsd:float"

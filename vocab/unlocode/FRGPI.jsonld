@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGPI",
             "rdf:value": "FRGPI",
+            "@id": "unlcd:FRGPI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léger-le-Petit"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leger-le-Petit"
+                    "@value": "Saint-Leger-le-Petit",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR18"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.116665",
                 "@type": "xsd:float"

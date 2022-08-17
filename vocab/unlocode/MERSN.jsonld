@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MERSN",
             "rdf:value": "MERSN",
+            "@id": "unlcd:MERSN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Risan (Risano)"
+                "@value": "Risan (Risano)",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ME",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ME"
+            },
             "geo:lat": {
                 "@value": "42.516666",
                 "@type": "xsd:float"

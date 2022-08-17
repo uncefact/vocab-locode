@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIPHJ",
             "rdf:value": "FIPHJ",
+            "@id": "unlcd:FIPHJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pyhäjoki"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pyhajoki"
+                    "@value": "Pyhajoki",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI14"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "64.45",
                 "@type": "xsd:float"

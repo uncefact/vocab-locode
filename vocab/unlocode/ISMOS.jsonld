@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISMOS",
             "rdf:value": "ISMOS",
+            "@id": "unlcd:ISMOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mosfellsbaer"
+                "@value": "Mosfellsbaer",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            },
             "geo:lat": {
                 "@value": "64.166664",
                 "@type": "xsd:float"

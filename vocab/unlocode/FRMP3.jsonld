@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMP3",
             "rdf:value": "FRMP3",
+            "@id": "unlcd:FRMP3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Manneville-ès-Plains"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Manneville-es-Plains"
+                    "@value": "Manneville-es-Plains",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.85",
                 "@type": "xsd:float"

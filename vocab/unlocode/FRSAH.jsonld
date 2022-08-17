@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSAH",
             "rdf:value": "FRSAH",
+            "@id": "unlcd:FRSAH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-d'Hébertot"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-d'Hebertot"
+                    "@value": "Saint-Andre-d'Hebertot",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.316666",
                 "@type": "xsd:float"

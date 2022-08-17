@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSXN",
             "rdf:value": "FRSXN",
+            "@id": "unlcd:FRSXN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Même-les-Carrières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Meme-les-Carrieres"
+                    "@value": "Saint-Meme-les-Carrieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.633335",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SJLYR",
             "rdf:value": "SJLYR",
+            "@id": "unlcd:SJLYR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Longyearbyen"
+                "@value": "Longyearbyen",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "SJ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SJ"
+            },
             "geo:lat": {
                 "@value": "78.21667",
                 "@type": "xsd:float"

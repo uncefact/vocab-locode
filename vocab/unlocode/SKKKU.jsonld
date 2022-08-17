@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKKKU",
             "rdf:value": "SKKKU",
+            "@id": "unlcd:SKKKU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Krásno nad Kysucou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Krasno nad Kysucou"
+                    "@value": "Krasno nad Kysucou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKZI"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "49.383335",
                 "@type": "xsd:float"

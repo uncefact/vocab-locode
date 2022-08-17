@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRJCE",
             "rdf:value": "FRJCE",
+            "@id": "unlcd:FRJCE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Just-en-Chaussée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Just-en-Chaussee"
+                    "@value": "Saint-Just-en-Chaussee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.5",
                 "@type": "xsd:float"

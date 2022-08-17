@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESPPG",
             "rdf:value": "ESPPG",
+            "@id": "unlcd:ESPPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puentes de García Rodríguez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puentes de Garcia Rodriguez"
+                    "@value": "Puentes de Garcia Rodriguez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESC"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "43.45",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUPTU",
             "rdf:value": "HUPTU",
+            "@id": "unlcd:HUPTU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Petrikeresztúr"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Petrikeresztur"
+                    "@value": "Petrikeresztur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUZA"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "46.733334",
                 "@type": "xsd:float"

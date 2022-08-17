@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SIGSH",
             "rdf:value": "SIGSH",
+            "@id": "unlcd:SIGSH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gemerská Horka"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gemerska Horka"
+                    "@value": "Gemerska Horka",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "SI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SI"
+            },
             "geo:lat": {
                 "@value": "48.533333",
                 "@type": "xsd:float"

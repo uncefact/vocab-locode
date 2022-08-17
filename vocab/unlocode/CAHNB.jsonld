@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAHNB",
             "rdf:value": "CAHNB",
+            "@id": "unlcd:CAHNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Hélène-de-Bagot"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Helene-de-Bagot"
+                    "@value": "Sainte-Helene-de-Bagot",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.733334",
                 "@type": "xsd:float"

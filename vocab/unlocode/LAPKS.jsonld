@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LAPKS",
             "rdf:value": "LAPKS",
+            "@id": "unlcd:LAPKS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Paksane"
+                "@value": "Paksane",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "LA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LA"
+            },
             "geo:lat": {
                 "@value": "18.383333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEFUB",
             "rdf:value": "DEFUB",
+            "@id": "unlcd:DEFUB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fürstenberg/Havel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Furstenberg/Havel"
+                    "@value": "Furstenberg/Havel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.183334",
                 "@type": "xsd:float"

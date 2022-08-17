@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHRV",
             "rdf:value": "FRHRV",
+            "@id": "unlcd:FRHRV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hérouville-Saint-Clair"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Herouville-Saint-Clair"
+                    "@value": "Herouville-Saint-Clair",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.2",
                 "@type": "xsd:float"

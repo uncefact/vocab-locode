@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNOI",
             "rdf:value": "FRNOI",
+            "@id": "unlcd:FRNOI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Noirmoutier-en-l'Île"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Noirmoutier-en-l'Ile"
+                    "@value": "Noirmoutier-en-l'Ile",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.0",
                 "@type": "xsd:float"

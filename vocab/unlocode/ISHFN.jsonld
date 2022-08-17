@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISHFN",
             "rdf:value": "ISHFN",
+            "@id": "unlcd:ISHFN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Höfn, Hornafjørdur"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hofn, Hornafjordur"
+                    "@value": "Hofn, Hornafjordur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "IS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            },
             "geo:lat": {
                 "@value": "64.25",
                 "@type": "xsd:float"

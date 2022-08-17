@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLSF",
             "rdf:value": "BRLSF",
+            "@id": "unlcd:BRLSF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lagoa de São Francisco"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lagoa de Sao Francisco"
+                    "@value": "Lagoa de Sao Francisco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-4.383333",
                 "@type": "xsd:float"

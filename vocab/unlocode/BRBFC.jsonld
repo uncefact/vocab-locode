@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBFC",
             "rdf:value": "BRBFC",
+            "@id": "unlcd:BRBFC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Belém do São Francisco"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Belem do Sao Francisco"
+                    "@value": "Belem do Sao Francisco",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.75",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAERO",
             "rdf:value": "CAERO",
+            "@id": "unlcd:CAERO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léonard-d'Aston"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leonard-d'Aston"
+                    "@value": "Saint-Leonard-d'Aston",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.1",
                 "@type": "xsd:float"

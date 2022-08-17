@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSVD",
             "rdf:value": "BRSVD",
+            "@id": "unlcd:BRSVD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Vicente do Seridó"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Vicente do Serido"
+                    "@value": "Sao Vicente do Serido",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.85",
                 "@type": "xsd:float"

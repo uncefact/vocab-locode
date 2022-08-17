@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PGMAN",
             "rdf:value": "PGMAN",
+            "@id": "unlcd:PGMAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Manda"
+                "@value": "Manda",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "PG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PG"
+            },
             "geo:lat": {
                 "@value": "-7.0",
                 "@type": "xsd:float"

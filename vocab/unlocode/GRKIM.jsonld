@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRKIM",
             "rdf:value": "GRKIM",
+            "@id": "unlcd:GRKIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kými (Kimi)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kymi (Kimi)"
+                    "@value": "Kymi (Kimi)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "38.633335",
                 "@type": "xsd:float"

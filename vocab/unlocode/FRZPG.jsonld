@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZPG",
             "rdf:value": "FRZPG",
+            "@id": "unlcd:FRZPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Champ-près-Froges"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Champ-pres-Froges"
+                    "@value": "Le Champ-pres-Froges",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.283333",
                 "@type": "xsd:float"

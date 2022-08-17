@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYEN",
             "rdf:value": "FRYEN",
+            "@id": "unlcd:FRYEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Creney-près-Troyes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Creney-pres-Troyes"
+                    "@value": "Creney-pres-Troyes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.333332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZUI",
             "rdf:value": "FRZUI",
+            "@id": "unlcd:FRZUI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Buzet-sur-Baïse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buzet-sur-Baise"
+                    "@value": "Buzet-sur-Baise",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR47"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.25",
                 "@type": "xsd:float"

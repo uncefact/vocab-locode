@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAAM",
             "rdf:value": "BRAAM",
+            "@id": "unlcd:BRAAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alto Alegre do Maranhão"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alto Alegre do Maranhao"
+                    "@value": "Alto Alegre do Maranhao",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-4.2",
                 "@type": "xsd:float"

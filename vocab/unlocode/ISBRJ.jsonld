@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ISBRJ",
             "rdf:value": "ISBRJ",
+            "@id": "unlcd:ISBRJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Brjánslækur"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Brjanslakur"
+                    "@value": "Brjanslakur",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:IS3"
             },
-            "unlcdc:countryCode": "IS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IS"
+            },
             "geo:lat": {
                 "@value": "65.53333",
                 "@type": "xsd:float"

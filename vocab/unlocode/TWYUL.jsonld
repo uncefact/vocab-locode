@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TWYUL",
             "rdf:value": "TWYUL",
+            "@id": "unlcd:TWYUL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Yüan-Lin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Yuan-Lin"
+                    "@value": "Yuan-Lin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TWCHA"
             },
-            "unlcdc:countryCode": "TW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TW"
+            },
             "geo:lat": {
                 "@value": "23.95",
                 "@type": "xsd:float"

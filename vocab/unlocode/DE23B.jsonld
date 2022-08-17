@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE23B",
             "rdf:value": "DE23B",
+            "@id": "unlcd:DE23B",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bollenbach/Hunsrück"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bollenbach/Hunsruck"
+                    "@value": "Bollenbach/Hunsruck",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DERP"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.833332",
                 "@type": "xsd:float"

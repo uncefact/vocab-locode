@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPCU",
             "rdf:value": "FRPCU",
+            "@id": "unlcd:FRPCU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pont-du-Château"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pont-du-Chateau"
+                    "@value": "Pont-du-Chateau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR63"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.783333",
                 "@type": "xsd:float"

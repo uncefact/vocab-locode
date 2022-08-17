@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBGB",
             "rdf:value": "FRBGB",
+            "@id": "unlcd:FRBGB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bougé-Chambalud"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bouge-Chambalud"
+                    "@value": "Bouge-Chambalud",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.333332",
                 "@type": "xsd:float"

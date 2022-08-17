@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEEFW",
             "rdf:value": "DEEFW",
+            "@id": "unlcd:DEEFW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Elsdorf-Westermühlen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Elsdorf-Westermuhlen"
+                    "@value": "Elsdorf-Westermuhlen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "54.266666",
                 "@type": "xsd:float"

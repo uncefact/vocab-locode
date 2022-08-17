@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBZK",
             "rdf:value": "FRBZK",
+            "@id": "unlcd:FRBZK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bérou-la-Mulotière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Berou-la-Mulotiere"
+                    "@value": "Berou-la-Mulotiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR28"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

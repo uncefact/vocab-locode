@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PYSPP",
             "rdf:value": "PYSPP",
+            "@id": "unlcd:PYSPP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Pedro del Paraná"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Pedro del Parana"
+                    "@value": "San Pedro del Parana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PY7"
             },
-            "unlcdc:countryCode": "PY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PY"
+            },
             "geo:lat": {
                 "@value": "-26.833334",
                 "@type": "xsd:float"

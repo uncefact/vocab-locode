@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GPFPI",
             "rdf:value": "GPFPI",
+            "@id": "unlcd:GPFPI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Anse-Bertrand"
+                "@value": "Anse-Bertrand",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GP"
+            },
             "geo:lat": {
                 "@value": "16.466667",
                 "@type": "xsd:float"

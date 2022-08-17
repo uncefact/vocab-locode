@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBBO",
             "rdf:value": "FRBBO",
+            "@id": "unlcd:FRBBO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bosc-Bénard-Commin"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bosc-Benard-Commin"
+                    "@value": "Bosc-Benard-Commin",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR27"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.316666",
                 "@type": "xsd:float"

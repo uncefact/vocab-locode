@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREIB",
             "rdf:value": "FREIB",
+            "@id": "unlcd:FREIB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-de-Brillouet"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-de-Brillouet"
+                    "@value": "Saint-Etienne-de-Brillouet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.516666",
                 "@type": "xsd:float"

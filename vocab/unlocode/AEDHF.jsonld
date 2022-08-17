@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AEDHF",
             "rdf:value": "AEDHF",
+            "@id": "unlcd:AEDHF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Al Dhafra"
+                "@value": "Al Dhafra",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "AE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AE"
+            },
             "geo:lat": {
                 "@value": "24.233334",
                 "@type": "xsd:float"

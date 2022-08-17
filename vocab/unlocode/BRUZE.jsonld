@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRUZE",
             "rdf:value": "BRUZE",
+            "@id": "unlcd:BRUZE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Cruz da Esperança"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Cruz da Esperanca"
+                    "@value": "Santa Cruz da Esperanca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.283333",
                 "@type": "xsd:float"

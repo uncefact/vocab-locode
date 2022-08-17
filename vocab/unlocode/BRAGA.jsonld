@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAGA",
             "rdf:value": "BRAGA",
+            "@id": "unlcd:BRAGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Águas Lindas de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aguas Lindas de Goias"
+                    "@value": "Aguas Lindas de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.733334",
                 "@type": "xsd:float"

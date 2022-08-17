@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRABZ",
             "rdf:value": "BRABZ",
+            "@id": "unlcd:BRABZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Armação dos Búzios"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Armacao dos Buzios"
+                    "@value": "Armacao dos Buzios",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.75",
                 "@type": "xsd:float"

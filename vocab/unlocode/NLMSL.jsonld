@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLMSL",
             "rdf:value": "NLMSL",
+            "@id": "unlcd:NLMSL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Maassluis"
+                "@value": "Maassluis",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -26,7 +26,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

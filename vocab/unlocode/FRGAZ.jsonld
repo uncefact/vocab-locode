@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGAZ",
             "rdf:value": "FRGAZ",
+            "@id": "unlcd:FRGAZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-le-Gaz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-le-Gaz"
+                    "@value": "Saint-Andre-le-Gaz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.55",
                 "@type": "xsd:float"

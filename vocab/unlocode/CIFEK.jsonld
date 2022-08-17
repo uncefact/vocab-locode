@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CIFEK",
             "rdf:value": "CIFEK",
+            "@id": "unlcd:CIFEK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ferkessédougou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ferkessedougou"
+                    "@value": "Ferkessedougou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CI"
+            },
             "geo:lat": {
                 "@value": "9.6",
                 "@type": "xsd:float"

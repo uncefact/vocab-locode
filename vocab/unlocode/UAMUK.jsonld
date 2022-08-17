@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:UAMUK",
             "rdf:value": "UAMUK",
+            "@id": "unlcd:UAMUK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mukachëvo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mukachevo"
+                    "@value": "Mukachevo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:UA21"
             },
-            "unlcdc:countryCode": "UA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:UA"
+            },
             "geo:lat": {
                 "@value": "48.45",
                 "@type": "xsd:float"

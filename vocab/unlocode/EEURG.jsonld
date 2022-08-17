@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEURG",
             "rdf:value": "EEURG",
+            "@id": "unlcd:EEURG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ürgoru Paadisadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Urgoru Paadisadam"
+                    "@value": "Urgoru Paadisadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE79"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "58.366665",
                 "@type": "xsd:float"

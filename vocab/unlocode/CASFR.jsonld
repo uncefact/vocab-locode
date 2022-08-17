@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASFR",
             "rdf:value": "CASFR",
+            "@id": "unlcd:CASFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-François-du-Lac"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Francois-du-Lac"
+                    "@value": "Saint-Francois-du-Lac",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.066666",
                 "@type": "xsd:float"

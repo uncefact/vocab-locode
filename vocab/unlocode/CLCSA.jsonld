@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLCSA",
             "rdf:value": "CLCSA",
+            "@id": "unlcd:CLCSA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Cardenal A. Samoré/Puyehue"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Cardenal A. Samore/Puyehue"
+                    "@value": "Paso Cardenal A. Samore/Puyehue",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLLL"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-40.716667",
                 "@type": "xsd:float"

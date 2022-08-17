@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSAO",
             "rdf:value": "FRSAO",
+            "@id": "unlcd:FRSAO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Amand-Longpré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Amand-Longpre"
+                    "@value": "Saint-Amand-Longpre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR41"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.683334",
                 "@type": "xsd:float"

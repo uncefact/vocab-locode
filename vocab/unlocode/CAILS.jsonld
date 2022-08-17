@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAILS",
             "rdf:value": "CAILS",
+            "@id": "unlcd:CAILS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Île-des-Soeurs (Nuns Island)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Ile-des-Soeurs (Nuns Island)"
+                    "@value": "L'Ile-des-Soeurs (Nuns Island)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.3",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRZHU",
             "rdf:value": "FRZHU",
+            "@id": "unlcd:FRZHU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Rémy-l'Honoré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Remy-l'Honore"
+                    "@value": "Saint-Remy-l'Honore",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR78"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

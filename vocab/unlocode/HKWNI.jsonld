@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HKWNI",
             "rdf:value": "HKWNI",
+            "@id": "unlcd:HKWNI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Wan Chai"
+                "@value": "Wan Chai",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HK"
+            },
             "geo:lat": {
                 "@value": "22.283333",
                 "@type": "xsd:float"

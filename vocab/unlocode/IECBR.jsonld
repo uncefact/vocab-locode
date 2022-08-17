@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IECBR",
             "rdf:value": "IECBR",
+            "@id": "unlcd:IECBR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Coomhola Bridge"
+                "@value": "Coomhola Bridge",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "IE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IE"
+            },
             "geo:lat": {
                 "@value": "51.75",
                 "@type": "xsd:float"

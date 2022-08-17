@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUREP",
             "rdf:value": "RUREP",
+            "@id": "unlcd:RUREP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rep'yëvka"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rep'yevka"
+                    "@value": "Rep'yevka",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUVGG"
             },
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "51.066666",
                 "@type": "xsd:float"

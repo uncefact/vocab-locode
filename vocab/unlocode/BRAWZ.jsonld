@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAWZ",
             "rdf:value": "BRAWZ",
+            "@id": "unlcd:BRAWZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morro Agudo de Goiás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morro Agudo de Goias"
+                    "@value": "Morro Agudo de Goias",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRGO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.3",
                 "@type": "xsd:float"

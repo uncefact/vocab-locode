@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHRTH",
             "rdf:value": "CHRTH",
+            "@id": "unlcd:CHRTH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rüthi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ruthi"
+                    "@value": "Ruthi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHSG"
             },
-            "unlcdc:countryCode": "CH"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            }
         }
     ]
 }

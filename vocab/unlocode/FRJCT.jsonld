@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRJCT",
             "rdf:value": "FRJCT",
+            "@id": "unlcd:FRJCT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jouy-le-Châtel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jouy-le-Chatel"
+                    "@value": "Jouy-le-Chatel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.666668",
                 "@type": "xsd:float"

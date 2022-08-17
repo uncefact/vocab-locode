@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREMC",
             "rdf:value": "FREMC",
+            "@id": "unlcd:FREMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-de-Montluc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-de-Montluc"
+                    "@value": "Saint-Etienne-de-Montluc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.266666",
                 "@type": "xsd:float"

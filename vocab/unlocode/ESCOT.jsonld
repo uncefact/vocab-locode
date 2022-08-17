@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCOT",
             "rdf:value": "ESCOT",
+            "@id": "unlcd:ESCOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cornellá de Llobregat"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cornella de Llobregat"
+                    "@value": "Cornella de Llobregat",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.35",
                 "@type": "xsd:float"

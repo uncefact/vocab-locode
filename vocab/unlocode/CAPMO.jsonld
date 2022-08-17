@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAPMO",
             "rdf:value": "CAPMO",
+            "@id": "unlcd:CAPMO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Port Moody/Vancouver"
+                "@value": "Port Moody/Vancouver",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -30,7 +30,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CABC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

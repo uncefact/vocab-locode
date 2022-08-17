@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKKNN",
             "rdf:value": "SKKNN",
+            "@id": "unlcd:SKKNN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Králová nad Váhom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kralova nad Vahom"
+                    "@value": "Kralova nad Vahom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKNI"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.166668",
                 "@type": "xsd:float"

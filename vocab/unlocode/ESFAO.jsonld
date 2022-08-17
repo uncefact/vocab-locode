@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFAO",
             "rdf:value": "ESFAO",
+            "@id": "unlcd:ESFAO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuente-Álamo de Murcia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuente-Alamo de Murcia"
+                    "@value": "Fuente-Alamo de Murcia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESMU"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "37.7",
                 "@type": "xsd:float"

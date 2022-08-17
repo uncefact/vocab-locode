@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNUX",
             "rdf:value": "FRNUX",
+            "@id": "unlcd:FRNUX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nanteuil-lès-Meaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nanteuil-les-Meaux"
+                    "@value": "Nanteuil-les-Meaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.933334",
                 "@type": "xsd:float"

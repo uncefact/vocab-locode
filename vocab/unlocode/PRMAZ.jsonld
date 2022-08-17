@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PRMAZ",
             "rdf:value": "PRMAZ",
+            "@id": "unlcd:PRMAZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mayagüez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mayaguez"
+                    "@value": "Mayaguez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "PR"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PR"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYLN",
             "rdf:value": "FRYLN",
+            "@id": "unlcd:FRYLN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Essey-lès-Nancy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Essey-les-Nancy"
+                    "@value": "Essey-les-Nancy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.7",
                 "@type": "xsd:float"

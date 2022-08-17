@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZIVA",
             "rdf:value": "CZIVA",
+            "@id": "unlcd:CZIVA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ivanovice na Hané"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ivanovice na Hane"
+                    "@value": "Ivanovice na Hane",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZ64"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.316666",
                 "@type": "xsd:float"

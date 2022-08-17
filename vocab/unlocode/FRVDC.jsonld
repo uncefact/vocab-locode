@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVDC",
             "rdf:value": "FRVDC",
+            "@id": "unlcd:FRVDC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vendenesse-lès-Charolles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vendenesse-les-Charolles"
+                    "@value": "Vendenesse-les-Charolles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.433334",
                 "@type": "xsd:float"

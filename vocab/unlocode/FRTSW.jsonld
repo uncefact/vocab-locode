@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTSW",
             "rdf:value": "FRTSW",
+            "@id": "unlcd:FRTSW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Luché-Thouarsais"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Luche-Thouarsais"
+                    "@value": "Luche-Thouarsais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR79"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.9",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LTMOC",
             "rdf:value": "LTMOC",
+            "@id": "unlcd:LTMOC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mockava"
+                "@value": "Mockava",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LT"
+            },
             "geo:lat": {
                 "@value": "54.333332",
                 "@type": "xsd:float"

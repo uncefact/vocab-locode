@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBCU",
             "rdf:value": "FRBCU",
+            "@id": "unlcd:FRBCU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boissy-le-Cutté"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boissy-le-Cutte"
+                    "@value": "Boissy-le-Cutte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FRHK"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.466667",
                 "@type": "xsd:float"

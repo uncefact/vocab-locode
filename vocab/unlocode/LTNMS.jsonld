@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LTNMS",
             "rdf:value": "LTNMS",
+            "@id": "unlcd:LTNMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nemaksciai"
+                "@value": "Nemaksciai",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LTKU"
             },
-            "unlcdc:countryCode": "LT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LT"
+            },
             "geo:lat": {
                 "@value": "55.416668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FISTA",
             "rdf:value": "FISTA",
+            "@id": "unlcd:FISTA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Seutula (Sjöskog)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Seutula (Sjoskog)"
+                    "@value": "Seutula (Sjoskog)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.35",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TDKME",
             "rdf:value": "TDKME",
+            "@id": "unlcd:TDKME",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Komé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kome"
+                    "@value": "Kome",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TD"
+            },
             "geo:lat": {
                 "@value": "8.45",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNDEF",
             "rdf:value": "CNDEF",
+            "@id": "unlcd:CNDEF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Defeng"
+                "@value": "Defeng",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNGZ"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "26.216667",
                 "@type": "xsd:float"

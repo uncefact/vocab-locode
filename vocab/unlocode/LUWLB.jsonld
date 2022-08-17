@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUWLB",
             "rdf:value": "LUWLB",
+            "@id": "unlcd:LUWLB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Waldbillig (Waldbëlleg)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Waldbillig (Waldbelleg)"
+                    "@value": "Waldbillig (Waldbelleg)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUEC"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.783333",
                 "@type": "xsd:float"

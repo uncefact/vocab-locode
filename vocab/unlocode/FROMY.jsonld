@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROMY",
             "rdf:value": "FROMY",
+            "@id": "unlcd:FROMY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boyeux-Saint-Jérôme"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boyeux-Saint-Jerome"
+                    "@value": "Boyeux-Saint-Jerome",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.016666",
                 "@type": "xsd:float"

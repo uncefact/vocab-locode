@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LCSLU",
             "rdf:value": "LCSLU",
+            "@id": "unlcd:LCSLU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saint Lucia Apt"
+                "@value": "Saint Lucia Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "LC",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LC"
+            },
             "geo:lat": {
                 "@value": "13.7",
                 "@type": "xsd:float"

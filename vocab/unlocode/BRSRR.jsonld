@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSRR",
             "rdf:value": "BRSRR",
+            "@id": "unlcd:BRSRR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José de Ribamar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose de Ribamar"
+                    "@value": "Sao Jose de Ribamar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-2.55",
                 "@type": "xsd:float"

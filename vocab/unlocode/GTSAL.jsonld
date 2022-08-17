@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSAL",
             "rdf:value": "GTSAL",
+            "@id": "unlcd:GTSAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Lucas Sacatepéquez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Lucas Sacatepequez"
+                    "@value": "San Lucas Sacatepequez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT03"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.6",
                 "@type": "xsd:float"

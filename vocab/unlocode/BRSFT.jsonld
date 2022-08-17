@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSFT",
             "rdf:value": "BRSFT",
+            "@id": "unlcd:BRSFT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Felipe D'Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Felipe D'Oeste"
+                    "@value": "Sao Felipe D'Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-11.9",
                 "@type": "xsd:float"

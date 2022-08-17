@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGPD",
             "rdf:value": "FRGPD",
+            "@id": "unlcd:FRGPD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Germain-des-Prés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Germain-des-Pres"
+                    "@value": "Saint-Germain-des-Pres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR81"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.566666",
                 "@type": "xsd:float"

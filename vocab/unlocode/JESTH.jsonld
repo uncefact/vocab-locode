@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:JESTH",
             "rdf:value": "JESTH",
+            "@id": "unlcd:JESTH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint Hélier"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint Helier"
+                    "@value": "Saint Helier",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "JE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:JE"
+            },
             "geo:lat": {
                 "@value": "49.183334",
                 "@type": "xsd:float"

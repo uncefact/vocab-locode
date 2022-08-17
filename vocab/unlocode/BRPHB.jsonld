@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPHB",
             "rdf:value": "BRPHB",
+            "@id": "unlcd:BRPHB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pinhal de São Bento"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pinhal de Sao Bento"
+                    "@value": "Pinhal de Sao Bento",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-26.016666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLPTE",
             "rdf:value": "CLPTE",
+            "@id": "unlcd:CLPTE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Quellón (Puerto Quellón)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Quellon (Puerto Quellon)"
+                    "@value": "Quellon (Puerto Quellon)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLLL"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-43.1",
                 "@type": "xsd:float"

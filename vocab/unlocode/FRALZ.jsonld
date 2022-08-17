@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRALZ",
             "rdf:value": "FRALZ",
+            "@id": "unlcd:FRALZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Arc-lès-Gray"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Arc-les-Gray"
+                    "@value": "Arc-les-Gray",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.45",
                 "@type": "xsd:float"

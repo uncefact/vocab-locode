@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITMID",
             "rdf:value": "ITMID",
+            "@id": "unlcd:ITMID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mirandola"
+                "@value": "Mirandola",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IT"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            }
         }
     ]
 }

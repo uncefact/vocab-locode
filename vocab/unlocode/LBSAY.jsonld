@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LBSAY",
             "rdf:value": "LBSAY",
+            "@id": "unlcd:LBSAY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saydå"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sayda"
+                    "@value": "Sayda",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "LB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LB"
+            },
             "geo:lat": {
                 "@value": "33.55",
                 "@type": "xsd:float"

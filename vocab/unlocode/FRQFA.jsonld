@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRQFA",
             "rdf:value": "FRQFA",
+            "@id": "unlcd:FRQFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Folletière-Abenon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Folletiere-Abenon"
+                    "@value": "La Folletiere-Abenon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.983334",
                 "@type": "xsd:float"

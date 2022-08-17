@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MGNOS",
             "rdf:value": "MGNOS",
+            "@id": "unlcd:MGNOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nosy-Be"
+                "@value": "Nosy-Be",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MG"
+            },
             "geo:lat": {
                 "@value": "-13.333333",
                 "@type": "xsd:float"

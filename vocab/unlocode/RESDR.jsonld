@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RESDR",
             "rdf:value": "RESDR",
+            "@id": "unlcd:RESDR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre"
+                    "@value": "Saint-Andre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "RE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RE"
+            },
             "geo:lat": {
                 "@value": "-20.933332",
                 "@type": "xsd:float"

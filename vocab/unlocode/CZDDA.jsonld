@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZDDA",
             "rdf:value": "CZDDA",
+            "@id": "unlcd:CZDDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dolní Dvoriste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dolni Dvoriste"
+                    "@value": "Dolni Dvoriste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "48.65",
                 "@type": "xsd:float"

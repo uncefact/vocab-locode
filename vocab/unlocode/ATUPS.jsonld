@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATUPS",
             "rdf:value": "ATUPS",
+            "@id": "unlcd:ATUPS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Unterpremstätten"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Unterpremstatten"
+                    "@value": "Unterpremstatten",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT6"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "46.95",
                 "@type": "xsd:float"

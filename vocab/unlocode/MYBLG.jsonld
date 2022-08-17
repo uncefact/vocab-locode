@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MYBLG",
             "rdf:value": "MYBLG",
+            "@id": "unlcd:MYBLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Belaga, Sarawak"
+                "@value": "Belaga, Sarawak",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MY"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MY"
+            }
         }
     ]
 }

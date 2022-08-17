@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROTSC",
             "rdf:value": "ROTSC",
+            "@id": "unlcd:ROTSC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Târgu Secuiesc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Targu Secuiesc"
+                    "@value": "Targu Secuiesc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "46.0",
                 "@type": "xsd:float"

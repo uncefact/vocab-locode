@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSF6",
             "rdf:value": "FRSF6",
+            "@id": "unlcd:FRSF6",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Michel-sur-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Michel-sur-Rhone"
+                    "@value": "Saint-Michel-sur-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR42"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.45",
                 "@type": "xsd:float"

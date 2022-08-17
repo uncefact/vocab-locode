@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRACB",
             "rdf:value": "FRACB",
+            "@id": "unlcd:FRACB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Salles-Courbatiès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Salles-Courbaties"
+                    "@value": "Salles-Courbaties",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR12"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.466667",
                 "@type": "xsd:float"

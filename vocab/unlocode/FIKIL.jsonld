@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIKIL",
             "rdf:value": "FIKIL",
+            "@id": "unlcd:FIKIL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kilpisjärvi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kilpisjarvi"
+                    "@value": "Kilpisjarvi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI10"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "69.05",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCEE",
             "rdf:value": "FRCEE",
+            "@id": "unlcd:FRCEE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cesson-Sévigné"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cesson-Sevigne"
+                    "@value": "Cesson-Sevigne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.116665",
                 "@type": "xsd:float"

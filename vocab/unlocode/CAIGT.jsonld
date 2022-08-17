@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAIGT",
             "rdf:value": "CAIGT",
+            "@id": "unlcd:CAIGT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Île-du-Grand-Calumet"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ile-du-Grand-Calumet"
+                    "@value": "Ile-du-Grand-Calumet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.716667",
                 "@type": "xsd:float"

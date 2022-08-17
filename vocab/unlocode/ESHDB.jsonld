@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESHDB",
             "rdf:value": "ESHDB",
+            "@id": "unlcd:ESHDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Els Hostalets de Balenyá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Els Hostalets de Balenya"
+                    "@value": "Els Hostalets de Balenya",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.816666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCLU",
             "rdf:value": "BRCLU",
+            "@id": "unlcd:BRCLU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição do Lago-Açu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao do Lago-Acu"
+                    "@value": "Conceicao do Lago-Acu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.8333333",
                 "@type": "xsd:float"

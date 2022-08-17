@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSOT",
             "rdf:value": "FRSOT",
+            "@id": "unlcd:FRSOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sotteville-lès-Rouen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sotteville-les-Rouen"
+                    "@value": "Sotteville-les-Rouen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.416668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRTC",
             "rdf:value": "FRRTC",
+            "@id": "unlcd:FRRTC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Roôcourt-la-Côte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Roocourt-la-Cote"
+                    "@value": "Roocourt-la-Cote",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR52"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.216667",
                 "@type": "xsd:float"

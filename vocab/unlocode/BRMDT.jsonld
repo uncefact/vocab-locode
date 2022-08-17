@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMDT",
             "rdf:value": "BRMDT",
+            "@id": "unlcd:BRMDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mineiros do Tietê"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mineiros do Tiete"
+                    "@value": "Mineiros do Tiete",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.4",
                 "@type": "xsd:float"

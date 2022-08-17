@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITFAS",
             "rdf:value": "ITFAS",
+            "@id": "unlcd:ITFAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fiè allo Sciliar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fie allo Sciliar"
+                    "@value": "Fie allo Sciliar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITBZ"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "46.516666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHBUS",
             "rdf:value": "CHBUS",
+            "@id": "unlcd:CHBUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bussigny-près-Lausanne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bussigny-pres-Lausanne"
+                    "@value": "Bussigny-pres-Lausanne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVD"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.55",
                 "@type": "xsd:float"

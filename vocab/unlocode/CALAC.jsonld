@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CALAC",
             "rdf:value": "CALAC",
+            "@id": "unlcd:CALAC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Lachine/Montreal"
+                "@value": "Lachine/Montreal",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

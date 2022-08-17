@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSGS",
             "rdf:value": "BRSGS",
+            "@id": "unlcd:BRSGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gabriel do Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Gabriel do Oeste"
+                    "@value": "Sao Gabriel do Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.383333",
                 "@type": "xsd:float"

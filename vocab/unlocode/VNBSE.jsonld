@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNBSE",
             "rdf:value": "VNBSE",
+            "@id": "unlcd:VNBSE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bông Sen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bong Sen"
+                    "@value": "Bong Sen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "10.683333",
                 "@type": "xsd:float"

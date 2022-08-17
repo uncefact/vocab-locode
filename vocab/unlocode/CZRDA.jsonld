@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZRDA",
             "rdf:value": "CZRDA",
+            "@id": "unlcd:CZRDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zelezná Ruda"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zelezna Ruda"
+                    "@value": "Zelezna Ruda",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.133335",
                 "@type": "xsd:float"

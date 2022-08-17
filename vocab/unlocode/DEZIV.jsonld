@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEZIV",
             "rdf:value": "DEZIV",
+            "@id": "unlcd:DEZIV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Weitendorf bei Brüel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Weitendorf bei Bruel"
+                    "@value": "Weitendorf bei Bruel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.716667",
                 "@type": "xsd:float"

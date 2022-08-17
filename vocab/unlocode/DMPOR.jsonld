@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DMPOR",
             "rdf:value": "DMPOR",
+            "@id": "unlcd:DMPOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Portsmouth"
+                "@value": "Portsmouth",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DM"
+            },
             "geo:lat": {
                 "@value": "15.566667",
                 "@type": "xsd:float"

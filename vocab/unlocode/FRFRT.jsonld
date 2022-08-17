@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFRT",
             "rdf:value": "FRFRT",
+            "@id": "unlcd:FRFRT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Verneuil-l'Étang"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Verneuil-l'Etang"
+                    "@value": "Verneuil-l'Etang",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.633335",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TWBAL",
             "rdf:value": "TWBAL",
+            "@id": "unlcd:TWBAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bali"
+                "@value": "Bali",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TW"
+            },
             "geo:lat": {
                 "@value": "25.15",
                 "@type": "xsd:float"

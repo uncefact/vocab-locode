@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRTUB",
             "rdf:value": "BRTUB",
+            "@id": "unlcd:BRTUB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tubarão Pt / Vitória"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tubarao Pt / Vitoria"
+                    "@value": "Tubarao Pt / Vitoria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.266666",
                 "@type": "xsd:float"

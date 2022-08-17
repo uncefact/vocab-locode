@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRENH",
             "rdf:value": "FRENH",
+            "@id": "unlcd:FRENH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Hélène-du-Lac"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Helene-du-Lac"
+                    "@value": "Sainte-Helene-du-Lac",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR73"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.483334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPRM",
             "rdf:value": "FRPRM",
+            "@id": "unlcd:FRPRM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Prévessin-Moëns"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Prevessin-Moens"
+                    "@value": "Prevessin-Moens",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.25",
                 "@type": "xsd:float"

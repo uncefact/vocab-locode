@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GNPMT",
             "rdf:value": "GNPMT",
+            "@id": "unlcd:GNPMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Dougoula"
+                "@value": "Dougoula",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNBK"
             },
-            "unlcdc:countryCode": "GN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GN"
+            },
             "geo:lat": {
                 "@value": "10.75",
                 "@type": "xsd:float"

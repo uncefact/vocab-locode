@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSLR",
             "rdf:value": "FRSLR",
+            "@id": "unlcd:FRSLR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Laurent-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Laurent-sur-Saone"
+                    "@value": "Saint-Laurent-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.3",
                 "@type": "xsd:float"

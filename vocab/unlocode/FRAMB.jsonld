@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAMB",
             "rdf:value": "FRAMB",
+            "@id": "unlcd:FRAMB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ambérieux-en-Dombes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Amberieux-en-Dombes"
+                    "@value": "Amberieux-en-Dombes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.0",
                 "@type": "xsd:float"

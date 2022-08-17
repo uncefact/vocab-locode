@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USLCA",
             "rdf:value": "USLCA",
+            "@id": "unlcd:USLCA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Cañada-Flintridge"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Canada-Flintridge"
+                    "@value": "La Canada-Flintridge",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USCA"
             },
-            "unlcdc:countryCode": "US",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            },
             "geo:lat": {
                 "@value": "34.183334",
                 "@type": "xsd:float"

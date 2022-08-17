@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ECCAR",
             "rdf:value": "ECCAR",
+            "@id": "unlcd:ECCAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Pedro Carbo"
+                "@value": "Pedro Carbo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "EC"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EC"
+            }
         }
     ]
 }

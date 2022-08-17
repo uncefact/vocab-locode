@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCDS",
             "rdf:value": "FRCDS",
+            "@id": "unlcd:FRCDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castelnau-d'Estrétefonds"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castelnau-d'Estretefonds"
+                    "@value": "Castelnau-d'Estretefonds",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR31"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.783333",
                 "@type": "xsd:float"

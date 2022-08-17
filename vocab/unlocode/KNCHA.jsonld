@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KNCHA",
             "rdf:value": "KNCHA",
+            "@id": "unlcd:KNCHA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Charlestown"
+                "@value": "Charlestown",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "KN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KN"
+            },
             "geo:lat": {
                 "@value": "17.133333",
                 "@type": "xsd:float"

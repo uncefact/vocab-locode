@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ARSLU",
             "rdf:value": "ARSLU",
+            "@id": "unlcd:ARSLU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sta. Lucía"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sta. Lucia"
+                    "@value": "Sta. Lucia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARJ"
             },
-            "unlcdc:countryCode": "AR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AR"
+            },
             "geo:lat": {
                 "@value": "-31.533333",
                 "@type": "xsd:float"

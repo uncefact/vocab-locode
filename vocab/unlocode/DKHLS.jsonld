@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKHLS",
             "rdf:value": "DKHLS",
+            "@id": "unlcd:DKHLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Helsingør"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Helsingor"
+                    "@value": "Helsingor",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:2"
                 }
             ],
-            "unlcdc:countryCode": "DK"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            }
         }
     ]
 }

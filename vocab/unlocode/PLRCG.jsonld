@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLRCG",
             "rdf:value": "PLRCG",
+            "@id": "unlcd:PLRCG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Raciborowice Górne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Raciborowice Gorne"
+                    "@value": "Raciborowice Gorne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL02"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "51.2",
                 "@type": "xsd:float"

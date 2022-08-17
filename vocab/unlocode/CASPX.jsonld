@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASPX",
             "rdf:value": "CASPX",
+            "@id": "unlcd:CASPX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Paul-de-l'Île-aux-Noix"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Paul-de-l'Ile-aux-Noix"
+                    "@value": "Saint-Paul-de-l'Ile-aux-Noix",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.05",
                 "@type": "xsd:float"

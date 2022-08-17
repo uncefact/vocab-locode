@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROAR",
             "rdf:value": "FROAR",
+            "@id": "unlcd:FROAR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Farges-lès-Mâcon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Farges-les-Macon"
+                    "@value": "Farges-les-Macon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR71"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.516666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSBT",
             "rdf:value": "FRSBT",
+            "@id": "unlcd:FRSBT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Benoît-la-Forêt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Benoit-la-Foret"
+                    "@value": "Saint-Benoit-la-Foret",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.216667",
                 "@type": "xsd:float"

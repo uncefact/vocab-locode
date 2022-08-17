@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FOSKA",
             "rdf:value": "FOSKA",
+            "@id": "unlcd:FOSKA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Skáli"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Skali"
+                    "@value": "Skali",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "FO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FO"
+            },
             "geo:lat": {
                 "@value": "62.15",
                 "@type": "xsd:float"

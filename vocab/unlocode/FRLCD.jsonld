@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLCD",
             "rdf:value": "FRLCD",
+            "@id": "unlcd:FRLCD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Chapelle-d'Armentières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Chapelle-d'Armentieres"
+                    "@value": "La Chapelle-d'Armentieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR59"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.683334",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKSLV",
             "rdf:value": "SKSLV",
+            "@id": "unlcd:SKSLV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sládkovicovo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sladkovicovo"
+                    "@value": "Sladkovicovo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.2",
                 "@type": "xsd:float"

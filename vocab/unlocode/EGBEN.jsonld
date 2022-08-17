@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EGBEN",
             "rdf:value": "EGBEN",
+            "@id": "unlcd:EGBEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Beni Suef"
+                "@value": "Beni Suef",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "EG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EG"
+            },
             "geo:lat": {
                 "@value": "29.066668",
                 "@type": "xsd:float"

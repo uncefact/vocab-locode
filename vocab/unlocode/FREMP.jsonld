@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREMP",
             "rdf:value": "FREMP",
+            "@id": "unlcd:FREMP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Clément-de-la-Place"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Clement-de-la-Place"
+                    "@value": "Saint-Clement-de-la-Place",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.533333",
                 "@type": "xsd:float"

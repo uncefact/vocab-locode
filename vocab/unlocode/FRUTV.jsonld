@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRUTV",
             "rdf:value": "FRUTV",
+            "@id": "unlcd:FRUTV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Laurent-la-Vallée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Laurent-la-Vallee"
+                    "@value": "Saint-Laurent-la-Vallee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR24"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.733334",
                 "@type": "xsd:float"

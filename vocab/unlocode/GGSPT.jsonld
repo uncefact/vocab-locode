@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GGSPT",
             "rdf:value": "GGSPT",
+            "@id": "unlcd:GGSPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saint Peter Port"
+                "@value": "Saint Peter Port",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GG"
+            },
             "geo:lat": {
                 "@value": "49.45",
                 "@type": "xsd:float"

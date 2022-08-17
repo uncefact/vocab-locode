@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:JPOSM",
             "rdf:value": "JPOSM",
+            "@id": "unlcd:JPOSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ôshima, Nagasaki"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Oshima, Nagasaki"
+                    "@value": "Oshima, Nagasaki",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:JP42"
             },
-            "unlcdc:countryCode": "JP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:JP"
+            },
             "geo:lat": {
                 "@value": "33.066666",
                 "@type": "xsd:float"

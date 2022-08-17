@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHKY",
             "rdf:value": "FRHKY",
+            "@id": "unlcd:FRHKY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Château-l'Abbaye"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateau-l'Abbaye"
+                    "@value": "Chateau-l'Abbaye",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR59"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.483334",
                 "@type": "xsd:float"

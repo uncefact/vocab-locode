@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNEB",
             "rdf:value": "FRNEB",
+            "@id": "unlcd:FRNEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neufchâtel-en-Bray"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neufchatel-en-Bray"
+                    "@value": "Neufchatel-en-Bray",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.733334",
                 "@type": "xsd:float"

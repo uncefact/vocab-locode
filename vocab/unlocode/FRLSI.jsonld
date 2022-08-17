@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLSI",
             "rdf:value": "FRLSI",
+            "@id": "unlcd:FRLSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Charité-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Charite-sur-Loire"
+                    "@value": "La Charite-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR58"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.183334",
                 "@type": "xsd:float"

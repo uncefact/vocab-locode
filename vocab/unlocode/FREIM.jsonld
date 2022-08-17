@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREIM",
             "rdf:value": "FREIM",
+            "@id": "unlcd:FREIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Herrlisheim-près-Colmar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Herrlisheim-pres-Colmar"
+                    "@value": "Herrlisheim-pres-Colmar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR68"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.016666",
                 "@type": "xsd:float"

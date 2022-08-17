@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSII",
             "rdf:value": "FRSII",
+            "@id": "unlcd:FRSII",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Pierre-le-Moûtier"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Pierre-le-Moutier"
+                    "@value": "Saint-Pierre-le-Moutier",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR58"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.8",
                 "@type": "xsd:float"

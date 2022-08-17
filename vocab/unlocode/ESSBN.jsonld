@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSBN",
             "rdf:value": "ESSBN",
+            "@id": "unlcd:ESSBN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Boi de Lluçanès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Boi de Llucanes"
+                    "@value": "Sant Boi de Llucanes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.05",
                 "@type": "xsd:float"

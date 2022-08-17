@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZRNB",
             "rdf:value": "CZRNB",
+            "@id": "unlcd:CZRNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rtyne nad Bílinou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rtyne nad Bilinou"
+                    "@value": "Rtyne nad Bilinou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZUS"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZPKA",
             "rdf:value": "CZPKA",
+            "@id": "unlcd:CZPKA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Petrovice u Karviné"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Petrovice u Karvine"
+                    "@value": "Petrovice u Karvine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

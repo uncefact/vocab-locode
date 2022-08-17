@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIEJO",
             "rdf:value": "FIEJO",
+            "@id": "unlcd:FIEJO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Eurajoki (Euraåminne)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Eurajoki (Euraaminne)"
+                    "@value": "Eurajoki (Euraaminne)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI17"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "61.2",
                 "@type": "xsd:float"

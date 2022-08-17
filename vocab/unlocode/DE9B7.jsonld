@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DE9B7",
             "rdf:value": "DE9B7",
+            "@id": "unlcd:DE9B7",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boelkendorf (Angermünde)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boelkendorf (Angermunde)"
+                    "@value": "Boelkendorf (Angermunde)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.95",
                 "@type": "xsd:float"

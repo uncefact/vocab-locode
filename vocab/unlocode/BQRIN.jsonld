@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BQRIN",
             "rdf:value": "BQRIN",
+            "@id": "unlcd:BQRIN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dorp Rincón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dorp Rincon"
+                    "@value": "Dorp Rincon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BQ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BQ"
+            },
             "geo:lat": {
                 "@value": "12.233334",
                 "@type": "xsd:float"

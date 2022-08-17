@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREUK",
             "rdf:value": "FREUK",
+            "@id": "unlcd:FREUK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ensuès-la-Redonne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ensues-la-Redonne"
+                    "@value": "Ensues-la-Redonne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR13"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.35",
                 "@type": "xsd:float"

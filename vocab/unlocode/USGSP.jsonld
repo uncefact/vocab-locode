@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:USGSP",
             "rdf:value": "USGSP",
+            "@id": "unlcd:USGSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Greer-Greenville Apt"
+                "@value": "Greer-Greenville Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -30,7 +30,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USSC"
             },
-            "unlcdc:countryCode": "US"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:US"
+            }
         }
     ]
 }

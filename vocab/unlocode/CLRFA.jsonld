@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLRFA",
             "rdf:value": "CLRFA",
+            "@id": "unlcd:CLRFA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paso Río Frías Appeleg/Cisnes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paso Rio Frias Appeleg/Cisnes"
+                    "@value": "Paso Rio Frias Appeleg/Cisnes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLAI"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-44.55",
                 "@type": "xsd:float"

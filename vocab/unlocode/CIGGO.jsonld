@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CIGGO",
             "rdf:value": "CIGGO",
+            "@id": "unlcd:CIGGO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Guiglo"
+                "@value": "Guiglo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CI"
+            },
             "geo:lat": {
                 "@value": "6.5333333",
                 "@type": "xsd:float"

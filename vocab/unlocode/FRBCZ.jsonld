@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBCZ",
             "rdf:value": "FRBCZ",
+            "@id": "unlcd:FRBCZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Boucoiran-et-Nozières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boucoiran-et-Nozieres"
+                    "@value": "Boucoiran-et-Nozieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR30"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.983334",
                 "@type": "xsd:float"

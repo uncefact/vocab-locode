@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMAS",
             "rdf:value": "FRMAS",
+            "@id": "unlcd:FRMAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Maisdon-sur-Sèvre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Maisdon-sur-Sevre"
+                    "@value": "Maisdon-sur-Sevre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.1",
                 "@type": "xsd:float"

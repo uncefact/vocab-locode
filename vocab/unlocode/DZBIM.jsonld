@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DZBIM",
             "rdf:value": "DZBIM",
+            "@id": "unlcd:DZBIM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bir Mourad Raïs"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bir Mourad Rais"
+                    "@value": "Bir Mourad Rais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DZ42"
             },
-            "unlcdc:countryCode": "DZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DZ"
+            },
             "geo:lat": {
                 "@value": "36.733334",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKSLO",
             "rdf:value": "SKSLO",
+            "@id": "unlcd:SKSLO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Slovenská Lupca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Slovenska Lupca"
+                    "@value": "Slovenska Lupca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.766666",
                 "@type": "xsd:float"

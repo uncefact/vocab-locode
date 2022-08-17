@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNCP",
             "rdf:value": "BRNCP",
+            "@id": "unlcd:BRNCP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nova Canaã Paulista"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nova Canaa Paulista"
+                    "@value": "Nova Canaa Paulista",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.383333",
                 "@type": "xsd:float"

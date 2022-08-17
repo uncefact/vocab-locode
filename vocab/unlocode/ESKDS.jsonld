@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESKDS",
             "rdf:value": "ESKDS",
+            "@id": "unlcd:ESKDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cabañas de la Sagra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cabanas de la Sagra"
+                    "@value": "Cabanas de la Sagra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESTO"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.016666",
                 "@type": "xsd:float"

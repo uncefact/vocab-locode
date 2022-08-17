@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEB2Z",
             "rdf:value": "DEB2Z",
+            "@id": "unlcd:DEB2Z",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bernstorf bei Grevesmühlen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bernstorf bei Grevesmuhlen"
+                    "@value": "Bernstorf bei Grevesmuhlen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEMV"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.833332",
                 "@type": "xsd:float"

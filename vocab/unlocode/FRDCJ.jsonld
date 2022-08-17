@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDCJ",
             "rdf:value": "FRDCJ",
+            "@id": "unlcd:FRDCJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Christoly-Médoc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Christoly-Medoc"
+                    "@value": "Saint-Christoly-Medoc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.35",
                 "@type": "xsd:float"

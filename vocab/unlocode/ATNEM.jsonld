@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATNEM",
             "rdf:value": "ATNEM",
+            "@id": "unlcd:ATNEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Neustift im Mühlkreis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Neustift im Muhlkreis"
+                    "@value": "Neustift im Muhlkreis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT4"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.533333",
                 "@type": "xsd:float"

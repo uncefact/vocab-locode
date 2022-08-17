@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSDN",
             "rdf:value": "FRSDN",
+            "@id": "unlcd:FRSDN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léonard-de-Noblat"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leonard-de-Noblat"
+                    "@value": "Saint-Leonard-de-Noblat",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR87"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.833332",
                 "@type": "xsd:float"

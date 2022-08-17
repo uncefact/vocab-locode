@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:WFMAU",
             "rdf:value": "WFMAU",
+            "@id": "unlcd:WFMAU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Matâ'utu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mata'utu"
+                    "@value": "Mata'utu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "WF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:WF"
+            },
             "geo:lat": {
                 "@value": "-13.283334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSVF",
             "rdf:value": "BRSVF",
+            "@id": "unlcd:BRSVF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Vicente Ferrer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Vicente Ferrer"
+                    "@value": "Sao Vicente Ferrer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-2.8833332",
                 "@type": "xsd:float"

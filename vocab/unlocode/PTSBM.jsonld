@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSBM",
             "rdf:value": "PTSBM",
+            "@id": "unlcd:PTSBM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Bartolomeu de Messines"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Bartolomeu de Messines"
+                    "@value": "Sao Bartolomeu de Messines",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT08"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "37.25",
                 "@type": "xsd:float"

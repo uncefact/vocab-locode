@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RELPT",
             "rdf:value": "RELPT",
+            "@id": "unlcd:RELPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Le Port"
+                "@value": "Le Port",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "RE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RE"
+            },
             "geo:lat": {
                 "@value": "-20.933332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITSMM",
             "rdf:value": "ITSMM",
+            "@id": "unlcd:ITSMM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Michele Mondovì"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Michele Mondovi"
+                    "@value": "San Michele Mondovi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITCN"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "44.383335",
                 "@type": "xsd:float"

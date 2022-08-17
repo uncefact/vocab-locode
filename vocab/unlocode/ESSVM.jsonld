@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSVM",
             "rdf:value": "ESSVM",
+            "@id": "unlcd:ESSVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Vicenç de Montalt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Vicenc de Montalt"
+                    "@value": "Sant Vicenc de Montalt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.566666",
                 "@type": "xsd:float"

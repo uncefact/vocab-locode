@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHSM",
             "rdf:value": "FRHSM",
+            "@id": "unlcd:FRHSM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chennevières-sur-Marne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chennevieres-sur-Marne"
+                    "@value": "Chennevieres-sur-Marne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR94"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.8",
                 "@type": "xsd:float"

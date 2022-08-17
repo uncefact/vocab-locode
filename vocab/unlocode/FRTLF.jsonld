@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTLF",
             "rdf:value": "FRTLF",
+            "@id": "unlcd:FRTLF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Fresnaye-sur-Chédouet"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Fresnaye-sur-Chedouet"
+                    "@value": "La Fresnaye-sur-Chedouet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.45",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMOG",
             "rdf:value": "FRMOG",
+            "@id": "unlcd:FRMOG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mortagne-sur-Sèvre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mortagne-sur-Sevre"
+                    "@value": "Mortagne-sur-Sevre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR85"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.0",
                 "@type": "xsd:float"

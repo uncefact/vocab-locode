@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLYS",
             "rdf:value": "FRLYS",
+            "@id": "unlcd:FRLYS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Exupéry Apt/Lyon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Exupery Apt/Lyon"
+                    "@value": "Saint-Exupery Apt/Lyon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.716667",
                 "@type": "xsd:float"

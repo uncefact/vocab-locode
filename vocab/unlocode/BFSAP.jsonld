@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BFSAP",
             "rdf:value": "BFSAP",
+            "@id": "unlcd:BFSAP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saponé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sapone"
+                    "@value": "Sapone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BFBAZ"
             },
-            "unlcdc:countryCode": "BF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BF"
+            },
             "geo:lat": {
                 "@value": "12.1",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTECL",
             "rdf:value": "PTECL",
+            "@id": "unlcd:PTECL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Estreito de Câmara de Lobos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Estreito de Camara de Lobos"
+                    "@value": "Estreito de Camara de Lobos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT30"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "32.666668",
                 "@type": "xsd:float"

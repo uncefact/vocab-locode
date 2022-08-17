@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEUWG",
             "rdf:value": "DEUWG",
+            "@id": "unlcd:DEUWG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Buchenberg bei Kempten/Allgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buchenberg bei Kempten/Allgau"
+                    "@value": "Buchenberg bei Kempten/Allgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.7",
                 "@type": "xsd:float"

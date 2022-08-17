@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGIU",
             "rdf:value": "FRGIU",
+            "@id": "unlcd:FRGIU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Juigné-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Juigne-sur-Loire"
+                    "@value": "Juigne-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.4",
                 "@type": "xsd:float"

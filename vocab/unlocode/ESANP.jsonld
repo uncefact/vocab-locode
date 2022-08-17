@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESANP",
             "rdf:value": "ESANP",
+            "@id": "unlcd:ESANP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alquerías del niño perdido"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alquerias del nino perdido"
+                    "@value": "Alquerias del nino perdido",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESCS"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.883335",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PEFER",
             "rdf:value": "PEFER",
+            "@id": "unlcd:PEFER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ferreñafe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ferrenafe"
+                    "@value": "Ferrenafe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PELAM"
             },
-            "unlcdc:countryCode": "PE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PE"
+            },
             "geo:lat": {
                 "@value": "-6.7166667",
                 "@type": "xsd:float"

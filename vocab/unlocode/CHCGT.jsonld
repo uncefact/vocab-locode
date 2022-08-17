@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CHCGT",
             "rdf:value": "CHCGT",
+            "@id": "unlcd:CHCGT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Chalet-à-Gobet"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Chalet-a-Gobet"
+                    "@value": "Le Chalet-a-Gobet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CHVD"
             },
-            "unlcdc:countryCode": "CH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CH"
+            },
             "geo:lat": {
                 "@value": "46.566666",
                 "@type": "xsd:float"

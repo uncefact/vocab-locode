@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRCW",
             "rdf:value": "FRRCW",
+            "@id": "unlcd:FRRCW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Genès-de-Fronsac"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Genes-de-Fronsac"
+                    "@value": "Saint-Genes-de-Fronsac",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.033333",
                 "@type": "xsd:float"

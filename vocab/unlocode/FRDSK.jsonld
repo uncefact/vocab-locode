@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDSK",
             "rdf:value": "FRDSK",
+            "@id": "unlcd:FRDSK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Charny Orée de Puisaye"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Charny Oree de Puisaye"
+                    "@value": "Charny Oree de Puisaye",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR89"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.883335",
                 "@type": "xsd:float"

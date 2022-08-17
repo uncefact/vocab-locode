@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRESF",
             "rdf:value": "BRESF",
+            "@id": "unlcd:BRESF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Espírito Santo FPSO"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Espirito Santo FPSO"
+                    "@value": "Espirito Santo FPSO",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.2",
                 "@type": "xsd:float"

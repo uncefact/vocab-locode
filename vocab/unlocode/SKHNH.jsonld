@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKHNH",
             "rdf:value": "SKHNH",
+            "@id": "unlcd:SKHNH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Hliník nad Hronom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hlinik nad Hronom"
+                    "@value": "Hlinik nad Hronom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKBC"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.55",
                 "@type": "xsd:float"

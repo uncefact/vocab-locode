@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEB5R",
             "rdf:value": "DEB5R",
+            "@id": "unlcd:DEB5R",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Berge/Quakenbrück"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Berge/Quakenbruck"
+                    "@value": "Berge/Quakenbruck",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.616665",
                 "@type": "xsd:float"

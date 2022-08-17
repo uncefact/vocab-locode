@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FISLY",
             "rdf:value": "FISLY",
+            "@id": "unlcd:FISLY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Siltakylä (Broby)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Siltakyla (Broby)"
+                    "@value": "Siltakyla (Broby)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI09"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.5",
                 "@type": "xsd:float"

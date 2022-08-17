@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSLD",
             "rdf:value": "PTSLD",
+            "@id": "unlcd:PTSLD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Lourenço do Douro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Lourenco do Douro"
+                    "@value": "Sao Lourenco do Douro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT13"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "41.1",
                 "@type": "xsd:float"

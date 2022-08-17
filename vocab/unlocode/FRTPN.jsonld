@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTPN",
             "rdf:value": "FRTPN",
+            "@id": "unlcd:FRTPN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Pons-de-Thomières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Pons-de-Thomieres"
+                    "@value": "Saint-Pons-de-Thomieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.483334",
                 "@type": "xsd:float"

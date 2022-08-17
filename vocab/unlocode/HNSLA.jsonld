@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNSLA",
             "rdf:value": "HNSLA",
+            "@id": "unlcd:HNSLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Lucía"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Lucia"
+                    "@value": "Santa Lucia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HNFM"
             },
-            "unlcdc:countryCode": "HN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            },
             "geo:lat": {
                 "@value": "14.1",
                 "@type": "xsd:float"

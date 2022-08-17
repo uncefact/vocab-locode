@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUPTT",
             "rdf:value": "LUPTT",
+            "@id": "unlcd:LUPTT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Putscheid (Pëtscht)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Putscheid (Petscht)"
+                    "@value": "Putscheid (Petscht)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUVD"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.95",
                 "@type": "xsd:float"

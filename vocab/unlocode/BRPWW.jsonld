@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPWW",
             "rdf:value": "BRPWW",
+            "@id": "unlcd:BRPWW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Pedro do Butiá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Pedro do Butia"
+                    "@value": "Sao Pedro do Butia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.116667",
                 "@type": "xsd:float"

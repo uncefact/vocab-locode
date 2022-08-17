@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPRM",
             "rdf:value": "BRPRM",
+            "@id": "unlcd:BRPRM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Praia Mole Pt / Vitória"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Praia Mole Pt / Vitoria"
+                    "@value": "Praia Mole Pt / Vitoria",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRES"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.3",
                 "@type": "xsd:float"

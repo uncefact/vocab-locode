@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TNKEM",
             "rdf:value": "TNKEM",
+            "@id": "unlcd:TNKEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ksibet el Médiouni"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ksibet el Mediouni"
+                    "@value": "Ksibet el Mediouni",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TN52"
             },
-            "unlcdc:countryCode": "TN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TN"
+            },
             "geo:lat": {
                 "@value": "35.666668",
                 "@type": "xsd:float"

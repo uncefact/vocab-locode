@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDMT",
             "rdf:value": "FRDMT",
+            "@id": "unlcd:FRDMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dommartin-lès-Toul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dommartin-les-Toul"
+                    "@value": "Dommartin-les-Toul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.666668",
                 "@type": "xsd:float"

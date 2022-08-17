@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRMEP",
             "rdf:value": "BRMEP",
+            "@id": "unlcd:BRMEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Morro Cabeça no Tempo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Morro Cabeca no Tempo"
+                    "@value": "Morro Cabeca no Tempo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.716666",
                 "@type": "xsd:float"

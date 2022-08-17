@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROYT",
             "rdf:value": "FROYT",
+            "@id": "unlcd:FROYT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Origny-en-Thiérache"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Origny-en-Thierache"
+                    "@value": "Origny-en-Thierache",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.9",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MAASE",
             "rdf:value": "MAASE",
+            "@id": "unlcd:MAASE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Aïn Sebaa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ain Sebaa"
+                    "@value": "Ain Sebaa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MACAS"
             },
-            "unlcdc:countryCode": "MA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MA"
+            },
             "geo:lat": {
                 "@value": "33.6",
                 "@type": "xsd:float"

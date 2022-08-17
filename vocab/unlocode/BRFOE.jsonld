@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRFOE",
             "rdf:value": "BRFOE",
+            "@id": "unlcd:BRFOE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Figueirópolis D'Oeste"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Figueiropolis D'Oeste"
+                    "@value": "Figueiropolis D'Oeste",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.433333",
                 "@type": "xsd:float"

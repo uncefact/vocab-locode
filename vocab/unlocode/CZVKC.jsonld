@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZVKC",
             "rdf:value": "CZVKC",
+            "@id": "unlcd:CZVKC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Velké Karlovice"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Velke Karlovice"
+                    "@value": "Velke Karlovice",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.366665",
                 "@type": "xsd:float"

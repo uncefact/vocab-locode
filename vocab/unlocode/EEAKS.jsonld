@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEAKS",
             "rdf:value": "EEAKS",
+            "@id": "unlcd:EEAKS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alajõe Kalasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alajoe Kalasadam"
+                    "@value": "Alajoe Kalasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE45"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "59.0",
                 "@type": "xsd:float"

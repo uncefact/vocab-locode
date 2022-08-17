@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGYP",
             "rdf:value": "FRGYP",
+            "@id": "unlcd:FRGYP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Léger-de-Peyre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leger-de-Peyre"
+                    "@value": "Saint-Leger-de-Peyre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR48"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.6",
                 "@type": "xsd:float"

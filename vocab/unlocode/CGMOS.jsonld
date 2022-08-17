@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CGMOS",
             "rdf:value": "CGMOS",
+            "@id": "unlcd:CGMOS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mossaka"
+                "@value": "Mossaka",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CG"
+            },
             "geo:lat": {
                 "@value": "-1.2166667",
                 "@type": "xsd:float"

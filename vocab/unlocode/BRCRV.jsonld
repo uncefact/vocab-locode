@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCRV",
             "rdf:value": "BRCRV",
+            "@id": "unlcd:BRCRV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição do Rio Verde"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao do Rio Verde"
+                    "@value": "Conceicao do Rio Verde",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.866667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAIH",
             "rdf:value": "FRAIH",
+            "@id": "unlcd:FRAIH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Aubin-des-Châteaux"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Aubin-des-Chateaux"
+                    "@value": "Saint-Aubin-des-Chateaux",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.716667",
                 "@type": "xsd:float"

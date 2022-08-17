@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESADE",
             "rdf:value": "ESADE",
+            "@id": "unlcd:ESADE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alhama de Aragón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alhama de Aragon"
+                    "@value": "Alhama de Aragon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.3",
                 "@type": "xsd:float"

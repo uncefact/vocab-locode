@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:JPSRN",
             "rdf:value": "JPSRN",
+            "@id": "unlcd:JPSRN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Shiranuka"
+                "@value": "Shiranuka",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:JP01"
             },
-            "unlcdc:countryCode": "JP",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:JP"
+            },
             "geo:lat": {
                 "@value": "42.95",
                 "@type": "xsd:float"

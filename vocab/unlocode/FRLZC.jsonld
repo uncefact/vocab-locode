@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLZC",
             "rdf:value": "FRLZC",
+            "@id": "unlcd:FRLZC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lézignan-Corbières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lezignan-Corbieres"
+                    "@value": "Lezignan-Corbieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR11"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.2",
                 "@type": "xsd:float"

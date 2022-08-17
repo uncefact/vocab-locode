@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXCUA",
             "rdf:value": "MXCUA",
+            "@id": "unlcd:MXCUA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ciudad Constitución"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ciudad Constitucion"
+                    "@value": "Ciudad Constitucion",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXBCS"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "25.033333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBVP",
             "rdf:value": "BRBVP",
+            "@id": "unlcd:BRBVP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bela Vista do Paraíso"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bela Vista do Paraiso"
+                    "@value": "Bela Vista do Paraiso",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.983334",
                 "@type": "xsd:float"

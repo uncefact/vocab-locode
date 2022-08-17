@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR3UM",
             "rdf:value": "FR3UM",
+            "@id": "unlcd:FR3UM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chens-sur-Léman"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chens-sur-Leman"
+                    "@value": "Chens-sur-Leman",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR74"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.333332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVPW",
             "rdf:value": "FRVPW",
+            "@id": "unlcd:FRVPW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villeneuve-l'Archevêque"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villeneuve-l'Archeveque"
+                    "@value": "Villeneuve-l'Archeveque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR89"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.233334",
                 "@type": "xsd:float"

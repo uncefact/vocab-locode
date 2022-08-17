@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXSGS",
             "rdf:value": "MXSGS",
+            "@id": "unlcd:MXSGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Soledad de Graciano Sánchez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Soledad de Graciano Sanchez"
+                    "@value": "Soledad de Graciano Sanchez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXSLP"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "22.183332",
                 "@type": "xsd:float"

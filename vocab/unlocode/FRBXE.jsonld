@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBXE",
             "rdf:value": "FRBXE",
+            "@id": "unlcd:FRBXE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Buxières-sur-Arce"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Buxieres-sur-Arce"
+                    "@value": "Buxieres-sur-Arce",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.116665",
                 "@type": "xsd:float"

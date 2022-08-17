@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZRNO",
             "rdf:value": "CZRNO",
+            "@id": "unlcd:CZRNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Radostín nad Oslavou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Radostin nad Oslavou"
+                    "@value": "Radostin nad Oslavou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZVY"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.45",
                 "@type": "xsd:float"

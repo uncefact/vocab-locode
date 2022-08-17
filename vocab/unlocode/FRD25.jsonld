@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRD25",
             "rdf:value": "FRD25",
+            "@id": "unlcd:FRD25",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Rivière-Drugeon"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Riviere-Drugeon"
+                    "@value": "La Riviere-Drugeon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.866665",
                 "@type": "xsd:float"

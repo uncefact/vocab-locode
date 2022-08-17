@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRS5U",
             "rdf:value": "FRS5U",
+            "@id": "unlcd:FRS5U",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Romain-d'Urfé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Romain-d'Urfe"
+                    "@value": "Saint-Romain-d'Urfe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR42"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.883335",
                 "@type": "xsd:float"

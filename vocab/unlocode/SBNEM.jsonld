@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SBNEM",
             "rdf:value": "SBNEM",
+            "@id": "unlcd:SBNEM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nemba"
+                "@value": "Nemba",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SB",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SB"
+            },
             "geo:lat": {
                 "@value": "-10.766666",
                 "@type": "xsd:float"

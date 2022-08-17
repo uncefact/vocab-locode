@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEGHE",
             "rdf:value": "BEGHE",
+            "@id": "unlcd:BEGHE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Grâce-Hollogne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Grace-Hollogne"
+                    "@value": "Grace-Hollogne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWLG"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.616665",
                 "@type": "xsd:float"

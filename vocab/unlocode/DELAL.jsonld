@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DELAL",
             "rdf:value": "DELAL",
+            "@id": "unlcd:DELAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lauben (Unterallgäu)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lauben (Unterallgau)"
+                    "@value": "Lauben (Unterallgau)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.05",
                 "@type": "xsd:float"

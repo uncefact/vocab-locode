@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MMMES",
             "rdf:value": "MMMES",
+            "@id": "unlcd:MMMES",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mese"
+                "@value": "Mese",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MM12"
             },
-            "unlcdc:countryCode": "MM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MM"
+            },
             "geo:lat": {
                 "@value": "18.633333",
                 "@type": "xsd:float"

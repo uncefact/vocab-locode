@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BFBER",
             "rdf:value": "BFBER",
+            "@id": "unlcd:BFBER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bérégadougou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beregadougou"
+                    "@value": "Beregadougou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BF"
+            },
             "geo:lat": {
                 "@value": "10.766666",
                 "@type": "xsd:float"

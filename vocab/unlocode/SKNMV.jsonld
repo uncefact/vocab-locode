@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKNMV",
             "rdf:value": "SKNMV",
+            "@id": "unlcd:SKNMV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nové Mesto nad Váhom"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nove Mesto nad Vahom"
+                    "@value": "Nove Mesto nad Vahom",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SKTC"
             },
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

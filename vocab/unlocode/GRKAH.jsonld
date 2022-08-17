@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRKAH",
             "rdf:value": "GRKAH",
+            "@id": "unlcd:GRKAH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Káto Achaïa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kato Achaia"
+                    "@value": "Kato Achaia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "38.15",
                 "@type": "xsd:float"

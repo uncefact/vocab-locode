@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCCC",
             "rdf:value": "FRCCC",
+            "@id": "unlcd:FRCCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Crécy-la-Chapelle"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Crecy-la-Chapelle"
+                    "@value": "Crecy-la-Chapelle",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.85",
                 "@type": "xsd:float"

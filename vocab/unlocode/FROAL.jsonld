@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROAL",
             "rdf:value": "FROAL",
+            "@id": "unlcd:FROAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Christol-lès-Alès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Christol-les-Ales"
+                    "@value": "Saint-Christol-les-Ales",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR30"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.083332",
                 "@type": "xsd:float"

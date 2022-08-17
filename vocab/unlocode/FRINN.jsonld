@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRINN",
             "rdf:value": "FRINN",
+            "@id": "unlcd:FRINN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villers-lès-Nancy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villers-les-Nancy"
+                    "@value": "Villers-les-Nancy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.666668",
                 "@type": "xsd:float"

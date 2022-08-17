@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAAP",
             "rdf:value": "BRAAP",
+            "@id": "unlcd:BRAAP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alto Alegre do Pindaré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alto Alegre do Pindare"
+                    "@value": "Alto Alegre do Pindare",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.65",
                 "@type": "xsd:float"

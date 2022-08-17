@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVEB",
             "rdf:value": "ESVEB",
+            "@id": "unlcd:ESVEB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vélez de Benaudalla"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Velez de Benaudalla"
+                    "@value": "Velez de Benaudalla",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESGR"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "36.833332",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TMKON",
             "rdf:value": "TMKON",
+            "@id": "unlcd:TMKON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Köneürgench"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Koneurgench"
+                    "@value": "Koneurgench",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TM"
+            },
             "geo:lat": {
                 "@value": "42.316666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEKMG",
             "rdf:value": "DEKMG",
+            "@id": "unlcd:DEKMG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Korntal-Münchingen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Korntal-Munchingen"
+                    "@value": "Korntal-Munchingen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "48.833332",
                 "@type": "xsd:float"

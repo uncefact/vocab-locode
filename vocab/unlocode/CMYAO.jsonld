@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMYAO",
             "rdf:value": "CMYAO",
+            "@id": "unlcd:CMYAO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Yaoundé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Yaounde"
+                    "@value": "Yaounde",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CMCE"
             },
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "3.8666668",
                 "@type": "xsd:float"

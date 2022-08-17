@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHBE",
             "rdf:value": "FRHBE",
+            "@id": "unlcd:FRHBE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Houssaye-Béranger"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Houssaye-Beranger"
+                    "@value": "La Houssaye-Beranger",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.633335",
                 "@type": "xsd:float"

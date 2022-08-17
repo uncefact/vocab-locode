@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBLA",
             "rdf:value": "FRBLA",
+            "@id": "unlcd:FRBLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Blainville-sur-l'Eau"
+                "@value": "Blainville-sur-l'Eau",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:2"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.55",
                 "@type": "xsd:float"

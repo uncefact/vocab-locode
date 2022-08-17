@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGMR",
             "rdf:value": "FRGMR",
+            "@id": "unlcd:FRGMR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pargny-lès-Reims"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pargny-les-Reims"
+                    "@value": "Pargny-les-Reims",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.216667",
                 "@type": "xsd:float"

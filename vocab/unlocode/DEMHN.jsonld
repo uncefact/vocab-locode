@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMHN",
             "rdf:value": "DEMHN",
+            "@id": "unlcd:DEMHN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mengersgereuth-Hämmern"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mengersgereuth-Hammern"
+                    "@value": "Mengersgereuth-Hammern",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DETH"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.4",
                 "@type": "xsd:float"

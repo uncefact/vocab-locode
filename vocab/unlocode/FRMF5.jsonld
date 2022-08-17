@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMF5",
             "rdf:value": "FRMF5",
+            "@id": "unlcd:FRMF5",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Martin-du-Frêne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Martin-du-Frene"
+                    "@value": "Saint-Martin-du-Frene",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.133335",
                 "@type": "xsd:float"

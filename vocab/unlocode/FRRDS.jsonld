@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRDS",
             "rdf:value": "FRRDS",
+            "@id": "unlcd:FRRDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rouffignac-de-Sigoulès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rouffignac-de-Sigoules"
+                    "@value": "Rouffignac-de-Sigoules",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR24"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.783333",
                 "@type": "xsd:float"

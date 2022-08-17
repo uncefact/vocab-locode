@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DERNB",
             "rdf:value": "DERNB",
+            "@id": "unlcd:DERNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Röthenbach im Allgäu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rothenbach im Allgau"
+                    "@value": "Rothenbach im Allgau",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "47.616665",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BLSBH",
             "rdf:value": "BLSBH",
+            "@id": "unlcd:BLSBH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Barthélemy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Barthelemy"
+                    "@value": "Saint-Barthelemy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "BL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BL"
+            },
             "geo:lat": {
                 "@value": "17.9",
                 "@type": "xsd:float"

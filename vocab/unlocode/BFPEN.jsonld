@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BFPEN",
             "rdf:value": "BFPEN",
+            "@id": "unlcd:BFPEN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Péni"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Peni"
+                    "@value": "Peni",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BFHOU"
             },
-            "unlcdc:countryCode": "BF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BF"
+            },
             "geo:lat": {
                 "@value": "10.95",
                 "@type": "xsd:float"

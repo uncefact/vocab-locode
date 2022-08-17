@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAPLZ",
             "rdf:value": "PAPLZ",
+            "@id": "unlcd:PAPLZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Plaza de Caisán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Plaza de Caisan"
+                    "@value": "Plaza de Caisan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA4"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.733334",
                 "@type": "xsd:float"

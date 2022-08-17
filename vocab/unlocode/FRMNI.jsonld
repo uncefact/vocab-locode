@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMNI",
             "rdf:value": "FRMNI",
+            "@id": "unlcd:FRMNI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Margny-lès-Compiègne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Margny-les-Compiegne"
+                    "@value": "Margny-les-Compiegne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.433334",
                 "@type": "xsd:float"

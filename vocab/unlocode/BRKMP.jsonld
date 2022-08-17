@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRKMP",
             "rdf:value": "BRKMP",
+            "@id": "unlcd:BRKMP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cuité de Mamanguape"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cuite de Mamanguape"
+                    "@value": "Cuite de Mamanguape",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.9",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CIBAO",
             "rdf:value": "CIBAO",
+            "@id": "unlcd:CIBAO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Baobab Terminal"
+                "@value": "Baobab Terminal",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CI"
+            },
             "geo:lat": {
                 "@value": "4.95",
                 "@type": "xsd:float"

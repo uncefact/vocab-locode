@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRETV",
             "rdf:value": "BRETV",
+            "@id": "unlcd:BRETV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Espírito Santo do Turvo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Espirito Santo do Turvo"
+                    "@value": "Espirito Santo do Turvo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.683332",
                 "@type": "xsd:float"

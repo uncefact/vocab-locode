@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BWMAH",
             "rdf:value": "BWMAH",
+            "@id": "unlcd:BWMAH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mahalapye"
+                "@value": "Mahalapye",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BW"
+            },
             "geo:lat": {
                 "@value": "-23.1",
                 "@type": "xsd:float"

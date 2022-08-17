@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSUU",
             "rdf:value": "FRSUU",
+            "@id": "unlcd:FRSUU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Sulpice-Laurière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Sulpice-Lauriere"
+                    "@value": "Saint-Sulpice-Lauriere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR87"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.05",
                 "@type": "xsd:float"

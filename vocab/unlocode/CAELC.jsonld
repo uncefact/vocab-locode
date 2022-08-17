@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAELC",
             "rdf:value": "CAELC",
+            "@id": "unlcd:CAELC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Élie-de-Caxton"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Elie-de-Caxton"
+                    "@value": "Saint-Elie-de-Caxton",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.483334",
                 "@type": "xsd:float"

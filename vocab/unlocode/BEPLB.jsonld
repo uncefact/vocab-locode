@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEPLB",
             "rdf:value": "BEPLB",
+            "@id": "unlcd:BEPLB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Péronnes/Binche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Peronnes/Binche"
+                    "@value": "Peronnes/Binche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.433334",
                 "@type": "xsd:float"

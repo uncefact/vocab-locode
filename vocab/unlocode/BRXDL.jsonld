@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRXDL",
             "rdf:value": "BRXDL",
+            "@id": "unlcd:BRXDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chapadão do Lageado"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chapadao do Lageado"
+                    "@value": "Chapadao do Lageado",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSC"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-27.583334",
                 "@type": "xsd:float"

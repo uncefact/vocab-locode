@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPHR",
             "rdf:value": "BRPHR",
+            "@id": "unlcd:BRPHR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Poço das Trincheiras"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Poco das Trincheiras"
+                    "@value": "Poco das Trincheiras",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.3",
                 "@type": "xsd:float"

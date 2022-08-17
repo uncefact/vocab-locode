@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLGOZ",
             "rdf:value": "PLGOZ",
+            "@id": "unlcd:PLGOZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Goczalkowice Zdrój"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Goczalkowice Zdroj"
+                    "@value": "Goczalkowice Zdroj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL24"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "49.95",
                 "@type": "xsd:float"

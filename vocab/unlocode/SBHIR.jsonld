@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SBHIR",
             "rdf:value": "SBHIR",
+            "@id": "unlcd:SBHIR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Honiara, Guadalcanal Is"
+                "@value": "Honiara, Guadalcanal Is",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -26,7 +26,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "SB"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SB"
+            }
         }
     ]
 }

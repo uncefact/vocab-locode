@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDGI",
             "rdf:value": "FRDGI",
+            "@id": "unlcd:FRDGI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Béard-Géovreissiat"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Beard-Geovreissiat"
+                    "@value": "Beard-Geovreissiat",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.183334",
                 "@type": "xsd:float"

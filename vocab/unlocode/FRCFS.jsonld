@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCFS",
             "rdf:value": "FRCFS",
+            "@id": "unlcd:FRCFS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-sur-Sarthe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-sur-Sarthe"
+                    "@value": "Chateauneuf-sur-Sarthe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.683334",
                 "@type": "xsd:float"

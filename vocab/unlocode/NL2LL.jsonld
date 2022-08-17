@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NL2LL",
             "rdf:value": "NL2LL",
+            "@id": "unlcd:NL2LL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tweede Exloërmond"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tweede Exloermond"
+                    "@value": "Tweede Exloermond",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLDR"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "52.916668",
                 "@type": "xsd:float"

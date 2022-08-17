@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSAD",
             "rdf:value": "FRSAD",
+            "@id": "unlcd:FRSAD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-Boëge"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-Boege"
+                    "@value": "Saint-Andre-de-Boege",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR74"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.2",
                 "@type": "xsd:float"

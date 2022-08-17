@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLGB",
             "rdf:value": "FRLGB",
+            "@id": "unlcd:FRLGB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Savigny-lès-Beaune"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Savigny-les-Beaune"
+                    "@value": "Savigny-les-Beaune",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.05",
                 "@type": "xsd:float"

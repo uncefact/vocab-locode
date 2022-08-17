@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREEC",
             "rdf:value": "FREEC",
+            "@id": "unlcd:FREEC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Étienne-en-Coglès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Etienne-en-Cogles"
+                    "@value": "Saint-Etienne-en-Cogles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.4",
                 "@type": "xsd:float"

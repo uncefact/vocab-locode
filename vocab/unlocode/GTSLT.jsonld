@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSLT",
             "rdf:value": "GTSLT",
+            "@id": "unlcd:GTSLT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Lucas Tolimán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Lucas Toliman"
+                    "@value": "San Lucas Toliman",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GTSO"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.633333",
                 "@type": "xsd:float"

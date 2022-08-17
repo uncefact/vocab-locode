@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAFXB",
             "rdf:value": "CAFXB",
+            "@id": "unlcd:CAFXB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-François-Xavier-de-Brompton"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Francois-Xavier-de-Brompton"
+                    "@value": "Saint-Francois-Xavier-de-Brompton",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.533333",
                 "@type": "xsd:float"

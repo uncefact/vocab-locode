@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DKNYM",
             "rdf:value": "DKNYM",
+            "@id": "unlcd:DKNYM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nykøbing Mors"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nykobing Mors"
+                    "@value": "Nykobing Mors",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DK81"
             },
-            "unlcdc:countryCode": "DK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DK"
+            },
             "geo:lat": {
                 "@value": "56.783333",
                 "@type": "xsd:float"

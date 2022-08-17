@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJDB",
             "rdf:value": "BRJDB",
+            "@id": "unlcd:BRJDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São José dos Basílios"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jose dos Basilios"
+                    "@value": "Sao Jose dos Basilios",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.0333333",
                 "@type": "xsd:float"

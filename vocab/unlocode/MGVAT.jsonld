@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MGVAT",
             "rdf:value": "MGVAT",
+            "@id": "unlcd:MGVAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Vatomandry"
+                "@value": "Vatomandry",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "MG"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MG"
+            }
         }
     ]
 }

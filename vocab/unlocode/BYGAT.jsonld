@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BYGAT",
             "rdf:value": "BYGAT",
+            "@id": "unlcd:BYGAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Gatovo"
+                "@value": "Gatovo",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BY"
+            },
             "geo:lat": {
                 "@value": "53.783333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BECNO",
             "rdf:value": "BECNO",
+            "@id": "unlcd:BECNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chaussée-Notre-Dame-Louvignies"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chaussee-Notre-Dame-Louvignies"
+                    "@value": "Chaussee-Notre-Dame-Louvignies",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

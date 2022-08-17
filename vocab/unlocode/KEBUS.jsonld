@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KEBUS",
             "rdf:value": "KEBUS",
+            "@id": "unlcd:KEBUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Busia"
+                "@value": "Busia",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:KE04"
             },
-            "unlcdc:countryCode": "KE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KE"
+            },
             "geo:lat": {
                 "@value": "0.46666667",
                 "@type": "xsd:float"

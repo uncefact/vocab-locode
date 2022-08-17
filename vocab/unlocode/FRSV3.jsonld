@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSV3",
             "rdf:value": "FRSV3",
+            "@id": "unlcd:FRSV3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Sauvetat-sur-Lède"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Sauvetat-sur-Lede"
+                    "@value": "La Sauvetat-sur-Lede",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR47"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.466667",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CNURM",
             "rdf:value": "CNURM",
+            "@id": "unlcd:CNURM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Urumqi"
+                "@value": "Urumqi",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -38,7 +38,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNXJ"
             },
-            "unlcdc:countryCode": "CN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CN"
+            },
             "geo:lat": {
                 "@value": "43.75",
                 "@type": "xsd:float"

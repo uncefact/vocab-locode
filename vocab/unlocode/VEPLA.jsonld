@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VEPLA",
             "rdf:value": "VEPLA",
+            "@id": "unlcd:VEPLA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Palúa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Palua"
+                    "@value": "Palua",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "VE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VE"
+            },
             "geo:lat": {
                 "@value": "8.35",
                 "@type": "xsd:float"

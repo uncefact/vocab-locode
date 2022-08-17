@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSLR",
             "rdf:value": "BRSLR",
+            "@id": "unlcd:BRSLR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Lourenço do Sul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Lourenco do Sul"
+                    "@value": "Sao Lourenco do Sul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-31.35",
                 "@type": "xsd:float"

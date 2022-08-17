@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSJS",
             "rdf:value": "GTSJS",
+            "@id": "unlcd:GTSJS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Juan Sacatepéquez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Juan Sacatepequez"
+                    "@value": "San Juan Sacatepequez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT01"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.716666",
                 "@type": "xsd:float"

@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HNPCR",
             "rdf:value": "HNPCR",
+            "@id": "unlcd:HNPCR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puerto Cortés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puerto Cortes"
+                    "@value": "Puerto Cortes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "HN"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HN"
+            }
         }
     ]
 }

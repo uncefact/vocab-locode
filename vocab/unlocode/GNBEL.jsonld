@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GNBEL",
             "rdf:value": "GNBEL",
+            "@id": "unlcd:GNBEL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bel-Air"
+                "@value": "Bel-Air",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNBF"
             },
-            "unlcdc:countryCode": "GN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GN"
+            },
             "geo:lat": {
                 "@value": "10.233334",
                 "@type": "xsd:float"

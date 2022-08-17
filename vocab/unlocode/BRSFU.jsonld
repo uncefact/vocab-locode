@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSFU",
             "rdf:value": "BRSFU",
+            "@id": "unlcd:BRSFU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Fé do Araguaia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Fe do Araguaia"
+                    "@value": "Santa Fe do Araguaia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-7.133333",
                 "@type": "xsd:float"

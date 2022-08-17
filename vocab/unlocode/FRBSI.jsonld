@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBSI",
             "rdf:value": "FRBSI",
+            "@id": "unlcd:FRBSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bréal-sous-Vitré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Breal-sous-Vitre"
+                    "@value": "Breal-sous-Vitre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.1",
                 "@type": "xsd:float"

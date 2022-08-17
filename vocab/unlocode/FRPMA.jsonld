@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPMA",
             "rdf:value": "FRPMA",
+            "@id": "unlcd:FRPMA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pont-à-Marcq"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pont-a-Marcq"
+                    "@value": "Pont-a-Marcq",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR59"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "50.516666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESAID",
             "rdf:value": "ESAID",
+            "@id": "unlcd:ESAID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alegría-Dulantzi"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alegria-Dulantzi"
+                    "@value": "Alegria-Dulantzi",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESVI"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.833332",
                 "@type": "xsd:float"

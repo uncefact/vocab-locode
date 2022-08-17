@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRABY",
             "rdf:value": "FRABY",
+            "@id": "unlcd:FRABY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ambérieu-en-Bugey"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Amberieu-en-Bugey"
+                    "@value": "Amberieu-en-Bugey",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR01"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.95",
                 "@type": "xsd:float"

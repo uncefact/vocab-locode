@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNPLY",
             "rdf:value": "VNPLY",
+            "@id": "unlcd:VNPLY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Phu Lý"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Phu Ly"
+                    "@value": "Phu Ly",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN63"
             },
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "20.533333",
                 "@type": "xsd:float"

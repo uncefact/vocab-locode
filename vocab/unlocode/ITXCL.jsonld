@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ITXCL",
             "rdf:value": "ITXCL",
+            "@id": "unlcd:ITXCL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Colà di Lazise"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cola di Lazise"
+                    "@value": "Cola di Lazise",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITVR"
             },
-            "unlcdc:countryCode": "IT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IT"
+            },
             "geo:lat": {
                 "@value": "45.466667",
                 "@type": "xsd:float"

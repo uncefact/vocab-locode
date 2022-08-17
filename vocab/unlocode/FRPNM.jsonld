@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPNM",
             "rdf:value": "FRPNM",
+            "@id": "unlcd:FRPNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Pian-Médoc"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Pian-Medoc"
+                    "@value": "Le Pian-Medoc",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR33"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.966667",
                 "@type": "xsd:float"

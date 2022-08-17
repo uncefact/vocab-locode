@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATALZ",
             "rdf:value": "ATALZ",
+            "@id": "unlcd:ATALZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Aurolzmünster"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aurolzmunster"
+                    "@value": "Aurolzmunster",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "48.25",
                 "@type": "xsd:float"

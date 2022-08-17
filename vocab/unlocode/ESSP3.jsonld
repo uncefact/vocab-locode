@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSP3",
             "rdf:value": "ESSP3",
+            "@id": "unlcd:ESSP3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Pere de Torelló"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Pere de Torello"
+                    "@value": "Sant Pere de Torello",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.066666",
                 "@type": "xsd:float"

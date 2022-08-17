@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFON",
             "rdf:value": "FRFON",
+            "@id": "unlcd:FRFON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontaine-lès-Luxeuil"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontaine-les-Luxeuil"
+                    "@value": "Fontaine-les-Luxeuil",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR70"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.85",
                 "@type": "xsd:float"

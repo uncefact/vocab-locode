@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DENGO",
             "rdf:value": "DENGO",
+            "@id": "unlcd:DENGO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nemsdorf-Göhrendorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nemsdorf-Gohrendorf"
+                    "@value": "Nemsdorf-Gohrendorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.35",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXSCO",
             "rdf:value": "MXSCO",
+            "@id": "unlcd:MXSCO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San José del Castillo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Jose del Castillo"
+                    "@value": "San Jose del Castillo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXJAL"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "20.533333",
                 "@type": "xsd:float"

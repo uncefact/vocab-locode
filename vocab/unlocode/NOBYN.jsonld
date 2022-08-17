@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOBYN",
             "rdf:value": "NOBYN",
+            "@id": "unlcd:NOBYN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Byggnes - Karmøy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Byggnes - Karmoy"
+                    "@value": "Byggnes - Karmoy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO11"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "59.3",
                 "@type": "xsd:float"

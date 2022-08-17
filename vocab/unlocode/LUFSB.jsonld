@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LUFSB",
             "rdf:value": "LUFSB",
+            "@id": "unlcd:LUFSB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fischbach (Fëschbech)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fischbach (Feschbech)"
+                    "@value": "Fischbach (Feschbech)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LUME"
             },
-            "unlcdc:countryCode": "LU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LU"
+            },
             "geo:lat": {
                 "@value": "49.733334",
                 "@type": "xsd:float"

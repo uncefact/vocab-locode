@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCAS",
             "rdf:value": "ESCAS",
+            "@id": "unlcd:ESCAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castellón de la Plana"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castellon de la Plana"
+                    "@value": "Castellon de la Plana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESV"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "39.983334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTXA",
             "rdf:value": "MXTXA",
+            "@id": "unlcd:MXTXA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Taxco de Alarcón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Taxco de Alarcon"
+                    "@value": "Taxco de Alarcon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXGRO"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "18.55",
                 "@type": "xsd:float"

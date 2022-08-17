@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXTDA",
             "rdf:value": "MXTDA",
+            "@id": "unlcd:MXTDA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tangancícuaro de Arista"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tangancicuaro de Arista"
+                    "@value": "Tangancicuaro de Arista",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXMIC"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "19.9",
                 "@type": "xsd:float"

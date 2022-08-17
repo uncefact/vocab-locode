@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEARS",
             "rdf:value": "SEARS",
+            "@id": "unlcd:SEARS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Årsta/Stockholm"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Arsta/Stockholm"
+                    "@value": "Arsta/Stockholm",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEAB"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "59.3",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRAVA",
             "rdf:value": "FRAVA",
+            "@id": "unlcd:FRAVA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ambrières-les-Vallées"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ambrieres-les-Vallees"
+                    "@value": "Ambrieres-les-Vallees",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR53"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.4",
                 "@type": "xsd:float"

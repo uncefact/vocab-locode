@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRPTI",
             "rdf:value": "BRPTI",
+            "@id": "unlcd:BRPTI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paraíso do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paraiso do Tocantins"
+                    "@value": "Paraiso do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.166667",
                 "@type": "xsd:float"

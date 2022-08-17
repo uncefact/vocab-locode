@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBGV",
             "rdf:value": "FRBGV",
+            "@id": "unlcd:FRBGV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bourg-lès-Valence"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bourg-les-Valence"
+                    "@value": "Bourg-les-Valence",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.95",
                 "@type": "xsd:float"

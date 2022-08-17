@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBDP",
             "rdf:value": "FRBDP",
+            "@id": "unlcd:FRBDP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bourg-de-Péage"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bourg-de-Peage"
+                    "@value": "Bourg-de-Peage",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.033333",
                 "@type": "xsd:float"

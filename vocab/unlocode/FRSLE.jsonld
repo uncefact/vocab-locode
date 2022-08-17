@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSLE",
             "rdf:value": "FRSLE",
+            "@id": "unlcd:FRSLE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Aubin-lès-Elbeuf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Aubin-les-Elbeuf"
+                    "@value": "Saint-Aubin-les-Elbeuf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.3",
                 "@type": "xsd:float"

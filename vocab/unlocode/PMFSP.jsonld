@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PMFSP",
             "rdf:value": "PMFSP",
+            "@id": "unlcd:PMFSP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Saint-Pierre"
+                "@value": "Saint-Pierre",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "PM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PM"
+            },
             "geo:lat": {
                 "@value": "46.766666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GRCFU",
             "rdf:value": "GRCFU",
+            "@id": "unlcd:GRCFU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Kérkira (Corfu)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Kerkira (Corfu)"
+                    "@value": "Kerkira (Corfu)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GR22"
             },
-            "unlcdc:countryCode": "GR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GR"
+            },
             "geo:lat": {
                 "@value": "39.616665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEGBC",
             "rdf:value": "DEGBC",
+            "@id": "unlcd:DEGBC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Glinde (Schönebeck)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Glinde (Schonebeck)"
+                    "@value": "Glinde (Schonebeck)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEST"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.016666",
                 "@type": "xsd:float"

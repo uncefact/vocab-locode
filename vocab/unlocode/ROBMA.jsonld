@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROBMA",
             "rdf:value": "ROBMA",
+            "@id": "unlcd:ROBMA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bârcea-Mare"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Barcea-Mare"
+                    "@value": "Barcea-Mare",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROHD"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "45.816666",
                 "@type": "xsd:float"

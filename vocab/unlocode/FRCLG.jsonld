@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCLG",
             "rdf:value": "FRCLG",
+            "@id": "unlcd:FRCLG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Crèvecur-le-Grand"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Crevecur-le-Grand"
+                    "@value": "Crevecur-le-Grand",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR60"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.6",
                 "@type": "xsd:float"

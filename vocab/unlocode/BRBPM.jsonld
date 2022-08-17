@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBPM",
             "rdf:value": "BRBPM",
+            "@id": "unlcd:BRBPM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bonfinópolis de Minas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bonfinopolis de Minas"
+                    "@value": "Bonfinopolis de Minas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-16.566668",
                 "@type": "xsd:float"

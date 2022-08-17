@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:THKPT",
             "rdf:value": "THKPT",
+            "@id": "unlcd:THKPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Kamphaeng Phet"
+                "@value": "Kamphaeng Phet",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "TH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TH"
+            },
             "geo:lat": {
                 "@value": "16.466667",
                 "@type": "xsd:float"

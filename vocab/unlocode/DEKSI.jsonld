@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEKSI",
             "rdf:value": "DEKSI",
+            "@id": "unlcd:DEKSI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Karstädt (Prignitz)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Karstadt (Prignitz)"
+                    "@value": "Karstadt (Prignitz)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.15",
                 "@type": "xsd:float"

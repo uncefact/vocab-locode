@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBPN",
             "rdf:value": "FRBPN",
+            "@id": "unlcd:FRBPN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bucy-lès-Pierrepont"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bucy-les-Pierrepont"
+                    "@value": "Bucy-les-Pierrepont",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.65",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREUW",
             "rdf:value": "FREUW",
+            "@id": "unlcd:FREUW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sèvres-Anxaumont"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sevres-Anxaumont"
+                    "@value": "Sevres-Anxaumont",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR86"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.566666",
                 "@type": "xsd:float"

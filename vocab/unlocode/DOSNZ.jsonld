@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DOSNZ",
             "rdf:value": "DOSNZ",
+            "@id": "unlcd:DOSNZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sánchez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sanchez"
+                    "@value": "Sanchez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "DO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DO"
+            },
             "geo:lat": {
                 "@value": "19.233334",
                 "@type": "xsd:float"

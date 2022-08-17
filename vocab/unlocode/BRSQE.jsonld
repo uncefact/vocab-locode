@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSQE",
             "rdf:value": "BRSQE",
+            "@id": "unlcd:BRSQE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Joaquim do Monte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joaquim do Monte"
+                    "@value": "Sao Joaquim do Monte",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPE"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.416667",
                 "@type": "xsd:float"

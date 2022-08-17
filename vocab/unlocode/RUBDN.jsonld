@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUBDN",
             "rdf:value": "RUBDN",
+            "@id": "unlcd:RUBDN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Budënnovsk"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Budennovsk"
+                    "@value": "Budennovsk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUSTA"
             },
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "44.783333",
                 "@type": "xsd:float"

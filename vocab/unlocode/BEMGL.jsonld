@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BEMGL",
             "rdf:value": "BEMGL",
+            "@id": "unlcd:BEMGL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mévergnies-lez-Lens"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mevergnies-lez-Lens"
+                    "@value": "Mevergnies-lez-Lens",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWHT"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

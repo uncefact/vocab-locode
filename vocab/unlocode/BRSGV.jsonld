@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSGV",
             "rdf:value": "BRSGV",
+            "@id": "unlcd:BRSGV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Jorge do Ivaí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jorge do Ivai"
+                    "@value": "Sao Jorge do Ivai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.433332",
                 "@type": "xsd:float"

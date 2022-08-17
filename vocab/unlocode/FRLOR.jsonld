@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLOR",
             "rdf:value": "FRLOR",
+            "@id": "unlcd:FRLOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Loriol-sur-Drôme"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Loriol-sur-Drome"
+                    "@value": "Loriol-sur-Drome",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.75",
                 "@type": "xsd:float"

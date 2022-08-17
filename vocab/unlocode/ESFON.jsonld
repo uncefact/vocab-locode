@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFON",
             "rdf:value": "ESFON",
+            "@id": "unlcd:ESFON",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fuentes de Oñoro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuentes de Onoro"
+                    "@value": "Fuentes de Onoro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.583332",
                 "@type": "xsd:float"

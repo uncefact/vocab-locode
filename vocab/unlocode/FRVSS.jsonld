@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRVSS",
             "rdf:value": "FRVSS",
+            "@id": "unlcd:FRVSS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villefranche-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villefranche-sur-Saone"
+                    "@value": "Villefranche-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.983334",
                 "@type": "xsd:float"

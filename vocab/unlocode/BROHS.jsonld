@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BROHS",
             "rdf:value": "BROHS",
+            "@id": "unlcd:BROHS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Olho d'Água das Flores"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Olho d'Agua das Flores"
+                    "@value": "Olho d'Agua das Flores",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRAL"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.533334",
                 "@type": "xsd:float"

@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CALCI",
             "rdf:value": "CALCI",
+            "@id": "unlcd:CALCI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Cédres"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Cedres"
+                    "@value": "Les Cedres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

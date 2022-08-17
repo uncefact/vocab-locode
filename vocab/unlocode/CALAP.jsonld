@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CALAP",
             "rdf:value": "CALAP",
+            "@id": "unlcd:CALAP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "L'Ascension-de-Patapédia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "L'Ascension-de-Patapedia"
+                    "@value": "L'Ascension-de-Patapedia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "47.933334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCEF",
             "rdf:value": "FRCEF",
+            "@id": "unlcd:FRCEF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Caudebec-lès-Elbeuf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caudebec-les-Elbeuf"
+                    "@value": "Caudebec-les-Elbeuf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR76"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.266666",
                 "@type": "xsd:float"

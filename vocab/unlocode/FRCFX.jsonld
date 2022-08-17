@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCFX",
             "rdf:value": "FRCFX",
+            "@id": "unlcd:FRCFX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-du-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-du-Rhone"
+                    "@value": "Chateauneuf-du-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.483334",
                 "@type": "xsd:float"

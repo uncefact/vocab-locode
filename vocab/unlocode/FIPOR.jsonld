@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIPOR",
             "rdf:value": "FIPOR",
+            "@id": "unlcd:FIPOR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pori (Björneborg)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pori (Bjorneborg)"
+                    "@value": "Pori (Bjorneborg)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI17"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "61.483334",
                 "@type": "xsd:float"

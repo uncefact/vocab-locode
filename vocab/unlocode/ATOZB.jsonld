@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATOZB",
             "rdf:value": "ATOZB",
+            "@id": "unlcd:ATOZB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ötztal-Bahnhof"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Otztal-Bahnhof"
+                    "@value": "Otztal-Bahnhof",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT7"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.233334",
                 "@type": "xsd:float"

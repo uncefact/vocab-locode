@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IMDGS",
             "rdf:value": "IMDGS",
+            "@id": "unlcd:IMDGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Douglas"
+                "@value": "Douglas",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IM"
+            },
             "geo:lat": {
                 "@value": "54.166668",
                 "@type": "xsd:float"

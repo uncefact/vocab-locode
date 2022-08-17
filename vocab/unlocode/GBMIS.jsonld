@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBMIS",
             "rdf:value": "GBMIS",
+            "@id": "unlcd:GBMIS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mistley"
+                "@value": "Mistley",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBESS"
             },
-            "unlcdc:countryCode": "GB"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            }
         }
     ]
 }

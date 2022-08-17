@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRCC",
             "rdf:value": "BRRCC",
+            "@id": "unlcd:BRRCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Reserva do Cabaçal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Reserva do Cabacal"
+                    "@value": "Reserva do Cabacal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-15.116667",
                 "@type": "xsd:float"

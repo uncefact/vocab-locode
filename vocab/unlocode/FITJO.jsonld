@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FITJO",
             "rdf:value": "FITJO",
+            "@id": "unlcd:FITJO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tessjö (Tesjoki)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tessjo (Tesjoki)"
+                    "@value": "Tessjo (Tesjoki)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.466667",
                 "@type": "xsd:float"

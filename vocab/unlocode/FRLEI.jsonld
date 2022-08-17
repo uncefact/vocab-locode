@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLEI",
             "rdf:value": "FRLEI",
+            "@id": "unlcd:FRLEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Châtelet-en-Brie"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Chatelet-en-Brie"
+                    "@value": "Le Chatelet-en-Brie",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR77"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.5",
                 "@type": "xsd:float"

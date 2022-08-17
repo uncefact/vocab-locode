@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRBCG",
             "rdf:value": "BRBCG",
+            "@id": "unlcd:BRBCG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Barão de Cotegipe"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Barao de Cotegipe"
+                    "@value": "Barao de Cotegipe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-27.616667",
                 "@type": "xsd:float"

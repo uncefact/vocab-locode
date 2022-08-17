@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BELWI",
             "rdf:value": "BELWI",
+            "@id": "unlcd:BELWI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lillois-Witterzée"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lillois-Witterzee"
+                    "@value": "Lillois-Witterzee",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWBR"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.65",
                 "@type": "xsd:float"

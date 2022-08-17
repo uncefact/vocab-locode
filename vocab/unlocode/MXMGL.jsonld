@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXMGL",
             "rdf:value": "MXMGL",
+            "@id": "unlcd:MXMGL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Miguel Alemán"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Miguel Aleman"
+                    "@value": "Miguel Aleman",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXSON"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "28.85",
                 "@type": "xsd:float"

@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PGMAG",
             "rdf:value": "PGMAG",
+            "@id": "unlcd:PGMAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Madang"
+                "@value": "Madang",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PGMPM"
             },
-            "unlcdc:countryCode": "PG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PG"
+            },
             "geo:lat": {
                 "@value": "-5.2166667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRJDB",
             "rdf:value": "FRJDB",
+            "@id": "unlcd:FRJDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Joué-du-Bois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Joue-du-Bois"
+                    "@value": "Joue-du-Bois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR61"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.583332",
                 "@type": "xsd:float"

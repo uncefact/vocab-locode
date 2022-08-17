@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYSH",
             "rdf:value": "FRYSH",
+            "@id": "unlcd:FRYSH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Marcel-lès-Annonay"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Marcel-les-Annonay"
+                    "@value": "Saint-Marcel-les-Annonay",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.283333",
                 "@type": "xsd:float"

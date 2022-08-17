@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTMAS",
             "rdf:value": "PTMAS",
+            "@id": "unlcd:PTMAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Maia, Island São Miguel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Maia, Island Sao Miguel"
+                    "@value": "Maia, Island Sao Miguel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT20"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "37.833332",
                 "@type": "xsd:float"

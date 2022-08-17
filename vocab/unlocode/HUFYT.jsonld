@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUFYT",
             "rdf:value": "HUFYT",
+            "@id": "unlcd:HUFYT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Füzfögyártelep"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fuzfogyartelep"
+                    "@value": "Fuzfogyartelep",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUVE"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.083332",
                 "@type": "xsd:float"

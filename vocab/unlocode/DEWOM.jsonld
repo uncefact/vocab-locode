@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEWOM",
             "rdf:value": "DEWOM",
+            "@id": "unlcd:DEWOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Worth (Hemsbünde)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Worth (Hemsbunde)"
+                    "@value": "Worth (Hemsbunde)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENI"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.1",
                 "@type": "xsd:float"

@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BYSGA",
             "rdf:value": "BYSGA",
+            "@id": "unlcd:BYSGA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Smorgon"
+                "@value": "Smorgon",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "BY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BY"
+            },
             "geo:lat": {
                 "@value": "54.483334",
                 "@type": "xsd:float"

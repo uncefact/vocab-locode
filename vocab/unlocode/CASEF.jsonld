@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASEF",
             "rdf:value": "CASEF",
+            "@id": "unlcd:CASEF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Évariste-de-Forsyth"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Evariste-de-Forsyth"
+                    "@value": "Saint-Evariste-de-Forsyth",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "45.95",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLB3",
             "rdf:value": "FRLB3",
+            "@id": "unlcd:FRLB3",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le Bourgneuf-la-Forêt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Bourgneuf-la-Foret"
+                    "@value": "Le Bourgneuf-la-Foret",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR53"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.166668",
                 "@type": "xsd:float"

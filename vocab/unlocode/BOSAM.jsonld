@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BOSAM",
             "rdf:value": "BOSAM",
+            "@id": "unlcd:BOSAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Andrés de Machaca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Andres de Machaca"
+                    "@value": "San Andres de Machaca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOL"
             },
-            "unlcdc:countryCode": "BO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BO"
+            },
             "geo:lat": {
                 "@value": "-16.95",
                 "@type": "xsd:float"

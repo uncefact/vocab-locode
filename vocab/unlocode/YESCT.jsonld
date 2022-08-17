@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:YESCT",
             "rdf:value": "YESCT",
+            "@id": "unlcd:YESCT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Suqutrá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Suqutra"
+                    "@value": "Suqutra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "YE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:YE"
+            },
             "geo:lat": {
                 "@value": "12.5",
                 "@type": "xsd:float"

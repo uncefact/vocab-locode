@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCWP",
             "rdf:value": "BRCWP",
+            "@id": "unlcd:BRCWP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição de Ipanema"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao de Ipanema"
+                    "@value": "Conceicao de Ipanema",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.916666",
                 "@type": "xsd:float"

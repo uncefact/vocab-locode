@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKBNB",
             "rdf:value": "SKBNB",
+            "@id": "unlcd:SKBNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bánovce nad Bebravou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Banovce nad Bebravou"
+                    "@value": "Banovce nad Bebravou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.716667",
                 "@type": "xsd:float"

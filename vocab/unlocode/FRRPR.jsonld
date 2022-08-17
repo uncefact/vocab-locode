@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRPR",
             "rdf:value": "FRRPR",
+            "@id": "unlcd:FRRPR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rosières-près-Troyes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rosieres-pres-Troyes"
+                    "@value": "Rosieres-pres-Troyes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR10"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.266666",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSLF",
             "rdf:value": "FRSLF",
+            "@id": "unlcd:FRSLF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Leu-la-Forêt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Leu-la-Foret"
+                    "@value": "Saint-Leu-la-Foret",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR95"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.0",
                 "@type": "xsd:float"

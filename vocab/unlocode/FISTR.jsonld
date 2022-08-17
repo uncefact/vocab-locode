@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FISTR",
             "rdf:value": "FISTR",
+            "@id": "unlcd:FISTR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Strömma"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stromma"
+                    "@value": "Stromma",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI19"
             },
-            "unlcdc:countryCode": "FI"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            }
         }
     ]
 }

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSBO",
             "rdf:value": "FRSBO",
+            "@id": "unlcd:FRSBO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Auban-sur-l'Ouvèze"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Auban-sur-l'Ouveze"
+                    "@value": "Saint-Auban-sur-l'Ouveze",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR26"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.283333",
                 "@type": "xsd:float"

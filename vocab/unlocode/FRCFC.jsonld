@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCFC",
             "rdf:value": "FRCFC",
+            "@id": "unlcd:FRCFC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-sur-Charente"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-sur-Charente"
+                    "@value": "Chateauneuf-sur-Charente",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR16"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.6",
                 "@type": "xsd:float"

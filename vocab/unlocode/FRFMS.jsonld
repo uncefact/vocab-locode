@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFMS",
             "rdf:value": "FRFMS",
+            "@id": "unlcd:FRFMS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Faveraye-Mâchelles"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Faveraye-Machelles"
+                    "@value": "Faveraye-Machelles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCIQ",
             "rdf:value": "BRCIQ",
+            "@id": "unlcd:BRCIQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cássia dos Coqueiros"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cassia dos Coqueiros"
+                    "@value": "Cassia dos Coqueiros",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.283333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOBOE",
             "rdf:value": "NOBOE",
+            "@id": "unlcd:NOBOE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bøneset - Karmøy"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Boneset - Karmoy"
+                    "@value": "Boneset - Karmoy",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO11"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "59.366665",
                 "@type": "xsd:float"

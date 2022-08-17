@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:IMCTN",
             "rdf:value": "IMCTN",
+            "@id": "unlcd:IMCTN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Castletown"
+                "@value": "Castletown",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "IM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IM"
+            },
             "geo:lat": {
                 "@value": "54.083332",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCHZ",
             "rdf:value": "ESCHZ",
+            "@id": "unlcd:ESCHZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Puebla de Sancho Pérez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Puebla de Sancho Perez"
+                    "@value": "Puebla de Sancho Perez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESBA"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.4",
                 "@type": "xsd:float"

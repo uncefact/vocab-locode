@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESADG",
             "rdf:value": "ESADG",
+            "@id": "unlcd:ESADG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alcalá de Gurrea"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alcala de Gurrea"
+                    "@value": "Alcala de Gurrea",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESHU"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.066666",
                 "@type": "xsd:float"

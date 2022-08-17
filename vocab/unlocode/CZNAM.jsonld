@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZNAM",
             "rdf:value": "CZNAM",
+            "@id": "unlcd:CZNAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Námest nad Oslavou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Namest nad Oslavou"
+                    "@value": "Namest nad Oslavou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZVY"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.216667",
                 "@type": "xsd:float"

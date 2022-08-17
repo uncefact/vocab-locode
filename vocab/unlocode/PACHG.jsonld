@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PACHG",
             "rdf:value": "PACHG",
+            "@id": "unlcd:PACHG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chiriquí Grande"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chiriqui Grande"
+                    "@value": "Chiriqui Grande",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.95",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUMNM",
             "rdf:value": "HUMNM",
+            "@id": "unlcd:HUMNM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mosonmagyaróvár"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mosonmagyarovar"
+                    "@value": "Mosonmagyarovar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUGS"
             },
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.516666",
                 "@type": "xsd:float"

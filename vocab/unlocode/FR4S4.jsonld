@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR4S4",
             "rdf:value": "FR4S4",
+            "@id": "unlcd:FR4S4",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-André-de-la-Roche"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Andre-de-la-Roche"
+                    "@value": "Saint-Andre-de-la-Roche",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR06"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.733334",
                 "@type": "xsd:float"

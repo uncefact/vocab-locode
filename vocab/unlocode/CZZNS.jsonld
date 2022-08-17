@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZZNS",
             "rdf:value": "CZZNS",
+            "@id": "unlcd:CZZNS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zdár nad Sázavou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zdar nad Sazavou"
+                    "@value": "Zdar nad Sazavou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZVY"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.566666",
                 "@type": "xsd:float"

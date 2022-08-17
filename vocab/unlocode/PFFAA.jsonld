@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PFFAA",
             "rdf:value": "PFFAA",
+            "@id": "unlcd:PFFAA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Tahiti Fa'a'à"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Tahiti Fa'a'a"
+                    "@value": "Tahiti Fa'a'a",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "PF",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PF"
+            },
             "geo:lat": {
                 "@value": "-17.55",
                 "@type": "xsd:float"

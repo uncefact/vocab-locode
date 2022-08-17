@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NRINU",
             "rdf:value": "NRINU",
+            "@id": "unlcd:NRINU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Nauru Island"
+                "@value": "Nauru Island",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "NR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NR"
+            },
             "geo:lat": {
                 "@value": "-0.55",
                 "@type": "xsd:float"

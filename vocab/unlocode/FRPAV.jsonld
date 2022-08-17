@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPAV",
             "rdf:value": "FRPAV",
+            "@id": "unlcd:FRPAV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Parçay-sur-Vienne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Parcay-sur-Vienne"
+                    "@value": "Parcay-sur-Vienne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.1",
                 "@type": "xsd:float"

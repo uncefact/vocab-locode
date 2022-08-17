@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRS4T",
             "rdf:value": "FRS4T",
+            "@id": "unlcd:FRS4T",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Vincent-des-Prés"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Vincent-des-Pres"
+                    "@value": "Saint-Vincent-des-Pres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.3",
                 "@type": "xsd:float"

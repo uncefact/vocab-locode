@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NCBUG",
             "rdf:value": "NCBUG",
+            "@id": "unlcd:NCBUG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Baie Ugué"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Baie Ugue"
+                    "@value": "Baie Ugue",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NC"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NC"
+            }
         }
     ]
 }

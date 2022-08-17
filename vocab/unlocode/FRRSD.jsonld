@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRSD",
             "rdf:value": "FRRSD",
+            "@id": "unlcd:FRRSD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Martres-d'Artière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Martres-d'Artiere"
+                    "@value": "Les Martres-d'Artiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR63"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.833332",
                 "@type": "xsd:float"

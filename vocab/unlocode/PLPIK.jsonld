@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLPIK",
             "rdf:value": "PLPIK",
+            "@id": "unlcd:PLPIK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Piotrków Kujawski"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Piotrkow Kujawski"
+                    "@value": "Piotrkow Kujawski",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "52.55",
                 "@type": "xsd:float"

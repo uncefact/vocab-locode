@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR2ME",
             "rdf:value": "FR2ME",
+            "@id": "unlcd:FR2ME",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bussière-Poitevine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bussiere-Poitevine"
+                    "@value": "Bussiere-Poitevine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR87"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.233334",
                 "@type": "xsd:float"

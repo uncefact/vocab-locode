@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXSFL",
             "rdf:value": "MXSFL",
+            "@id": "unlcd:MXSFL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Francisco Lachigoló"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Francisco Lachigolo"
+                    "@value": "San Francisco Lachigolo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXOAX"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "17.016666",
                 "@type": "xsd:float"

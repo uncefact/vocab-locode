@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PYSJE",
             "rdf:value": "PYSJE",
+            "@id": "unlcd:PYSJE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San José"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Jose"
+                    "@value": "San Jose",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PY7"
             },
-            "unlcdc:countryCode": "PY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PY"
+            },
             "geo:lat": {
                 "@value": "-26.7",
                 "@type": "xsd:float"

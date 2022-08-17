@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MXMDE",
             "rdf:value": "MXMDE",
+            "@id": "unlcd:MXMDE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Amatlán de los Reyes"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Amatlan de los Reyes"
+                    "@value": "Amatlan de los Reyes",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXVER"
             },
-            "unlcdc:countryCode": "MX",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MX"
+            },
             "geo:lat": {
                 "@value": "18.833334",
                 "@type": "xsd:float"

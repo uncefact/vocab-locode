@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FREMM",
             "rdf:value": "FREMM",
+            "@id": "unlcd:FREMM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Étampes-sur-Marne"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Etampes-sur-Marne"
+                    "@value": "Etampes-sur-Marne",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.033333",
                 "@type": "xsd:float"

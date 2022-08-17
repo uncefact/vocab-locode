@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SASAL",
             "rdf:value": "SASAL",
+            "@id": "unlcd:SASAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Salwá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Salwa"
+                    "@value": "Salwa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SA04"
             },
-            "unlcdc:countryCode": "SA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SA"
+            },
             "geo:lat": {
                 "@value": "24.733334",
                 "@type": "xsd:float"

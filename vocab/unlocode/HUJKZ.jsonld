@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HUJKZ",
             "rdf:value": "HUJKZ",
+            "@id": "unlcd:HUJKZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Jászárokszállás"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Jaszarokszallas"
+                    "@value": "Jaszarokszallas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "HU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HU"
+            },
             "geo:lat": {
                 "@value": "47.633335",
                 "@type": "xsd:float"

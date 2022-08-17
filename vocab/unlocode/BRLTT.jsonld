@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRLTT",
             "rdf:value": "BRLTT",
+            "@id": "unlcd:BRLTT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lagoa dos Três Cantos"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lagoa dos Tres Cantos"
+                    "@value": "Lagoa dos Tres Cantos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRS"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-28.566668",
                 "@type": "xsd:float"

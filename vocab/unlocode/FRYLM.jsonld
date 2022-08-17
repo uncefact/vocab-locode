@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYLM",
             "rdf:value": "FRYLM",
+            "@id": "unlcd:FRYLM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Barthélemy-le-Meil"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Barthelemy-le-Meil"
+                    "@value": "Saint-Barthelemy-le-Meil",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR07"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.9",
                 "@type": "xsd:float"

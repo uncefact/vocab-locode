@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHSU",
             "rdf:value": "FRHSU",
+            "@id": "unlcd:FRHSU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Héry-sur-Ugines"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Hery-sur-Ugines"
+                    "@value": "Hery-sur-Ugines",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR73"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.766666",
                 "@type": "xsd:float"

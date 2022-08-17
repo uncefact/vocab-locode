@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SNTHI",
             "rdf:value": "SNTHI",
+            "@id": "unlcd:SNTHI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Thiès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Thies"
+                    "@value": "Thies",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SN"
+            },
             "geo:lat": {
                 "@value": "14.8",
                 "@type": "xsd:float"

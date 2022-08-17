@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBM9",
             "rdf:value": "FRBM9",
+            "@id": "unlcd:FRBM9",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bruyères-et-Montberaut"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bruyeres-et-Montberaut"
+                    "@value": "Bruyeres-et-Montberaut",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.516666",
                 "@type": "xsd:float"

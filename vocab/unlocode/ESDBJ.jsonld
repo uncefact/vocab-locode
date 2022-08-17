@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESDBJ",
             "rdf:value": "ESDBJ",
+            "@id": "unlcd:ESDBJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santibañez de Bejar"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santibanez de Bejar"
+                    "@value": "Santibanez de Bejar",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESSA"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.483334",
                 "@type": "xsd:float"

@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLMEP",
             "rdf:value": "NLMEP",
+            "@id": "unlcd:NLMEP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Meppel"
+                "@value": "Meppel",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -26,7 +26,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "NL"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            }
         }
     ]
 }

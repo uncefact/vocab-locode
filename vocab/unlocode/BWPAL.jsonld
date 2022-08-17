@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BWPAL",
             "rdf:value": "BWPAL",
+            "@id": "unlcd:BWPAL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Palapye"
+                "@value": "Palapye",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "BW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BW"
+            },
             "geo:lat": {
                 "@value": "-22.566668",
                 "@type": "xsd:float"

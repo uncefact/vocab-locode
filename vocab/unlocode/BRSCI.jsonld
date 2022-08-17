@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSCI",
             "rdf:value": "BRSCI",
+            "@id": "unlcd:BRSCI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Carlos do Ivaí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Carlos do Ivai"
+                    "@value": "Sao Carlos do Ivai",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.3",
                 "@type": "xsd:float"

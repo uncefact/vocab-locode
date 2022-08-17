@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SESKF",
             "rdf:value": "SESKF",
+            "@id": "unlcd:SESKF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Skånes Fagerhult"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Skanes Fagerhult"
+                    "@value": "Skanes Fagerhult",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEM"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "56.366665",
                 "@type": "xsd:float"

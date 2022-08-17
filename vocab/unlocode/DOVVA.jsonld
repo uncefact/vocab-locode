@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DOVVA",
             "rdf:value": "DOVVA",
+            "@id": "unlcd:DOVVA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Villa Vásquez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Villa Vasquez"
+                    "@value": "Villa Vasquez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DO15"
             },
-            "unlcdc:countryCode": "DO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DO"
+            },
             "geo:lat": {
                 "@value": "19.75",
                 "@type": "xsd:float"

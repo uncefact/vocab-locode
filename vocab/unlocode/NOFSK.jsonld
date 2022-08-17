@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOFSK",
             "rdf:value": "NOFSK",
+            "@id": "unlcd:NOFSK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fiskåbygd - Vanylven"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fiskabygd - Vanylven"
+                    "@value": "Fiskabygd - Vanylven",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO15"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "62.1",
                 "@type": "xsd:float"

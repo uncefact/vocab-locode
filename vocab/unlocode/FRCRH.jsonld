@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCRH",
             "rdf:value": "FRCRH",
+            "@id": "unlcd:FRCRH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chasse-sur-Rhône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chasse-sur-Rhone"
+                    "@value": "Chasse-sur-Rhone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR38"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.583332",
                 "@type": "xsd:float"

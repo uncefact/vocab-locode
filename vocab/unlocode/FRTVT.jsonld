@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTVT",
             "rdf:value": "FRTVT",
+            "@id": "unlcd:FRTVT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Trévou-Tréguignec"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Trevou-Treguignec"
+                    "@value": "Trevou-Treguignec",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR22"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.816666",
                 "@type": "xsd:float"

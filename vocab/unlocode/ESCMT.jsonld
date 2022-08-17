@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESCMT",
             "rdf:value": "ESCMT",
+            "@id": "unlcd:ESCMT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chinchilla de Monte Aragón"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chinchilla de Monte Aragon"
+                    "@value": "Chinchilla de Monte Aragon",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESAB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "38.916668",
                 "@type": "xsd:float"

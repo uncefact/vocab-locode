@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:KHPPT",
             "rdf:value": "KHPPT",
+            "@id": "unlcd:KHPPT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Poipet (Paôy Pêt)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Poipet (Paoy Pet)"
+                    "@value": "Poipet (Paoy Pet)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "KH",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:KH"
+            },
             "geo:lat": {
                 "@value": "13.65",
                 "@type": "xsd:float"

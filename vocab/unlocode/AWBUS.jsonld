@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:AWBUS",
             "rdf:value": "AWBUS",
+            "@id": "unlcd:AWBUS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Bushiribana"
+                "@value": "Bushiribana",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "AW",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AW"
+            },
             "geo:lat": {
                 "@value": "12.55",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZSEZ",
             "rdf:value": "CZSEZ",
+            "@id": "unlcd:CZSEZ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sezimovo Ústí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sezimovo Usti"
+                    "@value": "Sezimovo Usti",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZJM"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.383335",
                 "@type": "xsd:float"

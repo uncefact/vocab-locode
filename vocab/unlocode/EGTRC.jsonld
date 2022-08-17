@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EGTRC",
             "rdf:value": "EGTRC",
+            "@id": "unlcd:EGTRC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "10th of Ramadan City"
+                "@value": "10th of Ramadan City",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "EG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EG"
+            },
             "geo:lat": {
                 "@value": "30.3",
                 "@type": "xsd:float"

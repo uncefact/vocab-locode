@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR5LS",
             "rdf:value": "FR5LS",
+            "@id": "unlcd:FR5LS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sceaux-du-Gâtinais"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sceaux-du-Gatinais"
+                    "@value": "Sceaux-du-Gatinais",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR45"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.1",
                 "@type": "xsd:float"

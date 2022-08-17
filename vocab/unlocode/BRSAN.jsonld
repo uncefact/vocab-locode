@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSAN",
             "rdf:value": "BRSAN",
+            "@id": "unlcd:BRSAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gonçalo do Amarante"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Goncalo do Amarante"
+                    "@value": "Sao Goncalo do Amarante",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.7833333",
                 "@type": "xsd:float"

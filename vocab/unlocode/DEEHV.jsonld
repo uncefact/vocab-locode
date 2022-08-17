@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEEHV",
             "rdf:value": "DEEHV",
+            "@id": "unlcd:DEEHV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bremerhaven-Speckenbüttel"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bremerhaven-Speckenbuttel"
+                    "@value": "Bremerhaven-Speckenbuttel",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "53.583332",
                 "@type": "xsd:float"

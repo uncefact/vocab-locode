@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSMI",
             "rdf:value": "ESSMI",
+            "@id": "unlcd:ESSMI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa María del Berrocal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Maria del Berrocal"
+                    "@value": "Santa Maria del Berrocal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESAV"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "40.516666",
                 "@type": "xsd:float"

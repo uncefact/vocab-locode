@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSVJ",
             "rdf:value": "BRSVJ",
+            "@id": "unlcd:BRSVJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João da Varjota"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao da Varjota"
+                    "@value": "Sao Joao da Varjota",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.9166665",
                 "@type": "xsd:float"

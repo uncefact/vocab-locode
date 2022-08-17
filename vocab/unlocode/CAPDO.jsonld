@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAPDO",
             "rdf:value": "CAPDO",
+            "@id": "unlcd:CAPDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Pierre-de-l'Île-d'Orléans"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Pierre-de-l'Ile-d'Orleans"
+                    "@value": "Saint-Pierre-de-l'Ile-d'Orleans",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -32,7 +32,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            }
         }
     ]
 }

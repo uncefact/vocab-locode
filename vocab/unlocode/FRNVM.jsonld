@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNVM",
             "rdf:value": "FRNVM",
+            "@id": "unlcd:FRNVM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nouaillé-Maupertuis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nouaille-Maupertuis"
+                    "@value": "Nouaille-Maupertuis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR86"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.516666",
                 "@type": "xsd:float"

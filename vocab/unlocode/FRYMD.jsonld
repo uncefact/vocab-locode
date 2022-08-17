@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYMD",
             "rdf:value": "FRYMD",
+            "@id": "unlcd:FRYMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mérey-sous-Montrond"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Merey-sous-Montrond"
+                    "@value": "Merey-sous-Montrond",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.15",
                 "@type": "xsd:float"

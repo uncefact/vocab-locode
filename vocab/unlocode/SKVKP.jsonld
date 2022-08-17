@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SKVKP",
             "rdf:value": "SKVKP",
+            "@id": "unlcd:SKVKP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Velké Kapusany"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Velke Kapusany"
+                    "@value": "Velke Kapusany",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "SK",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SK"
+            },
             "geo:lat": {
                 "@value": "48.55",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFET",
             "rdf:value": "FRFET",
+            "@id": "unlcd:FRFET",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fère-en-Tardenois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fere-en-Tardenois"
+                    "@value": "Fere-en-Tardenois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.2",
                 "@type": "xsd:float"

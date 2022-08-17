@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBDL",
             "rdf:value": "FRBDL",
+            "@id": "unlcd:FRBDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Blénod-lès-Toul"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Blenod-les-Toul"
+                    "@value": "Blenod-les-Toul",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.6",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDDL",
             "rdf:value": "FRDDL",
+            "@id": "unlcd:FRDDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castelnau-de-Lévis"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castelnau-de-Levis"
+                    "@value": "Castelnau-de-Levis",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR81"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.183334",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTSPG",
             "rdf:value": "PTSPG",
+            "@id": "unlcd:PTSPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Paio de Gramaços"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Paio de Gramacos"
+                    "@value": "Sao Paio de Gramacos",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT06"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "40.35",
                 "@type": "xsd:float"

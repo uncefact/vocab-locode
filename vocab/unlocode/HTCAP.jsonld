@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:HTCAP",
             "rdf:value": "HTCAP",
+            "@id": "unlcd:HTCAP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cap-Haïtien"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cap-Haitien"
+                    "@value": "Cap-Haitien",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "HT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:HT"
+            },
             "geo:lat": {
                 "@value": "19.75",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESTU9",
             "rdf:value": "ESTU9",
+            "@id": "unlcd:ESTU9",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Castrelo de Miño"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Castrelo de Mino"
+                    "@value": "Castrelo de Mino",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESOR"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.283333",
                 "@type": "xsd:float"

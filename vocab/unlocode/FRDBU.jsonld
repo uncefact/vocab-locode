@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDBU",
             "rdf:value": "FRDBU",
+            "@id": "unlcd:FRDBU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Détain-et-Bruant"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Detain-et-Bruant"
+                    "@value": "Detain-et-Bruant",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR21"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.166668",
                 "@type": "xsd:float"

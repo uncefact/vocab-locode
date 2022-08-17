@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRNPU",
             "rdf:value": "FRNPU",
+            "@id": "unlcd:FRNPU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontaine-Étoupefour"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontaine-Etoupefour"
+                    "@value": "Fontaine-Etoupefour",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR14"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.15",
                 "@type": "xsd:float"

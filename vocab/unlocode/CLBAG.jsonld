@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CLBAG",
             "rdf:value": "CLBAG",
+            "@id": "unlcd:CLBAG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bahía San Gregorio"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bahia San Gregorio"
+                    "@value": "Bahia San Gregorio",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLMA"
             },
-            "unlcdc:countryCode": "CL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CL"
+            },
             "geo:lat": {
                 "@value": "-52.616665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRDB",
             "rdf:value": "BRRDB",
+            "@id": "unlcd:BRRDB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Raimundo do Doca Bezerra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Raimundo do Doca Bezerra"
+                    "@value": "Sao Raimundo do Doca Bezerra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.1",
                 "@type": "xsd:float"

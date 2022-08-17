@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIRUO",
             "rdf:value": "FIRUO",
+            "@id": "unlcd:FIRUO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Strömfors (Ruotsinpyhtää)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Stromfors (Ruotsinpyhtaa)"
+                    "@value": "Stromfors (Ruotsinpyhtaa)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI18"
             },
-            "unlcdc:countryCode": "FI",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            },
             "geo:lat": {
                 "@value": "60.533333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSMJ",
             "rdf:value": "BRSMJ",
+            "@id": "unlcd:BRSMJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Miguel Arcanjo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Miguel Arcanjo"
+                    "@value": "Sao Miguel Arcanjo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.866667",
                 "@type": "xsd:float"

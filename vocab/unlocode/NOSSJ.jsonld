@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NOSSJ",
             "rdf:value": "NOSSJ",
+            "@id": "unlcd:NOSSJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sandnessjøen"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sandnessjoen"
+                    "@value": "Sandnessjoen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO18"
             },
-            "unlcdc:countryCode": "NO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NO"
+            },
             "geo:lat": {
                 "@value": "66.01667",
                 "@type": "xsd:float"

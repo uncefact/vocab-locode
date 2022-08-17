@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DERGS",
             "rdf:value": "DERGS",
+            "@id": "unlcd:DERGS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rödinghausen (Markischer Kreis)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rodinghausen (Markischer Kreis)"
+                    "@value": "Rodinghausen (Markischer Kreis)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DENW"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.4",
                 "@type": "xsd:float"

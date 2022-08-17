@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GLSEQ",
             "rdf:value": "GLSEQ",
+            "@id": "unlcd:GLSEQ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Seqi Olivine Mine"
+                "@value": "Seqi Olivine Mine",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "GL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GL"
+            },
             "geo:lat": {
                 "@value": "64.96667",
                 "@type": "xsd:float"

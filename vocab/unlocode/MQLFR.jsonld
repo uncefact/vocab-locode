@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MQLFR",
             "rdf:value": "MQLFR",
+            "@id": "unlcd:MQLFR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Le François"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Le Francois"
+                    "@value": "Le Francois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "MQ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MQ"
+            },
             "geo:lat": {
                 "@value": "14.616667",
                 "@type": "xsd:float"

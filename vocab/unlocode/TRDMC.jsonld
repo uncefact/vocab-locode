@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:TRDMC",
             "rdf:value": "TRDMC",
+            "@id": "unlcd:TRDMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Domaniç Kozluca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Domanic Kozluca"
+                    "@value": "Domanic Kozluca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TR43"
             },
-            "unlcdc:countryCode": "TR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:TR"
+            },
             "geo:lat": {
                 "@value": "39.8",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSBV",
             "rdf:value": "BRSBV",
+            "@id": "unlcd:BRSBV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São João da Boa Vista"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joao da Boa Vista"
+                    "@value": "Sao Joao da Boa Vista",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.966667",
                 "@type": "xsd:float"

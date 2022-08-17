@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZZRS",
             "rdf:value": "CZZRS",
+            "@id": "unlcd:CZZRS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zruc nad Sázavou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zruc nad Sazavou"
+                    "@value": "Zruc nad Sazavou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZST"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.733334",
                 "@type": "xsd:float"

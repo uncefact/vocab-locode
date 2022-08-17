@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHCP",
             "rdf:value": "FRHCP",
+            "@id": "unlcd:FRHCP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Hilaire-de-Chaléons"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Hilaire-de-Chaleons"
+                    "@value": "Saint-Hilaire-de-Chaleons",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR44"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.1",
                 "@type": "xsd:float"

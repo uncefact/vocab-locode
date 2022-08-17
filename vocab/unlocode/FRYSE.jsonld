@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYSE",
             "rdf:value": "FRYSE",
+            "@id": "unlcd:FRYSE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Albigny-sur-Saône"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Albigny-sur-Saone"
+                    "@value": "Albigny-sur-Saone",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR69"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.85",
                 "@type": "xsd:float"

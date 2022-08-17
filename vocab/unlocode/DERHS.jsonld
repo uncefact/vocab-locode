@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DERHS",
             "rdf:value": "DERHS",
+            "@id": "unlcd:DERHS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Reinhardtsdorf-Schöna"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Reinhardtsdorf-Schona"
+                    "@value": "Reinhardtsdorf-Schona",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "14.2",
                 "@type": "xsd:float"

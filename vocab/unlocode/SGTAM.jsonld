@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SGTAM",
             "rdf:value": "SGTAM",
+            "@id": "unlcd:SGTAM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Tampines"
+                "@value": "Tampines",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "SG",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SG"
+            },
             "geo:lat": {
                 "@value": "1.3333334",
                 "@type": "xsd:float"

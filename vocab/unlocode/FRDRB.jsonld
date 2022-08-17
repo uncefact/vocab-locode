@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRDRB",
             "rdf:value": "FRDRB",
+            "@id": "unlcd:FRDRB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bordères-sur-l'Échez"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Borderes-sur-l'Echez"
+                    "@value": "Borderes-sur-l'Echez",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR65"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.283333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PAPAC",
             "rdf:value": "PAPAC",
+            "@id": "unlcd:PAPAC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Marcos A. Gelabert International Apt/Panamá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Marcos A. Gelabert International Apt/Panama"
+                    "@value": "Marcos A. Gelabert International Apt/Panama",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PA8"
             },
-            "unlcdc:countryCode": "PA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PA"
+            },
             "geo:lat": {
                 "@value": "8.966666",
                 "@type": "xsd:float"

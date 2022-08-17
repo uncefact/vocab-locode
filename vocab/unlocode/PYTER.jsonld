@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PYTER",
             "rdf:value": "PYTER",
+            "@id": "unlcd:PYTER",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Terport (San Antonio)"
+                "@value": "Terport (San Antonio)",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "PY",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PY"
+            },
             "geo:lat": {
                 "@value": "-25.383333",
                 "@type": "xsd:float"

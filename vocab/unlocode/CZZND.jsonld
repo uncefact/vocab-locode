@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZZND",
             "rdf:value": "CZZND",
+            "@id": "unlcd:CZZND",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zdírec Nad Doubravkou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zdirec Nad Doubravkou"
+                    "@value": "Zdirec Nad Doubravkou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CZVY"
             },
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "49.7",
                 "@type": "xsd:float"

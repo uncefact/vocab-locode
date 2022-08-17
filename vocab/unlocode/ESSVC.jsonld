@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSVC",
             "rdf:value": "ESSVC",
+            "@id": "unlcd:ESSVC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Vicenç dels Horts"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Vicenc dels Horts"
+                    "@value": "Sant Vicenc dels Horts",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.4",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRDIT",
             "rdf:value": "BRDIT",
+            "@id": "unlcd:BRDIT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Dois Irmãos do Tocantins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Dois Irmaos do Tocantins"
+                    "@value": "Dois Irmaos do Tocantins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRTO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-9.25",
                 "@type": "xsd:float"

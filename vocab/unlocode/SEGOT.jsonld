@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SEGOT",
             "rdf:value": "SEGOT",
+            "@id": "unlcd:SEGOT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Göteborg"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Goteborg"
+                    "@value": "Goteborg",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -43,7 +43,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEO"
             },
-            "unlcdc:countryCode": "SE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SE"
+            },
             "geo:lat": {
                 "@value": "57.716667",
                 "@type": "xsd:float"

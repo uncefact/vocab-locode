@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRGBS",
             "rdf:value": "FRGBS",
+            "@id": "unlcd:FRGBS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sainte-Geneviève-des-Bois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sainte-Genevieve-des-Bois"
+                    "@value": "Sainte-Genevieve-des-Bois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR91"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.616665",
                 "@type": "xsd:float"

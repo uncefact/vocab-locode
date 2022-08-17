@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBGC",
             "rdf:value": "FRBGC",
+            "@id": "unlcd:FRBGC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bagnac-sur-Célé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bagnac-sur-Cele"
+                    "@value": "Bagnac-sur-Cele",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR46"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.666668",
                 "@type": "xsd:float"

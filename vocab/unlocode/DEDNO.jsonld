@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEDNO",
             "rdf:value": "DEDNO",
+            "@id": "unlcd:DEDNO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Danna/Niedergörsdorf"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Danna/Niedergorsdorf"
+                    "@value": "Danna/Niedergorsdorf",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "51.983334",
                 "@type": "xsd:float"

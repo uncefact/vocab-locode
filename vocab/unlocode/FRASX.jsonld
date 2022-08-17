@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRASX",
             "rdf:value": "FRASX",
+            "@id": "unlcd:FRASX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Assé-le-Bérenger"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Asse-le-Berenger"
+                    "@value": "Asse-le-Berenger",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR53"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.15",
                 "@type": "xsd:float"

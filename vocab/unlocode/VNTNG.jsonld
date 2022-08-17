@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:VNTNG",
             "rdf:value": "VNTNG",
+            "@id": "unlcd:VNTNG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Thái Nguyên"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Thai Nguyen"
+                    "@value": "Thai Nguyen",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "VN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:VN"
+            },
             "geo:lat": {
                 "@value": "21.55",
                 "@type": "xsd:float"

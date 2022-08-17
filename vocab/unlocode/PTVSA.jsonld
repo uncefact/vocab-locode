@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PTVSA",
             "rdf:value": "PTVSA",
+            "@id": "unlcd:PTVSA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vila Nova de Santo André"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vila Nova de Santo Andre"
+                    "@value": "Vila Nova de Santo Andre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT15"
             },
-            "unlcdc:countryCode": "PT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PT"
+            },
             "geo:lat": {
                 "@value": "38.05",
                 "@type": "xsd:float"

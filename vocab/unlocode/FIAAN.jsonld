@@ -9,16 +9,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FIAAN",
             "rdf:value": "FIAAN",
+            "@id": "unlcd:FIAAN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Äänekoski"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aanekoski"
+                    "@value": "Aanekoski",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -27,7 +27,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI08"
             },
-            "unlcdc:countryCode": "FI"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FI"
+            }
         }
     ]
 }

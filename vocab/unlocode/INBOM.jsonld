@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:INBOM",
             "rdf:value": "INBOM",
+            "@id": "unlcd:INBOM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Mumbai (ex Bombay)"
+                "@value": "Mumbai (ex Bombay)",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -41,7 +41,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INMH"
             },
-            "unlcdc:countryCode": "IN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:IN"
+            },
             "geo:lat": {
                 "@value": "18.966667",
                 "@type": "xsd:float"

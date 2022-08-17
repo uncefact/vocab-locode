@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSLH",
             "rdf:value": "ESSLH",
+            "@id": "unlcd:ESSLH",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sant Llorenç d'Hortons"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sant Llorenc d'Hortons"
+                    "@value": "Sant Llorenc d'Hortons",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.45",
                 "@type": "xsd:float"

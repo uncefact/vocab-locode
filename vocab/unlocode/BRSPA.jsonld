@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSPA",
             "rdf:value": "BRSPA",
+            "@id": "unlcd:BRSPA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Passé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Passe"
+                    "@value": "Sao Sebastiao do Passe",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRBA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-12.5",
                 "@type": "xsd:float"

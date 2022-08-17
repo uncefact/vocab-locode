@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRZEI",
             "rdf:value": "BRZEI",
+            "@id": "unlcd:BRZEI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Sebastião do Umbuzeiro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Sebastiao do Umbuzeiro"
+                    "@value": "Sao Sebastiao do Umbuzeiro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.15",
                 "@type": "xsd:float"

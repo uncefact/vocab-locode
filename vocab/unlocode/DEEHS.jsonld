@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEEHS",
             "rdf:value": "DEEHS",
+            "@id": "unlcd:DEEHS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Eisenhüttenstadt"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Eisenhuttenstadt"
+                    "@value": "Eisenhuttenstadt",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "52.15",
                 "@type": "xsd:float"

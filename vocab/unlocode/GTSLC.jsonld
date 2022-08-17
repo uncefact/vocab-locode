@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GTSLC",
             "rdf:value": "GTSLC",
+            "@id": "unlcd:GTSLC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Santa Lucía Cotzumalguapa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Santa Lucia Cotzumalguapa"
+                    "@value": "Santa Lucia Cotzumalguapa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT05"
             },
-            "unlcdc:countryCode": "GT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GT"
+            },
             "geo:lat": {
                 "@value": "14.333333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRDI",
             "rdf:value": "FRRDI",
+            "@id": "unlcd:FRRDI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Médard-sur-Ille"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Medard-sur-Ille"
+                    "@value": "Saint-Medard-sur-Ille",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.266666",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:LASAV",
             "rdf:value": "LASAV",
+            "@id": "unlcd:LASAV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Savannakhét"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Savannakhet"
+                    "@value": "Savannakhet",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "unlcdc:countryCode": "LA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:LA"
+            },
             "geo:lat": {
                 "@value": "16.55",
                 "@type": "xsd:float"

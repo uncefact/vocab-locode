@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRAGG",
             "rdf:value": "BRAGG",
+            "@id": "unlcd:BRAGG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Alvorada do Gurguéia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Alvorada do Gurgueia"
+                    "@value": "Alvorada do Gurgueia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-8.433333",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLPOL",
             "rdf:value": "PLPOL",
+            "@id": "unlcd:PLPOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Polanica-Zdrój"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Polanica-Zdroj"
+                    "@value": "Polanica-Zdroj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL02"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "50.4",
                 "@type": "xsd:float"

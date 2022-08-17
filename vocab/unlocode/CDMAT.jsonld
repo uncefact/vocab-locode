@@ -8,12 +8,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CDMAT",
             "rdf:value": "CDMAT",
+            "@id": "unlcd:CDMAT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Matadi"
+                "@value": "Matadi",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -23,7 +23,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "CD"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CD"
+            }
         }
     ]
 }

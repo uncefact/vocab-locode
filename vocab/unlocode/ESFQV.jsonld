@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESFQV",
             "rdf:value": "ESFQV",
+            "@id": "unlcd:ESFQV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Les Franqueses del Vallès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Les Franqueses del Valles"
+                    "@value": "Les Franqueses del Valles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.633335",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSQB",
             "rdf:value": "BRSQB",
+            "@id": "unlcd:BRSQB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Joaquim de Bicas"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Joaquim de Bicas"
+                    "@value": "Sao Joaquim de Bicas",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-20.05",
                 "@type": "xsd:float"

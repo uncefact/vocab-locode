@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ALKRC",
             "rdf:value": "ALKRC",
+            "@id": "unlcd:ALKRC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Korçë"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Korce"
+                    "@value": "Korce",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ALKO"
             },
-            "unlcdc:countryCode": "AL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AL"
+            },
             "geo:lat": {
                 "@value": "40.616665",
                 "@type": "xsd:float"

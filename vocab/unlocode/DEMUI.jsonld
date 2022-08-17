@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEMUI",
             "rdf:value": "DEMUI",
+            "@id": "unlcd:DEMUI",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mülsen Sankt Micheln"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Mulsen Sankt Micheln"
+                    "@value": "Mulsen Sankt Micheln",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DESN"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.75",
                 "@type": "xsd:float"

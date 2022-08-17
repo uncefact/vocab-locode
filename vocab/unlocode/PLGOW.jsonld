@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLGOW",
             "rdf:value": "PLGOW",
+            "@id": "unlcd:PLGOW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Gorzów Wielkopolski"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Gorzow Wielkopolski"
+                    "@value": "Gorzow Wielkopolski",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL08"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "52.733334",
                 "@type": "xsd:float"

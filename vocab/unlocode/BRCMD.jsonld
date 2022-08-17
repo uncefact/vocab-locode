@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCMD",
             "rdf:value": "BRCMD",
+            "@id": "unlcd:BRCMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Conceição do Mato Dentro"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Conceicao do Mato Dentro"
+                    "@value": "Conceicao do Mato Dentro",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.033333",
                 "@type": "xsd:float"

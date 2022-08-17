@@ -8,16 +8,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CFNDL",
             "rdf:value": "CFNDL",
+            "@id": "unlcd:CFNDL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ndélé"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ndele"
+                    "@value": "Ndele",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "CF"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CF"
+            }
         }
     ]
 }

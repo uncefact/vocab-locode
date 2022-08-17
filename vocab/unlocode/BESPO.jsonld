@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BESPO",
             "rdf:value": "BESPO",
+            "@id": "unlcd:BESPO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Woluwé-Saint-Pierre (Sint-Pieters-Woluwe)/Brussel (Bruxelles)"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Woluwe-Saint-Pierre (Sint-Pieters-Woluwe)/Brussel (Bruxelles)"
+                    "@value": "Woluwe-Saint-Pierre (Sint-Pieters-Woluwe)/Brussel (Bruxelles)",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEBRU"
             },
-            "unlcdc:countryCode": "BE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BE"
+            },
             "geo:lat": {
                 "@value": "50.833332",
                 "@type": "xsd:float"

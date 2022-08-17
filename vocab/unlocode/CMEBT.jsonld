@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CMEBT",
             "rdf:value": "CMEBT",
+            "@id": "unlcd:CMEBT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ebomé Terminal"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ebome Terminal"
+                    "@value": "Ebome Terminal",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CM",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CM"
+            },
             "geo:lat": {
                 "@value": "2.8",
                 "@type": "xsd:float"

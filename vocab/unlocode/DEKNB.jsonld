@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DEKNB",
             "rdf:value": "DEKNB",
+            "@id": "unlcd:DEKNB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Königsberg in Bayern"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Konigsberg in Bayern"
+                    "@value": "Konigsberg in Bayern",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "50.083332",
                 "@type": "xsd:float"

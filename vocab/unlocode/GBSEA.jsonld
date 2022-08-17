@@ -9,12 +9,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GBSEA",
             "rdf:value": "GBSEA",
+            "@id": "unlcd:GBSEA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Seaham"
+                "@value": "Seaham",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
@@ -22,7 +22,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBDUR"
             },
-            "unlcdc:countryCode": "GB"
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GB"
+            }
         }
     ]
 }

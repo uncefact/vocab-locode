@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNSJ",
             "rdf:value": "BRNSJ",
+            "@id": "unlcd:BRNSJ",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Novo São Joaquim"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Novo Sao Joaquim"
+                    "@value": "Novo Sao Joaquim",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMT"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-14.883333",
                 "@type": "xsd:float"

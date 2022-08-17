@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSGN",
             "rdf:value": "BRSGN",
+            "@id": "unlcd:BRSGN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Pedro da Água Branca"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Pedro da Agua Branca"
+                    "@value": "Sao Pedro da Agua Branca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.0833335",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFDT",
             "rdf:value": "FRFDT",
+            "@id": "unlcd:FRFDT",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Forêt-du-Temple"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Foret-du-Temple"
+                    "@value": "La Foret-du-Temple",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR23"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.416668",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRHPE",
             "rdf:value": "FRHPE",
+            "@id": "unlcd:FRHPE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pégairolles-de-l'Escalette"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pegairolles-de-l'Escalette"
+                    "@value": "Pegairolles-de-l'Escalette",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.8",
                 "@type": "xsd:float"

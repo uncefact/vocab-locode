@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRFVN",
             "rdf:value": "FRFVN",
+            "@id": "unlcd:FRFVN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Fontaine-lès-Vervins"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Fontaine-les-Vervins"
+                    "@value": "Fontaine-les-Vervins",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR02"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.85",
                 "@type": "xsd:float"

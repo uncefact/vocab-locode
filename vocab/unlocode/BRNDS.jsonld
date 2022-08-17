@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNDS",
             "rdf:value": "BRNDS",
+            "@id": "unlcd:BRNDS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nossa Senhora dos Remédios"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nossa Senhora dos Remedios"
+                    "@value": "Nossa Senhora dos Remedios",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-3.9833333",
                 "@type": "xsd:float"

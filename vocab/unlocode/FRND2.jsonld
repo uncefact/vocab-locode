@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRND2",
             "rdf:value": "FRND2",
+            "@id": "unlcd:FRND2",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Notre-Dame-des-Millières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Notre-Dame-des-Millieres"
+                    "@value": "Notre-Dame-des-Millieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR73"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "45.633335",
                 "@type": "xsd:float"

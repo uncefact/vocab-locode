@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRPCB",
             "rdf:value": "FRPCB",
+            "@id": "unlcd:FRPCB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Portel-des-Corbières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Portel-des-Corbieres"
+                    "@value": "Portel-des-Corbieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR11"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.05",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZCKP",
             "rdf:value": "CZCKP",
+            "@id": "unlcd:CZCKP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ceské Kopisty"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Ceske Kopisty"
+                    "@value": "Ceske Kopisty",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.533333",
                 "@type": "xsd:float"

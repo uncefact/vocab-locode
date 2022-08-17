@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRRBU",
             "rdf:value": "BRRBU",
+            "@id": "unlcd:BRRBU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rio Bonito do Iguaçu"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Rio Bonito do Iguacu"
+                    "@value": "Rio Bonito do Iguacu",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-25.483334",
                 "@type": "xsd:float"

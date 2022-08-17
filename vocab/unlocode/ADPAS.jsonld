@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ADPAS",
             "rdf:value": "ADPAS",
+            "@id": "unlcd:ADPAS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Pas de la Casa"
+                "@value": "Pas de la Casa",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "AD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AD"
+            },
             "geo:lat": {
                 "@value": "42.55",
                 "@type": "xsd:float"

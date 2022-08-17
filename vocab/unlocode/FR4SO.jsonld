@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR4SO",
             "rdf:value": "FR4SO",
+            "@id": "unlcd:FR4SO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Ouen-lès-Parey"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Ouen-les-Parey"
+                    "@value": "Saint-Ouen-les-Parey",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR88"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.183334",
                 "@type": "xsd:float"

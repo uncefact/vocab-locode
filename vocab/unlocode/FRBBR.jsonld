@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBBR",
             "rdf:value": "FRBBR",
+            "@id": "unlcd:FRBBR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bessé-sur-Braye"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Besse-sur-Braye"
+                    "@value": "Besse-sur-Braye",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR72"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

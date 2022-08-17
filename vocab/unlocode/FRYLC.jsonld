@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRYLC",
             "rdf:value": "FRYLC",
+            "@id": "unlcd:FRYLC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Barisey-la-Côte"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Barisey-la-Cote"
+                    "@value": "Barisey-la-Cote",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR54"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.55",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASMC",
             "rdf:value": "CASMC",
+            "@id": "unlcd:CASMC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Marc-des-Carrières"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Marc-des-Carrieres"
+                    "@value": "Saint-Marc-des-Carrieres",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.666668",
                 "@type": "xsd:float"

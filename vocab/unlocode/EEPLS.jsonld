@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEPLS",
             "rdf:value": "EEPLS",
+            "@id": "unlcd:EEPLS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Paldiski Lõunasadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Paldiski Lounasadam"
+                    "@value": "Paldiski Lounasadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE37"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "59.333332",
                 "@type": "xsd:float"

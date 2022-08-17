@@ -11,12 +11,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:SNKID",
             "rdf:value": "SNKID",
+            "@id": "unlcd:SNKID",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Kidira"
+                "@value": "Kidira",
+                "@language": "en"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
@@ -24,7 +24,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SNTC"
             },
-            "unlcdc:countryCode": "SN",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:SN"
+            },
             "geo:lat": {
                 "@value": "14.4",
                 "@type": "xsd:float"

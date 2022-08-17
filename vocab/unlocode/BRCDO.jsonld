@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCDO",
             "rdf:value": "BRCDO",
+            "@id": "unlcd:BRCDO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Cabedelo Pt / João Pessoa"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Cabedelo Pt / Joao Pessoa"
+                    "@value": "Cabedelo Pt / Joao Pessoa",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPB"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-6.9666667",
                 "@type": "xsd:float"

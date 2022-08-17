@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRNSN",
             "rdf:value": "BRNSN",
+            "@id": "unlcd:BRNSN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nossa Senhora de Nazaré"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nossa Senhora de Nazare"
+                    "@value": "Nossa Senhora de Nazare",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPI"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-4.616667",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSDR",
             "rdf:value": "BRSDR",
+            "@id": "unlcd:BRSDR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gonçalo do Rio Abaixo"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Goncalo do Rio Abaixo"
+                    "@value": "Sao Goncalo do Rio Abaixo",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-19.816668",
                 "@type": "xsd:float"

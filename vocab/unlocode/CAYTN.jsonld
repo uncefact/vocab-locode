@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CAYTN",
             "rdf:value": "CAYTN",
+            "@id": "unlcd:CAYTN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Rivière-au-Tonnerre"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Riviere-au-Tonnerre"
+                    "@value": "Riviere-au-Tonnerre",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "50.266666",
                 "@type": "xsd:float"

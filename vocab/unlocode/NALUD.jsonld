@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NALUD",
             "rdf:value": "NALUD",
+            "@id": "unlcd:NALUD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lüderitz"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Luderitz"
+                    "@value": "Luderitz",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "NA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NA"
+            },
             "geo:lat": {
                 "@value": "-26.65",
                 "@type": "xsd:float"

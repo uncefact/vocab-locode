@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:GDCRU",
             "rdf:value": "GDCRU",
+            "@id": "unlcd:GDCRU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Carriacou Apt"
+                "@value": "Carriacou Apt",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "GD",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:GD"
+            },
             "geo:lat": {
                 "@value": "12.466666",
                 "@type": "xsd:float"

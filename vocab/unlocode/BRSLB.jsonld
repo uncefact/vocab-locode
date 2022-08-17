@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSLB",
             "rdf:value": "BRSLB",
+            "@id": "unlcd:BRSLB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Gonçalo do Abaeté"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Goncalo do Abaete"
+                    "@value": "Sao Goncalo do Abaete",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMG"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-18.333334",
                 "@type": "xsd:float"

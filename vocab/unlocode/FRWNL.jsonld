@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRWNL",
             "rdf:value": "FRWNL",
+            "@id": "unlcd:FRWNL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Nézignan-l'Évêque"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Nezignan-l'Eveque"
+                    "@value": "Nezignan-l'Eveque",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR34"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.416668",
                 "@type": "xsd:float"

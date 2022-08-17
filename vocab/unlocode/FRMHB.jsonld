@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRMHB",
             "rdf:value": "FRMHB",
+            "@id": "unlcd:FRMHB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Trinité-sur-Mer"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Trinite-sur-Mer"
+                    "@value": "La Trinite-sur-Mer",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR56"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.583332",
                 "@type": "xsd:float"

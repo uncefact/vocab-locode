@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRASB",
             "rdf:value": "BRASB",
+            "@id": "unlcd:BRASB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Águas de Santa Bárbara"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Aguas de Santa Barbara"
+                    "@value": "Aguas de Santa Barbara",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRSP"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-22.866667",
                 "@type": "xsd:float"

@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CZOHA",
             "rdf:value": "CZOHA",
+            "@id": "unlcd:CZOHA",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pomezí nad Ohrí"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Pomezi nad Ohri"
+                    "@value": "Pomezi nad Ohri",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "unlcdc:countryCode": "CZ",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CZ"
+            },
             "geo:lat": {
                 "@value": "50.083332",
                 "@type": "xsd:float"

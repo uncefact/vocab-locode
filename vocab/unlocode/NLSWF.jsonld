@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:NLSWF",
             "rdf:value": "NLSWF",
+            "@id": "unlcd:NLSWF",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zuidwest-Friesland/Súdwest-Fryslân"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zuidwest-Friesland/Sudwest-Fryslan"
+                    "@value": "Zuidwest-Friesland/Sudwest-Fryslan",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLFR"
             },
-            "unlcdc:countryCode": "NL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:NL"
+            },
             "geo:lat": {
                 "@value": "53.033333",
                 "@type": "xsd:float"

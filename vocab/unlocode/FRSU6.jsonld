@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRSU6",
             "rdf:value": "FRSU6",
+            "@id": "unlcd:FRSU6",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-Sulpice-le-Guérétois"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Sulpice-le-Gueretois"
+                    "@value": "Saint-Sulpice-le-Gueretois",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR23"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.2",
                 "@type": "xsd:float"

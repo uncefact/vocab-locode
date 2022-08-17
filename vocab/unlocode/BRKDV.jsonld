@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRKDV",
             "rdf:value": "BRKDV",
+            "@id": "unlcd:BRKDV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Caiçara do Rio do Vento"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Caicara do Rio do Vento"
+                    "@value": "Caicara do Rio do Vento",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRN"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-5.75",
                 "@type": "xsd:float"

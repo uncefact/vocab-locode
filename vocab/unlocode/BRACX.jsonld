@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRACX",
             "rdf:value": "BRACX",
+            "@id": "unlcd:BRACX",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Açu Pt / São João da Barra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Acu Pt / Sao Joao da Barra"
+                    "@value": "Acu Pt / Sao Joao da Barra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.816668",
                 "@type": "xsd:float"

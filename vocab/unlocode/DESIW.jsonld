@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:DESIW",
             "rdf:value": "DESIW",
+            "@id": "unlcd:DESIW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Schönbrunn im Steigerwald"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Schonbrunn im Steigerwald"
+                    "@value": "Schonbrunn im Steigerwald",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBY"
             },
-            "unlcdc:countryCode": "DE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:DE"
+            },
             "geo:lat": {
                 "@value": "49.866665",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRTNV",
             "rdf:value": "FRTNV",
+            "@id": "unlcd:FRTNV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lantenne-Vertière"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lantenne-Vertiere"
+                    "@value": "Lantenne-Vertiere",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -34,7 +34,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR25"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.233334",
                 "@type": "xsd:float"

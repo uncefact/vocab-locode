@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBQP",
             "rdf:value": "FRBQP",
+            "@id": "unlcd:FRBQP",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bruère-Allichamps"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bruere-Allichamps"
+                    "@value": "Bruere-Allichamps",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR18"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "46.766666",
                 "@type": "xsd:float"

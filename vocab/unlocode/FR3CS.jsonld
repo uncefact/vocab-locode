@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FR3CS",
             "rdf:value": "FR3CS",
+            "@id": "unlcd:FR3CS",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Chouzé-sur-Loire"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chouze-sur-Loire"
+                    "@value": "Chouze-sur-Loire",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.25",
                 "@type": "xsd:float"

@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVOL",
             "rdf:value": "ESVOL",
+            "@id": "unlcd:ESVOL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Las Masías de Voltregá"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Las Masias de Voltrega"
+                    "@value": "Las Masias de Voltrega",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "42.016666",
                 "@type": "xsd:float"

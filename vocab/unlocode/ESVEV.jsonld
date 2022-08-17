@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESVEV",
             "rdf:value": "ESVEV",
+            "@id": "unlcd:ESVEV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Vilanova Del Vallès"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Vilanova Del Valles"
+                    "@value": "Vilanova Del Valles",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESB"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.55",
                 "@type": "xsd:float"

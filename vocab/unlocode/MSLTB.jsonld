@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MSLTB",
             "rdf:value": "MSLTB",
+            "@id": "unlcd:MSLTB",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Little Bay"
+                "@value": "Little Bay",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -25,7 +25,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "MS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:MS"
+            },
             "geo:lat": {
                 "@value": "16.8",
                 "@type": "xsd:float"

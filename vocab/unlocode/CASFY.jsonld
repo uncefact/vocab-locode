@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:CASFY",
             "rdf:value": "CASFY",
+            "@id": "unlcd:CASFY",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Saint-François-Montmagny"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Saint-Francois-Montmagny"
+                    "@value": "Saint-Francois-Montmagny",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:countryCode": "CA",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:CA"
+            },
             "geo:lat": {
                 "@value": "46.883335",
                 "@type": "xsd:float"

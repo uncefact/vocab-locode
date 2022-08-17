@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FROCC",
             "rdf:value": "FROCC",
+            "@id": "unlcd:FROCC",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Pocé-sur-Cisse"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Poce-sur-Cisse"
+                    "@value": "Poce-sur-Cisse",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR37"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.416668",
                 "@type": "xsd:float"

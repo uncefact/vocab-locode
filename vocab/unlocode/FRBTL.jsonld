@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRBTL",
             "rdf:value": "FRBTL",
+            "@id": "unlcd:FRBTL",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Bitschwiller-lès-Thann"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Bitschwiller-les-Thann"
+                    "@value": "Bitschwiller-les-Thann",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR68"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

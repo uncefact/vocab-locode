@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRRQD",
             "rdf:value": "FRRQD",
+            "@id": "unlcd:FRRQD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "La Roque-d'Anthéron"
                 },
                 {
-                    "@language": "en",
-                    "@value": "La Roque-d'Antheron"
+                    "@value": "La Roque-d'Antheron",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR13"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "43.716667",
                 "@type": "xsd:float"

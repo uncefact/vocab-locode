@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:MLSZU",
             "rdf:value": "MLSZU",
+            "@id": "unlcd:MLSZU",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Ségou"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Segou"
+                    "@value": "Segou",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -30,7 +30,9 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "unlcdc:countryCode": "ML",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ML"
+            },
             "geo:lat": {
                 "@value": "13.45",
                 "@type": "xsd:float"

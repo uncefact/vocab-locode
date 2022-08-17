@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ROSGM",
             "rdf:value": "ROSGM",
+            "@id": "unlcd:ROSGM",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Sîngeorgiu de Mures"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Singeorgiu de Mures"
+                    "@value": "Singeorgiu de Mures",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ROMS"
             },
-            "unlcdc:countryCode": "RO",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RO"
+            },
             "geo:lat": {
                 "@value": "46.566666",
                 "@type": "xsd:float"

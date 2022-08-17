@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRSIO",
             "rdf:value": "BRSIO",
+            "@id": "unlcd:BRSIO",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Francisco de Itabapoana"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Francisco de Itabapoana"
+                    "@value": "Sao Francisco de Itabapoana",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRJ"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-21.466667",
                 "@type": "xsd:float"

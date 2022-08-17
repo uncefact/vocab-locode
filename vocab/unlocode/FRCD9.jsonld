@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRCD9",
             "rdf:value": "FRCD9",
+            "@id": "unlcd:FRCD9",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Châteauneuf-d'Ille-et-Vilaine"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Chateauneuf-d'Ille-et-Vilaine"
+                    "@value": "Chateauneuf-d'Ille-et-Vilaine",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR35"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "48.55",
                 "@type": "xsd:float"

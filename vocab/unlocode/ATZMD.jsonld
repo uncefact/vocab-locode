@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ATZMD",
             "rdf:value": "ATZMD",
+            "@id": "unlcd:ATZMD",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zemendorf-Stöttera"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zemendorf-Stottera"
+                    "@value": "Zemendorf-Stottera",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AT1"
             },
-            "unlcdc:countryCode": "AT",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AT"
+            },
             "geo:lat": {
                 "@value": "47.75",
                 "@type": "xsd:float"

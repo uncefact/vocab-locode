@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:EEMNV",
             "rdf:value": "EEMNV",
+            "@id": "unlcd:EEMNV",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Mõntu Väikelaevade Sadam"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Montu Vaikelaevade Sadam"
+                    "@value": "Montu Vaikelaevade Sadam",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE74"
             },
-            "unlcdc:countryCode": "EE",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:EE"
+            },
             "geo:lat": {
                 "@value": "57.95",
                 "@type": "xsd:float"

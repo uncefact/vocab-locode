@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRCVN",
             "rdf:value": "BRCVN",
+            "@id": "unlcd:BRCVN",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Campo Novo de Rondônia"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Campo Novo de Rondonia"
+                    "@value": "Campo Novo de Rondonia",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRRO"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-10.566667",
                 "@type": "xsd:float"

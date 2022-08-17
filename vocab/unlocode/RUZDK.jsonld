@@ -10,16 +10,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:RUZDK",
             "rdf:value": "RUZDK",
+            "@id": "unlcd:RUZDK",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Zelënodol'sk"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Zelenodol'sk"
+                    "@value": "Zelenodol'sk",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -33,7 +33,9 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "unlcdc:countryCode": "RU",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:RU"
+            },
             "geo:lat": {
                 "@value": "55.833332",
                 "@type": "xsd:float"

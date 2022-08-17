@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:PLSWW",
             "rdf:value": "PLSWW",
+            "@id": "unlcd:PLSWW",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Swieradów-Zdrój"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Swieradow-Zdroj"
+                    "@value": "Swieradow-Zdroj",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": [
@@ -37,7 +37,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL02"
             },
-            "unlcdc:countryCode": "PL",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:PL"
+            },
             "geo:lat": {
                 "@value": "50.9",
                 "@type": "xsd:float"

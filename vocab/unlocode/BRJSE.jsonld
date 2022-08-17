@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:BRJSE",
             "rdf:value": "BRJSE",
+            "@id": "unlcd:BRJSE",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "São Jerônimo da Serra"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Sao Jeronimo da Serra"
+                    "@value": "Sao Jeronimo da Serra",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:countryCode": "BR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:BR"
+            },
             "geo:lat": {
                 "@value": "-23.716667",
                 "@type": "xsd:float"

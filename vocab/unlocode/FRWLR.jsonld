@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRWLR",
             "rdf:value": "FRWLR",
+            "@id": "unlcd:FRWLR",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Witry-lès-Reims"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Witry-les-Reims"
+                    "@value": "Witry-les-Reims",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR51"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "49.283333",
                 "@type": "xsd:float"

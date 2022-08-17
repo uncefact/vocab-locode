@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:FRLD7",
             "rdf:value": "FRLD7",
+            "@id": "unlcd:FRLD7",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "Lardier-et-Valença"
                 },
                 {
-                    "@language": "en",
-                    "@value": "Lardier-et-Valenca"
+                    "@value": "Lardier-et-Valenca",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR05"
             },
-            "unlcdc:countryCode": "FR",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:FR"
+            },
             "geo:lat": {
                 "@value": "44.433334",
                 "@type": "xsd:float"

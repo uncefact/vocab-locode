@@ -11,16 +11,16 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ESSMG",
             "rdf:value": "ESSMG",
+            "@id": "unlcd:ESSMG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": [
                 {
                     "@value": "San Mateo de Gállego"
                 },
                 {
-                    "@language": "en",
-                    "@value": "San Mateo de Gallego"
+                    "@value": "San Mateo de Gallego",
+                    "@language": "en"
                 }
             ],
             "unlcdf:functions": {
@@ -29,7 +29,9 @@
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESZ"
             },
-            "unlcdc:countryCode": "ES",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:ES"
+            },
             "geo:lat": {
                 "@value": "41.833332",
                 "@type": "xsd:float"

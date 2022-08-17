@@ -10,12 +10,12 @@
     },
     "@graph": [
         {
-            "@type": "unlcd:UNLOCODE",
-            "@id": "unlcd:ASPPG",
             "rdf:value": "ASPPG",
+            "@id": "unlcd:ASPPG",
+            "@type": "unlcd:UNLOCODE",
             "rdfs:label": {
-                "@language": "en",
-                "@value": "Pago Pago"
+                "@value": "Pago Pago",
+                "@language": "en"
             },
             "unlcdf:functions": [
                 {
@@ -28,7 +28,9 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "unlcdc:countryCode": "AS",
+            "unlcdc:countryCode": {
+                "@id": "unlcdc:AS"
+            },
             "geo:lat": {
                 "@value": "14.266666",
                 "@type": "xsd:float"

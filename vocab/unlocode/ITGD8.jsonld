@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITGD8",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITGD8",
+            "rdf:value": "ITGD8",
             "rdfs:label": {
-                "@value": "Grotte Di Castro",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Grotte Di Castro"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ITGD8",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITVT"
             },
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "42.666668",
                 "@type": "xsd:float"

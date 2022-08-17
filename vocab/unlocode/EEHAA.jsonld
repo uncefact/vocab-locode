@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:EEHAA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:EEHAA",
+            "rdf:value": "EEHAA",
             "rdfs:label": {
-                "@value": "Haapsalu",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Haapsalu"
             },
             "unlcdf:functions": [
                 {
@@ -29,11 +29,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "EEHAA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE56"
             },
-            "unlcdc:country": "EE",
+            "unlcdc:countryCode": "EE",
             "geo:lat": {
                 "@value": "58.933334",
                 "@type": "xsd:float"

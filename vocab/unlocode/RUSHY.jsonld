@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RUSHY",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RUSHY",
+            "rdf:value": "RUSHY",
             "rdfs:label": {
-                "@value": "Shushary",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Shushary"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "RUSHY",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RULEN"
             },
-            "unlcdc:country": "RU",
+            "unlcdc:countryCode": "RU",
             "geo:lat": {
                 "@value": "59.75",
                 "@type": "xsd:float"

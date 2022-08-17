@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:INBAE",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:INBAE",
+            "rdf:value": "INBAE",
             "rdfs:label": {
-                "@value": "Bardhaman",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Bardhaman"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "INBAE",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INWB"
             },
-            "unlcdc:country": "IN",
+            "unlcdc:countryCode": "IN",
             "geo:lat": {
                 "@value": "23.233334",
                 "@type": "xsd:float"

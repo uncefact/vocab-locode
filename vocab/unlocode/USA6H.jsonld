@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:USA6H",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:USA6H",
+            "rdf:value": "USA6H",
             "rdfs:label": {
-                "@value": "Blackstone",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Blackstone"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "USA6H",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USMA"
             },
-            "unlcdc:country": "US",
+            "unlcdc:countryCode": "US",
             "geo:lat": {
                 "@value": "42.016666",
                 "@type": "xsd:float"

@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PLSWT",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PLSWT",
+            "rdf:value": "PLSWT",
             "rdfs:label": {
-                "@value": "Swietochlowice",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Swietochlowice"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "PLSWT",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL24"
             },
-            "unlcdc:country": "PL",
+            "unlcdc:countryCode": "PL",
             "geo:lat": {
                 "@value": "50.283333",
                 "@type": "xsd:float"

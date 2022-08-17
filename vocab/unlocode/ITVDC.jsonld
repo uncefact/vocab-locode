@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITVDC",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITVDC",
+            "rdf:value": "ITVDC",
             "rdfs:label": {
-                "@value": "Vighizzolo Di Cantu",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Vighizzolo Di Cantu"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ITVDC",
-            "unlcdc:country": "IT"
+            "unlcdc:countryCode": "IT"
         }
     ]
 }

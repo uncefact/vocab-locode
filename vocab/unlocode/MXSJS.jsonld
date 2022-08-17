@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MXSJS",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MXSJS",
+            "rdf:value": "MXSJS",
             "rdfs:label": [
                 {
                     "@value": "San José de Castillo"
                 },
                 {
-                    "@value": "San Jose de Castillo",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "San Jose de Castillo"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MXSJS",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXBCN"
             },
-            "unlcdc:country": "MX",
+            "unlcdc:countryCode": "MX",
             "geo:lat": {
                 "@value": "31.016666",
                 "@type": "xsd:float"

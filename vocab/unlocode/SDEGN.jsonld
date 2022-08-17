@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SDEGN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SDEGN",
+            "rdf:value": "SDEGN",
             "rdfs:label": {
-                "@value": "Geneina",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Geneina"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "SDEGN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SDDW"
             },
-            "unlcdc:country": "SD",
+            "unlcdc:countryCode": "SD",
             "geo:lat": {
                 "@value": "13.45",
                 "@type": "xsd:float"

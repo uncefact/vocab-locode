@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:EGRAB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:EGRAB",
+            "rdf:value": "EGRAB",
             "rdfs:label": {
-                "@value": "Ras Budran",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Ras Budran"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "EGRAB",
-            "unlcdc:country": "EG",
+            "unlcdc:countryCode": "EG",
             "geo:lat": {
                 "@value": "28.933332",
                 "@type": "xsd:float"

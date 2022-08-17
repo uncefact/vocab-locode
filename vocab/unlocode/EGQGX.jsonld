@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:EGQGX",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:EGQGX",
+            "rdf:value": "EGQGX",
             "rdfs:label": {
-                "@value": "Gerga",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Gerga"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "EGQGX",
-            "unlcdc:country": "EG",
+            "unlcdc:countryCode": "EG",
             "geo:lat": {
                 "@value": "26.55",
                 "@type": "xsd:float"

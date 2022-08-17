@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:USMG9",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:USMG9",
+            "rdf:value": "USMG9",
             "rdfs:label": {
-                "@value": "Middleburg",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Middleburg"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "USMG9",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:USVA"
             },
-            "unlcdc:country": "US",
+            "unlcdc:countryCode": "US",
             "geo:lat": {
                 "@value": "38.966667",
                 "@type": "xsd:float"

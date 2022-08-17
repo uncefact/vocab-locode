@@ -2,32 +2,30 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CZKTA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CZKTA",
+            "rdf:value": "CZKTA",
             "rdfs:label": [
                 {
                     "@value": "Kostálov"
                 },
                 {
-                    "@value": "Kostalov",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Kostalov"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "CZKTA",
-            "unlcdc:country": "CZ",
+            "unlcdc:countryCode": "CZ",
             "geo:lat": {
                 "@value": "50.483334",
                 "@type": "xsd:float"

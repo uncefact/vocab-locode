@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SIZGK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SIZGK",
+            "rdf:value": "SIZGK",
             "rdfs:label": {
-                "@value": "Zgornja Korena",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Zgornja Korena"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "SIZGK",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SI026"
             },
-            "unlcdc:country": "SI",
+            "unlcdc:countryCode": "SI",
             "geo:lat": {
                 "@value": "46.516666",
                 "@type": "xsd:float"

@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:SGTAY",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SGTAY",
+            "rdf:value": "SGTAY",
             "rdfs:label": {
-                "@value": "Telok Ayer Basin",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Telok Ayer Basin"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "SGTAY",
-            "unlcdc:country": "SG"
+            "unlcdc:countryCode": "SG"
         }
     ]
 }

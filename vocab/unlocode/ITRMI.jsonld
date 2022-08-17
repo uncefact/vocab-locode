@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITRMI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITRMI",
+            "rdf:value": "ITRMI",
             "rdfs:label": {
-                "@value": "Rimini",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Rimini"
             },
             "unlcdf:functions": [
                 {
@@ -32,11 +32,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "ITRMI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITRN"
             },
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "44.066666",
                 "@type": "xsd:float"

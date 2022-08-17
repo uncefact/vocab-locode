@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GPPTP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GPPTP",
+            "rdf:value": "GPPTP",
             "rdfs:label": [
                 {
                     "@value": "Point-à-Pitre Apt"
                 },
                 {
-                    "@value": "Point-a-Pitre Apt",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Point-a-Pitre Apt"
                 }
             ],
             "unlcdf:functions": [
@@ -37,8 +36,7 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "GPPTP",
-            "unlcdc:country": "GP",
+            "unlcdc:countryCode": "GP",
             "geo:lat": {
                 "@value": "16.266666",
                 "@type": "xsd:float"

@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:AUTOB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:AUTOB",
+            "rdf:value": "AUTOB",
             "rdfs:label": {
-                "@value": "Towford Bay",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Towford Bay"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "AUTOB",
-            "unlcdc:country": "AU"
+            "unlcdc:countryCode": "AU"
         }
     ]
 }

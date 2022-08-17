@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BEFLH",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BEFLH",
+            "rdf:value": "BEFLH",
             "rdfs:label": [
                 {
                     "@value": "Flémalle-Haute"
                 },
                 {
-                    "@value": "Flemalle-Haute",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Flemalle-Haute"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "BEFLH",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWLG"
             },
-            "unlcdc:country": "BE",
+            "unlcdc:countryCode": "BE",
             "geo:lat": {
                 "@value": "50.6",
                 "@type": "xsd:float"

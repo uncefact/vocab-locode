@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:GLDAN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GLDAN",
+            "rdf:value": "GLDAN",
             "rdfs:label": {
-                "@value": "Daneborg",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Daneborg"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "GLDAN",
-            "unlcdc:country": "GL"
+            "unlcdc:countryCode": "GL"
         }
     ]
 }

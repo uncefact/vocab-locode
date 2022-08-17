@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:PHMCD",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PHMCD",
+            "rdf:value": "PHMCD",
             "rdfs:label": {
-                "@value": "Mercedes/Jose Panganiban",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mercedes/Jose Panganiban"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "PHMCD",
-            "unlcdc:country": "PH"
+            "unlcdc:countryCode": "PH"
         }
     ]
 }

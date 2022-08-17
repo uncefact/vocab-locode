@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ERASM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ERASM",
+            "rdf:value": "ERASM",
             "rdfs:label": {
-                "@value": "Asmara",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Asmara"
             },
             "unlcdf:functions": [
                 {
@@ -32,11 +32,10 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "ERASM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ERMA"
             },
-            "unlcdc:country": "ER",
+            "unlcdc:countryCode": "ER",
             "geo:lat": {
                 "@value": "15.333333",
                 "@type": "xsd:float"

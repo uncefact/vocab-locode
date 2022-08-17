@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PLZOW",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PLZOW",
+            "rdf:value": "PLZOW",
             "rdfs:label": [
                 {
                     "@value": "Szelków"
                 },
                 {
-                    "@value": "Szelkow",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Szelkow"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "PLZOW",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL14"
             },
-            "unlcdc:country": "PL",
+            "unlcdc:countryCode": "PL",
             "geo:lat": {
                 "@value": "52.816666",
                 "@type": "xsd:float"

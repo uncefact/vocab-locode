@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RUSAR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RUSAR",
+            "rdf:value": "RUSAR",
             "rdfs:label": {
-                "@value": "Sarova",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Sarova"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "RUSAR",
-            "unlcdc:country": "RU",
+            "unlcdc:countryCode": "RU",
             "geo:lat": {
                 "@value": "54.916668",
                 "@type": "xsd:float"

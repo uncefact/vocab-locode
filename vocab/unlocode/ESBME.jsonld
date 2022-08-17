@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ESBME",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ESBME",
+            "rdf:value": "ESBME",
             "rdfs:label": [
                 {
                     "@value": "Baños y Mendigo"
                 },
                 {
-                    "@value": "Banos y Mendigo",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Banos y Mendigo"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ESBME",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESMU"
             },
-            "unlcdc:country": "ES",
+            "unlcdc:countryCode": "ES",
             "geo:lat": {
                 "@value": "41.25",
                 "@type": "xsd:float"

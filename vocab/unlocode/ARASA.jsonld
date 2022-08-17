@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ARASA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ARASA",
+            "rdf:value": "ARASA",
             "rdfs:label": {
-                "@value": "Apolinario Saravia",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Apolinario Saravia"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "ARASA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ARA"
             },
-            "unlcdc:country": "AR",
+            "unlcdc:countryCode": "AR",
             "geo:lat": {
                 "@value": "-24.416666",
                 "@type": "xsd:float"

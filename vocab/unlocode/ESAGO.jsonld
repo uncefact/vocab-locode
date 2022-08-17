@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ESAGO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ESAGO",
+            "rdf:value": "ESAGO",
             "rdfs:label": {
-                "@value": "Agost",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Agost"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ESAGO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ESV"
             },
-            "unlcdc:country": "ES",
+            "unlcdc:countryCode": "ES",
             "geo:lat": {
                 "@value": "38.433334",
                 "@type": "xsd:float"

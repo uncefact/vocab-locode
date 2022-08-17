@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ESRAS",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ESRAS",
+            "rdf:value": "ESRAS",
             "rdfs:label": {
-                "@value": "Rascafria",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Rascafria"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ESRAS",
-            "unlcdc:country": "ES",
+            "unlcdc:countryCode": "ES",
             "geo:lat": {
                 "@value": "40.9",
                 "@type": "xsd:float"

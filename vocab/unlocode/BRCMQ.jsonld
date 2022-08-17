@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BRCMQ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BRCMQ",
+            "rdf:value": "BRCMQ",
             "rdfs:label": [
                 {
                     "@value": "Capitão Leônidas Marques"
                 },
                 {
-                    "@value": "Capitao Leonidas Marques",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Capitao Leonidas Marques"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "BRCMQ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRPR"
             },
-            "unlcdc:country": "BR",
+            "unlcdc:countryCode": "BR",
             "geo:lat": {
                 "@value": "-25.466667",
                 "@type": "xsd:float"

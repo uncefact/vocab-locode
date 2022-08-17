@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ESAOL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ESAOL",
+            "rdf:value": "ESAOL",
             "rdfs:label": {
-                "@value": "Autol",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Autol"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ESAOL",
-            "unlcdc:country": "ES"
+            "unlcdc:countryCode": "ES"
         }
     ]
 }

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:UAUUA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:UAUUA",
+            "rdf:value": "UAUUA",
             "rdfs:label": {
-                "@value": "Khmil'nyk",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Khmil'nyk"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "UAUUA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:UA05"
             },
-            "unlcdc:country": "UA",
+            "unlcdc:countryCode": "UA",
             "geo:lat": {
                 "@value": "49.55",
                 "@type": "xsd:float"

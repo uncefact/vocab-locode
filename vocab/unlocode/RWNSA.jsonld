@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RWNSA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RWNSA",
+            "rdf:value": "RWNSA",
             "rdfs:label": {
-                "@value": "Nyagatare",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Nyagatare"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "RWNSA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RW02"
             },
-            "unlcdc:country": "RW",
+            "unlcdc:countryCode": "RW",
             "geo:lat": {
                 "@value": "-1.2833333",
                 "@type": "xsd:float"

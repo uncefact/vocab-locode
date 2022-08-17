@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SID25",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SID25",
+            "rdf:value": "SID25",
             "rdfs:label": {
-                "@value": "Dravograd",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Dravograd"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "SID25",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SI025"
             },
-            "unlcdc:country": "SI",
+            "unlcdc:countryCode": "SI",
             "geo:lat": {
                 "@value": "46.583332",
                 "@type": "xsd:float"

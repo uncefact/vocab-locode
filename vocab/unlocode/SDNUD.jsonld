@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:SDNUD",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SDNUD",
+            "rdf:value": "SDNUD",
             "rdfs:label": {
-                "@value": "En Nahud",
-                "@language": "en"
+                "@language": "en",
+                "@value": "En Nahud"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "SDNUD",
-            "unlcdc:country": "SD"
+            "unlcdc:countryCode": "SD"
         }
     ]
 }

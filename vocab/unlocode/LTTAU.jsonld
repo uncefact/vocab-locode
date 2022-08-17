@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:LTTAU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:LTTAU",
+            "rdf:value": "LTTAU",
             "rdfs:label": [
                 {
                     "@value": "Tauragé"
                 },
                 {
-                    "@value": "Taurage",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Taurage"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "LTTAU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LTTA"
             },
-            "unlcdc:country": "LT",
+            "unlcdc:countryCode": "LT",
             "geo:lat": {
                 "@value": "55.25",
                 "@type": "xsd:float"

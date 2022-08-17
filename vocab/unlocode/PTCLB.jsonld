@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PTCLB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PTCLB",
+            "rdf:value": "PTCLB",
             "rdfs:label": {
-                "@value": "Celorico da Beira",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Celorico da Beira"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "PTCLB",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT09"
             },
-            "unlcdc:country": "PT",
+            "unlcdc:countryCode": "PT",
             "geo:lat": {
                 "@value": "40.633335",
                 "@type": "xsd:float"

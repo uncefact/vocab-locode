@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MYAIR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MYAIR",
+            "rdf:value": "MYAIR",
             "rdfs:label": {
-                "@value": "Air Itam/Penang",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Air Itam/Penang"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MYAIR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MY07"
             },
-            "unlcdc:country": "MY",
+            "unlcdc:countryCode": "MY",
             "geo:lat": {
                 "@value": "5.4",
                 "@type": "xsd:float"

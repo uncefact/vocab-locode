@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FRMH7",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FRMH7",
+            "rdf:value": "FRMH7",
             "rdfs:label": {
-                "@value": "Meilhan-sur-Garonne",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Meilhan-sur-Garonne"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "FRMH7",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR47"
             },
-            "unlcdc:country": "FR",
+            "unlcdc:countryCode": "FR",
             "geo:lat": {
                 "@value": "44.516666",
                 "@type": "xsd:float"

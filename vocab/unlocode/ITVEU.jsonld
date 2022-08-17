@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITVEU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITVEU",
+            "rdf:value": "ITVEU",
             "rdfs:label": {
-                "@value": "Valle Aurina",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Valle Aurina"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ITVEU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITBZ"
             },
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "47.0",
                 "@type": "xsd:float"

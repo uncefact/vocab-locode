@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PLJDO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PLJDO",
+            "rdf:value": "PLJDO",
             "rdfs:label": [
                 {
                     "@value": "Jordanów"
                 },
                 {
-                    "@value": "Jordanow",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Jordanow"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "PLJDO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PLMA"
             },
-            "unlcdc:country": "PL",
+            "unlcdc:countryCode": "PL",
             "geo:lat": {
                 "@value": "49.65",
                 "@type": "xsd:float"

@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PTTER",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PTTER",
+            "rdf:value": "PTTER",
             "rdfs:label": {
-                "@value": "Terceira Island Apt",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Terceira Island Apt"
             },
             "unlcdf:functions": [
                 {
@@ -29,11 +29,10 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "PTTER",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT20"
             },
-            "unlcdc:country": "PT",
+            "unlcdc:countryCode": "PT",
             "geo:lat": {
                 "@value": "38.716667",
                 "@type": "xsd:float"

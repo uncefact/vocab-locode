@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GNGUE",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GNGUE",
+            "rdf:value": "GNGUE",
             "rdfs:label": {
-                "@value": "Gueckedou",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Gueckedou"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GNGUE",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GNGU"
             },
-            "unlcdc:country": "GN",
+            "unlcdc:countryCode": "GN",
             "geo:lat": {
                 "@value": "80.566666",
                 "@type": "xsd:float"

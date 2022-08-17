@@ -2,32 +2,30 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HUNGH",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HUNGH",
+            "rdf:value": "HUNGH",
             "rdfs:label": [
                 {
                     "@value": "Nyíregyháza"
                 },
                 {
-                    "@value": "Nyiregyhaza",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Nyiregyhaza"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "HUNGH",
-            "unlcdc:country": "HU",
+            "unlcdc:countryCode": "HU",
             "geo:lat": {
                 "@value": "47.95",
                 "@type": "xsd:float"

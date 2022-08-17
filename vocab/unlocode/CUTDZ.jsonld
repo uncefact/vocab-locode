@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CUTDZ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CUTDZ",
+            "rdf:value": "CUTDZ",
             "rdfs:label": {
-                "@value": "Tunas de Zaza",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Tunas de Zaza"
             },
             "unlcdf:functions": [
                 {
@@ -29,8 +28,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "CUTDZ",
-            "unlcdc:country": "CU",
+            "unlcdc:countryCode": "CU",
             "geo:lat": {
                 "@value": "21.633333",
                 "@type": "xsd:float"

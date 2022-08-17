@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PHMHT",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PHMHT",
+            "rdf:value": "PHMHT",
             "rdfs:label": {
-                "@value": "Marihatag, Mindanao",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Marihatag, Mindanao"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "PHMHT",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PHSUR"
             },
-            "unlcdc:country": "PH",
+            "unlcdc:countryCode": "PH",
             "geo:lat": {
                 "@value": "8.783334",
                 "@type": "xsd:float"

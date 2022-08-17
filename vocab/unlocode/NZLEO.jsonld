@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NZLEO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NZLEO",
+            "rdf:value": "NZLEO",
             "rdfs:label": {
-                "@value": "Leeston",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Leeston"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NZLEO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZCAN"
             },
-            "unlcdc:country": "NZ",
+            "unlcdc:countryCode": "NZ",
             "geo:lat": {
                 "@value": "-43.766666",
                 "@type": "xsd:float"

@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ATPWE",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ATPWE",
+            "rdf:value": "ATPWE",
             "rdfs:label": {
-                "@value": "Pichl bei Wels",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Pichl bei Wels"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "ATPWE",
-            "unlcdc:country": "AT",
+            "unlcdc:countryCode": "AT",
             "geo:lat": {
                 "@value": "48.183334",
                 "@type": "xsd:float"

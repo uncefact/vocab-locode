@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CACRL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CACRL",
+            "rdf:value": "CACRL",
             "rdfs:label": {
-                "@value": "Prince Edward Island",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Prince Edward Island"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:2"
             },
-            "rdf:value": "CACRL",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAPE"
             },
-            "unlcdc:country": "CA",
+            "unlcdc:countryCode": "CA",
             "geo:lat": {
                 "@value": "46.233334",
                 "@type": "xsd:float"

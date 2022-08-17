@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:DEIHL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:DEIHL",
+            "rdf:value": "DEIHL",
             "rdfs:label": {
-                "@value": "Ihlow",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Ihlow"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "DEIHL",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBB"
             },
-            "unlcdc:country": "DE"
+            "unlcdc:countryCode": "DE"
         }
     ]
 }

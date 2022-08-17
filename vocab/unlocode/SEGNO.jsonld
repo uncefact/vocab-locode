@@ -2,35 +2,32 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:SEGNO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SEGNO",
+            "rdf:value": "SEGNO",
             "rdfs:label": [
                 {
                     "@value": "Gnosjö"
                 },
                 {
-                    "@value": "Gnosjo",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Gnosjo"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "SEGNO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEF"
             },
-            "unlcdc:country": "SE"
+            "unlcdc:countryCode": "SE"
         }
     ]
 }

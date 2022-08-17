@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBMGP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBMGP",
+            "rdf:value": "GBMGP",
             "rdfs:label": {
-                "@value": "Magilligan Point Ferry Terminal, Lough Foyle",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Magilligan Point Ferry Terminal, Lough Foyle"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "GBMGP",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBLMV"
             },
-            "unlcdc:country": "GB",
+            "unlcdc:countryCode": "GB",
             "geo:lat": {
                 "@value": "55.183334",
                 "@type": "xsd:float"

@@ -2,25 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:SELPI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SELPI",
+            "rdf:value": "SELPI",
             "rdfs:label": [
                 {
                     "@value": "Linköping"
                 },
                 {
-                    "@value": "Linkoping",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Linkoping"
                 }
             ],
             "unlcdf:functions": [
@@ -34,11 +32,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "SELPI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SEE"
             },
-            "unlcdc:country": "SE"
+            "unlcdc:countryCode": "SE"
         }
     ]
 }

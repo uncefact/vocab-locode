@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:AONTO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:AONTO",
+            "rdf:value": "AONTO",
             "rdfs:label": {
-                "@value": "N'Zeto (Ambrizete)",
-                "@language": "en"
+                "@language": "en",
+                "@value": "N'Zeto (Ambrizete)"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "AONTO",
-            "unlcdc:country": "AO",
+            "unlcdc:countryCode": "AO",
             "geo:lat": {
                 "@value": "-7.266667",
                 "@type": "xsd:float"

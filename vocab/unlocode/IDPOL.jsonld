@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:IDPOL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:IDPOL",
+            "rdf:value": "IDPOL",
             "rdfs:label": {
-                "@value": "Poleng",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Poleng"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:7"
             },
-            "rdf:value": "IDPOL",
-            "unlcdc:country": "ID",
+            "unlcdc:countryCode": "ID",
             "geo:lat": {
                 "@value": "-6.65",
                 "@type": "xsd:float"

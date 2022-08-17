@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FRZMG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FRZMG",
+            "rdf:value": "FRZMG",
             "rdfs:label": [
                 {
                     "@value": "Mazières-en-Mauges"
                 },
                 {
-                    "@value": "Mazieres-en-Mauges",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Mazieres-en-Mauges"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "FRZMG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR49"
             },
-            "unlcdc:country": "FR",
+            "unlcdc:countryCode": "FR",
             "geo:lat": {
                 "@value": "47.05",
                 "@type": "xsd:float"

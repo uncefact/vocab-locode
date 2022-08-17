@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CZNCA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CZNCA",
+            "rdf:value": "CZNCA",
             "rdfs:label": [
                 {
                     "@value": "Nová Bystrice"
                 },
                 {
-                    "@value": "Nova Bystrice",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Nova Bystrice"
                 }
             ],
             "unlcdf:functions": [
@@ -31,8 +30,7 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "rdf:value": "CZNCA",
-            "unlcdc:country": "CZ",
+            "unlcdc:countryCode": "CZ",
             "geo:lat": {
                 "@value": "49.016666",
                 "@type": "xsd:float"

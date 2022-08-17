@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BELSY",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BELSY",
+            "rdf:value": "BELSY",
             "rdfs:label": {
-                "@value": "Lesterny",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Lesterny"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "BELSY",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BEWLX"
             },
-            "unlcdc:country": "BE",
+            "unlcdc:countryCode": "BE",
             "geo:lat": {
                 "@value": "50.116665",
                 "@type": "xsd:float"

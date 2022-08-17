@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PLZWN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PLZWN",
+            "rdf:value": "PLZWN",
             "rdfs:label": {
-                "@value": "Zwierzyn",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Zwierzyn"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "PLZWN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PL18"
             },
-            "unlcdc:country": "PL",
+            "unlcdc:countryCode": "PL",
             "geo:lat": {
                 "@value": "49.45",
                 "@type": "xsd:float"

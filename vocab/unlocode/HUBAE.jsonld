@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HUBAE",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HUBAE",
+            "rdf:value": "HUBAE",
             "rdfs:label": {
-                "@value": "Balatonlelle",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Balatonlelle"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "HUBAE",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:HUSO"
             },
-            "unlcdc:country": "HU",
+            "unlcdc:countryCode": "HU",
             "geo:lat": {
                 "@value": "46.783333",
                 "@type": "xsd:float"

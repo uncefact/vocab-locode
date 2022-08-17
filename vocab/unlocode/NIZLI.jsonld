@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NIZLI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NIZLI",
+            "rdf:value": "NIZLI",
             "rdfs:label": {
-                "@value": "Libertad-Chontales",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Libertad-Chontales"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "NIZLI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NICO"
             },
-            "unlcdc:country": "NI",
+            "unlcdc:countryCode": "NI",
             "geo:lat": {
                 "@value": "12.216666",
                 "@type": "xsd:float"

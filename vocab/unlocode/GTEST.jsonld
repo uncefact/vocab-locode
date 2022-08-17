@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GTEST",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GTEST",
+            "rdf:value": "GTEST",
             "rdfs:label": {
-                "@value": "Estanzuela",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Estanzuela"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GTEST",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GT19"
             },
-            "unlcdc:country": "GT",
+            "unlcdc:countryCode": "GT",
             "geo:lat": {
                 "@value": "15.0",
                 "@type": "xsd:float"

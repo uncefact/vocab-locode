@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RSBEG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RSBEG",
+            "rdf:value": "RSBEG",
             "rdfs:label": {
-                "@value": "Belgrade (Beograd)",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Belgrade (Beograd)"
             },
             "unlcdf:functions": [
                 {
@@ -32,11 +32,10 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "RSBEG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RS00"
             },
-            "unlcdc:country": "RS",
+            "unlcdc:countryCode": "RS",
             "geo:lat": {
                 "@value": "44.816666",
                 "@type": "xsd:float"

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:IT940",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:IT940",
+            "rdf:value": "IT940",
             "rdfs:label": {
-                "@value": "Villanova",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Villanova"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "IT940",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITPE"
             },
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "42.366665",
                 "@type": "xsd:float"

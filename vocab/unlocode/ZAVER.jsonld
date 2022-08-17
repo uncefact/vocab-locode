@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ZAVER",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ZAVER",
+            "rdf:value": "ZAVER",
             "rdfs:label": {
-                "@value": "Vergenoeg",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Vergenoeg"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ZAVER",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ZAGP"
             },
-            "unlcdc:country": "ZA",
+            "unlcdc:countryCode": "ZA",
             "geo:lat": {
                 "@value": "-28.733334",
                 "@type": "xsd:float"

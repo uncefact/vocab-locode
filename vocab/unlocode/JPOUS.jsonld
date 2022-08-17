@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:JPOUS",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:JPOUS",
+            "rdf:value": "JPOUS",
             "rdfs:label": {
-                "@value": "Ohse",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Ohse"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "JPOUS",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:JP08"
             },
-            "unlcdc:country": "JP"
+            "unlcdc:countryCode": "JP"
         }
     ]
 }

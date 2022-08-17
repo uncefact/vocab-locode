@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:GLCNP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GLCNP",
+            "rdf:value": "GLCNP",
             "rdfs:label": {
-                "@value": "Neerlerit Inaat",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Neerlerit Inaat"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "GLCNP",
-            "unlcdc:country": "GL"
+            "unlcdc:countryCode": "GL"
         }
     ]
 }

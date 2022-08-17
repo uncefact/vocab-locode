@@ -2,25 +2,22 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:NCBUG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NCBUG",
+            "rdf:value": "NCBUG",
             "rdfs:label": [
                 {
                     "@value": "Baie Ugué"
                 },
                 {
-                    "@value": "Baie Ugue",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Baie Ugue"
                 }
             ],
             "unlcdf:functions": [
@@ -31,8 +28,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "NCBUG",
-            "unlcdc:country": "NC"
+            "unlcdc:countryCode": "NC"
         }
     ]
 }

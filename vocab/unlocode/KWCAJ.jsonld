@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:KWCAJ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:KWCAJ",
+            "rdf:value": "KWCAJ",
             "rdfs:label": {
-                "@value": "Camp Arifjan",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Camp Arifjan"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "KWCAJ",
-            "unlcdc:country": "KW",
+            "unlcdc:countryCode": "KW",
             "geo:lat": {
                 "@value": "28.9",
                 "@type": "xsd:float"

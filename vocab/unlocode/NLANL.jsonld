@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:NLANL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NLANL",
+            "rdf:value": "NLANL",
             "rdfs:label": {
-                "@value": "Andel",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Andel"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NLANL",
-            "unlcdc:country": "NL"
+            "unlcdc:countryCode": "NL"
         }
     ]
 }

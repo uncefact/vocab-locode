@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PTGEM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PTGEM",
+            "rdf:value": "PTGEM",
             "rdfs:label": {
-                "@value": "Gemieira",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Gemieira"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "PTGEM",
-            "unlcdc:country": "PT",
+            "unlcdc:countryCode": "PT",
             "geo:lat": {
                 "@value": "41.766666",
                 "@type": "xsd:float"

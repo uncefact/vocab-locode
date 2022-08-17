@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITCVH",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITCVH",
+            "rdf:value": "ITCVH",
             "rdfs:label": {
-                "@value": "Chiusavecchia",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Chiusavecchia"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "ITCVH",
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "43.966667",
                 "@type": "xsd:float"

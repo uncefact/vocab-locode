@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:AUOTR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:AUOTR",
+            "rdf:value": "AUOTR",
             "rdfs:label": {
-                "@value": "Port Sorell",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Port Sorell"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "AUOTR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUTAS"
             },
-            "unlcdc:country": "AU",
+            "unlcdc:countryCode": "AU",
             "geo:lat": {
                 "@value": "-41.15",
                 "@type": "xsd:float"

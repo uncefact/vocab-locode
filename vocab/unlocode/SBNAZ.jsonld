@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SBNAZ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SBNAZ",
+            "rdf:value": "SBNAZ",
             "rdfs:label": {
-                "@value": "Nana Apt / Star Harbour",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Nana Apt / Star Harbour"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "SBNAZ",
-            "unlcdc:country": "SB",
+            "unlcdc:countryCode": "SB",
             "geo:lat": {
                 "@value": "-10.783334",
                 "@type": "xsd:float"

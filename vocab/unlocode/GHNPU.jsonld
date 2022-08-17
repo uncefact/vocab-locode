@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GHNPU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GHNPU",
+            "rdf:value": "GHNPU",
             "rdfs:label": {
-                "@value": "Buipe",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Buipe"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GHNPU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GHNP"
             },
-            "unlcdc:country": "GH",
+            "unlcdc:countryCode": "GH",
             "geo:lat": {
                 "@value": "8.783334",
                 "@type": "xsd:float"

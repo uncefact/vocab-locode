@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:TWCLI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:TWCLI",
+            "rdf:value": "TWCLI",
             "rdfs:label": {
-                "@value": "Chung-Li",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Chung-Li"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "TWCLI",
-            "unlcdc:country": "TW"
+            "unlcdc:countryCode": "TW"
         }
     ]
 }

@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SERBG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SERBG",
+            "rdf:value": "SERBG",
             "rdfs:label": {
-                "@value": "Rosenborg",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Rosenborg"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:0"
             },
-            "rdf:value": "SERBG",
-            "unlcdc:country": "SE",
+            "unlcdc:countryCode": "SE",
             "geo:lat": {
                 "@value": "59.2",
                 "@type": "xsd:float"

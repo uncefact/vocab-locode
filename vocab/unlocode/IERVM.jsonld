@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:IERVM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:IERVM",
+            "rdf:value": "IERVM",
             "rdfs:label": {
-                "@value": "River Moy",
-                "@language": "en"
+                "@language": "en",
+                "@value": "River Moy"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "IERVM",
-            "unlcdc:country": "IE"
+            "unlcdc:countryCode": "IE"
         }
     ]
 }

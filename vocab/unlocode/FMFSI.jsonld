@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:FMFSI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FMFSI",
+            "rdf:value": "FMFSI",
             "rdfs:label": {
-                "@value": "Faisi",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Faisi"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "FMFSI",
-            "unlcdc:country": "FM"
+            "unlcdc:countryCode": "FM"
         }
     ]
 }

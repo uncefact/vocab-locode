@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FITRV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FITRV",
+            "rdf:value": "FITRV",
             "rdfs:label": {
-                "@value": "Tervola",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Tervola"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "FITRV",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI10"
             },
-            "unlcdc:country": "FI",
+            "unlcdc:countryCode": "FI",
             "geo:lat": {
                 "@value": "66.833336",
                 "@type": "xsd:float"

@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:THBKK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:THBKK",
+            "rdf:value": "THBKK",
             "rdfs:label": {
-                "@value": "Bangkok",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Bangkok"
             },
             "unlcdf:functions": [
                 {
@@ -35,11 +35,10 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "THBKK",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TH10"
             },
-            "unlcdc:country": "TH",
+            "unlcdc:countryCode": "TH",
             "geo:lat": {
                 "@value": "13.75",
                 "@type": "xsd:float"

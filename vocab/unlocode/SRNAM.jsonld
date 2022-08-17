@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SRNAM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SRNAM",
+            "rdf:value": "SRNAM",
             "rdfs:label": {
-                "@value": "Nieuw Amsterdam",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Nieuw Amsterdam"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "SRNAM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SRCM"
             },
-            "unlcdc:country": "SR",
+            "unlcdc:countryCode": "SR",
             "geo:lat": {
                 "@value": "5.883333",
                 "@type": "xsd:float"

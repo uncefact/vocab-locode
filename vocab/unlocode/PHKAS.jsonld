@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PHKAS",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PHKAS",
+            "rdf:value": "PHKAS",
             "rdfs:label": {
-                "@value": "Kabasalan/Zamboanga",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Kabasalan/Zamboanga"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "PHKAS",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PHZAS"
             },
-            "unlcdc:country": "PH",
+            "unlcdc:countryCode": "PH",
             "geo:lat": {
                 "@value": "7.7833333",
                 "@type": "xsd:float"

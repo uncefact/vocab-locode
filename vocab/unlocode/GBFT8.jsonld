@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBFT8",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBFT8",
+            "rdf:value": "GBFT8",
             "rdfs:label": {
-                "@value": "Catford",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Catford"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GBFT8",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBLEW"
             },
-            "unlcdc:country": "GB",
+            "unlcdc:countryCode": "GB",
             "geo:lat": {
                 "@value": "51.45",
                 "@type": "xsd:float"

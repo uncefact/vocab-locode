@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BRSLZ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BRSLZ",
+            "rdf:value": "BRSLZ",
             "rdfs:label": [
                 {
                     "@value": "São Luís"
                 },
                 {
-                    "@value": "Sao Luis",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Sao Luis"
                 }
             ],
             "unlcdf:functions": [
@@ -37,11 +37,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "BRSLZ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:country": "BR",
+            "unlcdc:countryCode": "BR",
             "geo:lat": {
                 "@value": "-2.5166667",
                 "@type": "xsd:float"

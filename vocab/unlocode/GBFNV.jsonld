@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBFNV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBFNV",
+            "rdf:value": "GBFNV",
             "rdfs:label": {
-                "@value": "Foinaven",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Foinaven"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:7"
                 }
             ],
-            "rdf:value": "GBFNV",
-            "unlcdc:country": "GB",
+            "unlcdc:countryCode": "GB",
             "geo:lat": {
                 "@value": "60.333332",
                 "@type": "xsd:float"

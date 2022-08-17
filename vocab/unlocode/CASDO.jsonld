@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CASDO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CASDO",
+            "rdf:value": "CASDO",
             "rdfs:label": [
                 {
                     "@value": "Saint-Jean-de-l'Île-d'Orléans"
                 },
                 {
-                    "@value": "Saint-Jean-de-l'Ile-d'Orleans",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Saint-Jean-de-l'Ile-d'Orleans"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "CASDO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:country": "CA",
+            "unlcdc:countryCode": "CA",
             "geo:lat": {
                 "@value": "46.916668",
                 "@type": "xsd:float"

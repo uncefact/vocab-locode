@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CNLNJ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CNLNJ",
+            "rdf:value": "CNLNJ",
             "rdfs:label": {
-                "@value": "Lianjiang",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Lianjiang"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "CNLNJ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNJX"
             },
-            "unlcdc:country": "CN",
+            "unlcdc:countryCode": "CN",
             "geo:lat": {
                 "@value": "26.333334",
                 "@type": "xsd:float"

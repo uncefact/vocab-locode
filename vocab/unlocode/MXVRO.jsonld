@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MXVRO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MXVRO",
+            "rdf:value": "MXVRO",
             "rdfs:label": {
-                "@value": "Valle Hermoso",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Valle Hermoso"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MXVRO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXTAM"
             },
-            "unlcdc:country": "MX",
+            "unlcdc:countryCode": "MX",
             "geo:lat": {
                 "@value": "25.666666",
                 "@type": "xsd:float"

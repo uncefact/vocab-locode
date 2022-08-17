@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PEACB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PEACB",
+            "rdf:value": "PEACB",
             "rdfs:label": {
-                "@value": "Acobamba",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Acobamba"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "PEACB",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PEHUV"
             },
-            "unlcdc:country": "PE",
+            "unlcdc:countryCode": "PE",
             "geo:lat": {
                 "@value": "-12.833333",
                 "@type": "xsd:float"

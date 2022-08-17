@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:CAZGR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CAZGR",
+            "rdf:value": "CAZGR",
             "rdfs:label": {
-                "@value": "Little Grand Rapids",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Little Grand Rapids"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "CAZGR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAMB"
             },
-            "unlcdc:country": "CA"
+            "unlcdc:countryCode": "CA"
         }
     ]
 }

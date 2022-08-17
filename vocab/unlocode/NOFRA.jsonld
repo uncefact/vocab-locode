@@ -2,35 +2,32 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:NOFRA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NOFRA",
+            "rdf:value": "NOFRA",
             "rdfs:label": [
                 {
                     "@value": "Frøya"
                 },
                 {
-                    "@value": "Froya",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Froya"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "NOFRA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NO16"
             },
-            "unlcdc:country": "NO"
+            "unlcdc:countryCode": "NO"
         }
     ]
 }

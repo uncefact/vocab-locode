@@ -2,35 +2,32 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:DEBNL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:DEBNL",
+            "rdf:value": "DEBNL",
             "rdfs:label": [
                 {
                     "@value": "Bad Soden-Salmünster"
                 },
                 {
-                    "@value": "Bad Soden-Salmunster",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Bad Soden-Salmunster"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "DEBNL",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEHE"
             },
-            "unlcdc:country": "DE"
+            "unlcdc:countryCode": "DE"
         }
     ]
 }

@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBSNG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBSNG",
+            "rdf:value": "GBSNG",
             "rdfs:label": {
-                "@value": "Singleton",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Singleton"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GBSNG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBWSX"
             },
-            "unlcdc:country": "GB"
+            "unlcdc:countryCode": "GB"
         }
     ]
 }

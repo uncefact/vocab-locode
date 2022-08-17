@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ILGYV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ILGYV",
+            "rdf:value": "ILGYV",
             "rdfs:label": {
-                "@value": "Gan Yavne",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Gan Yavne"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ILGYV",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ILM"
             },
-            "unlcdc:country": "IL",
+            "unlcdc:countryCode": "IL",
             "geo:lat": {
                 "@value": "31.783333",
                 "@type": "xsd:float"

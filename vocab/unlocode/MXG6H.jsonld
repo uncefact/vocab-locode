@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MXG6H",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MXG6H",
+            "rdf:value": "MXG6H",
             "rdfs:label": [
                 {
                     "@value": "BenitoJuárez"
                 },
                 {
-                    "@value": "BenitoJuarez",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "BenitoJuarez"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MXG6H",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXROO"
             },
-            "unlcdc:country": "MX",
+            "unlcdc:countryCode": "MX",
             "geo:lat": {
                 "@value": "20.816668",
                 "@type": "xsd:float"

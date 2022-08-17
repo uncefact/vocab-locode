@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PETGI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PETGI",
+            "rdf:value": "PETGI",
             "rdfs:label": [
                 {
                     "@value": "Tingo María"
                 },
                 {
-                    "@value": "Tingo Maria",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Tingo Maria"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "PETGI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PEHUC"
             },
-            "unlcdc:country": "PE",
+            "unlcdc:countryCode": "PE",
             "geo:lat": {
                 "@value": "-9.3",
                 "@type": "xsd:float"

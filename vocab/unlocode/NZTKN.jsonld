@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NZTKN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NZTKN",
+            "rdf:value": "NZTKN",
             "rdfs:label": {
-                "@value": "Takanini",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Takanini"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NZTKN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NZAUK"
             },
-            "unlcdc:country": "NZ",
+            "unlcdc:countryCode": "NZ",
             "geo:lat": {
                 "@value": "-37.033333",
                 "@type": "xsd:float"

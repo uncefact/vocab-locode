@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:DZSKK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:DZSKK",
+            "rdf:value": "DZSKK",
             "rdfs:label": {
-                "@value": "Skikda",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Skikda"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "DZSKK",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DZ21"
             },
-            "unlcdc:country": "DZ",
+            "unlcdc:countryCode": "DZ",
             "geo:lat": {
                 "@value": "36.866665",
                 "@type": "xsd:float"

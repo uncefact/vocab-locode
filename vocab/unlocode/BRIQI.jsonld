@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BRIQI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BRIQI",
+            "rdf:value": "BRIQI",
             "rdfs:label": [
                 {
                     "@value": "Itaqui Pt / São Luís"
                 },
                 {
-                    "@value": "Itaqui Pt / Sao Luis",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Itaqui Pt / Sao Luis"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:2"
                 }
             ],
-            "rdf:value": "BRIQI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BRMA"
             },
-            "unlcdc:country": "BR",
+            "unlcdc:countryCode": "BR",
             "geo:lat": {
                 "@value": "-2.5666666",
                 "@type": "xsd:float"

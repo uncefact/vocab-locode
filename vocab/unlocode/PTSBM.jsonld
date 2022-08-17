@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PTSBM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PTSBM",
+            "rdf:value": "PTSBM",
             "rdfs:label": [
                 {
                     "@value": "São Bartolomeu de Messines"
                 },
                 {
-                    "@value": "Sao Bartolomeu de Messines",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Sao Bartolomeu de Messines"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "PTSBM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT08"
             },
-            "unlcdc:country": "PT",
+            "unlcdc:countryCode": "PT",
             "geo:lat": {
                 "@value": "37.25",
                 "@type": "xsd:float"

@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITOGG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITOGG",
+            "rdf:value": "ITOGG",
             "rdfs:label": {
-                "@value": "Oggiono",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Oggiono"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:2"
             },
-            "rdf:value": "ITOGG",
-            "unlcdc:country": "IT"
+            "unlcdc:countryCode": "IT"
         }
     ]
 }

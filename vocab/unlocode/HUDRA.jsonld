@@ -2,32 +2,30 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HUDRA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HUDRA",
+            "rdf:value": "HUDRA",
             "rdfs:label": [
                 {
                     "@value": "Drávaszabolcs"
                 },
                 {
-                    "@value": "Dravaszabolcs",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Dravaszabolcs"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "HUDRA",
-            "unlcdc:country": "HU",
+            "unlcdc:countryCode": "HU",
             "geo:lat": {
                 "@value": "45.8",
                 "@type": "xsd:float"

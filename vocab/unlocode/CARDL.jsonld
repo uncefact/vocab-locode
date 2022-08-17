@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CARDL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CARDL",
+            "rdf:value": "CARDL",
             "rdfs:label": [
                 {
                     "@value": "Rivière-du-Loup"
                 },
                 {
-                    "@value": "Riviere-du-Loup",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Riviere-du-Loup"
                 }
             ],
             "unlcdf:functions": [
@@ -37,11 +37,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "CARDL",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CAQC"
             },
-            "unlcdc:country": "CA",
+            "unlcdc:countryCode": "CA",
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

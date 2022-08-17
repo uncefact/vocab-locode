@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CNBGG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CNBGG",
+            "rdf:value": "CNBGG",
             "rdfs:label": {
-                "@value": "Bagong",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Bagong"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "CNBGG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNGZ"
             },
-            "unlcdc:country": "CN",
+            "unlcdc:countryCode": "CN",
             "geo:lat": {
                 "@value": "26.966667",
                 "@type": "xsd:float"

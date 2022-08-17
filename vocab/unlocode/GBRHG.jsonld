@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBRHG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBRHG",
+            "rdf:value": "GBRHG",
             "rdfs:label": {
-                "@value": "Rhigos",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Rhigos"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GBRHG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBRCT"
             },
-            "unlcdc:country": "GB",
+            "unlcdc:countryCode": "GB",
             "geo:lat": {
                 "@value": "51.733334",
                 "@type": "xsd:float"

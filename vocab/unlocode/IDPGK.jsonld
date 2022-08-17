@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:IDPGK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:IDPGK",
+            "rdf:value": "IDPGK",
             "rdfs:label": {
-                "@value": "Pangkalpinang, Banka",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Pangkalpinang, Banka"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "IDPGK",
-            "unlcdc:country": "ID"
+            "unlcdc:countryCode": "ID"
         }
     ]
 }

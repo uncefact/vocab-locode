@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RUZVK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RUZVK",
+            "rdf:value": "RUZVK",
             "rdfs:label": [
                 {
                     "@value": "Zmiyëvka"
                 },
                 {
-                    "@value": "Zmiyevka",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Zmiyevka"
                 }
             ],
             "unlcdf:functions": [
@@ -34,8 +33,7 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "RUZVK",
-            "unlcdc:country": "RU",
+            "unlcdc:countryCode": "RU",
             "geo:lat": {
                 "@value": "52.666668",
                 "@type": "xsd:float"

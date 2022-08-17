@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SZSIM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SZSIM",
+            "rdf:value": "SZSIM",
             "rdfs:label": {
-                "@value": "Simunye",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Simunye"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "SZSIM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SZLU"
             },
-            "unlcdc:country": "SZ",
+            "unlcdc:countryCode": "SZ",
             "geo:lat": {
                 "@value": "-26.2",
                 "@type": "xsd:float"

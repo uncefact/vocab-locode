@@ -2,32 +2,30 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ISHVO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ISHVO",
+            "rdf:value": "ISHVO",
             "rdfs:label": [
                 {
                     "@value": "Hvolsvöllur"
                 },
                 {
-                    "@value": "Hvolsvollur",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Hvolsvollur"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ISHVO",
-            "unlcdc:country": "IS",
+            "unlcdc:countryCode": "IS",
             "geo:lat": {
                 "@value": "63.733334",
                 "@type": "xsd:float"

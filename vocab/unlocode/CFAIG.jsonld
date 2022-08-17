@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:CFAIG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CFAIG",
+            "rdf:value": "CFAIG",
             "rdfs:label": {
-                "@value": "Yalinga",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Yalinga"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "CFAIG",
-            "unlcdc:country": "CF"
+            "unlcdc:countryCode": "CF"
         }
     ]
 }

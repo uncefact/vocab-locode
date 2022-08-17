@@ -1,0 +1,21 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@type": "rdf:Property",
+            "@id": "unlcds:countrySubdivision",
+            "rdfs:comment": "Related ISO 3166-2 country subdivision code.",
+            "schema:rangeIncludes": {
+                "@id": "unlcds:Subdivision"
+            },
+            "schema:domainIncludes": {
+                "@id": "unlcd:UNLOCODE"
+            }
+        }
+    ]
+}

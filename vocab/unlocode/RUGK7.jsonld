@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RUGK7",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RUGK7",
+            "rdf:value": "RUGK7",
             "rdfs:label": {
-                "@value": "Gubakha",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Gubakha"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "RUGK7",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUPER"
             },
-            "unlcdc:country": "RU",
+            "unlcdc:countryCode": "RU",
             "geo:lat": {
                 "@value": "58.866665",
                 "@type": "xsd:float"

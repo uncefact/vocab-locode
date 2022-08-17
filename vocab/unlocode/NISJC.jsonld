@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NISJC",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NISJC",
+            "rdf:value": "NISJC",
             "rdfs:label": {
-                "@value": "San Juan Rio Coco",
-                "@language": "en"
+                "@language": "en",
+                "@value": "San Juan Rio Coco"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NISJC",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NIMD"
             },
-            "unlcdc:country": "NI",
+            "unlcdc:countryCode": "NI",
             "geo:lat": {
                 "@value": "13.55",
                 "@type": "xsd:float"

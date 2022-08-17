@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITRSP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITRSP",
+            "rdf:value": "ITRSP",
             "rdfs:label": {
-                "@value": "San Pietro In Campiano",
-                "@language": "en"
+                "@language": "en",
+                "@value": "San Pietro In Campiano"
             },
             "unlcdf:functions": [
                 {
@@ -35,11 +35,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "ITRSP",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:ITRA"
             },
-            "unlcdc:country": "IT",
+            "unlcdc:countryCode": "IT",
             "geo:lat": {
                 "@value": "44.283333",
                 "@type": "xsd:float"

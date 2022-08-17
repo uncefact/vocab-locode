@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:VNHSN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:VNHSN",
+            "rdf:value": "VNHSN",
             "rdfs:label": {
-                "@value": "Hai Son",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Hai Son"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "VNHSN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VNDN"
             },
-            "unlcdc:country": "VN",
+            "unlcdc:countryCode": "VN",
             "geo:lat": {
                 "@value": "16.1",
                 "@type": "xsd:float"

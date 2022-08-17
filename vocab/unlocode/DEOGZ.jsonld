@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:DEOGZ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:DEOGZ",
+            "rdf:value": "DEOGZ",
             "rdfs:label": {
-                "@value": "Orsingen-Nenzingen",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Orsingen-Nenzingen"
             },
             "unlcdf:functions": [
                 {
@@ -29,11 +29,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "DEOGZ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:DEBW"
             },
-            "unlcdc:country": "DE",
+            "unlcdc:countryCode": "DE",
             "geo:lat": {
                 "@value": "47.833332",
                 "@type": "xsd:float"

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FIKAV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FIKAV",
+            "rdf:value": "FIKAV",
             "rdfs:label": {
-                "@value": "Karvio",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Karvio"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "FIKAV",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI04"
             },
-            "unlcdc:country": "FI",
+            "unlcdc:countryCode": "FI",
             "geo:lat": {
                 "@value": "62.5",
                 "@type": "xsd:float"

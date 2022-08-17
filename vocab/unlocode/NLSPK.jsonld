@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:NLSPK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NLSPK",
+            "rdf:value": "NLSPK",
             "rdfs:label": {
-                "@value": "Spakenburg",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Spakenburg"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NLSPK",
-            "unlcdc:country": "NL"
+            "unlcdc:countryCode": "NL"
         }
     ]
 }

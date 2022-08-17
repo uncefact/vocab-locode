@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:UASCY",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:UASCY",
+            "rdf:value": "UASCY",
             "rdfs:label": {
-                "@value": "Stavchany",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Stavchany"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "UASCY",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:UA46"
             },
-            "unlcdc:country": "UA",
+            "unlcdc:countryCode": "UA",
             "geo:lat": {
                 "@value": "49.766666",
                 "@type": "xsd:float"

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RUIVN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RUIVN",
+            "rdf:value": "RUIVN",
             "rdfs:label": {
-                "@value": "Ivanteyevka",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Ivanteyevka"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "RUIVN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RUMOS"
             },
-            "unlcdc:country": "RU",
+            "unlcdc:countryCode": "RU",
             "geo:lat": {
                 "@value": "55.966667",
                 "@type": "xsd:float"

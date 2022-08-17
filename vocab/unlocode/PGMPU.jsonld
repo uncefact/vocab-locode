@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:PGMPU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PGMPU",
+            "rdf:value": "PGMPU",
             "rdfs:label": {
-                "@value": "Mapua",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mapua"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "PGMPU",
-            "unlcdc:country": "PG"
+            "unlcdc:countryCode": "PG"
         }
     ]
 }

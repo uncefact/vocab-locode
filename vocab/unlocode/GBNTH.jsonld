@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBNTH",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBNTH",
+            "rdf:value": "GBNTH",
             "rdfs:label": {
-                "@value": "Northwich",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Northwich"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "GBNTH",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBCHW"
             },
-            "unlcdc:country": "GB"
+            "unlcdc:countryCode": "GB"
         }
     ]
 }

@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CZDDA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CZDDA",
+            "rdf:value": "CZDDA",
             "rdfs:label": [
                 {
                     "@value": "Dolní Dvoriste"
                 },
                 {
-                    "@value": "Dolni Dvoriste",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Dolni Dvoriste"
                 }
             ],
             "unlcdf:functions": [
@@ -31,8 +30,7 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "rdf:value": "CZDDA",
-            "unlcdc:country": "CZ",
+            "unlcdc:countryCode": "CZ",
             "geo:lat": {
                 "@value": "48.65",
                 "@type": "xsd:float"

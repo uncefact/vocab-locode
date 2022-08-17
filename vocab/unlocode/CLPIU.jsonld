@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CLPIU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CLPIU",
+            "rdf:value": "CLPIU",
             "rdfs:label": [
                 {
                     "@value": "Paso Piuquenes/San José de Maipo"
                 },
                 {
-                    "@value": "Paso Piuquenes/San Jose de Maipo",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Paso Piuquenes/San Jose de Maipo"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:B"
                 }
             ],
-            "rdf:value": "CLPIU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CLRM"
             },
-            "unlcdc:country": "CL",
+            "unlcdc:countryCode": "CL",
             "geo:lat": {
                 "@value": "-33.633335",
                 "@type": "xsd:float"

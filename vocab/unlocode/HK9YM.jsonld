@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HK9YM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HK9YM",
+            "rdf:value": "HK9YM",
             "rdfs:label": {
-                "@value": "Yau Ma Tei",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Yau Ma Tei"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "HK9YM",
-            "unlcdc:country": "HK",
+            "unlcdc:countryCode": "HK",
             "geo:lat": {
                 "@value": "22.316668",
                 "@type": "xsd:float"

@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:KWMEA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:KWMEA",
+            "rdf:value": "KWMEA",
             "rdfs:label": {
-                "@value": "Mina' al Ahmadi",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mina' al Ahmadi"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "KWMEA",
-            "unlcdc:country": "KW",
+            "unlcdc:countryCode": "KW",
             "geo:lat": {
                 "@value": "29.066668",
                 "@type": "xsd:float"

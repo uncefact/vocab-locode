@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBZCW",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBZCW",
+            "rdf:value": "GBZCW",
             "rdfs:label": {
-                "@value": "Selly Oak",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Selly Oak"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "GBZCW",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBBIR"
             },
-            "unlcdc:country": "GB",
+            "unlcdc:countryCode": "GB",
             "geo:lat": {
                 "@value": "52.433334",
                 "@type": "xsd:float"

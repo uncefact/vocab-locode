@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:RWCYU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:RWCYU",
+            "rdf:value": "RWCYU",
             "rdfs:label": {
-                "@value": "Cyangugu",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Cyangugu"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "RWCYU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:RW04"
             },
-            "unlcdc:country": "RW",
+            "unlcdc:countryCode": "RW",
             "geo:lat": {
                 "@value": "-2.4833333",
                 "@type": "xsd:float"

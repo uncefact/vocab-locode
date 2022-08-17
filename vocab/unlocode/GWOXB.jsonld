@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GWOXB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GWOXB",
+            "rdf:value": "GWOXB",
             "rdfs:label": {
-                "@value": "Bissau",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Bissau"
             },
             "unlcdf:functions": [
                 {
@@ -32,11 +32,10 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "GWOXB",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GWBS"
             },
-            "unlcdc:country": "GW",
+            "unlcdc:countryCode": "GW",
             "geo:lat": {
                 "@value": "11.85",
                 "@type": "xsd:float"

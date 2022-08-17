@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MXCON",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MXCON",
+            "rdf:value": "MXCON",
             "rdfs:label": {
-                "@value": "Comonfort",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Comonfort"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MXCON",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXGUA"
             },
-            "unlcdc:country": "MX",
+            "unlcdc:countryCode": "MX",
             "geo:lat": {
                 "@value": "20.716667",
                 "@type": "xsd:float"

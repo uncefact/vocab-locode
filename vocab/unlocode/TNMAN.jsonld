@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:TNMAN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:TNMAN",
+            "rdf:value": "TNMAN",
             "rdfs:label": {
-                "@value": "Manouba",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Manouba"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "TNMAN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TN11"
             },
-            "unlcdc:country": "TN",
+            "unlcdc:countryCode": "TN",
             "geo:lat": {
                 "@value": "36.8",
                 "@type": "xsd:float"

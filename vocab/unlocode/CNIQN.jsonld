@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:CNIQN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CNIQN",
+            "rdf:value": "CNIQN",
             "rdfs:label": {
-                "@value": "Qingyang Xifengzhen Apt",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Qingyang Xifengzhen Apt"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "CNIQN",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:CNGS"
             },
-            "unlcdc:country": "CN"
+            "unlcdc:countryCode": "CN"
         }
     ]
 }

@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ECSDO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ECSDO",
+            "rdf:value": "ECSDO",
             "rdfs:label": {
-                "@value": "Santo Domingo de los Colorados",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Santo Domingo de los Colorados"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ECSDO",
-            "unlcdc:country": "EC"
+            "unlcdc:countryCode": "EC"
         }
     ]
 }

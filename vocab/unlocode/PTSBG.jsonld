@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PTSBG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PTSBG",
+            "rdf:value": "PTSBG",
             "rdfs:label": [
                 {
                     "@value": "Sobral de Monte Agraço"
                 },
                 {
-                    "@value": "Sobral de Monte Agraco",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Sobral de Monte Agraco"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "PTSBG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PT11"
             },
-            "unlcdc:country": "PT",
+            "unlcdc:countryCode": "PT",
             "geo:lat": {
                 "@value": "39.016666",
                 "@type": "xsd:float"

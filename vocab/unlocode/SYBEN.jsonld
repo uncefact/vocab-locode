@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SYBEN",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SYBEN",
+            "rdf:value": "SYBEN",
             "rdfs:label": {
-                "@value": "Banghazi",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Banghazi"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "SYBEN",
-            "unlcdc:country": "SY",
+            "unlcdc:countryCode": "SY",
             "geo:lat": {
                 "@value": "32.116665",
                 "@type": "xsd:float"

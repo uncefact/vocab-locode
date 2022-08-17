@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITVDO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITVDO",
+            "rdf:value": "ITVDO",
             "rdfs:label": {
-                "@value": "Vado/Lucca",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Vado/Lucca"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "ITVDO",
-            "unlcdc:country": "IT"
+            "unlcdc:countryCode": "IT"
         }
     ]
 }

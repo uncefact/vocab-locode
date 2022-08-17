@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MYPMT",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MYPMT",
+            "rdf:value": "MYPMT",
             "rdfs:label": {
-                "@value": "Penara Marine Terminal",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Penara Marine Terminal"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "MYPMT",
-            "unlcdc:country": "MY",
+            "unlcdc:countryCode": "MY",
             "geo:lat": {
                 "@value": "6.116667",
                 "@type": "xsd:float"

@@ -1,0 +1,21 @@
+
+{
+    "@context": {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/"
+    },
+    "@graph": [
+        {
+            "@type": "rdf:Property",
+            "@id": "unlcdf:functions",
+            "rdfs:comment": "Related function codes.",
+            "schema:rangeIncludes": {
+                "@id": "unlcdf:Function"
+            },
+            "schema:domainIncludes": {
+                "@id": "unlcd:UNLOCODE"
+            }
+        }
+    ]
+}

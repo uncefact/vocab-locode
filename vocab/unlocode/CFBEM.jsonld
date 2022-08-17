@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:CFBEM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CFBEM",
+            "rdf:value": "CFBEM",
             "rdfs:label": [
                 {
                     "@value": "Bossembélé"
                 },
                 {
-                    "@value": "Bossembele",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Bossembele"
                 }
             ],
             "unlcdf:functions": [
@@ -31,8 +30,7 @@
                     "@id": "unlcdf:5"
                 }
             ],
-            "rdf:value": "CFBEM",
-            "unlcdc:country": "CF",
+            "unlcdc:countryCode": "CF",
             "geo:lat": {
                 "@value": "5.266667",
                 "@type": "xsd:float"

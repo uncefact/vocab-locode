@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FRVZM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FRVZM",
+            "rdf:value": "FRVZM",
             "rdfs:label": [
                 {
                     "@value": "Vétraz-Monthoux"
                 },
                 {
-                    "@value": "Vetraz-Monthoux",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Vetraz-Monthoux"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:2"
             },
-            "rdf:value": "FRVZM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR74"
             },
-            "unlcdc:country": "FR",
+            "unlcdc:countryCode": "FR",
             "geo:lat": {
                 "@value": "46.166668",
                 "@type": "xsd:float"

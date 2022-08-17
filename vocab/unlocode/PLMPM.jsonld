@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PLMPM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PLMPM",
+            "rdf:value": "PLMPM",
             "rdfs:label": [
                 {
                     "@value": "Maków Podhalanski"
                 },
                 {
-                    "@value": "Makow Podhalanski",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Makow Podhalanski"
                 }
             ],
             "unlcdf:functions": [
@@ -34,11 +34,10 @@
                     "@id": "unlcdf:6"
                 }
             ],
-            "rdf:value": "PLMPM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PLMA"
             },
-            "unlcdc:country": "PL",
+            "unlcdc:countryCode": "PL",
             "geo:lat": {
                 "@value": "49.733334",
                 "@type": "xsd:float"

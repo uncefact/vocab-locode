@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MXPIC",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MXPIC",
+            "rdf:value": "MXPIC",
             "rdfs:label": {
-                "@value": "Pichilingue",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Pichilingue"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "MXPIC",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MXBCS"
             },
-            "unlcdc:country": "MX",
+            "unlcdc:countryCode": "MX",
             "geo:lat": {
                 "@value": "24.3",
                 "@type": "xsd:float"

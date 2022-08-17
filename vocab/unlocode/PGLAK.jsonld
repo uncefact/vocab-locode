@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:PGLAK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PGLAK",
+            "rdf:value": "PGLAK",
             "rdfs:label": {
-                "@value": "Lakuramau",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Lakuramau"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "PGLAK",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:PGNIK"
             },
-            "unlcdc:country": "PG",
+            "unlcdc:countryCode": "PG",
             "geo:lat": {
                 "@value": "-2.8833332",
                 "@type": "xsd:float"

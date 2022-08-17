@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:VNHLG",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:VNHLG",
+            "rdf:value": "VNHLG",
             "rdfs:label": {
-                "@value": "Ha Long",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Ha Long"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "VNHLG",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN13"
             },
-            "unlcdc:country": "VN",
+            "unlcdc:countryCode": "VN",
             "geo:lat": {
                 "@value": "20.95",
                 "@type": "xsd:float"

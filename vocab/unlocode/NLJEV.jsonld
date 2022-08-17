@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NLJEV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NLJEV",
+            "rdf:value": "NLJEV",
             "rdfs:label": {
-                "@value": "Nijeveen",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Nijeveen"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:6"
             },
-            "rdf:value": "NLJEV",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLDR"
             },
-            "unlcdc:country": "NL",
+            "unlcdc:countryCode": "NL",
             "geo:lat": {
                 "@value": "52.733334",
                 "@type": "xsd:float"

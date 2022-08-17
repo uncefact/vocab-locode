@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:INONJ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:INONJ",
+            "rdf:value": "INONJ",
             "rdfs:label": {
-                "@value": "Onjal",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Onjal"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "INONJ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:INGJ"
             },
-            "unlcdc:country": "IN"
+            "unlcdc:countryCode": "IN"
         }
     ]
 }

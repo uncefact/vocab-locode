@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:NLLPK",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NLLPK",
+            "rdf:value": "NLLPK",
             "rdfs:label": {
-                "@value": "Lopik",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Lopik"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NLLPK",
-            "unlcdc:country": "NL"
+            "unlcdc:countryCode": "NL"
         }
     ]
 }

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:NLSHB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:NLSHB",
+            "rdf:value": "NLSHB",
             "rdfs:label": {
-                "@value": "'s-Heerenbroek",
-                "@language": "en"
+                "@language": "en",
+                "@value": "'s-Heerenbroek"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "NLSHB",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:NLOV"
             },
-            "unlcdc:country": "NL",
+            "unlcdc:countryCode": "NL",
             "geo:lat": {
                 "@value": "52.533333",
                 "@type": "xsd:float"

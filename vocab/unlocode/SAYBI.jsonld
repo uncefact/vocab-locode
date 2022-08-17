@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SAYBI",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SAYBI",
+            "rdf:value": "SAYBI",
             "rdfs:label": {
-                "@value": "Yanbu Industrial City",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Yanbu Industrial City"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "SAYBI",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SA03"
             },
-            "unlcdc:country": "SA",
+            "unlcdc:countryCode": "SA",
             "geo:lat": {
                 "@value": "23.933332",
                 "@type": "xsd:float"

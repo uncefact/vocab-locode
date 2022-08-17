@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GUGUA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GUGUA",
+            "rdf:value": "GUGUA",
             "rdfs:label": {
-                "@value": "Mongmong-Toto-Maite",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mongmong-Toto-Maite"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GUGUA",
-            "unlcdc:country": "GU",
+            "unlcdc:countryCode": "GU",
             "geo:lat": {
                 "@value": "13.466666",
                 "@type": "xsd:float"

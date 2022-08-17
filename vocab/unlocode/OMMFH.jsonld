@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:OMMFH",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:OMMFH",
+            "rdf:value": "OMMFH",
             "rdfs:label": {
-                "@value": "Mina' al Fahl",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mina' al Fahl"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "OMMFH",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:OMMA"
             },
-            "unlcdc:country": "OM",
+            "unlcdc:countryCode": "OM",
             "geo:lat": {
                 "@value": "23.633333",
                 "@type": "xsd:float"

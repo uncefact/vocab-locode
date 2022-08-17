@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:LVZVT",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:LVZVT",
+            "rdf:value": "LVZVT",
             "rdfs:label": {
-                "@value": "Marupe",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Marupe"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "LVZVT",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LV062"
             },
-            "unlcdc:country": "LV",
+            "unlcdc:countryCode": "LV",
             "geo:lat": {
                 "@value": "56.9",
                 "@type": "xsd:float"

@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FRIHR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FRIHR",
+            "rdf:value": "FRIHR",
             "rdfs:label": [
                 {
                     "@value": "Île-de-Bréhat"
                 },
                 {
-                    "@value": "Ile-de-Brehat",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Ile-de-Brehat"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "FRIHR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FR22"
             },
-            "unlcdc:country": "FR",
+            "unlcdc:countryCode": "FR",
             "geo:lat": {
                 "@value": "48.85",
                 "@type": "xsd:float"

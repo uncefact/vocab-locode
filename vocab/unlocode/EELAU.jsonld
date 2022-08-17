@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:EELAU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:EELAU",
+            "rdf:value": "EELAU",
             "rdfs:label": {
-                "@value": "Lautri",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Lautri"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "EELAU",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:EE39"
             },
-            "unlcdc:country": "EE",
+            "unlcdc:countryCode": "EE",
             "geo:lat": {
                 "@value": "58.916668",
                 "@type": "xsd:float"

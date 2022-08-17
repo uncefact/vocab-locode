@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HNRTB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HNRTB",
+            "rdf:value": "HNRTB",
             "rdfs:label": [
                 {
                     "@value": "Roatán"
                 },
                 {
-                    "@value": "Roatan",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Roatan"
                 }
             ],
             "unlcdf:functions": [
@@ -31,8 +30,7 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "HNRTB",
-            "unlcdc:country": "HN",
+            "unlcdc:countryCode": "HN",
             "geo:lat": {
                 "@value": "16.3",
                 "@type": "xsd:float"

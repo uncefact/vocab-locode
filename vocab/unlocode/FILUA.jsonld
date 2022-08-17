@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:FILUA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:FILUA",
+            "rdf:value": "FILUA",
             "rdfs:label": [
                 {
                     "@value": "Luumäki"
                 },
                 {
-                    "@value": "Luumaki",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Luumaki"
                 }
             ],
             "unlcdf:functions": [
@@ -34,11 +34,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "FILUA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:FI02"
             },
-            "unlcdc:country": "FI",
+            "unlcdc:countryCode": "FI",
             "geo:lat": {
                 "@value": "60.916668",
                 "@type": "xsd:float"

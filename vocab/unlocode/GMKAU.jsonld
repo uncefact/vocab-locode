@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GMKAU",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GMKAU",
+            "rdf:value": "GMKAU",
             "rdfs:label": {
-                "@value": "Kau-ur",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Kau-ur"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:5"
             },
-            "rdf:value": "GMKAU",
-            "unlcdc:country": "GM",
+            "unlcdc:countryCode": "GM",
             "geo:lat": {
                 "@value": "13.7",
                 "@type": "xsd:float"

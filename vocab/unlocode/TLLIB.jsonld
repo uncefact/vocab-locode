@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:TLLIB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:TLLIB",
+            "rdf:value": "TLLIB",
             "rdfs:label": {
-                "@value": "Liberdade",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Liberdade"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:7"
             },
-            "rdf:value": "TLLIB",
-            "unlcdc:country": "TL",
+            "unlcdc:countryCode": "TL",
             "geo:lat": {
                 "@value": "-11.033334",
                 "@type": "xsd:float"

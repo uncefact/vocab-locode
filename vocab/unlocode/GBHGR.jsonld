@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:GBHGR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GBHGR",
+            "rdf:value": "GBHGR",
             "rdfs:label": {
-                "@value": "Houghton Regis",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Houghton Regis"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "GBHGR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GBCBF"
             },
-            "unlcdc:country": "GB"
+            "unlcdc:countryCode": "GB"
         }
     ]
 }

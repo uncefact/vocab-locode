@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:SVIZO",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:SVIZO",
+            "rdf:value": "SVIZO",
             "rdfs:label": {
-                "@value": "Izalco",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Izalco"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "SVIZO",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:SVSO"
             },
-            "unlcdc:country": "SV",
+            "unlcdc:countryCode": "SV",
             "geo:lat": {
                 "@value": "13.733334",
                 "@type": "xsd:float"

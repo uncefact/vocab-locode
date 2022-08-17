@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MNTOS",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MNTOS",
+            "rdf:value": "MNTOS",
             "rdfs:label": {
-                "@value": "Tosontsengel",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Tosontsengel"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "MNTOS",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MN057"
             },
-            "unlcdc:country": "MN",
+            "unlcdc:countryCode": "MN",
             "geo:lat": {
                 "@value": "48.75",
                 "@type": "xsd:float"

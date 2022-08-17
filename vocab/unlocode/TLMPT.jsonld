@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:TLMPT",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:TLMPT",
+            "rdf:value": "TLMPT",
             "rdfs:label": {
-                "@value": "Maliana",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Maliana"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "TLMPT",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:TLBO"
             },
-            "unlcdc:country": "TL",
+            "unlcdc:countryCode": "TL",
             "geo:lat": {
                 "@value": "-8.983334",
                 "@type": "xsd:float"

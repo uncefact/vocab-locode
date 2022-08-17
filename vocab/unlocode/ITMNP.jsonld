@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:ITMNP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:ITMNP",
+            "rdf:value": "ITMNP",
             "rdfs:label": {
-                "@value": "Monopoli",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Monopoli"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "ITMNP",
-            "unlcdc:country": "IT"
+            "unlcdc:countryCode": "IT"
         }
     ]
 }

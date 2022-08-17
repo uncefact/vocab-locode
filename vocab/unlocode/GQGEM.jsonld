@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GQGEM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GQGEM",
+            "rdf:value": "GQGEM",
             "rdfs:label": {
-                "@value": "Mongomeyen",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Mongomeyen"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "GQGEM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:GQWN"
             },
-            "unlcdc:country": "GQ",
+            "unlcdc:countryCode": "GQ",
             "geo:lat": {
                 "@value": "1.7",
                 "@type": "xsd:float"

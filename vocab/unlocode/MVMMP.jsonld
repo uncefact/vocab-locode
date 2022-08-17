@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:MVMMP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:MVMMP",
+            "rdf:value": "MVMMP",
             "rdfs:label": {
-                "@value": "Maamigili Port",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Maamigili Port"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:1"
             },
-            "rdf:value": "MVMMP",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:MV00"
             },
-            "unlcdc:country": "MV",
+            "unlcdc:countryCode": "MV",
             "geo:lat": {
                 "@value": "3.4666667",
                 "@type": "xsd:float"

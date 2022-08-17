@@ -2,27 +2,23 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:PRCUP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:PRCUP",
+            "rdf:value": "PRCUP",
             "rdfs:label": {
-                "@value": "Cupey, San Juan",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Cupey, San Juan"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:0"
             },
-            "rdf:value": "PRCUP",
-            "unlcdc:country": "PR"
+            "unlcdc:countryCode": "PR"
         }
     ]
 }

@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:OMQLM",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:OMQLM",
+            "rdf:value": "OMQLM",
             "rdfs:label": {
-                "@value": "Qarn Alam",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Qarn Alam"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "OMQLM",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:OMWU"
             },
-            "unlcdc:country": "OM",
+            "unlcdc:countryCode": "OM",
             "geo:lat": {
                 "@value": "21.3",
                 "@type": "xsd:float"

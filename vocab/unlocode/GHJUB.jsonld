@@ -2,27 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GHJUB",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GHJUB",
+            "rdf:value": "GHJUB",
             "rdfs:label": {
-                "@value": "Jubilee FPSO",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Jubilee FPSO"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:7"
             },
-            "rdf:value": "GHJUB",
-            "unlcdc:country": "GH",
+            "unlcdc:countryCode": "GH",
             "geo:lat": {
                 "@value": "4.616667",
                 "@type": "xsd:float"

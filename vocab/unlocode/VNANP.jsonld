@@ -2,35 +2,34 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:VNANP",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:VNANP",
+            "rdf:value": "VNANP",
             "rdfs:label": [
                 {
                     "@value": "An Phú"
                 },
                 {
-                    "@value": "An Phu",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "An Phu"
                 }
             ],
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "VNANP",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:VN44"
             },
-            "unlcdc:country": "VN",
+            "unlcdc:countryCode": "VN",
             "geo:lat": {
                 "@value": "10.85",
                 "@type": "xsd:float"

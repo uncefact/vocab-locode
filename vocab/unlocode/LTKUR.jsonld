@@ -2,25 +2,25 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:LTKUR",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:LTKUR",
+            "rdf:value": "LTKUR",
             "rdfs:label": [
                 {
                     "@value": "Kursénai"
                 },
                 {
-                    "@value": "Kursenai",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Kursenai"
                 }
             ],
             "unlcdf:functions": [
@@ -31,11 +31,10 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "LTKUR",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:LTSA"
             },
-            "unlcdc:country": "LT",
+            "unlcdc:countryCode": "LT",
             "geo:lat": {
                 "@value": "55.983334",
                 "@type": "xsd:float"

@@ -2,21 +2,20 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:GHKOF",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:GHKOF",
+            "rdf:value": "GHKOF",
             "rdfs:label": {
-                "@value": "Koforidua",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Koforidua"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +25,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "GHKOF",
-            "unlcdc:country": "GH",
+            "unlcdc:countryCode": "GH",
             "geo:lat": {
                 "@value": "6.0833335",
                 "@type": "xsd:float"

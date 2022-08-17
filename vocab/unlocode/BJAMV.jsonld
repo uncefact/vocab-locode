@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BJAMV",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BJAMV",
+            "rdf:value": "BJAMV",
             "rdfs:label": {
-                "@value": "Abomey-Calavi",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Abomey-Calavi"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:3"
             },
-            "rdf:value": "BJAMV",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BJAQ"
             },
-            "unlcdc:country": "BJ",
+            "unlcdc:countryCode": "BJ",
             "geo:lat": {
                 "@value": "6.45",
                 "@type": "xsd:float"

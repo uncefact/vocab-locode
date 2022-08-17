@@ -2,21 +2,18 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
         "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:CZRNL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:CZRNL",
+            "rdf:value": "CZRNL",
             "rdfs:label": {
-                "@value": "Roudnice nad Labem",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Roudnice nad Labem"
             },
             "unlcdf:functions": [
                 {
@@ -26,8 +23,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "CZRNL",
-            "unlcdc:country": "CZ"
+            "unlcdc:countryCode": "CZ"
         }
     ]
 }

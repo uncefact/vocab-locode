@@ -2,25 +2,24 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:HULMY",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:HULMY",
+            "rdf:value": "HULMY",
             "rdfs:label": [
                 {
                     "@value": "Lágymányos"
                 },
                 {
-                    "@value": "Lagymanyos",
-                    "@language": "en"
+                    "@language": "en",
+                    "@value": "Lagymanyos"
                 }
             ],
             "unlcdf:functions": [
@@ -34,8 +33,7 @@
                     "@id": "unlcdf:3"
                 }
             ],
-            "rdf:value": "HULMY",
-            "unlcdc:country": "HU",
+            "unlcdc:countryCode": "HU",
             "geo:lat": {
                 "@value": "47.466667",
                 "@type": "xsd:float"

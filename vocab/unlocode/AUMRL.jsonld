@@ -2,30 +2,27 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
-        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
+        "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/"
     },
     "@graph": [
         {
-            "@id": "unlcd:AUMRL",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:AUMRL",
+            "rdf:value": "AUMRL",
             "rdfs:label": {
-                "@value": "Miners Lake",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Miners Lake"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:4"
             },
-            "rdf:value": "AUMRL",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:AUQLD"
             },
-            "unlcdc:country": "AU"
+            "unlcdc:countryCode": "AU"
         }
     ]
 }

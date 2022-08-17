@@ -2,30 +2,29 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:UAZKA",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:UAZKA",
+            "rdf:value": "UAZKA",
             "rdfs:label": {
-                "@value": "Yevpatoriia",
-                "@language": "en"
+                "@language": "en",
+                "@value": "Yevpatoriia"
             },
             "unlcdf:functions": {
                 "@id": "unlcdf:0"
             },
-            "rdf:value": "UAZKA",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:UA43"
             },
-            "unlcdc:country": "UA",
+            "unlcdc:countryCode": "UA",
             "geo:lat": {
                 "@value": "45.183334",
                 "@type": "xsd:float"

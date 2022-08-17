@@ -2,21 +2,21 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "schema": "http://schema.org/",
         "unlcd": "https://service.unece.org/trade/uncefact/vocabulary/unlocode/",
         "unlcdc": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-countries/",
+        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/",
         "unlcds": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-subdivisions/",
-        "unlcdf": "https://service.unece.org/trade/uncefact/vocabulary/unlocode-functions/"
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
     "@graph": [
         {
-            "@id": "unlcd:BOSRJ",
             "@type": "unlcd:UNLOCODE",
+            "@id": "unlcd:BOSRJ",
+            "rdf:value": "BOSRJ",
             "rdfs:label": {
-                "@value": "San Borja",
-                "@language": "en"
+                "@language": "en",
+                "@value": "San Borja"
             },
             "unlcdf:functions": [
                 {
@@ -26,11 +26,10 @@
                     "@id": "unlcdf:4"
                 }
             ],
-            "rdf:value": "BOSRJ",
             "unlcds:countrySubdivision": {
                 "@id": "unlcds:BOB"
             },
-            "unlcdc:country": "BO",
+            "unlcdc:countryCode": "BO",
             "geo:lat": {
                 "@value": "-14.816667",
                 "@type": "xsd:float"

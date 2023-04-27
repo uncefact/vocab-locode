@@ -46,6 +46,8 @@ jobs:
       - name: commit locodes
         working-directory: locodes
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "update UN/LOCODE files"
           git push
@@ -82,6 +84,8 @@ jobs:
       - name: commit json-ld
         working-directory: vocab/
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "update UN/LOCODE vocabulary"
           git push

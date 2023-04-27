@@ -2,35 +2,35 @@
 {
     "@context": {
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "unlcdv": "https://dmvc7xzscpizo.cloudfront.net/unlocode-vocab#",
+        "unlcdv": "https://vocabulary.uncefact.org/unlocode-vocab/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "schema": "http://schema.org/"
     },
     "@graph": [
         {
             "@type": "rdfs:Class",
-            "@id": "unlcdv:Country",
-            "rdfs:comment": "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1."
+            "rdfs:comment": "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1.",
+            "@id": "unlcdv:Country"
         },
         {
             "@type": "rdfs:Class",
-            "@id": "unlcdv:Function",
-            "rdfs:comment": "1-character function classifier code which identifies the existence of either a facility providing a connection with a specific mode of transport 1 or some other significant function not directly related to any mode of transport at this location"
+            "rdfs:comment": "1-character function classifier code which identifies the existence of either a facility providing a connection with a specific mode of transport 1 or some other significant function not directly related to any mode of transport at this location",
+            "@id": "unlcdv:Function"
         },
         {
             "@type": "rdfs:Class",
-            "@id": "unlcdv:Subdivision",
-            "rdfs:comment": "Code for the administrative division of the country concerned (state, province, department, etc.)."
+            "rdfs:comment": "Code for the administrative division of the country concerned (state, province, department, etc.).",
+            "@id": "unlcdv:Subdivision"
         },
         {
             "@type": "rdfs:Class",
-            "@id": "unlcdv:UNLOCODE",
-            "rdfs:comment": "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country."
+            "rdfs:comment": "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country.",
+            "@id": "unlcdv:UNLOCODE"
         },
         {
             "@type": "rdf:Property",
-            "@id": "unlcdv:countryCode",
             "rdfs:comment": "Related ISO 3166-1 country code.",
+            "@id": "unlcdv:countryCode",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Country"
             },
@@ -45,8 +45,8 @@
         },
         {
             "@type": "rdf:Property",
-            "@id": "unlcdv:countrySubdivision",
             "rdfs:comment": "Related ISO 3166-2 country subdivision code.",
+            "@id": "unlcdv:countrySubdivision",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Subdivision"
             },
@@ -56,8 +56,8 @@
         },
         {
             "@type": "rdf:Property",
-            "@id": "unlcdv:functions",
             "rdfs:comment": "Related function codes.",
+            "@id": "unlcdv:functions",
             "schema:rangeIncludes": {
                 "@id": "unlcdv:Function"
             },
@@ -66,10 +66,10 @@
             }
         },
         {
-            "schema:rangeIncludes": "xsd:string",
-            "@type": "rdf:Property",
-            "@id": "unlcdv:subdivisionType",
             "rdfs:comment": "The administrative division (state,province, department, etc.).",
+            "@id": "unlcdv:subdivisionType",
+            "@type": "rdf:Property",
+            "schema:rangeIncludes": "xsd:string",
             "schema:domainIncludes": {
                 "@id": "unlcdv:Subdivision"
             }

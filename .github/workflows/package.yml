@@ -1,0 +1,87 @@
+name: preview
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/src/**'
+  # Manually run the deployment
+  workflow_dispatch:
+    mode:
+      type: choice
+      description: 'The mode of the transformation to run'
+      required: true
+      options:
+        - split
+        - json-ld
+  
+
+jobs:
+  split:
+    if: contains(github.event.inputs.mode, 'split')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: package
+        working-directory: scripts/
+        run: |
+          mvn -B package --file pom.xml
+
+      - name: upload transformer
+        uses: actions/upload-artifact@v2
+        with:
+          name: unlocode-transformer
+          path: scripts/target/unlocode-transformer-*.jar
+      - name: split locodes
+        working-directory: scripts/target
+        run: |
+          java -jar "$(find -name *.jar)"
+          mv *.csv ../../locodes/
+        
+      - name: commit locodes
+        working-directory: locodes
+        run: |
+          git add .
+          git commit -m "update UN/LOCODE files"
+          git push
+
+
+  json-ld:
+    if: contains(github.event.inputs.mode, 'json-ld')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: package
+        working-directory: scripts/
+        run: |
+          mvn -B package --file pom.xml
+
+      - name: copy locodes
+        run: |
+          java -jar "$(find -name *.jar)"
+          mkdir  scripts/target/csv
+          cp locodes/*.csv scripts/target/csv
+
+      - name: generate
+        working-directory: scripts/target/
+        run: |
+          java -jar "$(find -name *.jar)" -t json-ld
+          mv *.jsonld ../../vocab/
+      
+      - name: commit json-ld
+        working-directory: vocab/
+        run: |
+          git add .
+          git commit -m "update UN/LOCODE vocabulary"
+          git push

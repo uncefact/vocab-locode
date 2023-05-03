@@ -47,10 +47,6 @@ public abstract class Transformer {
     public static final String UNLOCODE_VOCAB_NS = "unlcdv";
     protected static final String UNLOCODE_FUNC_NS = "unlcdf";
     public static final String GEO_NS = "geo";
-    public static final String REC20_NS = "rec20";
-    public static final String REC21_NS = "rec21";
-    public static final String REC24_NS = "rec24";
-    public static final String REC28_NS = "rec28";
     public static final String DOMAIN = "vocabulary.uncefact.org";
 
 
@@ -65,15 +61,9 @@ public abstract class Transformer {
         NS_MAP.put(UNLOCODE_SUBDIVISIONS_NS, String.format("https://%s/unlocode-subdivisions#", DOMAIN));
         NS_MAP.put(UNLOCODE_FUNC_NS, String.format("https://%s/unlocode-functions#", DOMAIN));
         NS_MAP.put(UNLOCODE_VOCAB_NS, String.format("https://%s/unlocode-vocab/", DOMAIN));
-        NS_MAP.put(UNECE_NS, String.format("https://%s/", DOMAIN));
-        NS_MAP.put(REC20_NS, String.format("https://%s/rec20#", DOMAIN));
-        NS_MAP.put(REC21_NS, String.format("https://%s/rec21#", DOMAIN));
-        NS_MAP.put(REC24_NS, String.format("https://%s/rec24#", DOMAIN));
-        NS_MAP.put(REC28_NS, String.format("https://%s/rec28#", DOMAIN));
         NS_MAP.put(RDF_NS, "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
         NS_MAP.put(RDFS_NS, "http://www.w3.org/2000/01/rdf-schema#");
         NS_MAP.put(OWL_NS, "http://www.w3.org/2002/07/owl#");
-        NS_MAP.put(CEFACT_NS, String.format("https://%s/cefact#", DOMAIN));
     }
 
 

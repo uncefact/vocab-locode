@@ -29,16 +29,12 @@ public class TransformationRunner {
         String version = mainAttributes.getValue("Implementation-Version");
 
         Option transformationTypeOption = new Option("t", true, "transformation type.\n" +
-                String.format("Allowed values: %s, %s, %s, %s, %s, %s.\n", UNECE_NS, REC20_NS, REC21_NS, REC24_NS, REC28_NS, UNLOCODE_NS) +
-                String.format("Default value: %s.", UNECE_NS));
-        Option inputFileOption = new Option("i", true, "an input file or files to be transformed. \n" +
-                String.format("- %s type requires two files - XLSX with BSP subset and text file with UNCL code lists\n", UNECE_NS) +
-                String.format("- %s type requires CSV files with UN/LOCODE and Subdivision codes\n", UNLOCODE_NS));
+                String.format("Allowed values: %s, %s.\n", "json-ld", "split") +
+                String.format("Default value: %s.", "json-ld"));
         Option prettyPrintOption = new Option("p", "pretty-print",false, "an output file to be created as a result of transformation. Default value: output.jsonld.");
         Option versionOption = new Option("?", "version", false, "display this help.");
 
         options.addOption(transformationTypeOption);
-        options.addOption(inputFileOption);
         options.addOption(prettyPrintOption);
         options.addOption(versionOption);
 
@@ -60,25 +56,17 @@ public class TransformationRunner {
         while (optionIterator.hasNext()) {
             Option option = optionIterator.next();
             String opt = StringUtils.defaultIfEmpty(option.getOpt(), "");
-            if (opt.equals(inputFileOption.getOpt())) {
-                inputFileNames.add(option.getValue());
-            } else if (opt.equals(prettyPrintOption.getOpt())) {
+            if (opt.equals(prettyPrintOption.getOpt())) {
                 prettyPrint = Boolean.TRUE;
             } else if (opt.equals(transformationTypeOption.getOpt())) {
                 transformationType = option.getValue();
             }
         }
-        String inputFileName = null;
-        if (inputFileNames.isEmpty()){
-            //default value
-            inputFileName = null;
-        } else {
-            inputFileName = inputFileNames.iterator().next();
-        }
         Set<String> defaultInputNames = new TreeSet<>();
 
         switch (transformationType.toLowerCase()) {
             case "json-ld":
+            default:
                 try (Stream<Path> walk = Files.walk(Paths.get("csv"))) {
                     // We want to find only regular files
                     List<String> result = walk.filter(Files::isRegularFile)
@@ -92,7 +80,6 @@ public class TransformationRunner {
                 break;
 
             case "split":
-            default:
                 defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart1.csv");
                 defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart2.csv");
                 defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart3.csv");

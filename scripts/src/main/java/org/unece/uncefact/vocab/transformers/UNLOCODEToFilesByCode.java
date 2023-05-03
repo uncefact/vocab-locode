@@ -6,12 +6,8 @@ import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.unece.uncefact.vocab.FileGenerator;
-import org.unece.uncefact.vocab.JSONLDContext;
-import org.unece.uncefact.vocab.JSONLDVocabulary;
 import org.unece.uncefact.vocab.Transformer;
 
-import javax.json.Json;
-import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import java.io.*;

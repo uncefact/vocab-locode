@@ -64,13 +64,12 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         for (String key : functionsMap.keySet()) {
             Function function = functionsMap.get(key);
             String id = function.getCode();
-            JsonObjectBuilder rdfClass = Json.createObjectBuilder(Map.of(
-                    ID, StringUtils.join(UNLOCODE_FUNC_NS, ":", id),
-                    TYPE, FUNCTION_CLASS,
-                    RDFS_LABEL, function.getFunction(),
-                    RDFS_COMMENT, function.getDefinition(),
-                    RDF_VALUE, id
-            ));
+            JsonObjectBuilder rdfClass = Json.createObjectBuilder();
+            rdfClass.add(ID, StringUtils.join(UNLOCODE_FUNC_NS, ":", id));
+            rdfClass.add(TYPE, FUNCTION_CLASS);
+            rdfClass.add(RDFS_LABEL, function.getFunction());
+            rdfClass.add(RDFS_COMMENT, function.getDefinition());
+            rdfClass.add(RDF_VALUE, id);
             functionsGraph.put(id, rdfClass.build());
         }
     }
@@ -137,13 +136,12 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
                     records.get(i).get(3)
             );
             String id = StringUtils.join(code.getCountry(), code.getCode());
-            JsonObjectBuilder rdfClass = Json.createObjectBuilder(Map.of(
-                    ID, StringUtils.join(UNLOCODE_SUBDIVISIONS_NS, ":", id),
-                    TYPE, SUBDIVISION_CLASS,
-                    RDFS_LABEL, code.getName(),
-                    RDF_VALUE, id,
-                    SUBDIVISION_TYPE_PROPERTY, code.getType()
-            ));
+            JsonObjectBuilder rdfClass = Json.createObjectBuilder();
+            rdfClass.add(ID, StringUtils.join(UNLOCODE_SUBDIVISIONS_NS, ":", id));
+            rdfClass.add(TYPE, SUBDIVISION_CLASS);
+            rdfClass.add(RDFS_LABEL, code.getName());
+            rdfClass.add(RDF_VALUE, id);
+            rdfClass.add(SUBDIVISION_TYPE_PROPERTY, code.getType());
             JsonObjectBuilder countryObj = Json.createObjectBuilder(Map.of(ID, StringUtils.join(UNLOCODE_COUNTRIES_NS, ":", code.getCountry())));
             rdfClass.add(PROPERTY_COUNTRY_CODE, countryObj);
 
@@ -175,25 +173,22 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
                 if (countryName.startsWith("."))
                     countryName = countryName.substring(1);
 
-                JsonObjectBuilder rdfClass = Json.createObjectBuilder(Map.of(
-                        ID, StringUtils.join(UNLOCODE_COUNTRIES_NS, ":", country),
-                        TYPE, COUNTRY_CLASS,
-                        RDFS_LABEL, countryName,
-                        RDF_VALUE, country
-                ));
+                JsonObjectBuilder rdfClass = Json.createObjectBuilder();
+                rdfClass.add(ID, StringUtils.join(UNLOCODE_COUNTRIES_NS, ":", country));
+                rdfClass.add(TYPE, COUNTRY_CLASS);
+                rdfClass.add(RDFS_LABEL, countryName);
+                rdfClass.add(RDF_VALUE, country);
                 countriesGraph.put(locode, rdfClass.build());
             } else if (!data[i][0].equalsIgnoreCase("=")) {
                 //read the UN/LOCODE
-                JsonObjectBuilder rdfClass = Json.createObjectBuilder(Map.of(
-                        ID, StringUtils.join(UNLOCODE_NS, ":", locode),
-                        TYPE, UNLOCODE_CLASS,
-                        RDF_VALUE, locode
-                ));
+                JsonObjectBuilder rdfClass = Json.createObjectBuilder();
+                rdfClass.add(ID, StringUtils.join(UNLOCODE_NS, ":", locode));
+                rdfClass.add(TYPE, UNLOCODE_CLASS);
+                rdfClass.add(RDF_VALUE, locode);
                 if (StringUtils.equals(name, internationalName)) {
-                    JsonObjectBuilder labelObj = Json.createObjectBuilder(Map.of(
-                            VALUE, name,
-                            LANGUAGE, "en"
-                    ));
+                    JsonObjectBuilder labelObj = Json.createObjectBuilder();
+                    labelObj.add(VALUE, name);
+                    labelObj.add(LANGUAGE, "en");
                     rdfClass.add(RDFS_LABEL, labelObj);
                 } else {
                     JsonArrayBuilder labelArray = Json.createArrayBuilder();
@@ -201,10 +196,9 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
                             VALUE, name
                     ));
                     labelArray.add(labelObj);
-                    JsonObjectBuilder labelObjEn = Json.createObjectBuilder(Map.of(
-                            VALUE, internationalName,
-                            LANGUAGE, "en"
-                    ));
+                    JsonObjectBuilder labelObjEn = Json.createObjectBuilder();
+                    labelObjEn.add(VALUE, internationalName);
+                    labelObjEn.add(LANGUAGE, "en");
                     labelArray.add(labelObjEn);
                     rdfClass.add(RDFS_LABEL, labelArray);
                 }
@@ -253,33 +247,30 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
                     if (longDMS.endsWith("W")) {
                         longFloat *= -1;
                     }
-                    JsonObjectBuilder latObj = Json.createObjectBuilder(Map.of(
-                            VALUE, String.valueOf(latFloat),
-                            TYPE, StringUtils.join(XSD_NS, ":float")
-                    ));
+                    JsonObjectBuilder latObj = Json.createObjectBuilder();
+                    latObj.add(VALUE, String.valueOf(latFloat));
+                    latObj.add(TYPE, StringUtils.join(XSD_NS, ":float"));
                     rdfClass.add(StringUtils.join(GEO_NS, ":", "lat"), latObj);
 
-                    JsonObjectBuilder longObj = Json.createObjectBuilder(Map.of(
-                            VALUE, String.valueOf(longFloat),
-                            TYPE, StringUtils.join(XSD_NS, ":float")
-                    ));
+                    JsonObjectBuilder longObj = Json.createObjectBuilder();
+                    longObj.add(VALUE, String.valueOf(longFloat));
+                    longObj.add(TYPE, StringUtils.join(XSD_NS, ":float"));
                     rdfClass.add(StringUtils.join(GEO_NS, ":", "long"), longObj);
                 }
                 locodesGraph.put(locode, rdfClass.build());
             }
         }
 
-        JsonObjectBuilder countryClass = Json.createObjectBuilder(Map.of(
-                ID, COUNTRY_CLASS,
-                TYPE, RDFS_CLASS,
-                RDFS_COMMENT, "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1."));
+        JsonObjectBuilder countryClass = Json.createObjectBuilder();
+        countryClass.add(ID, COUNTRY_CLASS);
+        countryClass.add(TYPE, RDFS_CLASS);
+        countryClass.add(RDFS_COMMENT, "The two-letter alphabetic country codes, adopted in International Standard ISO 3166-1.");
         vocabGraph.put(COUNTRY_CLASS_NAME, countryClass.build());
 
-        JsonObjectBuilder countryCodeProperty = Json.createObjectBuilder(Map.of(
-                ID, PROPERTY_COUNTRY_CODE,
-                TYPE, RDF_PROPERTY,
-                RDFS_COMMENT, "Related ISO 3166-1 country code."
-        ));
+        JsonObjectBuilder countryCodeProperty = Json.createObjectBuilder();
+        countryCodeProperty.add(ID, PROPERTY_COUNTRY_CODE);
+        countryCodeProperty.add(TYPE, RDF_PROPERTY);
+        countryCodeProperty.add(RDFS_COMMENT, "Related ISO 3166-1 country code.");
         countryCodeProperty.add(SCHEMA_RANGE_INCLUDES, Json.createObjectBuilder(Map.of(
                 ID, COUNTRY_CLASS
         )));
@@ -294,26 +285,23 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
 
         vocabGraph.put(PROPERTY_COUNTRY_CODE_NAME, countryCodeProperty.build());
 
-        JsonObjectBuilder unlocodeClass = Json.createObjectBuilder(Map.of(
-                ID, UNLOCODE_CLASS,
-                TYPE, RDFS_CLASS,
-                RDFS_COMMENT,
-                "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country."
-        ));
+        JsonObjectBuilder unlocodeClass = Json.createObjectBuilder();
+        unlocodeClass.add(ID, UNLOCODE_CLASS);
+        unlocodeClass.add(TYPE, RDFS_CLASS);
+        unlocodeClass.add(RDFS_COMMENT,
+                "Identifies an administrative or economic area, relevant to international trade and transport, as defined by the competent national authority in each country.");
         vocabGraph.put(UNLOCODE_CLASS_NAME, unlocodeClass.build());
 
-        JsonObjectBuilder subdivisionClass = Json.createObjectBuilder(Map.of(
-                ID, SUBDIVISION_CLASS,
-                TYPE, RDFS_CLASS,
-                RDFS_COMMENT, "Code for the administrative division of the country concerned (state, province, department, etc.)."
-        ));
+        JsonObjectBuilder subdivisionClass = Json.createObjectBuilder();
+        subdivisionClass.add(ID, SUBDIVISION_CLASS);
+        subdivisionClass.add(TYPE, RDFS_CLASS);
+        subdivisionClass.add(RDFS_COMMENT, "Code for the administrative division of the country concerned (state, province, department, etc.).");
         vocabGraph.put(SUBDIVISION_CLASS_NAME, subdivisionClass.build());
 
-        JsonObjectBuilder countrySubdivProperty = Json.createObjectBuilder(Map.of(
-                ID, COUNTRY_SUBDIVISION_PROPERTY,
-                TYPE, RDF_PROPERTY,
-                RDFS_COMMENT, "Related ISO 3166-2 country subdivision code."
-        ));
+        JsonObjectBuilder countrySubdivProperty = Json.createObjectBuilder();
+        countrySubdivProperty.add(ID, COUNTRY_SUBDIVISION_PROPERTY);
+        countrySubdivProperty.add(TYPE, RDF_PROPERTY);
+        countrySubdivProperty.add(RDFS_COMMENT, "Related ISO 3166-2 country subdivision code.");
         countrySubdivProperty.add(SCHEMA_RANGE_INCLUDES, Json.createObjectBuilder(Map.of(
                 ID, SUBDIVISION_CLASS
         )));
@@ -322,33 +310,30 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         )));
         vocabGraph.put(COUNTRY_SUBDIVISION_PROPERTY_NAME, countrySubdivProperty.build());
 
-        JsonObjectBuilder subdivTypeProperty = Json.createObjectBuilder(Map.of(
-                ID, SUBDIVISION_TYPE_PROPERTY,
-                TYPE, RDF_PROPERTY,
-                RDFS_COMMENT, "The administrative division (state," +
-                        "province, department, etc.).",
-                SCHEMA_RANGE_INCLUDES, StringUtils.join(XSD_NS, ":string")
-        ));
+        JsonObjectBuilder subdivTypeProperty = Json.createObjectBuilder();
+        subdivTypeProperty.add(ID, SUBDIVISION_TYPE_PROPERTY);
+        subdivTypeProperty.add(TYPE, RDF_PROPERTY);
+        subdivTypeProperty.add(RDFS_COMMENT, "The administrative division (state," +
+                        "province, department, etc.).");
+        subdivTypeProperty.add(SCHEMA_RANGE_INCLUDES, StringUtils.join(XSD_NS, ":string"));
         subdivTypeProperty.add(SCHEMA_DOMAIN_INCLUDES, Json.createObjectBuilder(Map.of(
                 ID, SUBDIVISION_CLASS
         )));
 
         vocabGraph.put(SUBDIVISION_TYPE_PROPERTY_NAME, subdivTypeProperty.build());
 
-        JsonObjectBuilder functionClass = Json.createObjectBuilder(Map.of(
-                ID, FUNCTION_CLASS,
-                TYPE, RDFS_CLASS,
-                RDFS_COMMENT, "1-character function classifier code which identifies the existence of " +
+        JsonObjectBuilder functionClass = Json.createObjectBuilder();
+        functionClass.add(ID, FUNCTION_CLASS);
+        functionClass.add(TYPE, RDFS_CLASS);
+        functionClass.add(RDFS_COMMENT, "1-character function classifier code which identifies the existence of " +
                         "either a facility providing a connection with a specific mode of transport 1 or some other " +
-                        "significant function not directly related to any mode of transport at this location"
-        ));
+                        "significant function not directly related to any mode of transport at this location");
         vocabGraph.put(FUNCTION_CLASS_NAME, functionClass.build());
 
-        JsonObjectBuilder functionsProperty = Json.createObjectBuilder(Map.of(
-                ID, FUNCTIONS_PROPERTY,
-                TYPE, RDF_PROPERTY,
-                RDFS_COMMENT, "Related function codes."
-        ));
+        JsonObjectBuilder functionsProperty = Json.createObjectBuilder();
+        functionsProperty.add(ID, FUNCTIONS_PROPERTY);
+        functionsProperty.add(TYPE, RDF_PROPERTY);
+        functionsProperty.add(RDFS_COMMENT, "Related function codes.");
         functionsProperty.add(SCHEMA_RANGE_INCLUDES, Json.createObjectBuilder(Map.of(
                 ID, FUNCTION_CLASS
         )));

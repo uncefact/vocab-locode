@@ -16,9 +16,7 @@ public class FileGenerator {
         jsonObjectBuilder.add("@context", contextObjectBuilder.build());
         if (graphJsonArrayBuilder!=null) {
             JsonArray graph = graphJsonArrayBuilder.build();
-/*
             verify(graph);
-*/
             jsonObjectBuilder.add("@graph", graph);
         }
 
@@ -60,11 +58,8 @@ public class FileGenerator {
         Set<String> missingRanges = new HashSet<>();
         for (JsonObject jsonObject:array.getValuesAs(JsonObject.class)) {
             if (jsonObject.containsKey(Transformer.SCHEMA_RANGE_INCLUDES)) {
-                if (!(jsonObject instanceof JsonObject)){
-                    System.out.println(jsonObject);
-                } else if (jsonObject.getJsonObject(Transformer.SCHEMA_RANGE_INCLUDES) instanceof JsonObject){
-                    System.out.println(jsonObject);
-                } else {
+                if (jsonObject instanceof JsonObject &&
+                        jsonObject.getJsonObject(Transformer.SCHEMA_RANGE_INCLUDES) instanceof JsonObject) {
                     String rangeIncludes = jsonObject.getJsonObject(Transformer.SCHEMA_RANGE_INCLUDES).getString(Transformer.ID);
                     if (!ids.contains(rangeIncludes)) {
                         if (!missingRanges.contains(rangeIncludes)) {
@@ -72,45 +67,10 @@ public class FileGenerator {
                             missingRanges.add(rangeIncludes);
                         }
                     }
+                } else {
+                    System.out.println(jsonObject);
                 }
             }
-        }
-    }
-
-    public void generateFile(final JsonValue jsonValue, boolean prettyPrint, String outputFile) {
-
-        Map<String, Boolean> config = new HashMap<>();
-        if (prettyPrint) {
-            config.put(JsonGenerator.PRETTY_PRINTING, true);
-        }
-        StringWriter stringWriter = new StringWriter();
-        JsonWriterFactory writerFactory = Json.createWriterFactory(config);
-        ;
-        try (JsonWriter jsonWriter = writerFactory.createWriter(stringWriter)) {
-            if (jsonValue instanceof JsonObject)
-                jsonWriter.writeObject(jsonValue.asJsonObject());
-            else if (jsonValue instanceof JsonArrayBuilder)
-                jsonWriter.writeArray(jsonValue.asJsonArray());
-        }
-        try (PrintWriter writer =  new PrintWriter(outputFile, "UTF-8")){
-            writer.print(stringWriter);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void generateTextFile(final String text, String outputFile) {
-
-        StringWriter stringWriter = new StringWriter();
-        stringWriter.write(text);
-        try (PrintWriter writer =  new PrintWriter(outputFile, "UTF-8")){
-            writer.print(stringWriter);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
         }
     }
 

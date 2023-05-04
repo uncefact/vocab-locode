@@ -18,11 +18,9 @@ public abstract class Transformer {
     public static String RDFS_NS = "rdfs";
     public static String RDF_NS = "rdf";
     public static final String UNECE_NS = "unece";
-    public static String CEFACT_NS = "cefact";
     public static String XSD_NS = "xsd";
     public static String RDFS_CLASS = RDFS_NS+":Class";
     public static String RDF_PROPERTY = RDF_NS+":Property";
-    public static String RDF_SEQ = RDF_NS+":Seq";
     public static String RDF_VALUE = RDF_NS+":value";
     public static String RDFS_COMMENT = RDFS_NS+":comment";
     public static String RDFS_LABEL = RDFS_NS+":label";
@@ -33,10 +31,6 @@ public abstract class Transformer {
     protected String defaultFile;
     protected Set<String> inputFiles;
     protected Set<String> defaultInputFiles;
-
-    protected JsonObject context;
-
-    protected JsonObjectBuilder jsonObjectBuilder;
 
     protected List<JSONLDVocabulary> vocabularies = new ArrayList<>();
     protected List<JSONLDContext> contexts = new ArrayList<>();
@@ -104,55 +98,6 @@ public abstract class Transformer {
     }
 
     protected abstract void readInputFileToGraphArray(Object object);
-
-    protected String getCellValue(Row row, int cellNumber) {
-       return getCellValue(row, cellNumber, false);
-    }
-
-    protected String getCellValue(Row row, int cellNumber, boolean convertToInteger) {
-        Object result = null;
-        if (row.getCell(cellNumber) != null) {
-            switch (row.getCell(cellNumber).getCellTypeEnum()) {
-                case NUMERIC:
-                    double value = row.getCell(cellNumber).getNumericCellValue();
-                    if(convertToInteger)
-                        result = Integer.valueOf((int) value);
-                    else
-                        result = value;
-                    break;
-                case STRING:
-                    result = row.getCell(cellNumber).getStringCellValue();
-                    break;
-            }
-        }
-        return result != null ? result.toString() : "";
-    }
-
-    protected Double getNumericValue(Row row, int cellNumber) {
-        if (row.getCell(cellNumber) != null) {
-            return row.getCell(cellNumber).getNumericCellValue();
-        }
-        return null;
-    }
-
-    protected String getStringCellValue(Row row, int cellNumber) {
-        return getStringCellValue(row, cellNumber, true);
-    }
-
-    protected String getStringCellValue(Row row, int cellNumber, boolean cleanup) {
-        if (row.getCell(cellNumber) != null) {
-            String result = row.getCell(cellNumber).getStringCellValue();
-            if (cleanup) {
-                return cleanUp(result);
-            }
-            return StringUtils.defaultIfEmpty(result, "");
-        }
-        return "";
-    }
-
-    protected String cleanUp(String attribute) {
-        return attribute.replaceAll(" ", "").replaceAll("_", "").replaceAll("-", "").replaceAll("/", "")/*.replaceAll(".","")*/;
-    }
 
     protected void setInputFiles(Set<String> inputFiles){
         this.inputFiles = inputFiles;

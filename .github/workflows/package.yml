@@ -1,10 +1,11 @@
-name: preview
+name: JSON-LD vocabulary generation from CSV files
 
 on:
   pull_request:
     paths:
       - 'scripts/src/**'
-  # Manually run the deployment
+      - 'locodes/**'
+  # Manually run the generation or split
   workflow_dispatch:
     inputs:
       mode:
@@ -12,52 +13,11 @@ on:
         description: 'The mode of the transformation to run'
         required: true
         options:
-          - split
           - json-ld
-
+          - split
 
 jobs:
-  split:
-    if: contains(github.event.inputs.mode, 'split')
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-      - uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '11'
-
-      - name: package
-        working-directory: scripts/
-        run: |
-          mvn -B package --file pom.xml
-
-      - name: upload transformer
-        uses: actions/upload-artifact@v2
-        with:
-          name: unlocode-transformer
-          path: scripts/target/unlocode-transformer-*.jar
-      - name: split locodes
-        working-directory: scripts/target
-        run: |
-          java -jar "$(find -name *.jar)"
-          mv *.csv ../../locodes/
-        
-      - name: commit locodes
-        working-directory: locodes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "update UN/LOCODE files"
-          git push
-
-
   json-ld:
-    if: contains(github.event.inputs.mode, 'json-ld')
     runs-on: ubuntu-latest
 
     steps:
@@ -93,4 +53,42 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "update UN/LOCODE vocabulary"
+          git push
+
+  split:
+    if: contains(github.event.inputs.mode, 'split')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: package
+        working-directory: scripts/
+        run: |
+          mvn -B package --file pom.xml
+
+      - name: upload transformer
+        uses: actions/upload-artifact@v2
+        with:
+          name: unlocode-transformer
+          path: scripts/target/unlocode-transformer-*.jar
+      - name: split locodes
+        working-directory: scripts/target
+        run: |
+          java -jar "$(find -name *.jar)"
+          mv *.csv ../../locodes/
+
+      - name: commit locodes
+        working-directory: locodes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "update UN/LOCODE files"
           git push

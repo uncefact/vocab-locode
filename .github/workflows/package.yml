@@ -6,14 +6,15 @@ on:
       - 'scripts/src/**'
   # Manually run the deployment
   workflow_dispatch:
-    mode:
-      type: choice
-      description: 'The mode of the transformation to run'
-      required: true
-      options:
-        - split
-        - json-ld
-  
+    inputs:
+      mode:
+        type: choice
+        description: 'The mode of the transformation to run'
+        required: true
+        options:
+          - split
+          - json-ld
+
 
 jobs:
   split:

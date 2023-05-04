@@ -315,7 +315,9 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         subdivTypeProperty.add(TYPE, RDF_PROPERTY);
         subdivTypeProperty.add(RDFS_COMMENT, "The administrative division (state," +
                         "province, department, etc.).");
-        subdivTypeProperty.add(SCHEMA_RANGE_INCLUDES, StringUtils.join(XSD_NS, ":string"));
+        subdivTypeProperty.add(SCHEMA_RANGE_INCLUDES, Json.createObjectBuilder(Map.of(
+                ID, StringUtils.join(XSD_NS, ":string")
+        )));
         subdivTypeProperty.add(SCHEMA_DOMAIN_INCLUDES, Json.createObjectBuilder(Map.of(
                 ID, SUBDIVISION_CLASS
         )));
@@ -353,6 +355,7 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         jsonldContext.getContextObjectBuilder().add(XSD_NS, NS_MAP.get(XSD_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_NS, NS_MAP.get(UNLOCODE_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_COUNTRIES_NS, NS_MAP.get(UNLOCODE_COUNTRIES_NS));
+        jsonldContext.getContextObjectBuilder().add(UNLOCODE_FUNC_NS, NS_MAP.get(UNLOCODE_FUNC_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_SUBDIVISIONS_NS, NS_MAP.get(UNLOCODE_SUBDIVISIONS_NS));
         jsonldContext.getContextObjectBuilder().add(GEO_NS, NS_MAP.get(GEO_NS));
         jsonldContext.getContextObjectBuilder().add(XSD_NS, NS_MAP.get(XSD_NS));
@@ -391,6 +394,7 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         jsonldVocabulary.setContextObjectBuilder(getContext());
         jsonldVocabulary.getContextObjectBuilder().add(UNLOCODE_NS, NS_MAP.get(UNLOCODE_NS));
         jsonldVocabulary.getContextObjectBuilder().add(UNLOCODE_COUNTRIES_NS, NS_MAP.get(UNLOCODE_COUNTRIES_NS));
+        jsonldVocabulary.getContextObjectBuilder().add(UNLOCODE_FUNC_NS, NS_MAP.get(UNLOCODE_FUNC_NS));
         jsonldVocabulary.getContextObjectBuilder().add(UNLOCODE_SUBDIVISIONS_NS, NS_MAP.get(UNLOCODE_SUBDIVISIONS_NS));
         jsonldVocabulary.getContextObjectBuilder().add(GEO_NS, NS_MAP.get(GEO_NS));
         jsonldVocabulary.getContextObjectBuilder().add(XSD_NS, NS_MAP.get(XSD_NS));

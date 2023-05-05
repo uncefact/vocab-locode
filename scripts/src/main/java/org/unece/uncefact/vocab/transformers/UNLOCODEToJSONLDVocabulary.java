@@ -130,10 +130,10 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
     private void processSubdivisionCodes(List<CSVRecord> records) {
         for (int i = 0; i < records.size(); i++) {
             SubDivisionCode code = new SubDivisionCode(
-                    records.get(i).get(0),
-                    records.get(i).get(1),
-                    records.get(i).get(2),
-                    records.get(i).get(3)
+                    records.get(i).get(0).trim(),
+                    records.get(i).get(1).trim(),
+                    records.get(i).get(2).trim(),
+                    records.get(i).get(3).trim()
             );
             String id = StringUtils.join(code.getCountry(), code.getCode());
             JsonObjectBuilder rdfClass = Json.createObjectBuilder();

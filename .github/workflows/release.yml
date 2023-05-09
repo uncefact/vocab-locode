@@ -54,7 +54,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: refs/tags/${{ github.event.inputs.tag }}
-          fetch-depth: 0
 
       - name: Get vocabulary
         uses: actions/download-artifact@v3
@@ -67,8 +66,9 @@ jobs:
           tar -zxvf unlocodes.tar.gz
 
       - name: Create Releases
-        uses: ncipollo/release-action@v1.8.6
+        uses: ncipollo/release-action@v1
         with:
+          tag: ${{ github.event.inputs.tag }}
           artifacts: 'vocab/*.jsonld'
           token: ${{ secrets.GITHUB_TOKEN }}
 

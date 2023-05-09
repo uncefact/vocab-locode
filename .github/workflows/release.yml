@@ -1,0 +1,50 @@
+name: release
+
+on:
+  workflow_run:
+    branches:
+      - 'master'
+    tags:
+      - "v[0-9]*"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: create artifact tar
+        run: |
+          tar -cvzf unlocodes.tar.gz vocab/ 
+
+      - name: upload build details
+        uses: actions/upload-artifact@v2
+        with:
+          name: unlocodes_artifact
+          path: unlocodes.tar.gz
+
+  release_tag:
+    if: ${{ startsWith(github.ref, 'refs/tags/') }}
+    needs:
+      - package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get wrapper
+        uses: actions/download-artifact@v2
+        with:
+          name: unlocodes_artifact
+          path: ./
+
+      - name: extract artifact
+        run: |
+          tar -zxvf unlocodes.tar.gz
+
+      - name: Create Releases
+        uses: ncipollo/release-action@v1.8.6
+        with:
+          artifacts: 'vocab/*.jsonld'
+          token: ${{ secrets.GITHUB_TOKEN }}

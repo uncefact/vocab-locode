@@ -54,7 +54,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'unece',
+              owner: 'uncefact',
               repo: 'vocabulary-outputs',
               workflow_id: 'update-unlocodes.yml',
               ref: 'main'

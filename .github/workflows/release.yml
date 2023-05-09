@@ -1,13 +1,23 @@
 name: release
 
 on:
-  push:
-    branches:
-      - 'master'
-    tags:
-      - "v[0-9]*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'New tag name'
+        required: true
+
 
 jobs:
+  
+  create_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - run: git tag ${{ github.event.inputs.tag }}
+
   package:
     runs-on: ubuntu-latest
 

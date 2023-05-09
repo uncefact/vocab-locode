@@ -48,14 +48,10 @@ jobs:
         with:
           artifacts: 'vocab/*.jsonld'
           token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - uses: actions/github-script@v6
+
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
         with:
-          github-token: ${{ secrets.PAT_TOKEN }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: 'uncefact',
-              repo: 'vocabulary-outputs',
-              workflow_id: 'update-unlocodes.yml',
-              ref: 'main'
-            })
+          token: ${{ secrets.PAT_TOKEN }}
+          repository: uncefact/vocabulary-outputs
+          event-type: update-unlocodes

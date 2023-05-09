@@ -48,3 +48,14 @@ jobs:
         with:
           artifacts: 'vocab/*.jsonld'
           token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'unece',
+              repo: 'vocabulary-outputs',
+              workflow_id: 'update-unlocodes.yml',
+              ref: 'main'
+            })

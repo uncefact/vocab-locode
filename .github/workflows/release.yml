@@ -17,8 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -34,7 +32,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
           ref: refs/tags/${{ github.event.inputs.tag }}
 
       - name: create artifact tar
@@ -53,7 +50,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get wrapper
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: refs/tags/${{ github.event.inputs.tag }}
+
+      - name: Get vocabulary
         uses: actions/download-artifact@v2
         with:
           name: unlocodes_artifact

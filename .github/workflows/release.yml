@@ -39,7 +39,7 @@ jobs:
           tar -cvzf unlocodes.tar.gz vocab/ 
 
       - name: upload build details
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: unlocodes_artifact
           path: unlocodes.tar.gz
@@ -54,9 +54,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: refs/tags/${{ github.event.inputs.tag }}
+          fetch-depth: 0
 
       - name: Get vocabulary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: unlocodes_artifact
           path: ./

@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: git tag -a ${{ github.event.inputs.tag }} -m ${{ github.event.inputs.message }}
+      - run: git tag -a ${{ github.event.inputs.tag }} -m "${{ github.event.inputs.message }}"
       - run: git push origin ${{ github.event.inputs.tag }}
 
   package:

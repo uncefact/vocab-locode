@@ -17,33 +17,6 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class UNLOCODEToFilesByCode extends Transformer {
-
-    protected static String FUNCTION_CLASS_NAME = "Function";
-    protected static String FUNCTION_CLASS = StringUtils.join(UNLOCODE_VOCAB_NS, ":", FUNCTION_CLASS_NAME);
-    public static final String FUNCTIONS_PROPERTY_NAME = "functions";
-    public static String FUNCTIONS_PROPERTY = StringUtils.join(UNLOCODE_VOCAB_NS, ":", FUNCTIONS_PROPERTY_NAME);
-    public static String SUBDIVISION_CLASS_NAME = "Subdivision";
-    public static String SUBDIVISION_CLASS = StringUtils.join(UNLOCODE_VOCAB_NS, ":", SUBDIVISION_CLASS_NAME);
-    public static final String COUNTRY_SUBDIVISION_PROPERTY_NAME = "countrySubdivision";
-    public static String COUNTRY_SUBDIVISION_PROPERTY = StringUtils.join(UNLOCODE_VOCAB_NS, ":", COUNTRY_SUBDIVISION_PROPERTY_NAME);
-    public final static String SUBDIVISION_TYPE_PROPERTY_NAME = "subdivisionType";
-    public static String SUBDIVISION_TYPE_PROPERTY = StringUtils.join(UNLOCODE_VOCAB_NS, ":", SUBDIVISION_TYPE_PROPERTY_NAME);
-    public static String COUNTRY_CLASS_NAME = "Country";
-    public static String COUNTRY_CLASS = StringUtils.join(UNLOCODE_VOCAB_NS, ":", COUNTRY_CLASS_NAME);
-    public static String UNLOCODE_CLASS_NAME = "UNLOCODE";
-    public static String UNLOCODE_CLASS = StringUtils.join(UNLOCODE_VOCAB_NS, ":", UNLOCODE_CLASS_NAME);
-    public final static String PROPERTY_COUNTRY_CODE_NAME = "countryCode";
-    public static String PROPERTY_COUNTRY_CODE = StringUtils.join(UNLOCODE_VOCAB_NS, ":", PROPERTY_COUNTRY_CODE_NAME);
-
-
-    Map<String, JsonObject> countriesGraph = new TreeMap<>();
-    Map<String, JsonObject> subdivisionsGraph = new TreeMap<>();
-    Map<String, JsonObject> vocabGraph = new TreeMap<>();
-    Map<String, JsonObject> functionsGraph = new TreeMap<>();
-    Map<String, JsonObject> locodesGraph = new TreeMap<>();
-
-
-
     public UNLOCODEToFilesByCode(Set<String> inputFiles, Set<String> defaultInputFiles, boolean prettyPrint) {
         super(null);
         setInputFiles(inputFiles);
@@ -60,7 +33,7 @@ public class UNLOCODEToFilesByCode extends Transformer {
     }
 
 
-    public void transform() throws IOException, InvalidFormatException {
+    public void transform() throws IOException {
         Map<String, Set<CSVRecord>> locodesByCountries = new TreeMap<>();
         if (inputFiles.isEmpty()){
             for (String file : defaultInputFiles) {
@@ -87,7 +60,6 @@ public class UNLOCODEToFilesByCode extends Transformer {
         else {
             for (String file : inputFiles) {
                 BufferedReader reader = Files.newBufferedReader(Paths.get(file), Charset.forName("ISO-8859-1"));
-                String line = reader.readLine();
                 CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
                 List<CSVRecord> records = csvParser.getRecords();
                 if (records.get(0).size() > 4) {
@@ -109,7 +81,6 @@ public class UNLOCODEToFilesByCode extends Transformer {
 
         for (String country:locodesByCountries.keySet()){
             Set<CSVRecord> records = locodesByCountries.get(country);
-            Set<String> lines = new TreeSet<>();
             Map<String, String> sortedLines = new HashMap<>();
             Iterator<CSVRecord> iterator = records.iterator();
             while (iterator.hasNext()){

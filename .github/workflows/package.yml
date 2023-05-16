@@ -38,7 +38,7 @@ jobs:
         run: |
           mkdir  scripts/target/csv
           cp locodes/*.csv scripts/target/csv
-
+          cp scripts/target/classes/**/*SubdivisionCodes.csv scripts/target/csv
       - name: generate
         working-directory: scripts/target/
         run: |

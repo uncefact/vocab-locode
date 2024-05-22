@@ -24,6 +24,7 @@ on:
     
 jobs:
   json-ld:
+    if: contains(github.event.inputs.mode, 'json-ld')
     runs-on: ubuntu-latest
 
     steps:
@@ -48,7 +49,7 @@ jobs:
       - name: generate
         working-directory: scripts/target/
         run: |
-          java -jar "$(find -name *.jar)" -t json-ld
+          java -jar "$(find -name *.jar)" -t json-ld -d csv
           mv *.jsonld ../../vocab/
       
       - name: commit json-ld

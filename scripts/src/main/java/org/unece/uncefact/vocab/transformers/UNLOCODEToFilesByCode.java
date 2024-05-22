@@ -61,13 +61,15 @@ public class UNLOCODEToFilesByCode extends Transformer {
 
 
     public void transform() throws IOException, InvalidFormatException {
+        CSVFormat csvFormat = CSVFormat.DEFAULT.builder().setSkipHeaderRecord(false).build();
         Map<String, Set<CSVRecord>> locodesByCountries = new TreeMap<>();
         if (inputFiles.isEmpty()){
             for (String file : defaultInputFiles) {
                 InputStream in = getClass().getResourceAsStream(file);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in, Charset.forName("ISO-8859-1")));
-                CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+                CSVParser csvParser = new CSVParser(reader, csvFormat);
                 List<CSVRecord> records = csvParser.getRecords();
+                System.out.println(records.get(0));
                 if (records.get(0).size() > 4) {
                     for (int i = 0; i < records.size(); i++) {
                         CSVRecord record = records.get(i);
@@ -82,14 +84,18 @@ public class UNLOCODEToFilesByCode extends Transformer {
                         locodesByCountries.put(country, locodesSet);
                     }
                 }
+                csvParser.close();
             }
         }
         else {
             for (String file : inputFiles) {
+                if (!file.endsWith(".csv")) {
+                    continue;
+                }
                 BufferedReader reader = Files.newBufferedReader(Paths.get(file), Charset.forName("ISO-8859-1"));
-                String line = reader.readLine();
-                CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+                CSVParser csvParser = new CSVParser(reader, csvFormat);
                 List<CSVRecord> records = csvParser.getRecords();
+                System.out.println(records.get(0));
                 if (records.get(0).size() > 4) {
                     for (int i = 0; i < records.size(); i++) {
                         CSVRecord record = records.get(i);
@@ -104,6 +110,7 @@ public class UNLOCODEToFilesByCode extends Transformer {
                         locodesByCountries.put(country, locodesSet);
                     }
                 }
+                csvParser.close();
             }
         }
 
@@ -121,14 +128,15 @@ public class UNLOCODEToFilesByCode extends Transformer {
                     else
                         line += String.format("\"%s\",", value);
                 }
-                String key = record.get(1).concat(record.get(2));
-                if (sortedLines.containsKey(key)){
+                String key = record.get(1).concat(record.get(2).concat(record.get(3)));
+                //TODO: add a report for duplicated codes
+                /*if (sortedLines.containsKey(key)){
                     if (!record.get(2).isEmpty()) {
                         System.err.println(sortedLines.get(key));
                         System.err.println(line);
                     }
                     key += record.get(3);
-                }
+                }*/
                 sortedLines.put(key, line.substring(0,line.length()-1));
             }
 

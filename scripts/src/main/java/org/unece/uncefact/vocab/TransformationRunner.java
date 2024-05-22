@@ -31,11 +31,13 @@ public class TransformationRunner {
         Option transformationTypeOption = new Option("t", true, "transformation type.\n" +
                 String.format("Allowed values: %s, %s.\n", "json-ld", "split") +
                 String.format("Default value: %s.", "json-ld"));
+        Option dirOption = new Option("d", true, "directory with csv files for split option.");
         Option prettyPrintOption = new Option("p", "pretty-print",false, "an output file to be created as a result of transformation. Default value: output.jsonld.");
         Option versionOption = new Option("?", "version", false, "display this help.");
 
         options.addOption(transformationTypeOption);
         options.addOption(prettyPrintOption);
+        options.addOption(dirOption);
         options.addOption(versionOption);
 
         HelpFormatter formatter = new HelpFormatter();
@@ -51,6 +53,7 @@ public class TransformationRunner {
         Set<String> inputFileNames = new TreeSet<>();
         boolean prettyPrint = false;
         String transformationType = UNECE_NS;
+        String dir = "";
         Transformer transformer = null;
         Iterator<Option> optionIterator = cmd.iterator();
         while (optionIterator.hasNext()) {
@@ -60,30 +63,34 @@ public class TransformationRunner {
                 prettyPrint = Boolean.TRUE;
             } else if (opt.equals(transformationTypeOption.getOpt())) {
                 transformationType = option.getValue();
+            } else if (opt.equals(dirOption.getOpt())) {
+                dir = option.getValue();
             }
         }
         Set<String> defaultInputNames = new TreeSet<>();
 
+        try (Stream<Path> walk = Files.walk(Paths.get(dir))) {
+            // We want to find only regular files
+            List<String> result = walk.filter(Files::isRegularFile)
+                    .map(x -> x.toString()).collect(Collectors.toList());
+            System.out.println(result.size());
+            for(String r:result){
+                System.out.println(r);
+            }
+
+            inputFileNames = new TreeSet<>(result);
+        } catch (IOException e) {
+            System.err.println(dir);
+            e.printStackTrace();
+        }
+        
         switch (transformationType.toLowerCase()) {
             case "json-ld":
             default:
-                try (Stream<Path> walk = Files.walk(Paths.get("csv"))) {
-                    // We want to find only regular files
-                    List<String> result = walk.filter(Files::isRegularFile)
-                            .map(x -> x.toString()).collect(Collectors.toList());
-
-                    inputFileNames = new TreeSet<>(result);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
                 transformer = new UNLOCODEToJSONLDVocabulary(inputFileNames, defaultInputNames, prettyPrint);
                 break;
 
             case "split":
-                defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart1.csv");
-                defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart2.csv");
-                defaultInputNames.add("/loc222csv/2022-2 UNLOCODE CodeListPart3.csv");
-                defaultInputNames.add("/loc222csv/2022-2 SubdivisionCodes.csv");
                 transformer = new UNLOCODEToFilesByCode(inputFileNames, defaultInputNames, prettyPrint);
                 break;
         }

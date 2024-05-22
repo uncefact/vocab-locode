@@ -86,7 +86,7 @@ jobs:
       - name: split locodes
         working-directory: scripts/target
         run: |
-          java -jar "$(find -name *.jar)" -t split -d ${{github.event.inputs.directory}}
+          java -jar "$(find -name *.jar)" -t split -d classes/${{github.event.inputs.directory}}
           mv *.csv ../../locodes/
 
       - name: commit locodes

@@ -15,7 +15,13 @@ on:
         options:
           - json-ld
           - split
-
+      directory:
+        type: choice
+        description: 'The location of input csv files to be split'
+        required: false
+        options:
+          - loc222csv
+    
 jobs:
   json-ld:
     runs-on: ubuntu-latest
@@ -80,7 +86,7 @@ jobs:
       - name: split locodes
         working-directory: scripts/target
         run: |
-          java -jar "$(find -name *.jar)"
+          java -jar "$(find -name *.jar)" -t split -d ${{github.event.inputs.directory}}
           mv *.csv ../../locodes/
 
       - name: commit locodes

@@ -92,12 +92,16 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
 
 
     public void transform() throws IOException, InvalidFormatException {
+        CSVFormat csvFormat = CSVFormat.DEFAULT.builder().setSkipHeaderRecord(false).build();
         List<CSVRecord> locodes = new ArrayList();
         if (inputFiles.isEmpty()){
             for (String file : defaultInputFiles) {
+                if (!file.endsWith(".csv")) {
+                    continue;
+                }
                 InputStream in = getClass().getResourceAsStream(file);
                 Reader reader = new BufferedReader(new InputStreamReader(in, Charset.forName("ISO-8859-1")));
-                CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+                CSVParser csvParser = new CSVParser(reader, csvFormat);
                 List<CSVRecord> records = csvParser.getRecords();
                 if (records.get(0).size() > 4) {
                     locodes.addAll(records);
@@ -111,8 +115,11 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         }
         else {
             for (String file : inputFiles) {
+                if (!file.endsWith(".csv")) {
+                    continue;
+                }
                 Reader reader = Files.newBufferedReader(Paths.get(file), Charset.forName("ISO-8859-1"));
-                CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+                CSVParser csvParser = new CSVParser(reader, csvFormat);
                 List<CSVRecord> records = csvParser.getRecords();
                 if (records.get(0).size() > 4) {
                     locodes.addAll(records);
@@ -347,12 +354,12 @@ public class UNLOCODEToJSONLDVocabulary extends Transformer {
         JSONLDVocabulary jsonldVocabulary = new JSONLDVocabulary(StringUtils.join("unlocode-vocab.jsonld"), true);
         jsonldVocabulary.setContextObjectBuilder(getContext());
         jsonldVocabulary.getContextObjectBuilder().add(SCHEMA_NS, NS_MAP.get(SCHEMA_NS));
+        jsonldVocabulary.getContextObjectBuilder().add(XSD_NS, NS_MAP.get(XSD_NS));
 
         JSONLDContext jsonldContext = new JSONLDContext(StringUtils.join("unlocode-vocab-context.jsonld"), true);
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_VOCAB_NS, NS_MAP.get(UNLOCODE_VOCAB_NS));
         jsonldContext.getContextObjectBuilder().add(RDF_NS, NS_MAP.get(RDF_NS));
         jsonldContext.getContextObjectBuilder().add(RDFS_NS, NS_MAP.get(RDFS_NS));
-        jsonldContext.getContextObjectBuilder().add(XSD_NS, NS_MAP.get(XSD_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_NS, NS_MAP.get(UNLOCODE_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_COUNTRIES_NS, NS_MAP.get(UNLOCODE_COUNTRIES_NS));
         jsonldContext.getContextObjectBuilder().add(UNLOCODE_FUNC_NS, NS_MAP.get(UNLOCODE_FUNC_NS));

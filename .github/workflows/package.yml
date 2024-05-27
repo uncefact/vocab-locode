@@ -13,13 +13,14 @@ on:
         description: 'The mode of the transformation to run'
         required: true
         options:
-          - json-ld
           - split
+          - json-ld
       directory:
         type: choice
         description: 'The location of input csv files to be split'
         required: false
         options:
+          - loc221csv
           - loc222csv
     
 jobs:
@@ -50,6 +51,18 @@ jobs:
         working-directory: scripts/target/
         run: |
           java -jar "$(find -name *.jar)" -t json-ld -d csv
+          jq --sort-keys . unlocode-countries.jsonld > unlocode-countries-sorted.jsonld
+          mv unlocode-countries-sorted.jsonld unlocode-countries.jsonld
+          jq --sort-keys . unlocode-functions.jsonld > unlocode-functions-sorted.jsonld
+          mv unlocode-functions-sorted.jsonld unlocode-functions.jsonld
+          jq --sort-keys . unlocode-subdivisions.jsonld > unlocode-subdivisions-sorted.jsonld
+          mv unlocode-subdivisions-sorted.jsonld unlocode-subdivisions.jsonld
+          jq --sort-keys . unlocode-vocab-context.jsonld > unlocode-vocab-context-sorted.jsonld
+          mv unlocode-vocab-context-sorted.jsonld unlocode-vocab-context.jsonld
+          jq --sort-keys . unlocode-vocab.jsonld > unlocode-vocab-sorted.jsonld
+          mv unlocode-vocab-sorted.jsonld unlocode-vocab.jsonld
+          jq -c --sort-keys . unlocode.jsonld > unlocode-sorted.jsonld
+          mv unlocode-sorted.jsonld unlocode.jsonld
           mv *.jsonld ../../vocab/
       
       - name: commit json-ld

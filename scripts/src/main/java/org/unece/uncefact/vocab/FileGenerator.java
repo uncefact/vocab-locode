@@ -41,6 +41,7 @@ public class FileGenerator {
 
     public void verify (JsonArray array){
         Set<String> ids = new HashSet<>();
+        ids.add("xsd:string");
         Set<String> idsLC = new HashSet<>();
         for (JsonObject jsonObject:array.getValuesAs(JsonObject.class)) {
             String id = jsonObject.getString(Transformer.ID);

@@ -13,11 +13,19 @@ on:
         description: 'The mode of the transformation to run'
         required: true
         options:
-          - json-ld
           - split
-
+          - json-ld
+      directory:
+        type: choice
+        description: 'The location of input csv files to be split'
+        required: false
+        options:
+          - loc221csv
+          - loc222csv
+    
 jobs:
   json-ld:
+    if: contains(github.event.inputs.mode, 'json-ld')
     runs-on: ubuntu-latest
 
     steps:
@@ -42,7 +50,17 @@ jobs:
       - name: generate
         working-directory: scripts/target/
         run: |
-          java -jar "$(find -name *.jar)" -t json-ld
+          java -jar "$(find -name *.jar)" -t json-ld -d classes/${{github.event.inputs.directory}}
+          jq --sort-keys . unlocode-countries.jsonld > unlocode-countries-sorted.jsonld
+          mv unlocode-countries-sorted.jsonld unlocode-countries.jsonld
+          jq --sort-keys . unlocode-functions.jsonld > unlocode-functions-sorted.jsonld
+          mv unlocode-functions-sorted.jsonld unlocode-functions.jsonld
+          jq --sort-keys . unlocode-subdivisions.jsonld > unlocode-subdivisions-sorted.jsonld
+          mv unlocode-subdivisions-sorted.jsonld unlocode-subdivisions.jsonld
+          jq --sort-keys . unlocode-vocab.jsonld > unlocode-vocab-sorted.jsonld
+          mv unlocode-vocab-sorted.jsonld unlocode-vocab.jsonld
+          jq -c --sort-keys . unlocode.jsonld > unlocode-sorted.jsonld
+          mv unlocode-sorted.jsonld unlocode.jsonld
           mv *.jsonld ../../vocab/
       
       - name: commit json-ld
@@ -80,7 +98,7 @@ jobs:
       - name: split locodes
         working-directory: scripts/target
         run: |
-          java -jar "$(find -name *.jar)"
+          java -jar "$(find -name *.jar)" -t split -d classes/${{github.event.inputs.directory}}
           mv *.csv ../../locodes/
 
       - name: commit locodes

@@ -71,7 +71,7 @@ jobs:
           curl -o unlocode-subdivisions-main.jsonld https://raw.githubusercontent.com/uncefact/vocabulary-outputs/main/unlocode-subdivisions.jsonld
           diff <(jq --sort-keys . unlocode-subdivisions-main.jsonld) <(jq --sort-keys . unlocode-subdivisions.jsonld) > unlocode-subdivisions-diff.txt
           rm unlocode-main.jsonld
-          unlocode-subdivisions-main.jsonld
+          rm unlocode-subdivisions-main.jsonld
   
       - name: commit json-ld
         working-directory: vocab/

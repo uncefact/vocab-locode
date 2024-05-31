@@ -63,6 +63,16 @@ jobs:
           mv unlocode-sorted.jsonld unlocode.jsonld
           mv *.jsonld ../../vocab/
       
+      - name: runn diff
+        working-directory: vocab/
+        run: |
+          curl -o unlocode-main.jsonld https://raw.githubusercontent.com/uncefact/vocabulary-outputs/main/unlocode.jsonld && echo "Downloaded"
+          diff <(jq --sort-keys . unlocode-main.jsonld) <(jq --sort-keys . unlocode.jsonld) > unlocode-diff.txt && echo "Diff created"
+          curl -o unlocode-subdivisions-main.jsonld https://raw.githubusercontent.com/uncefact/vocabulary-outputs/main/unlocode-subdivisions.jsonld && echo "Downloaded"
+          diff <(jq --sort-keys . unlocode-subdivisions-main.jsonld) <(jq --sort-keys . unlocode-subdivisions.jsonld) > unlocode-subdivisions-diff.txt && echo "Diff created"
+          rm unlocode-main.jsonld && echo "File removed"
+          rm unlocode-subdivisions-main.jsonld && echo "File removed"
+  
       - name: commit json-ld
         working-directory: vocab/
         run: |
